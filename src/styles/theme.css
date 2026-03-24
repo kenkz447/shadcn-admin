@@ -31,6 +31,10 @@
   --sidebar-accent-foreground: var(--accent-foreground);
   --sidebar-border: var(--border);
   --sidebar-ring: var(--ring);
+
+  --svg-size-md: calc(var(--spacing) * 4);
+  --svg-size-sm: calc(var(--spacing) * 3);
+  --svg-size-lg: calc(var(--spacing) * 5);
 }
 
 .dark {
@@ -104,9 +108,9 @@
   --spacing-px-sm: calc(var(--spacing) * 1.5);
   --spacing-px-lg: calc(var(--spacing) * 3.5);
 
-  --spacing-gap-md: calc(var(--spacing) * 0.5);
+  --spacing-gap-md: calc(var(--spacing) * 2);
   --spacing-gap-sm: calc(var(--spacing) * 1);
-  --spacing-gap-lg: calc(var(--spacing) * 1.5);
+  --spacing-gap-lg: calc(var(--spacing) * 3);
 
   --radius: 0.625rem;
   --radius-sm: calc(var(--radius) - 4px);

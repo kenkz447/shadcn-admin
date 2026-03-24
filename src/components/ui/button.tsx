@@ -5,41 +5,47 @@ import { Slot } from "radix-ui"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  "inline-flex shrink-0 items-center justify-center font-medium text-sm whitespace-nowrap transition-all outline-none disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        primary: "bg-btn-primary text-btn-primary-foreground hover:bg-btn-primary-hover",
         destructive:
-          "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:bg-destructive/60 dark:focus-visible:ring-destructive/40",
+          "bg-btn-destructive text-btn-destructive-foreground hover:bg-btn-destructive-hover focus-visible:ring-btn-destructive-focus",
         outline:
-          "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+          "border border-btn-outline-border bg-btn-outline shadow-xs hover:bg-btn-outline-hover hover:text-accent-foreground",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "bg-btn-secondary text-btn-secondary-foreground hover:bg-btn-secondary-hover",
         ghost:
-          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+          "hover:bg-btn-ghost-hover hover:text-btn-ghost-foreground",
+        link: "text-btn-primary underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-btn-md px-btn-px-md rounded-btn-md",
-        sm: "h-btn-sm px-btn-px-sm rounded-btn-sm",
-        lg: "h-btn-lg px-btn-px-lg rounded-btn-lg",
-        icon: "size-btn-md rounded-btn-md",
-        "icon-sm": "size-btn-sm rounded-btn-sm",
-        "icon-lg": "size-btn-lg rounded-btn-lg",
+        md: "h-btn-md px-btn-px-md rounded-btn-md gap-btn-gap-md [&_svg:not([class*='size-'])]:size-btn-svg-size-md",
+        sm: "h-btn-sm px-btn-px-sm rounded-btn-sm gap-btn-gap-sm [&_svg:not([class*='size-'])]:size-btn-svg-size-sm",
+        lg: "h-btn-lg px-btn-px-lg rounded-btn-lg gap-btn-gap-lg [&_svg:not([class*='size-'])]:size-btn-svg-size-lg",
+        icon: "size-btn-md rounded-btn-md gap-btn-gap-md [&_svg:not([class*='size-'])]:size-btn-svg-size-md",
+        "icon-sm": "size-btn-sm rounded-btn-sm gap-btn-gap-sm [&_svg:not([class*='size-'])]:size-btn-svg-size-sm",
+        "icon-lg": "size-btn-lg rounded-btn-lg gap-btn-gap-lg [&_svg:not([class*='size-'])]:size-btn-svg-size-lg",
+      },
+      focus: {
+        visible: "focus-visible:border-btn-focus-border focus-visible:ring-[3px] focus-visible:ring-btn-focus-ring",
+        none: "",
       },
     },
     defaultVariants: {
-      variant: "default",
-      size: "default",
+      variant: "primary",
+      size: "md",
+      focus: "visible",
     },
   }
 )
 
 function Button({
   className,
-  variant = "default",
-  size = "default",
+  variant,
+  size,
+  focus,
   asChild = false,
   ...props
 }: React.ComponentProps<"button"> &
@@ -53,7 +59,7 @@ function Button({
       data-slot="button"
       data-variant={variant}
       data-size={size}
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(buttonVariants({ variant, size, focus, className }))}
       {...props}
     />
   )
