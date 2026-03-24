@@ -1,18 +1,18 @@
 /** Table **/
 
 :root {
-    --table-footer-border-color: var(--surface-border);
+    --table-footer-border-color: var(--surface-border-color);
     --table-footer-bg: var(--data-footer-surface);
 
-    --table-row-border-color: var(--surface-border);
-    --table-row-bg-hover: var(--data-row-surface-hover);
-    --table-row-bg-selected: var(--data-row-surface-selected);
+    --table-row-border-color: var(--surface-border-color);
+    --table-row-hover-bg: var(--data-row-surface-hover);
+    --table-row-selected-bg: var(--data-row-surface-selected);
 
     --table-head-height: calc(var(--spacing) * 10);
     --table-cell-padding: var(--space-2);
     --table-checkbox-translate-y: 2px;
 
     --table-caption-margin-top: var(--space-4);
-    --table-head-fg: var(--data-heading-text);
-    --table-caption-fg: var(--data-caption-text);
+    --table-head-fg: var(--data-heading-fg);
+    --table-caption-fg: var(--data-caption-fg);
 }

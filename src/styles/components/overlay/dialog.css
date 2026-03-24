@@ -7,7 +7,7 @@
     --dialog-content-max-width-sm: 32rem;
     --dialog-content-gap: var(--panel-gap-lg);
     --dialog-content-radius: var(--panel-radius-lg);
-    --dialog-content-border-color: var(--surface-border);
+    --dialog-content-border-color: var(--surface-border-color);
     --dialog-content-padding: var(--panel-padding-lg);
     --dialog-content-bg: var(--surface-page);
 
@@ -22,10 +22,10 @@
     --dialog-close-ring-offset-color: var(--surface-page);
     --dialog-close-icon-size: var(--icon-md);
     --dialog-close-active-bg: var(--surface-accent-subtle);
-    --dialog-close-active-fg: var(--text-muted);
+    --dialog-close-active-fg: var(--fg-muted);
 
     --dialog-header-gap: var(--panel-gap-sm);
     --dialog-footer-gap: var(--panel-gap-sm);
 
-    --dialog-description-fg: var(--text-muted);
+    --dialog-description-fg: var(--fg-muted);
 }

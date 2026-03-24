@@ -3,7 +3,7 @@
 :root {
     --checkbox-size: var(--selection-control-size);
     --checkbox-radius: var(--selection-control-radius);
-    --checkbox-border-color: var(--selection-border);
+    --checkbox-border-color: var(--selection-border-color);
     --checkbox-bg: var(--selection-surface);
     --checkbox-indicator-size: var(--selection-control-indicator-size);
 
@@ -16,5 +16,5 @@
 
     --checkbox-checked-border-color: var(--selection-border-checked);
     --checkbox-checked-bg: var(--selection-surface-checked);
-    --checkbox-checked-fg: var(--selection-text-checked);
+    --checkbox-checked-fg: var(--selection-checked-fg);
 }

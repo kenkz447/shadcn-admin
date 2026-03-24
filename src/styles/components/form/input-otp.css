@@ -5,7 +5,7 @@
 
     --input-otp-slot-size: var(--control-size-lg);
     --input-otp-slot-radius: var(--field-radius);
-    --input-otp-slot-border-color: var(--field-border);
+    --input-otp-slot-border-color: var(--field-border-color);
     --input-otp-slot-bg: var(--field-surface);
 
     --input-otp-slot-active-border-color: var(--field-border-focus);
@@ -17,5 +17,5 @@
 
     --input-otp-caret-height: var(--space-4);
     --input-otp-caret-width: 1px;
-    --input-otp-caret-color: var(--text-primary);
+    --input-otp-caret-color: var(--fg-primary);
 }

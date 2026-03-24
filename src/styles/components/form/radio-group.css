@@ -5,9 +5,9 @@
 
     --radio-size: var(--selection-control-size);
     --radio-radius: var(--selection-control-radius-full);
-    --radio-border-color: var(--selection-border);
+    --radio-border-color: var(--selection-border-color);
     --radio-bg: var(--selection-surface);
-    --radio-color: var(--selection-text-brand);
+    --radio-color: var(--selection-brand-fg);
 
     --radio-focus-border-color: var(--selection-border-focus);
     --radio-focus-ring-width: var(--selection-ring-focus-width);
@@ -17,5 +17,5 @@
     --radio-invalid-ring-color: var(--selection-ring-invalid-color);
 
     --radio-indicator-size: var(--space-2);
-    --radio-indicator-color: var(--selection-text-brand);
+    --radio-indicator-color: var(--selection-brand-fg);
 }

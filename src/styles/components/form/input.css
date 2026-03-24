@@ -5,9 +5,9 @@
     --input-radius: var(--field-radius);
     --input-padding-x: var(--field-padding-x);
     --input-padding-y: var(--field-padding-y);
-    --input-border-color: var(--field-border);
+    --input-border-color: var(--field-border-color);
     --input-bg: var(--field-surface);
-    --input-placeholder-color: var(--field-placeholder-text);
+    --input-placeholder-color: var(--field-placeholder-fg);
     --input-file-height: var(--field-height-sm);
 
     --input-focus-border-color: var(--field-border-focus);

@@ -3,11 +3,11 @@
 :root {
     --dropdown-menu-content-min-width: var(--menu-content-min-width);
     --dropdown-menu-content-radius: var(--menu-content-radius);
-    --dropdown-menu-content-border-color: var(--surface-border);
+    --dropdown-menu-content-border-color: var(--surface-border-color);
     --dropdown-menu-content-padding: var(--menu-content-padding);
     --dropdown-menu-content-side-offset: var(--menu-content-offset-side);
     --dropdown-menu-content-bg: var(--surface-popover);
-    --dropdown-menu-content-fg: var(--text-popover-contrast);
+    --dropdown-menu-content-fg: var(--fg-popover-contrast);
 
     --dropdown-menu-item-gap: var(--menu-item-gap);
     --dropdown-menu-item-radius: var(--menu-item-radius);
@@ -18,22 +18,22 @@
     --dropdown-menu-item-indicator-size: var(--menu-item-indicator-size);
     --dropdown-menu-item-icon-size: var(--menu-item-icon-size);
     --dropdown-menu-item-focus-bg: var(--menu-item-surface-active);
-    --dropdown-menu-item-focus-fg: var(--menu-item-text-active);
-    --dropdown-menu-item-icon-fg: var(--menu-text-muted);
-    --dropdown-menu-item-destructive-fg: var(--text-danger);
+    --dropdown-menu-item-focus-fg: var(--menu-item-active-fg);
+    --dropdown-menu-item-icon-fg: var(--menu-fg-muted);
+    --dropdown-menu-item-destructive-fg: var(--fg-danger);
 
     --dropdown-menu-label-padding-x: var(--menu-label-padding-x);
     --dropdown-menu-label-padding-y: var(--menu-label-padding-y);
-    --dropdown-menu-label-fg: var(--menu-text-muted);
+    --dropdown-menu-label-fg: var(--menu-fg-muted);
 
     --dropdown-menu-separator-margin-x: var(--menu-separator-margin-x);
     --dropdown-menu-separator-margin-y: var(--menu-separator-margin-y);
     --dropdown-menu-separator-height: var(--menu-separator-height);
-    --dropdown-menu-separator-color: var(--surface-border);
+    --dropdown-menu-separator-color: var(--surface-border-color);
 
     --dropdown-menu-shortcut-margin-left: auto;
-    --dropdown-menu-shortcut-fg: var(--menu-text-muted);
+    --dropdown-menu-shortcut-fg: var(--menu-fg-muted);
 
     --dropdown-menu-destructive-focus-bg: var(--menu-item-surface-destructive-focus);
-    --dropdown-menu-destructive-focus-fg: var(--menu-item-text-destructive-focus);
+    --dropdown-menu-destructive-focus-fg: var(--menu-item-destructive-focus-fg);
 }

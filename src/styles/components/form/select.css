@@ -3,14 +3,14 @@
 :root {
     --select-trigger-gap: var(--control-gap-md);
     --select-trigger-radius: var(--field-radius);
-    --select-trigger-border-color: var(--field-border);
+    --select-trigger-border-color: var(--field-border-color);
     --select-trigger-bg: var(--field-surface);
-    --select-trigger-bg-hover: var(--field-surface-hover);
+    --select-trigger-hover-bg: var(--field-surface-hover);
     --select-trigger-padding-x: var(--field-padding-x);
     --select-trigger-padding-y: var(--field-padding-y-comfortable);
     --select-trigger-height: var(--field-height-md);
     --select-trigger-height-sm: var(--field-height-sm);
-    --select-trigger-placeholder-color: var(--field-placeholder-text);
+    --select-trigger-placeholder-color: var(--field-placeholder-fg);
 
     --select-trigger-focus-border-color: var(--field-border-focus);
     --select-trigger-focus-ring-width: var(--field-ring-focus-width);
@@ -24,9 +24,9 @@
 
     --select-content-min-width: var(--menu-content-min-width);
     --select-content-radius: var(--menu-content-radius);
-    --select-content-border-color: var(--surface-border);
+    --select-content-border-color: var(--surface-border-color);
     --select-content-bg: var(--surface-popover);
-    --select-content-fg: var(--text-popover-contrast);
+    --select-content-fg: var(--fg-popover-contrast);
 
     --select-content-offset: var(--menu-content-offset-side);
     --select-content-offset-negative: calc(var(--menu-content-offset-side) * -1);
@@ -34,7 +34,7 @@
 
     --select-label-padding-x: var(--menu-label-padding-x);
     --select-label-padding-y: var(--menu-label-padding-y);
-    --select-label-fg: var(--menu-text-muted);
+    --select-label-fg: var(--menu-fg-muted);
 
     --select-item-gap: var(--menu-item-gap);
     --select-item-radius: var(--menu-item-radius);
@@ -42,8 +42,8 @@
     --select-item-padding-right: var(--menu-item-inset-padding);
     --select-item-padding-left: var(--menu-item-padding-x);
     --select-item-focus-bg: var(--menu-item-surface-active);
-    --select-item-focus-fg: var(--menu-item-text-active);
-    --select-item-icon-fg: var(--menu-text-muted);
+    --select-item-focus-fg: var(--menu-item-active-fg);
+    --select-item-icon-fg: var(--menu-fg-muted);
 
     --select-item-indicator-offset-right: var(--menu-item-indicator-offset);
     --select-item-indicator-size: var(--menu-item-indicator-size);
@@ -51,7 +51,7 @@
     --select-separator-margin-x: var(--menu-separator-margin-x);
     --select-separator-margin-y: var(--menu-separator-margin-y);
     --select-separator-height: var(--menu-separator-height);
-    --select-separator-color: var(--surface-border);
+    --select-separator-color: var(--surface-border-color);
 
     --select-scroll-button-padding-y: var(--space-1);
 }

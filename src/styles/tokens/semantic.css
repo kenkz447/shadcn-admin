@@ -9,8 +9,8 @@
 	--tone-surface-danger-solid-hover: color-mix(in oklab, var(--destructive) 90%, transparent);
 	--tone-surface-danger-soft: color-mix(in oklab, var(--destructive) 10%, transparent);
 	--tone-surface-danger-soft-hover: color-mix(in oklab, var(--destructive) 20%, transparent);
-	--tone-text-danger-soft: color-mix(in oklab, var(--destructive) 90%, transparent);
-	--tone-text-muted-strong: color-mix(in oklab, var(--foreground) 60%, transparent);
+	--tone-fg-danger-soft: color-mix(in oklab, var(--destructive) 90%, transparent);
+	--tone-fg-muted-strong: color-mix(in oklab, var(--foreground) 60%, transparent);
 	--tone-surface-muted-soft: color-mix(in oklab, var(--muted) 50%, transparent);
 	--tone-surface-muted-soft-hover: var(--muted);
 	--tone-surface-input-soft: transparent;
@@ -25,51 +25,51 @@
 	/* Brand and feedback surfaces */
 	--surface-brand-solid: var(--primary);
 	--surface-brand-solid-hover: var(--tone-surface-brand-solid-hover);
-	--text-brand-solid-contrast: var(--primary-foreground);
+	--fg-brand-solid-contrast: var(--primary-foreground);
 
 	--surface-secondary-solid: var(--secondary);
 	--surface-secondary-solid-hover: var(--tone-surface-secondary-solid-hover);
-	--text-secondary-solid-contrast: var(--secondary-foreground);
+	--fg-secondary-solid-contrast: var(--secondary-foreground);
 
 	--surface-accent-subtle: var(--accent);
-	--text-accent-subtle-contrast: var(--accent-foreground);
+	--fg-accent-subtle-contrast: var(--accent-foreground);
 
 	--surface-danger-solid: var(--tone-surface-danger-solid);
 	--surface-danger-solid-hover: var(--tone-surface-danger-solid-hover);
 	--surface-danger-soft: var(--tone-surface-danger-soft);
 	--surface-danger-soft-hover: var(--tone-surface-danger-soft-hover);
-	--text-danger-solid-contrast: white;
+	--fg-danger-solid-contrast: white;
 
 	/* Core text and surface roles */
-	--text-brand-link: var(--primary);
-	--text-danger: var(--destructive);
-	--text-danger-soft: var(--tone-text-danger-soft);
-	--text-primary: var(--foreground);
-	--text-muted-strong: var(--tone-text-muted-strong);
-	--text-muted: var(--muted-foreground);
+	--fg-brand-link: var(--primary);
+	--fg-danger: var(--destructive);
+	--fg-danger-soft: var(--tone-fg-danger-soft);
+	--fg-primary: var(--foreground);
+	--fg-muted-strong: var(--tone-fg-muted-strong);
+	--fg-muted: var(--muted-foreground);
 	--surface-muted: var(--muted);
 	--surface-muted-soft: var(--tone-surface-muted-soft);
 	--surface-muted-soft-hover: var(--tone-surface-muted-soft-hover);
 	--surface-page: var(--background);
 	--surface-popover: var(--popover);
-	--text-popover-contrast: var(--popover-foreground);
+	--fg-popover-contrast: var(--popover-foreground);
 	--surface-input-soft: var(--tone-surface-input-soft);
 	--surface-input-soft-hover: var(--tone-surface-input-soft-hover);
 	--surface-input-strong: var(--tone-surface-input-strong);
 
 	/* Context display roles */
-	--menu-text-muted: var(--text-muted);
+	--menu-fg-muted: var(--fg-muted);
 	--nav-list-surface: var(--surface-muted);
-	--nav-list-text: var(--text-muted);
-	--nav-item-text-hover: var(--text-primary);
-	--nav-item-text-active: var(--text-primary);
-	--nav-indicator-text: var(--text-primary);
+	--nav-list-fg: var(--fg-muted);
+	--nav-item-hover-fg: var(--fg-primary);
+	--nav-item-active-fg: var(--fg-primary);
+	--nav-indicator-fg: var(--fg-primary);
 
 	/* Context interaction roles */
 	--menu-item-surface-destructive-focus: var(--surface-danger-soft);
-	--menu-item-text-destructive-focus: var(--text-danger);
+	--menu-item-destructive-focus-fg: var(--fg-danger);
 	--menu-item-surface-active: var(--surface-accent-subtle);
-	--menu-item-text-active: var(--text-accent-subtle-contrast);
+	--menu-item-active-fg: var(--fg-accent-subtle-contrast);
 	--data-row-surface-hover: var(--surface-muted-soft-hover);
 	--data-row-surface-selected: var(--surface-muted);
 	--nav-tab-surface-active: var(--background);
@@ -78,8 +78,8 @@
 
 	/* Data display roles */
 	--data-footer-surface: var(--surface-muted-soft);
-	--data-caption-text: var(--text-muted);
-	--data-heading-text: var(--text-primary);
+	--data-caption-fg: var(--fg-muted);
+	--data-heading-fg: var(--fg-primary);
 }
 
 .dark {

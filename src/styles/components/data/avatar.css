@@ -29,7 +29,7 @@
     --avatar-group-count-icon-size-lg: calc(var(--spacing) * 5);
 
     --avatar-fallback-bg: var(--surface-muted);
-    --avatar-fallback-fg: var(--text-muted);
+    --avatar-fallback-fg: var(--fg-muted);
     --avatar-badge-bg: var(--surface-brand-solid);
-    --avatar-badge-fg: var(--text-brand-solid-contrast);
+    --avatar-badge-fg: var(--fg-brand-solid-contrast);
 }

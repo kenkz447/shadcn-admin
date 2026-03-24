@@ -13,14 +13,14 @@
     --switch-track-height-sm: var(--selection-switch-track-height-sm);
     --switch-track-width-sm: var(--selection-switch-track-width-sm);
 
-    --switch-track-bg-checked: var(--selection-surface-checked);
-    --switch-track-bg-unchecked: var(--switch-track-surface-unchecked);
+    --switch-track-checked-bg: var(--selection-surface-checked);
+    --switch-track-unchecked-bg: var(--switch-track-surface-unchecked);
 
     --switch-thumb-size: var(--selection-switch-thumb-size-md);
     --switch-thumb-size-sm: var(--selection-switch-thumb-size-sm);
     --switch-thumb-bg: var(--switch-thumb-surface);
-    --switch-thumb-bg-checked: var(--switch-thumb-surface);
-    --switch-thumb-bg-unchecked: var(--switch-thumb-surface);
+    --switch-thumb-checked-bg: var(--switch-thumb-surface);
+    --switch-thumb-unchecked-bg: var(--switch-thumb-surface);
     --switch-thumb-translate-checked: calc(100% - 2px);
     --switch-thumb-translate-unchecked: 0px;
 }

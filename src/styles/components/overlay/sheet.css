@@ -6,7 +6,7 @@
     --sheet-content-gap: var(--panel-gap-lg);
     --sheet-content-max-width: 24rem;
     --sheet-content-width: 75%;
-    --sheet-content-border-color: var(--surface-border);
+    --sheet-content-border-color: var(--surface-border-color);
     --sheet-content-bg: var(--surface-page);
 
     --sheet-close-offset-top: var(--space-4);
@@ -20,13 +20,13 @@
     --sheet-close-ring-offset-color: var(--surface-page);
     --sheet-close-icon-size: var(--icon-md);
     --sheet-close-active-bg: var(--surface-secondary-solid);
-    --sheet-close-active-fg: var(--text-secondary-solid-contrast);
+    --sheet-close-active-fg: var(--fg-secondary-solid-contrast);
 
     --sheet-header-gap: var(--space-1-5);
     --sheet-header-padding: var(--panel-padding-sm);
     --sheet-footer-gap: var(--panel-gap-sm);
     --sheet-footer-padding: var(--panel-padding-sm);
 
-    --sheet-title-fg: var(--text-primary);
-    --sheet-description-fg: var(--text-muted);
+    --sheet-title-fg: var(--fg-primary);
+    --sheet-description-fg: var(--fg-muted);
 }

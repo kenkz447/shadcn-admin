@@ -15,7 +15,7 @@ function Switch({
       data-slot="switch"
       data-size={size}
       className={cn(
-        "peer group/switch inline-flex shrink-0 items-center rounded-(--switch-radius) border border-(--switch-border-color) shadow-xs transition-all outline-none focus-visible:border-(--switch-focus-border-color) focus-visible:ring-(length:--switch-focus-ring-width) focus-visible:ring-(--switch-focus-ring-color) disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-(--switch-track-height) data-[size=default]:w-(--switch-track-width) data-[size=sm]:h-(--switch-track-height-sm) data-[size=sm]:w-(--switch-track-width-sm) data-[state=checked]:bg-(--switch-track-bg-checked) data-[state=unchecked]:bg-(--switch-track-bg-unchecked)",
+        "peer group/switch inline-flex shrink-0 items-center rounded-(--switch-radius) border border-(--switch-border-color) shadow-xs transition-all outline-none focus-visible:border-(--switch-focus-border-color) focus-visible:ring-(length:--switch-focus-ring-width) focus-visible:ring-(--switch-focus-ring-color) disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-(--switch-track-height) data-[size=default]:w-(--switch-track-width) data-[size=sm]:h-(--switch-track-height-sm) data-[size=sm]:w-(--switch-track-width-sm) data-[state=checked]:bg-(--switch-track-checked-bg) data-[state=unchecked]:bg-(--switch-track-unchecked-bg)",
         className
       )}
       {...props}
@@ -23,7 +23,7 @@ function Switch({
       <SwitchPrimitive.Thumb
         data-slot="switch-thumb"
         className={cn(
-          "pointer-events-none block rounded-(--switch-radius) bg-(--switch-thumb-bg) ring-0 transition-transform group-data-[size=default]/switch:size-(--switch-thumb-size) group-data-[size=sm]/switch:size-(--switch-thumb-size-sm) data-[state=checked]:translate-x-(--switch-thumb-translate-checked) data-[state=unchecked]:translate-x-(--switch-thumb-translate-unchecked) data-[state=checked]:bg-(--switch-thumb-bg-checked) data-[state=unchecked]:bg-(--switch-thumb-bg-unchecked)"
+          "pointer-events-none block rounded-(--switch-radius) bg-(--switch-thumb-bg) ring-0 transition-transform group-data-[size=default]/switch:size-(--switch-thumb-size) group-data-[size=sm]/switch:size-(--switch-thumb-size-sm) data-[state=checked]:translate-x-(--switch-thumb-translate-checked) data-[state=unchecked]:translate-x-(--switch-thumb-translate-unchecked) data-[state=checked]:bg-(--switch-thumb-checked-bg) data-[state=unchecked]:bg-(--switch-thumb-unchecked-bg)"
         )}
       />
     </SwitchPrimitive.Root>

@@ -8,7 +8,7 @@
     --calendar-nav-gap: var(--nav-list-gap-sm);
     --calendar-dropdown-gap: var(--space-1-5);
     --calendar-dropdown-radius: var(--field-radius);
-    --calendar-dropdown-border-color: var(--field-border);
+    --calendar-dropdown-border-color: var(--field-border-color);
     --calendar-dropdown-focus-border-color: var(--field-border-focus);
     --calendar-dropdown-focus-ring-width: var(--field-ring-focus-width);
     --calendar-dropdown-focus-ring-color: var(--field-ring-focus-color);
@@ -23,13 +23,13 @@
     --calendar-weekday-text-size: var(--text-ui-sm);
     --calendar-week-number-text-size: var(--text-ui-sm);
     --calendar-range-selected-bg: var(--surface-brand-solid);
-    --calendar-range-selected-fg: var(--text-brand-solid-contrast);
+    --calendar-range-selected-fg: var(--fg-brand-solid-contrast);
     --calendar-range-middle-bg: var(--surface-accent-subtle);
-    --calendar-range-middle-fg: var(--text-accent-subtle-contrast);
-    --calendar-day-hover-dark-fg: var(--text-accent-subtle-contrast);
+    --calendar-range-middle-fg: var(--fg-accent-subtle-contrast);
+    --calendar-day-hover-dark-fg: var(--fg-accent-subtle-contrast);
     --calendar-bg: var(--surface-page);
     --calendar-overlay-bg: var(--surface-popover);
-    --calendar-muted-fg: var(--text-muted);
+    --calendar-muted-fg: var(--fg-muted);
     --calendar-today-bg: var(--surface-accent-subtle);
-    --calendar-today-fg: var(--text-accent-subtle-contrast);
+    --calendar-today-fg: var(--fg-accent-subtle-contrast);
 }

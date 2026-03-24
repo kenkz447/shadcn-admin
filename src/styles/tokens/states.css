@@ -10,15 +10,15 @@
 	--overlay-surface-scrim: var(--tone-surface-overlay-scrim);
 
 	/* Border roles derived from state */
-	--control-border: var(--input);
+	--control-border-color: var(--input);
 	--invalid-border-strong: var(--tone-border-danger-strong);
-	--invalid-border: var(--tone-border-danger-default);
-	--field-border: var(--control-border);
-	--surface-border: var(--border);
+	--invalid-border-color: var(--tone-border-danger-default);
+	--field-border-color: var(--control-border-color);
+	--surface-border-color: var(--border);
 
 	/* Placeholder and field state */
-	--placeholder-text: var(--muted-foreground);
-	--field-placeholder-text: var(--placeholder-text);
+	--placeholder-fg: var(--muted-foreground);
+	--field-placeholder-fg: var(--placeholder-fg);
 
 	/* Focus and invalid recipes */
 	--focus-ring-width: 3px;
@@ -30,14 +30,14 @@
 	--field-surface: var(--control-surface);
 	--field-surface-hover: var(--control-surface-hover);
 	--field-border-focus: var(--ring);
-	--field-border-invalid: var(--invalid-border);
+	--field-border-invalid: var(--invalid-border-color);
 	--field-ring-focus-width: var(--focus-ring-width);
 	--field-ring-focus-color: var(--focus-ring-color);
 	--field-ring-invalid-color: var(--invalid-ring-color);
 
 	/* Selection controls */
 	--selection-surface: var(--field-surface);
-	--selection-border: var(--field-border);
+	--selection-border-color: var(--field-border-color);
 	--selection-border-focus: var(--field-border-focus);
 	--selection-border-invalid: var(--field-border-invalid);
 	--selection-ring-focus-width: var(--field-ring-focus-width);
@@ -45,8 +45,8 @@
 	--selection-ring-invalid-color: var(--field-ring-invalid-color);
 	--selection-surface-checked: var(--surface-brand-solid);
 	--selection-border-checked: var(--surface-brand-solid);
-	--selection-text-checked: var(--text-brand-solid-contrast);
-	--selection-text-brand: var(--text-brand-link);
+	--selection-checked-fg: var(--fg-brand-solid-contrast);
+	--selection-brand-fg: var(--fg-brand-link);
 	--switch-track-surface-unchecked: var(--surface-input-strong);
 	--switch-thumb-surface: var(--background);
 	--switch-thumb-surface-checked-dark: var(--primary-foreground);
@@ -57,7 +57,7 @@
 	--scroll-focus-ring-width: var(--focus-ring-width);
 	--scroll-focus-ring-color: var(--focus-ring-color);
 	--scroll-thumb-surface: var(--border);
-	--divider-surface: var(--surface-border);
+	--divider-surface: var(--surface-border-color);
 	--avatar-ring-on-surface: var(--background);
 }
 

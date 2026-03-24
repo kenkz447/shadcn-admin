@@ -3,13 +3,13 @@
 :root {
     --popover-content-width: calc(var(--spacing) * 72);
     --popover-content-radius: var(--panel-radius-md);
-    --popover-content-border-color: var(--surface-border);
+    --popover-content-border-color: var(--surface-border-color);
     --popover-content-padding: var(--panel-padding-sm);
     --popover-content-side-offset: var(--panel-offset-side);
     --popover-content-bg: var(--surface-popover);
-    --popover-content-fg: var(--text-popover-contrast);
+    --popover-content-fg: var(--fg-popover-contrast);
 
     --popover-header-gap: var(--panel-gap-xs);
 
-    --popover-description-fg: var(--text-muted);
+    --popover-description-fg: var(--fg-muted);
 }

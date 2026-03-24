@@ -3,8 +3,8 @@
 :root {
     /* Tabs (container + list) */
     --tabs-bg: var(--nav-list-surface);
-    --tabs-fg: var(--nav-list-text);
-    --tabs-border: var(--divider-surface);
+    --tabs-fg: var(--nav-list-fg);
+    --tabs-border-color: var(--divider-surface);
     --tabs-size-md: var(--nav-list-height-md);
     --tabs-radius: var(--panel-radius-lg);
     --tabs-padding: 3px;
@@ -19,17 +19,17 @@
     --tabs-item-height: calc(100% - 1px);
 
     --tabs-item-bg: transparent;
-    --tabs-item-border: transparent; 
+    --tabs-item-border-color: transparent; 
     --tabs-item-border-active: transparent;
 
     /* text-foreground/60 */
-    --tabs-item-fg: var(--text-muted-strong);
+    --tabs-item-fg: var(--fg-muted-strong);
 
-    --tabs-item-bg-hover: transparent;
-    --tabs-item-fg-hover: var(--nav-item-text-hover);
+    --tabs-item-hover-bg: transparent;
+    --tabs-item-hover-fg: var(--nav-item-hover-fg);
 
-    --tabs-item-bg-active: var(--nav-tab-surface-active);
-    --tabs-item-fg-active: var(--nav-item-text-active);
+    --tabs-item-active-bg: var(--nav-tab-surface-active);
+    --tabs-item-active-fg: var(--nav-item-active-fg);
 
     /* focus-visible */
     --tabs-item-outline-color: var(--nav-border-focus);
@@ -37,7 +37,7 @@
     --tabs-item-ring-width: var(--focus-ring-width);
 
     /* Indicator cho variant=line */
-    --tabs-indicator-color: var(--nav-indicator-text);
+    --tabs-indicator-color: var(--nav-indicator-fg);
     --tabs-indicator-thickness-horizontal: var(--nav-indicator-thickness);
     --tabs-indicator-thickness-vertical: var(--nav-indicator-thickness);
 

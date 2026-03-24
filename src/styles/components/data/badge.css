@@ -16,25 +16,25 @@
     --badge-invalid-ring-color: var(--field-ring-invalid-color);
 
     --badge-primary-bg: var(--surface-brand-solid);
-    --badge-primary-fg: var(--text-brand-solid-contrast);
+    --badge-primary-fg: var(--fg-brand-solid-contrast);
     --badge-primary-hover-bg: var(--surface-brand-solid-hover);
 
     --badge-secondary-bg: var(--surface-secondary-solid);
-    --badge-secondary-fg: var(--text-secondary-solid-contrast);
+    --badge-secondary-fg: var(--fg-secondary-solid-contrast);
     --badge-secondary-hover-bg: var(--surface-secondary-solid-hover);
 
     --badge-destructive-bg: var(--surface-danger-solid);
-    --badge-destructive-fg: var(--text-danger-solid-contrast);
+    --badge-destructive-fg: var(--fg-danger-solid-contrast);
     --badge-destructive-hover-bg: var(--surface-danger-solid-hover);
-    --badge-destructive-focus-ring: var(--danger-soft-ring-color);
+    --badge-destructive-focus-ring-color: var(--danger-soft-ring-color);
 
-    --badge-outline-border-color: var(--surface-border);
-    --badge-outline-fg: var(--text-primary);
+    --badge-outline-border-color: var(--surface-border-color);
+    --badge-outline-fg: var(--fg-primary);
     --badge-outline-hover-bg: var(--surface-accent-subtle);
-    --badge-outline-hover-fg: var(--text-accent-subtle-contrast);
+    --badge-outline-hover-fg: var(--fg-accent-subtle-contrast);
 
     --badge-ghost-hover-bg: var(--surface-accent-subtle);
-    --badge-ghost-hover-fg: var(--text-accent-subtle-contrast);
+    --badge-ghost-hover-fg: var(--fg-accent-subtle-contrast);
 
-    --badge-link-fg: var(--text-brand-link);
+    --badge-link-fg: var(--fg-brand-link);
 }
