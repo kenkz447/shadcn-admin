@@ -1,26 +1,26 @@
 /** Switch **/
 
 :root {
-    --switch-radius: var(--selection-control-radius-full);
+    --switch-radius: var(--selection-radius-full);
     --switch-border-color: transparent;
 
-    --switch-focus-border-color: var(--selection-border-focus);
-    --switch-focus-ring-width: var(--selection-ring-focus-width);
-    --switch-focus-ring-color: var(--selection-ring-focus-color);
+    --switch-focus-border-color: var(--selection-focus-border-color);
+    --switch-focus-ring-width: var(--selection-focus-ring-width);
+    --switch-focus-ring-color: var(--selection-focus-ring-color);
 
-    --switch-track-height: var(--selection-switch-track-height-md);
-    --switch-track-width: var(--selection-switch-track-width-md);
-    --switch-track-height-sm: var(--selection-switch-track-height-sm);
-    --switch-track-width-sm: var(--selection-switch-track-width-sm);
+    --switch-track-height: var(--selection-track-height-md);
+    --switch-track-width: var(--selection-track-width-md);
+    --switch-track-height-sm: var(--selection-track-height-sm);
+    --switch-track-width-sm: var(--selection-track-width-sm);
 
-    --switch-track-checked-bg: var(--selection-surface-checked);
-    --switch-track-unchecked-bg: var(--switch-track-surface-unchecked);
+    --switch-track-checked-bg: var(--selection-checked-bg);
+    --switch-track-unchecked-bg: var(--switch-track-bg-unchecked);
 
-    --switch-thumb-size: var(--selection-switch-thumb-size-md);
-    --switch-thumb-size-sm: var(--selection-switch-thumb-size-sm);
-    --switch-thumb-bg: var(--switch-thumb-surface);
-    --switch-thumb-checked-bg: var(--switch-thumb-surface);
-    --switch-thumb-unchecked-bg: var(--switch-thumb-surface);
+    --switch-thumb-size: var(--selection-thumb-size-md);
+    --switch-thumb-size-sm: var(--selection-thumb-size-sm);
+    --switch-thumb-bg: var(--switch-thumb-bg-unchecked);
+    --switch-thumb-checked-bg: var(--switch-thumb-bg-checked);
+    --switch-thumb-unchecked-bg: var(--switch-thumb-bg-unchecked);
     --switch-thumb-translate-checked: calc(100% - 2px);
     --switch-thumb-translate-unchecked: 0px;
 }

@@ -3,17 +3,17 @@
 :root {
     --input-height: var(--field-height-md);
     --input-radius: var(--field-radius);
-    --input-padding-x: var(--field-padding-x);
-    --input-padding-y: var(--field-padding-y);
+    --input-padding-x: var(--field-padding-inline);
+    --input-padding-y: var(--field-padding-block);
     --input-border-color: var(--field-border-color);
-    --input-bg: var(--field-surface);
+    --input-bg: var(--field-bg);
     --input-placeholder-color: var(--field-placeholder-fg);
     --input-file-height: var(--field-height-sm);
 
-    --input-focus-border-color: var(--field-border-focus);
-    --input-focus-ring-width: var(--field-ring-focus-width);
-    --input-focus-ring-color: var(--field-ring-focus-color);
+    --input-focus-border-color: var(--field-focus-border-color);
+    --input-focus-ring-width: var(--field-focus-ring-width);
+    --input-focus-ring-color: var(--field-focus-ring-color);
 
-    --input-invalid-border-color: var(--field-border-invalid);
-    --input-invalid-ring-color: var(--field-ring-invalid-color);
+    --input-invalid-border-color: var(--field-invalid-border-color);
+    --input-invalid-ring-color: var(--field-invalid-ring-color);
 }

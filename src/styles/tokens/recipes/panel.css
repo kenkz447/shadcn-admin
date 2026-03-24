@@ -1,0 +1,14 @@
+/** Shared panel recipe tokens **/
+
+:root {
+	--panel-radius-md: var(--control-radius-md);
+	--panel-radius-lg: var(--control-radius-lg);
+	--panel-radius-xl: var(--radius-xl);
+	--panel-padding-sm: var(--space-4);
+	--panel-padding-lg: var(--space-6);
+	--panel-gap-xs: var(--space-1);
+	--panel-gap-sm: var(--space-2);
+	--panel-gap-md: var(--space-3);
+	--panel-gap-lg: var(--space-4);
+	--panel-side-offset: var(--space-1);
+}

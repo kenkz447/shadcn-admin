@@ -3,10 +3,10 @@
 :root {
     --popover-content-width: calc(var(--spacing) * 72);
     --popover-content-radius: var(--panel-radius-md);
-    --popover-content-border-color: var(--surface-border-color);
+    --popover-content-border-color: var(--bg-border-color);
     --popover-content-padding: var(--panel-padding-sm);
-    --popover-content-side-offset: var(--panel-offset-side);
-    --popover-content-bg: var(--surface-popover);
+    --popover-content-side-offset: var(--panel-side-offset);
+    --popover-content-bg: var(--bg-popover);
     --popover-content-fg: var(--fg-popover-contrast);
 
     --popover-header-gap: var(--panel-gap-xs);

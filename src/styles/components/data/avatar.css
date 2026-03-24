@@ -4,12 +4,12 @@
     --avatar-size: var(--control-size-md);
     --avatar-size-sm: var(--control-size-xs);
     --avatar-size-lg: calc(var(--spacing) * 10);
-    --avatar-radius: var(--selection-control-radius-full);
+    --avatar-radius: var(--selection-radius-full);
 
     --avatar-fallback-radius: var(--avatar-radius);
     --avatar-badge-radius: var(--avatar-radius);
     --avatar-badge-ring-width: 2px;
-    --avatar-badge-ring-color: var(--avatar-ring-on-surface);
+    --avatar-badge-ring-color: var(--avatar-ring-on-bg);
 
     --avatar-badge-size-sm: var(--space-2);
     --avatar-badge-size: var(--space-2-5);
@@ -18,7 +18,7 @@
 
     --avatar-group-space-x: calc(var(--space-2) * -1);
     --avatar-group-ring-width: 2px;
-    --avatar-group-ring-color: var(--avatar-ring-on-surface);
+    --avatar-group-ring-color: var(--avatar-ring-on-bg);
 
     --avatar-group-count-size: var(--avatar-size);
     --avatar-group-count-size-sm: var(--avatar-size-sm);
@@ -28,8 +28,8 @@
     --avatar-group-count-icon-size-sm: var(--icon-xs);
     --avatar-group-count-icon-size-lg: calc(var(--spacing) * 5);
 
-    --avatar-fallback-bg: var(--surface-muted);
+    --avatar-fallback-bg: var(--bg-muted);
     --avatar-fallback-fg: var(--fg-muted);
-    --avatar-badge-bg: var(--surface-brand-solid);
+    --avatar-badge-bg: var(--bg-brand-solid);
     --avatar-badge-fg: var(--fg-brand-solid-contrast);
 }

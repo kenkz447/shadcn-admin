@@ -1,0 +1,29 @@
+/** Shared control recipe tokens **/
+
+:root {
+	--control-radius-sm: var(--radius-sm);
+	--control-radius-md: var(--radius-md);
+	--control-radius-lg: var(--radius-lg);
+
+	--control-height-xs: var(--space-6);
+	--control-height-sm: var(--space-7);
+	--control-height-md: var(--space-8);
+	--control-height-lg: var(--space-9);
+
+	--control-size-xs: var(--space-6);
+	--control-size-sm: var(--space-7);
+	--control-size-md: var(--space-8);
+	--control-size-lg: var(--space-9);
+
+	--control-gap-xs: var(--space-1);
+	--control-gap-sm: var(--space-1-5);
+	--control-gap-md: var(--space-2);
+
+	--control-padding-inline-xs: var(--space-2);
+	--control-padding-inline-sm: var(--space-2-5);
+	--control-padding-inline-md: var(--space-3);
+
+	--control-padding-block-xs: var(--space-1);
+	--control-padding-block-sm: var(--space-1-5);
+	--control-padding-block-md: var(--space-2);
+}

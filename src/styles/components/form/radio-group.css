@@ -1,21 +1,21 @@
 /** Radio Group **/
 
 :root {
-    --radio-group-gap: var(--selection-control-gap);
+    --radio-group-gap: var(--selection-gap);
 
-    --radio-size: var(--selection-control-size);
-    --radio-radius: var(--selection-control-radius-full);
+    --radio-size: var(--selection-size);
+    --radio-radius: var(--selection-radius-full);
     --radio-border-color: var(--selection-border-color);
-    --radio-bg: var(--selection-surface);
-    --radio-color: var(--selection-brand-fg);
+    --radio-bg: var(--selection-bg);
+    --radio-color: var(--selection-indicator-fg);
 
-    --radio-focus-border-color: var(--selection-border-focus);
-    --radio-focus-ring-width: var(--selection-ring-focus-width);
-    --radio-focus-ring-color: var(--selection-ring-focus-color);
+    --radio-focus-border-color: var(--selection-focus-border-color);
+    --radio-focus-ring-width: var(--selection-focus-ring-width);
+    --radio-focus-ring-color: var(--selection-focus-ring-color);
 
-    --radio-invalid-border-color: var(--selection-border-invalid);
-    --radio-invalid-ring-color: var(--selection-ring-invalid-color);
+    --radio-invalid-border-color: var(--selection-invalid-border-color);
+    --radio-invalid-ring-color: var(--selection-invalid-ring-color);
 
     --radio-indicator-size: var(--space-2);
-    --radio-indicator-color: var(--selection-brand-fg);
+    --radio-indicator-color: var(--selection-indicator-fg);
 }

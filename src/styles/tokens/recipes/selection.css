@@ -1,0 +1,36 @@
+/** Shared selection recipe tokens **/
+
+:root {
+	--selection-size: var(--icon-md);
+	--selection-indicator-size: var(--icon-sm);
+	--selection-gap: var(--space-3);
+	--selection-radius: 4px;
+	--selection-radius-full: 9999px;
+	--selection-track-width-sm: var(--space-6);
+	--selection-track-width-md: var(--space-8);
+	--selection-track-height-sm: var(--icon-sm);
+	--selection-track-height-md: 1.15rem;
+	--selection-thumb-size-sm: var(--icon-xs);
+	--selection-thumb-size-md: var(--icon-md);
+
+	--selection-checked-border-color: var(--bg-brand-solid);
+	--selection-border-color: var(--input);
+	--selection-focus-border-color: var(--ring);
+	--selection-invalid-border-color: var(--invalid-border-color);
+	--selection-indicator-fg: var(--fg-brand-link);
+	--selection-checked-fg: var(--fg-brand-solid-contrast);
+	--selection-focus-ring-color: var(--focus-ring-color);
+	--selection-focus-ring-width: var(--focus-ring-width);
+	--selection-invalid-ring-color: var(--invalid-ring-color);
+	--selection-bg: var(--bg-input-soft);
+	--selection-checked-bg: var(--bg-brand-solid);
+
+	--switch-thumb-bg-checked: var(--background);
+	--switch-thumb-bg-unchecked: var(--background);
+	--switch-track-bg-unchecked: var(--bg-input-strong);
+}
+
+.dark {
+	--switch-thumb-bg-checked: var(--primary-foreground);
+	--switch-thumb-bg-unchecked: var(--foreground);
+}

@@ -1,18 +1,18 @@
 /** Textarea **/
 
 :root {
-    --textarea-min-height: var(--field-height-min-lg);
+    --textarea-min-height: var(--field-min-height-lg);
     --textarea-radius: var(--field-radius);
-    --textarea-padding-x: var(--field-padding-x);
-    --textarea-padding-y: var(--field-padding-y-comfortable);
+    --textarea-padding-x: var(--field-padding-inline);
+    --textarea-padding-y: var(--field-padding-block-comfortable);
     --textarea-border-color: var(--field-border-color);
-    --textarea-bg: var(--field-surface);
+    --textarea-bg: var(--field-bg);
     --textarea-placeholder-color: var(--field-placeholder-fg);
 
-    --textarea-focus-border-color: var(--field-border-focus);
-    --textarea-focus-ring-width: var(--field-ring-focus-width);
-    --textarea-focus-ring-color: var(--field-ring-focus-color);
+    --textarea-focus-border-color: var(--field-focus-border-color);
+    --textarea-focus-ring-width: var(--field-focus-ring-width);
+    --textarea-focus-ring-color: var(--field-focus-ring-color);
 
-    --textarea-invalid-border-color: var(--field-border-invalid);
-    --textarea-invalid-ring-color: var(--field-ring-invalid-color);
+    --textarea-invalid-border-color: var(--field-invalid-border-color);
+    --textarea-invalid-ring-color: var(--field-invalid-ring-color);
 }

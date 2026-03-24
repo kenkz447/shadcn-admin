@@ -2,38 +2,38 @@
 
 :root {
     --badge-gap: var(--space-1);
-    --badge-radius: var(--selection-control-radius-full);
+    --badge-radius: var(--selection-radius-full);
     --badge-border-color: transparent;
     --badge-padding-x: var(--space-2);
     --badge-padding-y: calc(var(--spacing) * 0.5);
     --badge-icon-size: var(--icon-xs);
 
-    --badge-focus-border-color: var(--field-border-focus);
+    --badge-focus-border-color: var(--field-focus-border-color);
     --badge-focus-ring-width: var(--focus-ring-width);
     --badge-focus-ring-color: var(--focus-ring-color);
 
-    --badge-invalid-border-color: var(--field-border-invalid);
-    --badge-invalid-ring-color: var(--field-ring-invalid-color);
+    --badge-invalid-border-color: var(--field-invalid-border-color);
+    --badge-invalid-ring-color: var(--field-invalid-ring-color);
 
-    --badge-primary-bg: var(--surface-brand-solid);
+    --badge-primary-bg: var(--bg-brand-solid);
     --badge-primary-fg: var(--fg-brand-solid-contrast);
-    --badge-primary-hover-bg: var(--surface-brand-solid-hover);
+    --badge-primary-hover-bg: var(--bg-brand-solid-hover);
 
-    --badge-secondary-bg: var(--surface-secondary-solid);
+    --badge-secondary-bg: var(--bg-secondary-solid);
     --badge-secondary-fg: var(--fg-secondary-solid-contrast);
-    --badge-secondary-hover-bg: var(--surface-secondary-solid-hover);
+    --badge-secondary-hover-bg: var(--bg-secondary-solid-hover);
 
-    --badge-destructive-bg: var(--surface-danger-solid);
-    --badge-destructive-fg: var(--fg-danger-solid-contrast);
-    --badge-destructive-hover-bg: var(--surface-danger-solid-hover);
-    --badge-destructive-focus-ring-color: var(--danger-soft-ring-color);
+    --badge-destructive-bg: var(--bg-destructive-solid);
+    --badge-destructive-fg: var(--fg-destructive-solid-contrast);
+    --badge-destructive-hover-bg: var(--bg-destructive-solid-hover);
+    --badge-destructive-focus-ring-color: var(--destructive-soft-ring-color);
 
-    --badge-outline-border-color: var(--surface-border-color);
+    --badge-outline-border-color: var(--bg-border-color);
     --badge-outline-fg: var(--fg-primary);
-    --badge-outline-hover-bg: var(--surface-accent-subtle);
+    --badge-outline-hover-bg: var(--bg-accent-subtle);
     --badge-outline-hover-fg: var(--fg-accent-subtle-contrast);
 
-    --badge-ghost-hover-bg: var(--surface-accent-subtle);
+    --badge-ghost-hover-bg: var(--bg-accent-subtle);
     --badge-ghost-hover-fg: var(--fg-accent-subtle-contrast);
 
     --badge-link-fg: var(--fg-brand-link);

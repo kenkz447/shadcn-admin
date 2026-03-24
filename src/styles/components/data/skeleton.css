@@ -2,5 +2,5 @@
 
 :root {
     --skeleton-radius: var(--field-radius);
-    --skeleton-bg: var(--surface-accent-subtle);
+    --skeleton-bg: var(--bg-accent-subtle);
 }

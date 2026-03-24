@@ -3,7 +3,7 @@
 :root {
     --form-item-gap: calc(var(--spacing) * 2);
 
-    --form-label-error-fg: var(--fg-danger);
+    --form-label-error-fg: var(--fg-destructive);
     --form-description-fg: var(--fg-muted);
-    --form-message-fg: var(--fg-danger);
+    --form-message-fg: var(--fg-destructive);
 }

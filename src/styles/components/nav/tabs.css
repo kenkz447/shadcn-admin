@@ -2,9 +2,9 @@
 
 :root {
     /* Tabs (container + list) */
-    --tabs-bg: var(--nav-list-surface);
+    --tabs-bg: var(--nav-list-bg);
     --tabs-fg: var(--nav-list-fg);
-    --tabs-border-color: var(--divider-surface);
+    --tabs-border-color: var(--divider-bg);
     --tabs-size-md: var(--nav-list-height-md);
     --tabs-radius: var(--panel-radius-lg);
     --tabs-padding: 3px;
@@ -28,11 +28,11 @@
     --tabs-item-hover-bg: transparent;
     --tabs-item-hover-fg: var(--nav-item-hover-fg);
 
-    --tabs-item-active-bg: var(--nav-tab-surface-active);
+    --tabs-item-active-bg: var(--nav-tab-active-bg);
     --tabs-item-active-fg: var(--nav-item-active-fg);
 
     /* focus-visible */
-    --tabs-item-outline-color: var(--nav-border-focus);
+    --tabs-item-outline-color: var(--nav-focus-border-color);
     --tabs-item-ring-color: var(--focus-ring-color);
     --tabs-item-ring-width: var(--focus-ring-width);
 
@@ -44,5 +44,5 @@
     --tabs-indicator-offset-horizontal: var(--nav-indicator-offset-negative-xs); 
     --tabs-indicator-offset-vertical: var(--nav-indicator-offset-negative-sm);
 
-    --tabs-item-border-active: var(--nav-tab-border-active);
+    --tabs-item-border-active: var(--nav-tab-active-border-color);
 }

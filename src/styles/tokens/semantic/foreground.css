@@ -1,0 +1,16 @@
+/** Semantic foreground tokens **/
+
+:root {
+	--fg-accent-subtle-contrast: var(--accent-foreground);
+	--fg-brand-link: var(--primary);
+	--fg-brand-solid-contrast: var(--primary-foreground);
+	--fg-destructive: var(--destructive);
+	--fg-destructive-soft: var(--tone-fg-destructive-soft);
+	--fg-destructive-solid-contrast: white;
+	--fg-muted: var(--muted-foreground);
+	--fg-muted-strong: var(--tone-fg-muted-strong);
+	--fg-popover-contrast: var(--popover-foreground);
+	--fg-primary: var(--foreground);
+	--fg-secondary-solid-contrast: var(--secondary-foreground);
+	--placeholder-fg: var(--muted-foreground);
+}

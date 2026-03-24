@@ -1,0 +1,23 @@
+/** Semantic bg tokens **/
+
+:root {
+	--bg-accent-subtle: var(--accent);
+	--bg-border-color: var(--border);
+	--bg-brand-solid: var(--primary);
+	--bg-brand-solid-hover: var(--tone-bg-brand-solid-hover);
+	--bg-destructive-soft: var(--tone-bg-destructive-soft);
+	--bg-destructive-soft-hover: var(--tone-bg-destructive-soft-hover);
+	--bg-destructive-solid: var(--tone-bg-destructive-solid);
+	--bg-destructive-solid-hover: var(--tone-bg-destructive-solid-hover);
+	--bg-input-soft: var(--tone-bg-input-soft);
+	--bg-input-soft-hover: var(--tone-bg-input-soft-hover);
+	--bg-input-strong: var(--tone-bg-input-strong);
+	--bg-muted: var(--muted);
+	--bg-muted-soft: var(--tone-bg-muted-soft);
+	--bg-muted-soft-hover: var(--tone-bg-muted-soft-hover);
+	--bg-overlay-scrim: var(--tone-bg-overlay-scrim);
+	--bg-page: var(--background);
+	--bg-popover: var(--popover);
+	--bg-secondary-solid: var(--secondary);
+	--bg-secondary-solid-hover: var(--tone-bg-secondary-solid-hover);
+}

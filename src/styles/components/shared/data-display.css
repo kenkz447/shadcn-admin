@@ -1,0 +1,9 @@
+/** Shared data display component tokens **/
+
+:root {
+	--data-caption-fg: var(--fg-muted);
+	--data-footer-bg: var(--bg-muted-soft);
+	--data-heading-fg: var(--fg-primary);
+	--data-row-bg-hover: var(--bg-muted-soft-hover);
+	--data-row-bg-selected: var(--bg-muted);
+}

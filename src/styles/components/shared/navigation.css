@@ -1,0 +1,29 @@
+/** Shared navigation component tokens **/
+
+:root {
+	--nav-list-height-md: var(--control-height-lg);
+	--nav-list-gap-sm: var(--space-1);
+	--nav-list-gap-md: var(--space-2);
+	--nav-item-gap-sm: var(--space-1-5);
+	--nav-item-padding-x: var(--space-2);
+	--nav-item-padding-y: var(--space-1);
+	--nav-item-radius: var(--control-radius-md);
+	--nav-item-icon-size: var(--icon-md);
+	--nav-indicator-thickness: calc(var(--spacing) * 0.5);
+	--nav-indicator-offset-negative-sm: calc(var(--space-1) * -1);
+	--nav-indicator-offset-negative-xs: -5px;
+
+	--nav-focus-border-color: var(--ring);
+	--nav-indicator-fg: var(--fg-primary);
+	--nav-item-active-fg: var(--fg-primary);
+	--nav-item-hover-fg: var(--fg-primary);
+	--nav-list-fg: var(--fg-muted);
+	--nav-list-bg: var(--bg-muted);
+	--nav-tab-active-border-color: transparent;
+	--nav-tab-active-bg: var(--background);
+}
+
+.dark {
+	--nav-tab-active-border-color: var(--input);
+	--nav-tab-active-bg: var(--bg-input-soft);
+}

@@ -1,20 +1,20 @@
 /** Checkbox **/
 
 :root {
-    --checkbox-size: var(--selection-control-size);
-    --checkbox-radius: var(--selection-control-radius);
+    --checkbox-size: var(--selection-size);
+    --checkbox-radius: var(--selection-radius);
     --checkbox-border-color: var(--selection-border-color);
-    --checkbox-bg: var(--selection-surface);
-    --checkbox-indicator-size: var(--selection-control-indicator-size);
+    --checkbox-bg: var(--selection-bg);
+    --checkbox-indicator-size: var(--selection-indicator-size);
 
-    --checkbox-focus-border-color: var(--selection-border-focus);
-    --checkbox-focus-ring-width: var(--selection-ring-focus-width);
-    --checkbox-focus-ring-color: var(--selection-ring-focus-color);
+    --checkbox-focus-border-color: var(--selection-focus-border-color);
+    --checkbox-focus-ring-width: var(--selection-focus-ring-width);
+    --checkbox-focus-ring-color: var(--selection-focus-ring-color);
 
-    --checkbox-invalid-border-color: var(--selection-border-invalid);
-    --checkbox-invalid-ring-color: var(--selection-ring-invalid-color);
+    --checkbox-invalid-border-color: var(--selection-invalid-border-color);
+    --checkbox-invalid-ring-color: var(--selection-invalid-ring-color);
 
-    --checkbox-checked-border-color: var(--selection-border-checked);
-    --checkbox-checked-bg: var(--selection-surface-checked);
+    --checkbox-checked-border-color: var(--selection-checked-border-color);
+    --checkbox-checked-bg: var(--selection-checked-bg);
     --checkbox-checked-fg: var(--selection-checked-fg);
 }

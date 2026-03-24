@@ -3,6 +3,10 @@
 @import './theme.css';
 @import './tokens/primitives.css';
 @import './tokens/semantic.css';
+@import './tokens/recipes.css';
+@import './components/shared/menu.css';
+@import './components/shared/navigation.css';
+@import './components/shared/data-display.css';
 
 /* Input / Data Entry */
 @import './components/form/calendar.css';

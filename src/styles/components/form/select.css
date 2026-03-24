@@ -4,54 +4,54 @@
     --select-trigger-gap: var(--control-gap-md);
     --select-trigger-radius: var(--field-radius);
     --select-trigger-border-color: var(--field-border-color);
-    --select-trigger-bg: var(--field-surface);
-    --select-trigger-hover-bg: var(--field-surface-hover);
-    --select-trigger-padding-x: var(--field-padding-x);
-    --select-trigger-padding-y: var(--field-padding-y-comfortable);
+    --select-trigger-bg: var(--field-bg);
+    --select-trigger-hover-bg: var(--field-hover-bg);
+    --select-trigger-padding-x: var(--field-padding-inline);
+    --select-trigger-padding-y: var(--field-padding-block-comfortable);
     --select-trigger-height: var(--field-height-md);
     --select-trigger-height-sm: var(--field-height-sm);
     --select-trigger-placeholder-color: var(--field-placeholder-fg);
 
-    --select-trigger-focus-border-color: var(--field-border-focus);
-    --select-trigger-focus-ring-width: var(--field-ring-focus-width);
-    --select-trigger-focus-ring-color: var(--field-ring-focus-color);
+    --select-trigger-focus-border-color: var(--field-focus-border-color);
+    --select-trigger-focus-ring-width: var(--field-focus-ring-width);
+    --select-trigger-focus-ring-color: var(--field-focus-ring-color);
 
-    --select-trigger-invalid-border-color: var(--field-border-invalid);
-    --select-trigger-invalid-ring-color: var(--field-ring-invalid-color);
+    --select-trigger-invalid-border-color: var(--field-invalid-border-color);
+    --select-trigger-invalid-ring-color: var(--field-invalid-ring-color);
 
     --select-icon-size: var(--icon-md);
     --select-icon-opacity: 0.5;
 
     --select-content-min-width: var(--menu-content-min-width);
     --select-content-radius: var(--menu-content-radius);
-    --select-content-border-color: var(--surface-border-color);
-    --select-content-bg: var(--surface-popover);
+    --select-content-border-color: var(--bg-border-color);
+    --select-content-bg: var(--bg-popover);
     --select-content-fg: var(--fg-popover-contrast);
 
-    --select-content-offset: var(--menu-content-offset-side);
-    --select-content-offset-negative: calc(var(--menu-content-offset-side) * -1);
+    --select-content-offset: var(--menu-content-side-offset);
+    --select-content-offset-negative: calc(var(--menu-content-side-offset) * -1);
     --select-viewport-padding: var(--menu-content-padding);
 
-    --select-label-padding-x: var(--menu-label-padding-x);
-    --select-label-padding-y: var(--menu-label-padding-y);
+    --select-label-padding-x: var(--menu-label-padding-inline);
+    --select-label-padding-y: var(--menu-label-padding-block);
     --select-label-fg: var(--menu-fg-muted);
 
     --select-item-gap: var(--menu-item-gap);
     --select-item-radius: var(--menu-item-radius);
-    --select-item-padding-y: var(--menu-item-padding-y);
-    --select-item-padding-right: var(--menu-item-inset-padding);
-    --select-item-padding-left: var(--menu-item-padding-x);
-    --select-item-focus-bg: var(--menu-item-surface-active);
+    --select-item-padding-y: var(--menu-item-padding-block);
+    --select-item-padding-right: var(--menu-item-inset-padding-inline-start);
+    --select-item-padding-left: var(--menu-item-padding-inline);
+    --select-item-focus-bg: var(--menu-item-active-bg);
     --select-item-focus-fg: var(--menu-item-active-fg);
     --select-item-icon-fg: var(--menu-fg-muted);
 
-    --select-item-indicator-offset-right: var(--menu-item-indicator-offset);
+    --select-item-indicator-offset-right: var(--menu-item-indicator-offset-inline-start);
     --select-item-indicator-size: var(--menu-item-indicator-size);
 
-    --select-separator-margin-x: var(--menu-separator-margin-x);
-    --select-separator-margin-y: var(--menu-separator-margin-y);
+    --select-separator-margin-x: var(--menu-separator-margin-inline);
+    --select-separator-margin-y: var(--menu-separator-margin-block);
     --select-separator-height: var(--menu-separator-height);
-    --select-separator-color: var(--surface-border-color);
+    --select-separator-color: var(--bg-border-color);
 
     --select-scroll-button-padding-y: var(--space-1);
 }

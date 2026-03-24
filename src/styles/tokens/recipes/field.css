@@ -1,0 +1,21 @@
+/** Shared field recipe tokens **/
+
+:root {
+	--field-height-sm: var(--control-height-md);
+	--field-height-md: var(--control-height-lg);
+	--field-min-height-lg: calc(var(--spacing) * 16);
+	--field-radius: var(--control-radius-md);
+	--field-padding-inline: var(--control-padding-inline-md);
+	--field-padding-block: var(--control-padding-block-xs);
+	--field-padding-block-comfortable: var(--control-padding-block-md);
+
+	--field-border-color: var(--input);
+	--field-focus-border-color: var(--ring);
+	--field-invalid-border-color: var(--invalid-border-color);
+	--field-placeholder-fg: var(--placeholder-fg);
+	--field-focus-ring-color: var(--focus-ring-color);
+	--field-focus-ring-width: var(--focus-ring-width);
+	--field-invalid-ring-color: var(--invalid-ring-color);
+	--field-bg: var(--bg-input-soft);
+	--field-hover-bg: var(--bg-input-soft-hover);
+}

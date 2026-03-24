@@ -1,13 +1,13 @@
 /** Sheet **/
 
 :root {
-    --sheet-overlay-bg: var(--surface-overlay-scrim);
+    --sheet-overlay-bg: var(--bg-overlay-scrim);
 
     --sheet-content-gap: var(--panel-gap-lg);
     --sheet-content-max-width: 24rem;
     --sheet-content-width: 75%;
-    --sheet-content-border-color: var(--surface-border-color);
-    --sheet-content-bg: var(--surface-page);
+    --sheet-content-border-color: var(--bg-border-color);
+    --sheet-content-bg: var(--bg-page);
 
     --sheet-close-offset-top: var(--space-4);
     --sheet-close-offset-right: var(--space-4);
@@ -17,9 +17,9 @@
     --sheet-close-ring-width: 2px;
     --sheet-close-ring-color: var(--ring);
     --sheet-close-ring-offset-width: 2px;
-    --sheet-close-ring-offset-color: var(--surface-page);
+    --sheet-close-ring-offset-color: var(--bg-page);
     --sheet-close-icon-size: var(--icon-md);
-    --sheet-close-active-bg: var(--surface-secondary-solid);
+    --sheet-close-active-bg: var(--bg-secondary-solid);
     --sheet-close-active-fg: var(--fg-secondary-solid-contrast);
 
     --sheet-header-gap: var(--space-1-5);

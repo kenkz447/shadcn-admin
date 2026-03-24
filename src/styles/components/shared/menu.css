@@ -1,0 +1,27 @@
+/** Shared menu component tokens **/
+
+:root {
+	--menu-content-min-width: calc(var(--spacing) * 32);
+	--menu-content-radius: var(--panel-radius-md);
+	--menu-content-padding: var(--space-1);
+	--menu-content-side-offset: var(--panel-side-offset);
+	--menu-item-gap: var(--control-gap-md);
+	--menu-item-radius: var(--control-radius-sm);
+	--menu-item-padding-inline: var(--space-2);
+	--menu-item-padding-block: var(--space-1-5);
+	--menu-item-inset-padding-inline-start: var(--space-8);
+	--menu-item-indicator-offset-inline-start: var(--space-2);
+	--menu-item-indicator-size: var(--icon-sm);
+	--menu-item-icon-size: var(--icon-md);
+	--menu-label-padding-inline: var(--space-2);
+	--menu-label-padding-block: var(--space-1-5);
+	--menu-separator-margin-inline: calc(var(--space-1) * -1);
+	--menu-separator-margin-block: var(--space-1);
+	--menu-separator-height: 1px;
+
+	--menu-fg-muted: var(--fg-muted);
+	--menu-item-active-fg: var(--fg-accent-subtle-contrast);
+	--menu-item-destructive-focus-fg: var(--fg-destructive);
+	--menu-item-active-bg: var(--bg-accent-subtle);
+	--menu-item-destructive-focus-bg: var(--bg-destructive-soft);
+}

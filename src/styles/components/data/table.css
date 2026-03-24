@@ -1,12 +1,12 @@
 /** Table **/
 
 :root {
-    --table-footer-border-color: var(--surface-border-color);
-    --table-footer-bg: var(--data-footer-surface);
+    --table-footer-border-color: var(--bg-border-color);
+    --table-footer-bg: var(--data-footer-bg);
 
-    --table-row-border-color: var(--surface-border-color);
-    --table-row-hover-bg: var(--data-row-surface-hover);
-    --table-row-selected-bg: var(--data-row-surface-selected);
+    --table-row-border-color: var(--bg-border-color);
+    --table-row-hover-bg: var(--data-row-bg-hover);
+    --table-row-selected-bg: var(--data-row-bg-selected);
 
     --table-head-height: calc(var(--spacing) * 10);
     --table-cell-padding: var(--space-2);

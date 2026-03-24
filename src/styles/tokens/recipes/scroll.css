@@ -1,0 +1,8 @@
+/** Shared scroll recipe tokens **/
+
+:root {
+	--scrollbar-size: var(--space-2-5);
+	--scrollbar-padding: 1px;
+	--scrollbar-thumb-radius: var(--selection-radius-full);
+	--divider-thickness: 1px;
+}

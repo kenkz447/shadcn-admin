@@ -1,0 +1,35 @@
+/** Semantic tone derivations **/
+
+:root {
+	--tone-border-destructive-default: var(--destructive);
+	--tone-border-destructive-strong: color-mix(in oklab, var(--destructive) 40%, transparent);
+	--tone-fg-destructive-soft: color-mix(in oklab, var(--destructive) 90%, transparent);
+	--tone-fg-muted-strong: color-mix(in oklab, var(--foreground) 60%, transparent);
+	--tone-ring-destructive-default: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--tone-ring-focus-default: color-mix(in oklab, var(--ring) 50%, transparent);
+	--tone-bg-brand-solid-hover: color-mix(in oklab, var(--primary) 80%, transparent);
+	--tone-bg-destructive-soft: color-mix(in oklab, var(--destructive) 10%, transparent);
+	--tone-bg-destructive-soft-hover: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--tone-bg-destructive-solid: var(--destructive);
+	--tone-bg-destructive-solid-hover: color-mix(in oklab, var(--destructive) 90%, transparent);
+	--tone-bg-input-soft: transparent;
+	--tone-bg-input-soft-hover: transparent;
+	--tone-bg-input-strong: var(--input);
+	--tone-bg-muted-soft: color-mix(in oklab, var(--muted) 50%, transparent);
+	--tone-bg-muted-soft-hover: var(--muted);
+	--tone-bg-overlay-scrim: color-mix(in oklab, black 50%, transparent);
+	--tone-bg-secondary-solid-hover: color-mix(in oklab, var(--secondary) 80%, transparent);
+}
+
+.dark {
+	--tone-border-destructive-default: color-mix(in oklab, var(--destructive) 50%, transparent);
+	--tone-ring-destructive-default: color-mix(in oklab, var(--destructive) 40%, transparent);
+	--tone-bg-destructive-soft: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--tone-bg-destructive-soft-hover: color-mix(in oklab, var(--destructive) 30%, transparent);
+	--tone-bg-destructive-solid: color-mix(in oklab, var(--destructive) 60%, transparent);
+	--tone-bg-input-soft: color-mix(in oklab, var(--input) 30%, transparent);
+	--tone-bg-input-soft-hover: color-mix(in oklab, var(--input) 50%, transparent);
+	--tone-bg-input-strong: color-mix(in oklab, var(--input) 80%, transparent);
+	--tone-bg-muted-soft: color-mix(in oklab, var(--muted) 50%, transparent);
+	--tone-bg-muted-soft-hover: color-mix(in oklab, var(--muted) 50%, transparent);
+}

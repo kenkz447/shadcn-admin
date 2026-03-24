@@ -1,15 +1,15 @@
 /** Dialog **/
 
 :root {
-    --dialog-overlay-bg: var(--surface-overlay-scrim);
+    --dialog-overlay-bg: var(--bg-overlay-scrim);
 
     --dialog-content-max-width: calc(100% - 2rem);
     --dialog-content-max-width-sm: 32rem;
     --dialog-content-gap: var(--panel-gap-lg);
     --dialog-content-radius: var(--panel-radius-lg);
-    --dialog-content-border-color: var(--surface-border-color);
+    --dialog-content-border-color: var(--bg-border-color);
     --dialog-content-padding: var(--panel-padding-lg);
-    --dialog-content-bg: var(--surface-page);
+    --dialog-content-bg: var(--bg-page);
 
     --dialog-close-offset-top: var(--space-4);
     --dialog-close-offset-right: var(--space-4);
@@ -19,9 +19,9 @@
     --dialog-close-ring-width: 2px;
     --dialog-close-ring-color: var(--ring);
     --dialog-close-ring-offset-width: 2px;
-    --dialog-close-ring-offset-color: var(--surface-page);
+    --dialog-close-ring-offset-color: var(--bg-page);
     --dialog-close-icon-size: var(--icon-md);
-    --dialog-close-active-bg: var(--surface-accent-subtle);
+    --dialog-close-active-bg: var(--bg-accent-subtle);
     --dialog-close-active-fg: var(--fg-muted);
 
     --dialog-header-gap: var(--panel-gap-sm);

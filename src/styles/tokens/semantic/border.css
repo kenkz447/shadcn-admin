@@ -1,0 +1,16 @@
+/** Semantic border and ring tokens **/
+
+:root {
+	--avatar-ring-on-bg: var(--background);
+	--destructive-soft-ring-color: var(--tone-ring-destructive-default);
+	--focus-ring-color: var(--tone-ring-focus-default);
+	--focus-ring-width: 3px;
+	--focus-ring-width-sm: 2px;
+	--invalid-border-color: var(--tone-border-destructive-default);
+	--invalid-border-strong: var(--tone-border-destructive-strong);
+	--invalid-ring-color: var(--tone-ring-destructive-default);
+	--scroll-focus-ring-color: var(--focus-ring-color);
+	--scroll-focus-ring-width: var(--focus-ring-width);
+	--scroll-thumb-bg: var(--border);
+	--divider-bg: var(--bg-border-color);
+}

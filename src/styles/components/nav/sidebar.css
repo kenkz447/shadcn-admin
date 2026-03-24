@@ -42,8 +42,8 @@
     --sidebar-menu-gap: var(--nav-list-gap-sm);
     --sidebar-menu-button-gap: var(--menu-item-gap);
     --sidebar-menu-button-radius: var(--menu-item-radius);
-    --sidebar-menu-button-padding: var(--menu-item-padding-x);
-    --sidebar-menu-button-padding-right-with-action: var(--menu-item-inset-padding);
+    --sidebar-menu-button-padding: var(--menu-item-padding-inline);
+    --sidebar-menu-button-padding-right-with-action: var(--menu-item-inset-padding-inline-start);
     --sidebar-menu-button-icon-size: var(--menu-item-icon-size);
     --sidebar-menu-button-collapsed-size: var(--control-size-md);
     --sidebar-menu-button-height: var(--field-height-sm);
@@ -70,7 +70,7 @@
     --sidebar-menu-skeleton-height: var(--field-height-sm);
     --sidebar-menu-skeleton-gap: var(--menu-item-gap);
     --sidebar-menu-skeleton-radius: var(--menu-item-radius);
-    --sidebar-menu-skeleton-padding-x: var(--menu-item-padding-x);
+    --sidebar-menu-skeleton-padding-x: var(--menu-item-padding-inline);
     --sidebar-menu-skeleton-icon-size: var(--menu-item-icon-size);
     --sidebar-menu-skeleton-text-height: var(--space-4);
 
@@ -83,7 +83,7 @@
     --sidebar-menu-sub-button-height: var(--control-height-sm);
     --sidebar-menu-sub-button-gap: var(--menu-item-gap);
     --sidebar-menu-sub-button-radius: var(--menu-item-radius);
-    --sidebar-menu-sub-button-padding-x: var(--menu-item-padding-x);
+    --sidebar-menu-sub-button-padding-x: var(--menu-item-padding-inline);
     --sidebar-menu-sub-button-translate-x: 1px;
     --sidebar-menu-sub-button-icon-size: var(--menu-item-icon-size);
     --sidebar-menu-sub-button-focus-ring-width: var(--focus-ring-width-sm);

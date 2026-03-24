@@ -6,5 +6,5 @@
     --scroll-area-scrollbar-padding: var(--scrollbar-padding);
     --scroll-area-scrollbar-size: var(--scrollbar-size);
     --scroll-area-thumb-radius: var(--scrollbar-thumb-radius);
-    --scroll-area-thumb-bg: var(--scroll-thumb-surface);
+    --scroll-area-thumb-bg: var(--scroll-thumb-bg);
 }

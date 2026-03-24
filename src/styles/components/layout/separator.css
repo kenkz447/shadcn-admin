@@ -1,6 +1,6 @@
 /** Separator **/
 
 :root {
-    --separator-color: var(--divider-surface);
+    --separator-color: var(--divider-bg);
     --separator-thickness: var(--divider-thickness);
 }
