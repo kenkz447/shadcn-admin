@@ -29,14 +29,14 @@
     --sidebar-group-label-padding-x: var(--nav-item-padding-x);
     --sidebar-group-label-icon-size: var(--nav-item-icon-size);
     --sidebar-group-label-collapsed-margin-top: calc(var(--space-8) * -1);
-    --sidebar-group-label-focus-ring-width: var(--ring-focus-width-sm);
+    --sidebar-group-label-focus-ring-width: var(--focus-ring-width-sm);
 
     --sidebar-group-action-top: var(--space-3-5);
     --sidebar-group-action-right: var(--space-3);
     --sidebar-group-action-width: calc(var(--spacing) * 5);
     --sidebar-group-action-radius: var(--nav-item-radius);
     --sidebar-group-action-hit-area: calc(var(--space-2) * -1);
-    --sidebar-group-action-focus-ring-width: var(--ring-focus-width-sm);
+    --sidebar-group-action-focus-ring-width: var(--focus-ring-width-sm);
     --sidebar-group-action-icon-size: var(--nav-item-icon-size);
 
     --sidebar-menu-gap: var(--nav-list-gap-sm);
@@ -49,7 +49,7 @@
     --sidebar-menu-button-height: var(--field-height-sm);
     --sidebar-menu-button-height-sm: var(--control-height-sm);
     --sidebar-menu-button-height-lg: calc(var(--spacing) * 12);
-    --sidebar-menu-button-focus-ring-width: var(--ring-focus-width-sm);
+    --sidebar-menu-button-focus-ring-width: var(--focus-ring-width-sm);
 
     --sidebar-menu-action-top: var(--space-1-5);
     --sidebar-menu-action-top-sm: var(--space-1);
@@ -58,7 +58,7 @@
     --sidebar-menu-action-width: calc(var(--spacing) * 5);
     --sidebar-menu-action-radius: var(--menu-item-radius);
     --sidebar-menu-action-hit-area: calc(var(--space-2) * -1);
-    --sidebar-menu-action-focus-ring-width: var(--ring-focus-width-sm);
+    --sidebar-menu-action-focus-ring-width: var(--focus-ring-width-sm);
     --sidebar-menu-action-icon-size: var(--menu-item-icon-size);
 
     --sidebar-menu-badge-right: var(--space-1);
@@ -86,7 +86,7 @@
     --sidebar-menu-sub-button-padding-x: var(--menu-item-padding-x);
     --sidebar-menu-sub-button-translate-x: 1px;
     --sidebar-menu-sub-button-icon-size: var(--menu-item-icon-size);
-    --sidebar-menu-sub-button-focus-ring-width: var(--ring-focus-width-sm);
+    --sidebar-menu-sub-button-focus-ring-width: var(--focus-ring-width-sm);
 
     --sidebar-shadow-outline: 0 0 0 1px hsl(var(--sidebar-border));
     --sidebar-shadow-outline-hover: 0 0 0 1px hsl(var(--sidebar-accent));

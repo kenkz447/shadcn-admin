@@ -1,10 +1,10 @@
 /** Scroll Area **/
 
 :root {
-    --scroll-area-viewport-ring-width: var(--ring-scroll-focus-width);
-    --scroll-area-viewport-ring-color: var(--ring-scroll-focus-color);
+    --scroll-area-viewport-ring-width: var(--scroll-focus-ring-width);
+    --scroll-area-viewport-ring-color: var(--scroll-focus-ring-color);
     --scroll-area-scrollbar-padding: var(--scrollbar-padding);
     --scroll-area-scrollbar-size: var(--scrollbar-size);
     --scroll-area-thumb-radius: var(--scrollbar-thumb-radius);
-    --scroll-area-thumb-bg: var(--surface-scroll-thumb);
+    --scroll-area-thumb-bg: var(--scroll-thumb-surface);
 }

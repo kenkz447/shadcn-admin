@@ -4,23 +4,23 @@
     --switch-radius: var(--selection-control-radius-full);
     --switch-border-color: transparent;
 
-    --switch-focus-border-color: var(--border-selection-focus);
-    --switch-focus-ring-width: var(--ring-selection-focus-width);
-    --switch-focus-ring-color: var(--ring-selection-focus-color);
+    --switch-focus-border-color: var(--selection-border-focus);
+    --switch-focus-ring-width: var(--selection-ring-focus-width);
+    --switch-focus-ring-color: var(--selection-ring-focus-color);
 
     --switch-track-height: var(--selection-switch-track-height-md);
     --switch-track-width: var(--selection-switch-track-width-md);
     --switch-track-height-sm: var(--selection-switch-track-height-sm);
     --switch-track-width-sm: var(--selection-switch-track-width-sm);
 
-    --switch-track-bg-checked: var(--surface-selection-checked-bg);
-    --switch-track-bg-unchecked: var(--surface-switch-track-unchecked);
+    --switch-track-bg-checked: var(--selection-surface-checked);
+    --switch-track-bg-unchecked: var(--switch-track-surface-unchecked);
 
     --switch-thumb-size: var(--selection-switch-thumb-size-md);
     --switch-thumb-size-sm: var(--selection-switch-thumb-size-sm);
-    --switch-thumb-bg: var(--surface-switch-thumb);
-    --switch-thumb-bg-checked: var(--surface-switch-thumb);
-    --switch-thumb-bg-unchecked: var(--surface-switch-thumb);
+    --switch-thumb-bg: var(--switch-thumb-surface);
+    --switch-thumb-bg-checked: var(--switch-thumb-surface);
+    --switch-thumb-bg-unchecked: var(--switch-thumb-surface);
     --switch-thumb-translate-checked: calc(100% - 2px);
     --switch-thumb-translate-unchecked: 0px;
 }

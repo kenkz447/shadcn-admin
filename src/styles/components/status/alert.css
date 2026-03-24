@@ -4,7 +4,7 @@
     --alert-gap-y: calc(var(--spacing) * 0.5);
     --alert-gap-x: var(--panel-gap-md);
     --alert-radius: var(--panel-radius-lg);
-    --alert-border-color: var(--border-surface);
+    --alert-border-color: var(--surface-border);
     --alert-padding-x: var(--panel-padding-sm);
     --alert-padding-y: var(--space-3);
     --alert-icon-size: var(--icon-md);
@@ -17,6 +17,6 @@
     --alert-bg: var(--surface-base);
     --alert-fg: var(--text-default);
     --alert-destructive-fg: var(--text-danger);
-    --alert-description-fg: var(--text-muted-default);
+    --alert-description-fg: var(--text-muted);
     --alert-description-destructive-fg: var(--text-danger-soft);
 }

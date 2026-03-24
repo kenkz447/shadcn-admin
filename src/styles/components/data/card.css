@@ -3,7 +3,7 @@
 :root {
     --card-gap: var(--panel-gap-lg);
     --card-radius: var(--panel-radius-xl);
-    --card-border-color: var(--border-surface);
+    --card-border-color: var(--surface-border);
     --card-padding-x: var(--panel-padding-lg);
     --card-padding-y: var(--panel-padding-lg);
 

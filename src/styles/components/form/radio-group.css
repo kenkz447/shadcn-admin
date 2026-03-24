@@ -5,17 +5,17 @@
 
     --radio-size: var(--selection-control-size);
     --radio-radius: var(--selection-control-radius-full);
-    --radio-border-color: var(--border-selection);
-    --radio-bg: var(--surface-selection-bg);
-    --radio-color: var(--text-selection-brand);
+    --radio-border-color: var(--selection-border);
+    --radio-bg: var(--selection-surface);
+    --radio-color: var(--selection-text-brand);
 
-    --radio-focus-border-color: var(--border-selection-focus);
-    --radio-focus-ring-width: var(--ring-selection-focus-width);
-    --radio-focus-ring-color: var(--ring-selection-focus-color);
+    --radio-focus-border-color: var(--selection-border-focus);
+    --radio-focus-ring-width: var(--selection-ring-focus-width);
+    --radio-focus-ring-color: var(--selection-ring-focus-color);
 
-    --radio-invalid-border-color: var(--border-selection-invalid);
-    --radio-invalid-ring-color: var(--ring-selection-invalid-color);
+    --radio-invalid-border-color: var(--selection-border-invalid);
+    --radio-invalid-ring-color: var(--selection-ring-invalid-color);
 
     --radio-indicator-size: var(--space-2);
-    --radio-indicator-color: var(--text-selection-brand);
+    --radio-indicator-color: var(--selection-text-brand);
 }

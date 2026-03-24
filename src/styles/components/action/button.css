@@ -1,20 +1,20 @@
 /** Button **/
 
 :root {
-	--button-radius: var(--radius-control-lg);
-	--button-radius-xs: min(var(--radius-control-md), 10px);
-	--button-radius-sm: min(var(--radius-control-md), 12px);
-	--button-group-radius: var(--radius-control-lg);
+	--button-radius: var(--control-radius-lg);
+	--button-radius-xs: min(var(--control-radius-md), 10px);
+	--button-radius-sm: min(var(--control-radius-md), 12px);
+	--button-group-radius: var(--control-radius-lg);
 
 	--button-text-size: var(--text-sm);
 	--button-text-size-xs: var(--text-xs);
 	--button-text-size-sm: var(--text-ui-sm);
 
-	--button-focus-ring-width: var(--ring-focus-width);
-	--button-invalid-ring-width: var(--ring-focus-width);
-	--button-focus-ring-color: var(--ring-focus-color);
-	--button-invalid-ring-color: var(--ring-invalid-color);
-	--button-invalid-border-color: var(--border-invalid);
+	--button-focus-ring-width: var(--focus-ring-width);
+	--button-invalid-ring-width: var(--focus-ring-width);
+	--button-focus-ring-color: var(--focus-ring-color);
+	--button-invalid-ring-color: var(--invalid-ring-color);
+	--button-invalid-border-color: var(--invalid-border);
 
 	--button-icon-size: var(--icon-md);
 	--button-icon-size-xs: var(--icon-xs);
@@ -50,26 +50,26 @@
 	--button-size-icon-lg: var(--control-size-lg);
 
 	--button-primary-bg: var(--surface-brand-solid);
-	--button-primary-fg: var(--text-on-brand-solid);
+	--button-primary-fg: var(--text-brand-solid-contrast);
 	--button-primary-hover-bg: var(--surface-brand-solid-hover);
 
 	--button-secondary-bg: var(--surface-secondary-solid);
-	--button-secondary-fg: var(--text-on-secondary-solid);
+	--button-secondary-fg: var(--text-secondary-solid-contrast);
 	--button-secondary-hover-bg: var(--surface-secondary-solid-hover);
 
-	--button-link-fg: var(--text-link-brand);
+	--button-link-fg: var(--text-brand-link);
 
-	--button-outline-bg: var(--surface-control-bg);
+	--button-outline-bg: var(--control-surface);
 	--button-outline-border-color: var(--border);
-	--button-outline-hover-bg: var(--surface-muted-hover-bg);
+	--button-outline-hover-bg: var(--muted-surface-hover);
 	--button-outline-hover-fg: var(--text-strong);
 
-	--button-ghost-hover-bg: var(--surface-muted-hover-bg);
+	--button-ghost-hover-bg: var(--muted-surface-hover);
 	--button-ghost-hover-fg: var(--text-strong);
 
-	--button-destructive-bg: var(--surface-destructive-soft-bg);
-	--button-destructive-hover-bg: var(--surface-destructive-soft-hover-bg);
+	--button-destructive-bg: var(--danger-surface-soft);
+	--button-destructive-hover-bg: var(--danger-surface-soft-hover);
 	--button-destructive-fg: var(--text-danger);
-	--button-destructive-focus-ring-color: var(--ring-destructive-soft-color);
-	--button-destructive-focus-border-color: var(--border-invalid-strong);
+	--button-destructive-focus-ring-color: var(--danger-soft-ring-color);
+	--button-destructive-focus-border-color: var(--invalid-border-strong);
 }

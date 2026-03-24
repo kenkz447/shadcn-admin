@@ -1,11 +1,38 @@
-/** Shared geometry recipes **/
+/** Shared recipe tokens **/
 
 :root {
+	/* Interactive control recipes */
+	--control-radius-sm: var(--radius-sm);
+	--control-radius-md: var(--radius-md);
+	--control-radius-lg: var(--radius-lg);
+
+	--control-height-xs: var(--space-6);
+	--control-height-sm: var(--space-7);
+	--control-height-md: var(--space-8);
+	--control-height-lg: var(--space-9);
+
+	--control-size-xs: var(--space-6);
+	--control-size-sm: var(--space-7);
+	--control-size-md: var(--space-8);
+	--control-size-lg: var(--space-9);
+
+	--control-gap-xs: var(--space-1);
+	--control-gap-sm: var(--space-1-5);
+	--control-gap-md: var(--space-2);
+
+	--control-padding-x-xs: var(--space-2);
+	--control-padding-x-sm: var(--space-2-5);
+	--control-padding-x-md: var(--space-3);
+
+	--control-padding-y-xs: var(--space-1);
+	--control-padding-y-sm: var(--space-1-5);
+	--control-padding-y-md: var(--space-2);
+
 	/* Field geometry */
 	--field-height-sm: var(--control-height-md);
 	--field-height-md: var(--control-height-lg);
 	--field-min-height-lg: calc(var(--spacing) * 16);
-	--field-radius: var(--radius-control-md);
+	--field-radius: var(--control-radius-md);
 	--field-padding-x: var(--control-padding-x-md);
 	--field-padding-y: var(--control-padding-y-xs);
 	--field-padding-y-comfortable: var(--control-padding-y-md);
@@ -24,8 +51,8 @@
 	--selection-switch-thumb-size-md: var(--icon-md);
 
 	/* Panel geometry */
-	--panel-radius-md: var(--radius-control-md);
-	--panel-radius-lg: var(--radius-control-lg);
+	--panel-radius-md: var(--control-radius-md);
+	--panel-radius-lg: var(--control-radius-lg);
 	--panel-radius-xl: var(--radius-xl);
 	--panel-padding-sm: var(--space-4);
 	--panel-padding-lg: var(--space-6);
@@ -41,7 +68,7 @@
 	--menu-content-padding: var(--space-1);
 	--menu-content-side-offset: var(--panel-side-offset);
 	--menu-item-gap: var(--control-gap-md);
-	--menu-item-radius: var(--radius-control-sm);
+	--menu-item-radius: var(--control-radius-sm);
 	--menu-item-padding-x: var(--space-2);
 	--menu-item-padding-y: var(--space-1-5);
 	--menu-item-inset-padding: var(--space-8);
@@ -61,7 +88,7 @@
 	--nav-item-gap-sm: var(--space-1-5);
 	--nav-item-padding-x: var(--space-2);
 	--nav-item-padding-y: var(--space-1);
-	--nav-item-radius: var(--radius-control-md);
+	--nav-item-radius: var(--control-radius-md);
 	--nav-item-icon-size: var(--icon-md);
 	--nav-indicator-thickness: calc(var(--spacing) * 0.5);
 	--nav-indicator-offset-negative-sm: calc(var(--space-1) * -1);

@@ -1,14 +1,14 @@
 /** Alert Dialog **/
 
 :root {
-    --alert-dialog-overlay-bg: var(--surface-overlay-scrim);
+    --alert-dialog-overlay-bg: var(--overlay-surface-scrim);
 
     --alert-dialog-content-max-width: calc(100% - 2rem);
     --alert-dialog-content-max-width-sm: 20rem;
     --alert-dialog-content-max-width-default-sm: 32rem;
     --alert-dialog-content-gap: var(--panel-gap-lg);
     --alert-dialog-content-radius: var(--panel-radius-lg);
-    --alert-dialog-content-border-color: var(--border-surface);
+    --alert-dialog-content-border-color: var(--surface-border);
     --alert-dialog-content-padding: var(--panel-padding-lg);
 
     --alert-dialog-header-gap: var(--space-1-5);

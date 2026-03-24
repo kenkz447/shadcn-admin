@@ -1,7 +1,7 @@
 /** Shared semantic tokens **/
 
 :root {
-	/* Named visual tones */
+	/* Internal tone derivations */
 	/* Grammar: --tone-{role}-{family}-{emphasis}[-state] */
 	--tone-surface-brand-solid-hover: color-mix(in oklab, var(--primary) 80%, transparent);
 	--tone-surface-secondary-solid-hover: color-mix(in oklab, var(--secondary) 80%, transparent);
@@ -25,51 +25,62 @@
 	/* Brand and feedback surfaces */
 	--surface-brand-solid: var(--primary);
 	--surface-brand-solid-hover: var(--tone-surface-brand-solid-hover);
-	--text-on-brand-solid: var(--primary-foreground);
+	--text-brand-solid-contrast: var(--primary-foreground);
 
 	--surface-secondary-solid: var(--secondary);
 	--surface-secondary-solid-hover: var(--tone-surface-secondary-solid-hover);
-	--text-on-secondary-solid: var(--secondary-foreground);
+	--text-secondary-solid-contrast: var(--secondary-foreground);
 
 	--surface-accent-subtle: var(--accent);
-	--text-on-accent-subtle: var(--accent-foreground);
+	--text-accent-subtle-contrast: var(--accent-foreground);
 
 	--surface-danger-solid: var(--tone-surface-danger-solid);
 	--surface-danger-solid-hover: var(--tone-surface-danger-solid-hover);
 	--surface-danger-soft: var(--tone-surface-danger-soft);
 	--surface-danger-soft-hover: var(--tone-surface-danger-soft-hover);
-	--text-on-danger-solid: white;
+	--text-danger-solid-contrast: white;
 
 	/* Core text and surface roles */
-	--text-link-brand: var(--primary);
+	--text-brand-link: var(--primary);
 	--text-danger: var(--destructive);
 	--text-danger-soft: var(--tone-text-danger-soft);
 	--text-strong: var(--foreground);
 	--text-muted-strong: var(--tone-text-muted-strong);
-	--text-muted-default: var(--muted-foreground);
-	--surface-muted-default: var(--muted);
+	--text-muted: var(--muted-foreground);
+	--surface-muted: var(--muted);
 	--surface-muted-soft: var(--tone-surface-muted-soft);
 	--surface-muted-soft-hover: var(--tone-surface-muted-soft-hover);
 	--surface-base: var(--background);
 	--text-default: var(--foreground);
 	--surface-popover: var(--popover);
-	--text-on-popover: var(--popover-foreground);
+	--text-popover-contrast: var(--popover-foreground);
 	--surface-input-soft: var(--tone-surface-input-soft);
 	--surface-input-soft-hover: var(--tone-surface-input-soft-hover);
 	--surface-input-strong: var(--tone-surface-input-strong);
 
-	/* Menu and navigation display roles */
-	--text-menu-muted: var(--text-muted-default);
-	--surface-nav-list: var(--surface-muted-default);
-	--text-nav-list: var(--text-muted-default);
-	--text-nav-item-hover: var(--text-default);
-	--text-nav-item-active: var(--text-default);
-	--text-nav-indicator: var(--text-default);
+	/* Context display roles */
+	--menu-text-muted: var(--text-muted);
+	--nav-list-surface: var(--surface-muted);
+	--nav-list-text: var(--text-muted);
+	--nav-item-text-hover: var(--text-default);
+	--nav-item-text-active: var(--text-default);
+	--nav-indicator-text: var(--text-default);
+
+	/* Context interaction roles */
+	--menu-item-surface-destructive-focus: var(--surface-danger-soft);
+	--menu-item-text-destructive-focus: var(--text-danger);
+	--menu-item-surface-active: var(--surface-accent-subtle);
+	--menu-item-text-active: var(--text-accent-subtle-contrast);
+	--data-row-surface-hover: var(--surface-muted-soft-hover);
+	--data-row-surface-selected: var(--surface-muted);
+	--nav-tab-surface-active: var(--background);
+	--nav-tab-border-active: transparent;
+	--nav-border-focus: var(--ring);
 
 	/* Data display roles */
-	--surface-data-footer: var(--surface-muted-soft);
-	--text-data-caption: var(--text-muted-default);
-	--text-data-heading: var(--text-default);
+	--data-footer-surface: var(--surface-muted-soft);
+	--data-caption-text: var(--text-muted);
+	--data-heading-text: var(--text-default);
 }
 
 .dark {
@@ -83,4 +94,6 @@
 	--tone-surface-input-strong: color-mix(in oklab, var(--input) 80%, transparent);
 	--tone-border-danger-default: color-mix(in oklab, var(--destructive) 50%, transparent);
 	--tone-ring-danger-default: color-mix(in oklab, var(--destructive) 40%, transparent);
+	--nav-tab-surface-active: var(--surface-input-soft);
+	--nav-tab-border-active: var(--input);
 }
