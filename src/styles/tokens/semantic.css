@@ -1,0 +1,86 @@
+/** Shared semantic tokens **/
+
+:root {
+	/* Named visual tones */
+	/* Grammar: --tone-{role}-{family}-{emphasis}[-state] */
+	--tone-surface-brand-solid-hover: color-mix(in oklab, var(--primary) 80%, transparent);
+	--tone-surface-secondary-solid-hover: color-mix(in oklab, var(--secondary) 80%, transparent);
+	--tone-surface-danger-solid: var(--destructive);
+	--tone-surface-danger-solid-hover: color-mix(in oklab, var(--destructive) 90%, transparent);
+	--tone-surface-danger-soft: color-mix(in oklab, var(--destructive) 10%, transparent);
+	--tone-surface-danger-soft-hover: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--tone-text-danger-soft: color-mix(in oklab, var(--destructive) 90%, transparent);
+	--tone-text-muted-strong: color-mix(in oklab, var(--foreground) 60%, transparent);
+	--tone-surface-muted-soft: color-mix(in oklab, var(--muted) 50%, transparent);
+	--tone-surface-muted-soft-hover: var(--muted);
+	--tone-surface-input-soft: transparent;
+	--tone-surface-input-soft-hover: transparent;
+	--tone-surface-input-strong: var(--input);
+	--tone-surface-overlay-scrim: color-mix(in oklab, black 50%, transparent);
+	--tone-border-danger-strong: color-mix(in oklab, var(--destructive) 40%, transparent);
+	--tone-border-danger-default: var(--destructive);
+	--tone-ring-focus-default: color-mix(in oklab, var(--ring) 50%, transparent);
+	--tone-ring-danger-default: color-mix(in oklab, var(--destructive) 20%, transparent);
+
+	/* Brand and feedback surfaces */
+	--surface-brand-solid: var(--primary);
+	--surface-brand-solid-hover: var(--tone-surface-brand-solid-hover);
+	--text-on-brand-solid: var(--primary-foreground);
+
+	--surface-secondary-solid: var(--secondary);
+	--surface-secondary-solid-hover: var(--tone-surface-secondary-solid-hover);
+	--text-on-secondary-solid: var(--secondary-foreground);
+
+	--surface-accent-subtle: var(--accent);
+	--text-on-accent-subtle: var(--accent-foreground);
+
+	--surface-danger-solid: var(--tone-surface-danger-solid);
+	--surface-danger-solid-hover: var(--tone-surface-danger-solid-hover);
+	--surface-danger-soft: var(--tone-surface-danger-soft);
+	--surface-danger-soft-hover: var(--tone-surface-danger-soft-hover);
+	--text-on-danger-solid: white;
+
+	/* Core text and surface roles */
+	--text-link-brand: var(--primary);
+	--text-danger: var(--destructive);
+	--text-danger-soft: var(--tone-text-danger-soft);
+	--text-strong: var(--foreground);
+	--text-muted-strong: var(--tone-text-muted-strong);
+	--text-muted-default: var(--muted-foreground);
+	--surface-muted-default: var(--muted);
+	--surface-muted-soft: var(--tone-surface-muted-soft);
+	--surface-muted-soft-hover: var(--tone-surface-muted-soft-hover);
+	--surface-base: var(--background);
+	--text-default: var(--foreground);
+	--surface-popover: var(--popover);
+	--text-on-popover: var(--popover-foreground);
+	--surface-input-soft: var(--tone-surface-input-soft);
+	--surface-input-soft-hover: var(--tone-surface-input-soft-hover);
+	--surface-input-strong: var(--tone-surface-input-strong);
+
+	/* Menu and navigation display roles */
+	--text-menu-muted: var(--text-muted-default);
+	--surface-nav-list: var(--surface-muted-default);
+	--text-nav-list: var(--text-muted-default);
+	--text-nav-item-hover: var(--text-default);
+	--text-nav-item-active: var(--text-default);
+	--text-nav-indicator: var(--text-default);
+
+	/* Data display roles */
+	--surface-data-footer: var(--surface-muted-soft);
+	--text-data-caption: var(--text-muted-default);
+	--text-data-heading: var(--text-default);
+}
+
+.dark {
+	--tone-surface-danger-solid: color-mix(in oklab, var(--destructive) 60%, transparent);
+	--tone-surface-danger-soft: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--tone-surface-danger-soft-hover: color-mix(in oklab, var(--destructive) 30%, transparent);
+	--tone-surface-muted-soft: color-mix(in oklab, var(--muted) 50%, transparent);
+	--tone-surface-muted-soft-hover: color-mix(in oklab, var(--muted) 50%, transparent);
+	--tone-surface-input-soft: color-mix(in oklab, var(--input) 30%, transparent);
+	--tone-surface-input-soft-hover: color-mix(in oklab, var(--input) 50%, transparent);
+	--tone-surface-input-strong: color-mix(in oklab, var(--input) 80%, transparent);
+	--tone-border-danger-default: color-mix(in oklab, var(--destructive) 50%, transparent);
+	--tone-ring-danger-default: color-mix(in oklab, var(--destructive) 40%, transparent);
+}

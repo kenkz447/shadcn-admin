@@ -2,10 +2,14 @@
 
 :root {
     --popover-content-width: calc(var(--spacing) * 72);
-    --popover-content-radius: var(--radius-md);
-    --popover-content-border-color: var(--border);
-    --popover-content-padding: calc(var(--spacing) * 4);
-    --popover-content-side-offset: calc(var(--spacing) * 1);
+    --popover-content-radius: var(--panel-radius-md);
+    --popover-content-border-color: var(--border-surface);
+    --popover-content-padding: var(--panel-padding-sm);
+    --popover-content-side-offset: var(--panel-side-offset);
+    --popover-content-bg: var(--surface-popover);
+    --popover-content-fg: var(--text-on-popover);
 
-    --popover-header-gap: calc(var(--spacing) * 1);
+    --popover-header-gap: var(--panel-gap-xs);
+
+    --popover-description-fg: var(--text-muted-default);
 }

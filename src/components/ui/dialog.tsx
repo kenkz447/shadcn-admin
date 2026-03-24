@@ -59,7 +59,7 @@ function DialogContent({
       <DialogPrimitive.Content
         data-slot="dialog-content"
         className={cn(
-          "fixed top-[50%] left-[50%] z-50 grid w-full max-w-(--dialog-content-max-width) translate-x-[-50%] translate-y-[-50%] gap-(--dialog-content-gap) rounded-(--dialog-content-radius) border border-(--dialog-content-border-color) bg-background p-(--dialog-content-padding) shadow-lg duration-200 outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 sm:max-w-(--dialog-content-max-width-sm)",
+          "fixed top-[50%] left-[50%] z-50 grid w-full max-w-(--dialog-content-max-width) translate-x-[-50%] translate-y-[-50%] gap-(--dialog-content-gap) rounded-(--dialog-content-radius) border border-(--dialog-content-border-color) bg-(--dialog-content-bg) p-(--dialog-content-padding) shadow-lg duration-200 outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 sm:max-w-(--dialog-content-max-width-sm)",
           className
         )}
         {...props}
@@ -68,7 +68,7 @@ function DialogContent({
         {showCloseButton && (
           <DialogPrimitive.Close
             data-slot="dialog-close"
-            className="absolute top-(--dialog-close-offset-top) right-(--dialog-close-offset-right) rounded-(--dialog-close-radius) opacity-(--dialog-close-opacity) ring-offset-background transition-opacity hover:opacity-(--dialog-close-opacity-hover) focus:ring-(length:--dialog-close-ring-width) focus:ring-(--dialog-close-ring-color) focus:ring-offset-(length:--dialog-close-ring-offset-width) focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--dialog-close-icon-size)"
+            className="absolute top-(--dialog-close-offset-top) right-(--dialog-close-offset-right) rounded-(--dialog-close-radius) opacity-(--dialog-close-opacity) ring-offset-(--dialog-close-ring-offset-color) transition-opacity hover:opacity-(--dialog-close-opacity-hover) focus:ring-(length:--dialog-close-ring-width) focus:ring-(--dialog-close-ring-color) focus:ring-offset-(length:--dialog-close-ring-offset-width) focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-(--dialog-close-active-bg) data-[state=open]:text-(--dialog-close-active-fg) [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--dialog-close-icon-size)"
           >
             <XIcon />
             <span className="sr-only">Close</span>
@@ -139,7 +139,7 @@ function DialogDescription({
   return (
     <DialogPrimitive.Description
       data-slot="dialog-description"
-      className={cn("text-sm text-muted-foreground", className)}
+      className={cn("text-sm text-(--dialog-description-fg)", className)}
       {...props}
     />
   )

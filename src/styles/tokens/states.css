@@ -1,0 +1,83 @@
+/** Shared state tokens **/
+
+:root {
+	/* Generic surfaces and state recipes */
+	--surface-control-bg: var(--surface-input-soft);
+	--surface-control-hover-bg: var(--surface-input-soft-hover);
+	--surface-muted-hover-bg: var(--surface-muted-soft-hover);
+	--surface-destructive-soft-bg: var(--surface-danger-soft);
+	--surface-destructive-soft-hover-bg: var(--surface-danger-soft-hover);
+	--surface-overlay-scrim: var(--tone-surface-overlay-scrim);
+
+	/* Border roles derived from state */
+	--border-control: var(--input);
+	--border-invalid-strong: var(--tone-border-danger-strong);
+	--border-invalid: var(--tone-border-danger-default);
+	--border-field: var(--border-control);
+	--border-surface: var(--border);
+
+	/* Placeholder and field state */
+	--text-placeholder: var(--muted-foreground);
+	--text-field-placeholder: var(--text-placeholder);
+
+	/* Focus and invalid recipes */
+	--ring-focus-width: 3px;
+	--ring-focus-color: var(--tone-ring-focus-default);
+	--ring-invalid-color: var(--tone-ring-danger-default);
+	--ring-destructive-soft-color: var(--tone-ring-danger-default);
+
+	/* Field */
+	--surface-field-bg: var(--surface-control-bg);
+	--surface-field-hover-bg: var(--surface-control-hover-bg);
+	--border-field-focus: var(--ring);
+	--border-field-invalid: var(--border-invalid);
+	--ring-field-focus-width: var(--ring-focus-width);
+	--ring-field-focus-color: var(--ring-focus-color);
+	--ring-field-invalid-color: var(--ring-invalid-color);
+
+	/* Selection controls */
+	--surface-selection-bg: var(--surface-field-bg);
+	--border-selection: var(--border-field);
+	--border-selection-focus: var(--border-field-focus);
+	--border-selection-invalid: var(--border-field-invalid);
+	--ring-selection-focus-width: var(--ring-field-focus-width);
+	--ring-selection-focus-color: var(--ring-field-focus-color);
+	--ring-selection-invalid-color: var(--ring-field-invalid-color);
+	--surface-selection-checked-bg: var(--surface-brand-solid);
+	--border-selection-checked: var(--surface-brand-solid);
+	--text-selection-checked: var(--text-on-brand-solid);
+	--text-selection-brand: var(--text-link-brand);
+	--surface-switch-track-unchecked: var(--surface-input-strong);
+	--surface-switch-thumb: var(--background);
+	--surface-switch-thumb-checked-dark: var(--primary-foreground);
+	--surface-switch-thumb-unchecked-dark: var(--foreground);
+
+	/* Menu interaction */
+	--surface-menu-destructive-focus-bg: var(--surface-destructive-soft-bg);
+	--text-menu-destructive-focus: var(--text-danger);
+	--surface-menu-item-active-bg: var(--surface-accent-subtle);
+	--text-menu-item-active: var(--text-on-accent-subtle);
+
+	/* Data interaction */
+	--surface-data-row-hover: var(--surface-muted-hover-bg);
+	--surface-data-row-selected: var(--surface-muted-default);
+
+	/* Navigation interaction */
+	--surface-nav-tab-active: var(--background);
+	--border-nav-tab-active: transparent;
+	--border-nav-focus: var(--border-field-focus);
+	--ring-focus-width-sm: 2px;
+
+	/* Scroll and divider */
+	--ring-scroll-focus-width: var(--ring-focus-width);
+	--ring-scroll-focus-color: var(--ring-focus-color);
+	--surface-scroll-thumb: var(--border);
+	--divider-color: var(--border-surface);
+	--ring-avatar-on-surface: var(--background);
+}
+
+.dark {
+	--surface-selection-bg: var(--surface-field-bg);
+	--surface-nav-tab-active: var(--surface-field-bg);
+	--border-nav-tab-active: var(--input);
+}

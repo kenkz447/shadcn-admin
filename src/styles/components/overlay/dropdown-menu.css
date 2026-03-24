@@ -1,35 +1,39 @@
 /** Dropdown Menu **/
 
 :root {
-    --dropdown-menu-content-min-width: calc(var(--spacing) * 32);
-    --dropdown-menu-content-radius: var(--radius-md);
-    --dropdown-menu-content-border-color: var(--border);
-    --dropdown-menu-content-padding: calc(var(--spacing) * 1);
-    --dropdown-menu-content-side-offset: calc(var(--spacing) * 1);
+    --dropdown-menu-content-min-width: var(--menu-content-min-width);
+    --dropdown-menu-content-radius: var(--menu-content-radius);
+    --dropdown-menu-content-border-color: var(--border-surface);
+    --dropdown-menu-content-padding: var(--menu-content-padding);
+    --dropdown-menu-content-side-offset: var(--menu-content-side-offset);
+    --dropdown-menu-content-bg: var(--surface-popover);
+    --dropdown-menu-content-fg: var(--text-on-popover);
 
-    --dropdown-menu-item-gap: calc(var(--spacing) * 2);
-    --dropdown-menu-item-radius: var(--radius-sm);
-    --dropdown-menu-item-padding-x: calc(var(--spacing) * 2);
-    --dropdown-menu-item-padding-y: calc(var(--spacing) * 1.5);
-    --dropdown-menu-item-inset-padding-left: calc(var(--spacing) * 8);
-    --dropdown-menu-item-indicator-offset-left: calc(var(--spacing) * 2);
-    --dropdown-menu-item-indicator-size: calc(var(--spacing) * 3.5);
-    --dropdown-menu-item-icon-size: calc(var(--spacing) * 4);
+    --dropdown-menu-item-gap: var(--menu-item-gap);
+    --dropdown-menu-item-radius: var(--menu-item-radius);
+    --dropdown-menu-item-padding-x: var(--menu-item-padding-x);
+    --dropdown-menu-item-padding-y: var(--menu-item-padding-y);
+    --dropdown-menu-item-inset-padding-left: var(--menu-item-inset-padding);
+    --dropdown-menu-item-indicator-offset-left: var(--menu-item-indicator-offset);
+    --dropdown-menu-item-indicator-size: var(--menu-item-indicator-size);
+    --dropdown-menu-item-icon-size: var(--menu-item-icon-size);
+    --dropdown-menu-item-focus-bg: var(--surface-menu-item-active-bg);
+    --dropdown-menu-item-focus-fg: var(--text-menu-item-active);
+    --dropdown-menu-item-icon-fg: var(--text-menu-muted);
+    --dropdown-menu-item-destructive-fg: var(--text-danger);
 
-    --dropdown-menu-label-padding-x: calc(var(--spacing) * 2);
-    --dropdown-menu-label-padding-y: calc(var(--spacing) * 1.5);
+    --dropdown-menu-label-padding-x: var(--menu-label-padding-x);
+    --dropdown-menu-label-padding-y: var(--menu-label-padding-y);
+    --dropdown-menu-label-fg: var(--text-menu-muted);
 
-    --dropdown-menu-separator-margin-x: calc(var(--spacing) * -1);
-    --dropdown-menu-separator-margin-y: calc(var(--spacing) * 1);
-    --dropdown-menu-separator-height: 1px;
-    --dropdown-menu-separator-color: var(--border);
+    --dropdown-menu-separator-margin-x: var(--menu-separator-margin-x);
+    --dropdown-menu-separator-margin-y: var(--menu-separator-margin-y);
+    --dropdown-menu-separator-height: var(--menu-separator-height);
+    --dropdown-menu-separator-color: var(--border-surface);
 
     --dropdown-menu-shortcut-margin-left: auto;
+    --dropdown-menu-shortcut-fg: var(--text-menu-muted);
 
-    --dropdown-menu-destructive-focus-bg: color-mix(in oklab, var(--destructive) 10%, transparent);
-    --dropdown-menu-destructive-focus-fg: var(--destructive);
-}
-
-.dark {
-    --dropdown-menu-destructive-focus-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
+    --dropdown-menu-destructive-focus-bg: var(--surface-menu-destructive-focus-bg);
+    --dropdown-menu-destructive-focus-fg: var(--text-menu-destructive-focus);
 }

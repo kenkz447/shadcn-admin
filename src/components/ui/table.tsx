@@ -70,7 +70,7 @@ function TableHead({ className, ...props }: React.ComponentProps<"th">) {
     <th
       data-slot="table-head"
       className={cn(
-        "h-(--table-head-height) px-(--table-cell-padding) text-left align-middle font-medium whitespace-nowrap text-foreground [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-(--table-checkbox-translate-y)",
+        "h-(--table-head-height) px-(--table-cell-padding) text-left align-middle font-medium whitespace-nowrap text-(--table-head-fg) [&:has([role=checkbox])]:pr-0 *:[[role=checkbox]]:translate-y-(--table-checkbox-translate-y)",
         className
       )}
       {...props}
@@ -83,7 +83,7 @@ function TableCell({ className, ...props }: React.ComponentProps<"td">) {
     <td
       data-slot="table-cell"
       className={cn(
-        "p-(--table-cell-padding) align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-(--table-checkbox-translate-y)",
+        "p-(--table-cell-padding) align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 *:[[role=checkbox]]:translate-y-(--table-checkbox-translate-y)",
         className
       )}
       {...props}
@@ -99,7 +99,7 @@ function TableCaption({
     <caption
       data-slot="table-caption"
       className={cn(
-        "mt-(--table-caption-margin-top) text-sm text-muted-foreground",
+        "mt-(--table-caption-margin-top) text-sm text-(--table-caption-fg)",
         className
       )}
       {...props}

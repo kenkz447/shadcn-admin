@@ -9,15 +9,15 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
+        default: "bg-(--badge-primary-bg) text-(--badge-primary-fg) [a&]:hover:bg-(--badge-primary-hover-bg)",
         secondary:
-          "bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
+          "bg-(--badge-secondary-bg) text-(--badge-secondary-fg) [a&]:hover:bg-(--badge-secondary-hover-bg)",
         destructive:
-          "bg-destructive text-white focus-visible:ring-(--badge-destructive-focus-ring) dark:bg-destructive/60 [a&]:hover:bg-destructive/90",
+          "bg-(--badge-destructive-bg) text-(--badge-destructive-fg) focus-visible:ring-(--badge-destructive-focus-ring) [a&]:hover:bg-(--badge-destructive-hover-bg)",
         outline:
-          "border-border text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
-        ghost: "[a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 [a&]:hover:underline",
+          "border-(--badge-outline-border-color) text-(--badge-outline-fg) [a&]:hover:bg-(--badge-outline-hover-bg) [a&]:hover:text-(--badge-outline-hover-fg)",
+        ghost: "[a&]:hover:bg-(--badge-ghost-hover-bg) [a&]:hover:text-(--badge-ghost-hover-fg)",
+        link: "text-(--badge-link-fg) underline-offset-4 [a&]:hover:underline",
       },
     },
     defaultVariants: {

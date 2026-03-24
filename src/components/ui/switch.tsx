@@ -23,7 +23,7 @@ function Switch({
       <SwitchPrimitive.Thumb
         data-slot="switch-thumb"
         className={cn(
-          "pointer-events-none block rounded-(--switch-radius) bg-(--switch-thumb-bg) ring-0 transition-transform group-data-[size=default]/switch:size-(--switch-thumb-size) group-data-[size=sm]/switch:size-(--switch-thumb-size-sm) data-[state=checked]:translate-x-(--switch-thumb-translate-checked) data-[state=unchecked]:translate-x-(--switch-thumb-translate-unchecked) dark:data-[state=checked]:bg-(--switch-thumb-bg-checked-dark) dark:data-[state=unchecked]:bg-(--switch-thumb-bg-unchecked-dark)"
+          "pointer-events-none block rounded-(--switch-radius) bg-(--switch-thumb-bg) ring-0 transition-transform group-data-[size=default]/switch:size-(--switch-thumb-size) group-data-[size=sm]/switch:size-(--switch-thumb-size-sm) data-[state=checked]:translate-x-(--switch-thumb-translate-checked) data-[state=unchecked]:translate-x-(--switch-thumb-translate-unchecked) data-[state=checked]:bg-(--switch-thumb-bg-checked) data-[state=unchecked]:bg-(--switch-thumb-bg-unchecked)"
         )}
       />
     </SwitchPrimitive.Root>

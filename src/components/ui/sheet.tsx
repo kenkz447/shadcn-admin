@@ -60,7 +60,7 @@ function SheetContent({
       <SheetPrimitive.Content
         data-slot="sheet-content"
         className={cn(
-          "fixed z-50 flex flex-col gap-(--sheet-content-gap) bg-background shadow-lg transition ease-in-out data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:animate-in data-[state=open]:duration-500",
+          "fixed z-50 flex flex-col gap-(--sheet-content-gap) bg-(--sheet-content-bg) shadow-lg transition ease-in-out data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:animate-in data-[state=open]:duration-500",
           side === "right" &&
             "inset-y-0 right-0 h-full w-(--sheet-content-width) border-l border-(--sheet-content-border-color) data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-(--sheet-content-max-width)",
           side === "left" &&
@@ -75,7 +75,7 @@ function SheetContent({
       >
         {children}
         {showCloseButton && (
-          <SheetPrimitive.Close className="absolute top-(--sheet-close-offset-top) right-(--sheet-close-offset-right) rounded-(--sheet-close-radius) opacity-(--sheet-close-opacity) ring-offset-background transition-opacity hover:opacity-(--sheet-close-opacity-hover) focus:ring-(length:--sheet-close-ring-width) focus:ring-(--sheet-close-ring-color) focus:ring-offset-(length:--sheet-close-ring-offset-width) focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-secondary">
+          <SheetPrimitive.Close className="absolute top-(--sheet-close-offset-top) right-(--sheet-close-offset-right) rounded-(--sheet-close-radius) opacity-(--sheet-close-opacity) ring-offset-(--sheet-close-ring-offset-color) transition-opacity hover:opacity-(--sheet-close-opacity-hover) focus:ring-(length:--sheet-close-ring-width) focus:ring-(--sheet-close-ring-color) focus:ring-offset-(length:--sheet-close-ring-offset-width) focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-(--sheet-close-active-bg) data-[state=open]:text-(--sheet-close-active-fg)">
             <XIcon className="size-(--sheet-close-icon-size)" />
             <span className="sr-only">Close</span>
           </SheetPrimitive.Close>
@@ -118,7 +118,7 @@ function SheetTitle({
   return (
     <SheetPrimitive.Title
       data-slot="sheet-title"
-      className={cn("font-semibold text-foreground", className)}
+      className={cn("font-semibold text-(--sheet-title-fg)", className)}
       {...props}
     />
   )
@@ -131,7 +131,7 @@ function SheetDescription({
   return (
     <SheetPrimitive.Description
       data-slot="sheet-description"
-      className={cn("text-sm text-muted-foreground", className)}
+      className={cn("text-sm text-(--sheet-description-fg)", className)}
       {...props}
     />
   )

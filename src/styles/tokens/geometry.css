@@ -1,0 +1,75 @@
+/** Shared geometry recipes **/
+
+:root {
+	/* Field geometry */
+	--field-height-sm: var(--control-height-md);
+	--field-height-md: var(--control-height-lg);
+	--field-min-height-lg: calc(var(--spacing) * 16);
+	--field-radius: var(--radius-control-md);
+	--field-padding-x: var(--control-padding-x-md);
+	--field-padding-y: var(--control-padding-y-xs);
+	--field-padding-y-comfortable: var(--control-padding-y-md);
+
+	/* Selection control geometry */
+	--selection-control-size: var(--icon-md);
+	--selection-control-indicator-size: var(--icon-sm);
+	--selection-control-gap: var(--space-3);
+	--selection-control-radius: 4px;
+	--selection-control-radius-full: 9999px;
+	--selection-switch-track-width-sm: var(--space-6);
+	--selection-switch-track-width-md: var(--space-8);
+	--selection-switch-track-height-sm: var(--icon-sm);
+	--selection-switch-track-height-md: 1.15rem;
+	--selection-switch-thumb-size-sm: var(--icon-xs);
+	--selection-switch-thumb-size-md: var(--icon-md);
+
+	/* Panel geometry */
+	--panel-radius-md: var(--radius-control-md);
+	--panel-radius-lg: var(--radius-control-lg);
+	--panel-radius-xl: var(--radius-xl);
+	--panel-padding-sm: var(--space-4);
+	--panel-padding-lg: var(--space-6);
+	--panel-gap-xs: var(--space-1);
+	--panel-gap-sm: var(--space-2);
+	--panel-gap-md: var(--space-3);
+	--panel-gap-lg: var(--space-4);
+	--panel-side-offset: var(--space-1);
+
+	/* Menu geometry */
+	--menu-content-min-width: calc(var(--spacing) * 32);
+	--menu-content-radius: var(--panel-radius-md);
+	--menu-content-padding: var(--space-1);
+	--menu-content-side-offset: var(--panel-side-offset);
+	--menu-item-gap: var(--control-gap-md);
+	--menu-item-radius: var(--radius-control-sm);
+	--menu-item-padding-x: var(--space-2);
+	--menu-item-padding-y: var(--space-1-5);
+	--menu-item-inset-padding: var(--space-8);
+	--menu-item-indicator-offset: var(--space-2);
+	--menu-item-indicator-size: var(--icon-sm);
+	--menu-item-icon-size: var(--icon-md);
+	--menu-label-padding-x: var(--space-2);
+	--menu-label-padding-y: var(--space-1-5);
+	--menu-separator-margin-x: calc(var(--space-1) * -1);
+	--menu-separator-margin-y: var(--space-1);
+	--menu-separator-height: 1px;
+
+	/* Navigation geometry */
+	--nav-list-height-md: var(--control-height-lg);
+	--nav-list-gap-sm: var(--space-1);
+	--nav-list-gap-md: var(--space-2);
+	--nav-item-gap-sm: var(--space-1-5);
+	--nav-item-padding-x: var(--space-2);
+	--nav-item-padding-y: var(--space-1);
+	--nav-item-radius: var(--radius-control-md);
+	--nav-item-icon-size: var(--icon-md);
+	--nav-indicator-thickness: calc(var(--spacing) * 0.5);
+	--nav-indicator-offset-negative-sm: calc(var(--space-1) * -1);
+	--nav-indicator-offset-negative-xs: -5px;
+
+	/* Scroll and divider geometry */
+	--scrollbar-size: var(--space-2-5);
+	--scrollbar-padding: 1px;
+	--scrollbar-thumb-radius: var(--selection-control-radius-full);
+	--divider-thickness: 1px;
+}

@@ -1,25 +1,32 @@
 /** Sheet **/
 
 :root {
-    --sheet-overlay-bg: color-mix(in oklab, black 50%, transparent);
+    --sheet-overlay-bg: var(--surface-overlay-scrim);
 
-    --sheet-content-gap: calc(var(--spacing) * 4);
+    --sheet-content-gap: var(--panel-gap-lg);
     --sheet-content-max-width: 24rem;
     --sheet-content-width: 75%;
-    --sheet-content-border-color: var(--border);
+    --sheet-content-border-color: var(--border-surface);
+    --sheet-content-bg: var(--surface-base);
 
-    --sheet-close-offset-top: calc(var(--spacing) * 4);
-    --sheet-close-offset-right: calc(var(--spacing) * 4);
+    --sheet-close-offset-top: var(--space-4);
+    --sheet-close-offset-right: var(--space-4);
     --sheet-close-radius: var(--radius-xs);
     --sheet-close-opacity: 0.7;
     --sheet-close-opacity-hover: 1;
     --sheet-close-ring-width: 2px;
     --sheet-close-ring-color: var(--ring);
     --sheet-close-ring-offset-width: 2px;
-    --sheet-close-icon-size: calc(var(--spacing) * 4);
+    --sheet-close-ring-offset-color: var(--surface-base);
+    --sheet-close-icon-size: var(--icon-md);
+    --sheet-close-active-bg: var(--surface-secondary-solid);
+    --sheet-close-active-fg: var(--text-on-secondary-solid);
 
-    --sheet-header-gap: calc(var(--spacing) * 1.5);
-    --sheet-header-padding: calc(var(--spacing) * 4);
-    --sheet-footer-gap: calc(var(--spacing) * 2);
-    --sheet-footer-padding: calc(var(--spacing) * 4);
+    --sheet-header-gap: var(--space-1-5);
+    --sheet-header-padding: var(--panel-padding-sm);
+    --sheet-footer-gap: var(--panel-gap-sm);
+    --sheet-footer-padding: var(--panel-padding-sm);
+
+    --sheet-title-fg: var(--text-default);
+    --sheet-description-fg: var(--text-muted-default);
 }

@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import './theme.css';
+@import './tokens/foundation.css';
+@import './tokens/geometry.css';
+@import './tokens/semantic.css';
+@import './tokens/states.css';
 
 /* Input / Data Entry */
 @import './components/form/calendar.css';

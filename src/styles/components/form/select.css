@@ -1,57 +1,57 @@
 /** Select **/
 
 :root {
-    --select-trigger-gap: calc(var(--spacing) * 2);
-    --select-trigger-radius: var(--radius-md);
-    --select-trigger-border-color: var(--input);
-    --select-trigger-bg: transparent;
-    --select-trigger-bg-hover: transparent;
-    --select-trigger-padding-x: calc(var(--spacing) * 3);
-    --select-trigger-padding-y: calc(var(--spacing) * 2);
-    --select-trigger-height: calc(var(--spacing) * 9);
-    --select-trigger-height-sm: calc(var(--spacing) * 8);
-    --select-trigger-placeholder-color: var(--muted-foreground);
+    --select-trigger-gap: var(--control-gap-md);
+    --select-trigger-radius: var(--field-radius);
+    --select-trigger-border-color: var(--border-field);
+    --select-trigger-bg: var(--surface-field-bg);
+    --select-trigger-bg-hover: var(--surface-field-hover-bg);
+    --select-trigger-padding-x: var(--field-padding-x);
+    --select-trigger-padding-y: var(--field-padding-y-comfortable);
+    --select-trigger-height: var(--field-height-md);
+    --select-trigger-height-sm: var(--field-height-sm);
+    --select-trigger-placeholder-color: var(--text-field-placeholder);
 
-    --select-trigger-focus-border-color: var(--ring);
-    --select-trigger-focus-ring-width: 3px;
-    --select-trigger-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    --select-trigger-focus-border-color: var(--border-field-focus);
+    --select-trigger-focus-ring-width: var(--ring-field-focus-width);
+    --select-trigger-focus-ring-color: var(--ring-field-focus-color);
 
-    --select-trigger-invalid-border-color: var(--destructive);
-    --select-trigger-invalid-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+    --select-trigger-invalid-border-color: var(--border-field-invalid);
+    --select-trigger-invalid-ring-color: var(--ring-field-invalid-color);
 
-    --select-icon-size: calc(var(--spacing) * 4);
+    --select-icon-size: var(--icon-md);
     --select-icon-opacity: 0.5;
 
-    --select-content-min-width: calc(var(--spacing) * 32);
-    --select-content-radius: var(--radius-md);
-    --select-content-border-color: var(--border);
+    --select-content-min-width: var(--menu-content-min-width);
+    --select-content-radius: var(--menu-content-radius);
+    --select-content-border-color: var(--border-surface);
+    --select-content-bg: var(--surface-popover);
+    --select-content-fg: var(--text-on-popover);
 
-    --select-content-offset: calc(var(--spacing) * 1);
-    --select-content-offset-negative: calc(var(--spacing) * -1);
-    --select-viewport-padding: calc(var(--spacing) * 1);
+    --select-content-offset: var(--menu-content-side-offset);
+    --select-content-offset-negative: calc(var(--menu-content-side-offset) * -1);
+    --select-viewport-padding: var(--menu-content-padding);
 
-    --select-label-padding-x: calc(var(--spacing) * 2);
-    --select-label-padding-y: calc(var(--spacing) * 1.5);
+    --select-label-padding-x: var(--menu-label-padding-x);
+    --select-label-padding-y: var(--menu-label-padding-y);
+    --select-label-fg: var(--text-menu-muted);
 
-    --select-item-gap: calc(var(--spacing) * 2);
-    --select-item-radius: var(--radius-sm);
-    --select-item-padding-y: calc(var(--spacing) * 1.5);
-    --select-item-padding-right: calc(var(--spacing) * 8);
-    --select-item-padding-left: calc(var(--spacing) * 2);
+    --select-item-gap: var(--menu-item-gap);
+    --select-item-radius: var(--menu-item-radius);
+    --select-item-padding-y: var(--menu-item-padding-y);
+    --select-item-padding-right: var(--menu-item-inset-padding);
+    --select-item-padding-left: var(--menu-item-padding-x);
+    --select-item-focus-bg: var(--surface-menu-item-active-bg);
+    --select-item-focus-fg: var(--text-menu-item-active);
+    --select-item-icon-fg: var(--text-menu-muted);
 
-    --select-item-indicator-offset-right: calc(var(--spacing) * 2);
-    --select-item-indicator-size: calc(var(--spacing) * 3.5);
+    --select-item-indicator-offset-right: var(--menu-item-indicator-offset);
+    --select-item-indicator-size: var(--menu-item-indicator-size);
 
-    --select-separator-margin-x: calc(var(--spacing) * -1);
-    --select-separator-margin-y: calc(var(--spacing) * 1);
-    --select-separator-height: 1px;
-    --select-separator-color: var(--border);
+    --select-separator-margin-x: var(--menu-separator-margin-x);
+    --select-separator-margin-y: var(--menu-separator-margin-y);
+    --select-separator-height: var(--menu-separator-height);
+    --select-separator-color: var(--border-surface);
 
-    --select-scroll-button-padding-y: calc(var(--spacing) * 1);
-}
-
-.dark {
-    --select-trigger-bg: color-mix(in oklab, var(--input) 30%, transparent);
-    --select-trigger-bg-hover: color-mix(in oklab, var(--input) 50%, transparent);
-    --select-trigger-invalid-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+    --select-scroll-button-padding-y: var(--space-1);
 }

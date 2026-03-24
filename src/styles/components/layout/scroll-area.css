@@ -1,10 +1,10 @@
 /** Scroll Area **/
 
 :root {
-    --scroll-area-viewport-ring-width: 3px;
-    --scroll-area-viewport-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
-    --scroll-area-scrollbar-padding: 1px;
-    --scroll-area-scrollbar-size: calc(var(--spacing) * 2.5);
-    --scroll-area-thumb-radius: 9999px;
-    --scroll-area-thumb-bg: var(--border);
+    --scroll-area-viewport-ring-width: var(--ring-scroll-focus-width);
+    --scroll-area-viewport-ring-color: var(--ring-scroll-focus-color);
+    --scroll-area-scrollbar-padding: var(--scrollbar-padding);
+    --scroll-area-scrollbar-size: var(--scrollbar-size);
+    --scroll-area-thumb-radius: var(--scrollbar-thumb-radius);
+    --scroll-area-thumb-bg: var(--surface-scroll-thumb);
 }

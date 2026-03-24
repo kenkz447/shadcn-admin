@@ -1,22 +1,22 @@
 /** Alert Dialog **/
 
 :root {
-    --alert-dialog-overlay-bg: color-mix(in oklab, black 50%, transparent);
+    --alert-dialog-overlay-bg: var(--surface-overlay-scrim);
 
     --alert-dialog-content-max-width: calc(100% - 2rem);
     --alert-dialog-content-max-width-sm: 20rem;
     --alert-dialog-content-max-width-default-sm: 32rem;
-    --alert-dialog-content-gap: calc(var(--spacing) * 4);
-    --alert-dialog-content-radius: var(--radius-lg);
-    --alert-dialog-content-border-color: var(--border);
-    --alert-dialog-content-padding: calc(var(--spacing) * 6);
+    --alert-dialog-content-gap: var(--panel-gap-lg);
+    --alert-dialog-content-radius: var(--panel-radius-lg);
+    --alert-dialog-content-border-color: var(--border-surface);
+    --alert-dialog-content-padding: var(--panel-padding-lg);
 
-    --alert-dialog-header-gap: calc(var(--spacing) * 1.5);
-    --alert-dialog-header-media-gap-x: calc(var(--spacing) * 6);
-    --alert-dialog-footer-gap: calc(var(--spacing) * 2);
+    --alert-dialog-header-gap: var(--space-1-5);
+    --alert-dialog-header-media-gap-x: var(--space-6);
+    --alert-dialog-footer-gap: var(--panel-gap-sm);
 
-    --alert-dialog-media-size: calc(var(--spacing) * 16);
-    --alert-dialog-media-margin-bottom: calc(var(--spacing) * 2);
-    --alert-dialog-media-radius: var(--radius-md);
-    --alert-dialog-media-icon-size: calc(var(--spacing) * 8);
+    --alert-dialog-media-size: var(--space-16);
+    --alert-dialog-media-margin-bottom: var(--space-2);
+    --alert-dialog-media-radius: var(--panel-radius-md);
+    --alert-dialog-media-icon-size: var(--space-8);
 }

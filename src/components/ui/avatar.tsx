@@ -44,7 +44,7 @@ function AvatarFallback({
     <AvatarPrimitive.Fallback
       data-slot="avatar-fallback"
       className={cn(
-        "flex size-full items-center justify-center rounded-(--avatar-fallback-radius) bg-muted text-sm text-muted-foreground group-data-[size=sm]/avatar:text-xs",
+        "flex size-full items-center justify-center rounded-(--avatar-fallback-radius) bg-(--avatar-fallback-bg) text-sm text-(--avatar-fallback-fg) group-data-[size=sm]/avatar:text-xs",
         className
       )}
       {...props}
@@ -57,7 +57,7 @@ function AvatarBadge({ className, ...props }: React.ComponentProps<"span">) {
     <span
       data-slot="avatar-badge"
       className={cn(
-        "absolute right-0 bottom-0 z-10 inline-flex items-center justify-center rounded-(--avatar-badge-radius) bg-primary text-primary-foreground ring-(length:--avatar-badge-ring-width) ring-(--avatar-badge-ring-color) select-none",
+        "absolute right-0 bottom-0 z-10 inline-flex items-center justify-center rounded-(--avatar-badge-radius) bg-(--avatar-badge-bg) text-(--avatar-badge-fg) ring-(length:--avatar-badge-ring-width) ring-(--avatar-badge-ring-color) select-none",
         "group-data-[size=sm]/avatar:size-(--avatar-badge-size-sm) group-data-[size=sm]/avatar:[&>svg]:hidden",
         "group-data-[size=default]/avatar:size-(--avatar-badge-size) group-data-[size=default]/avatar:[&>svg]:size-(--avatar-badge-icon-size)",
         "group-data-[size=lg]/avatar:size-(--avatar-badge-size-lg) group-data-[size=lg]/avatar:[&>svg]:size-(--avatar-badge-icon-size)",
@@ -89,7 +89,7 @@ function AvatarGroupCount({
     <div
       data-slot="avatar-group-count"
       className={cn(
-        "relative flex size-(--avatar-group-count-size) shrink-0 items-center justify-center rounded-(--avatar-group-count-radius) bg-muted text-sm text-muted-foreground ring-(length:--avatar-group-ring-width) ring-(--avatar-group-ring-color) group-has-data-[size=lg]/avatar-group:size-(--avatar-group-count-size-lg) group-has-data-[size=sm]/avatar-group:size-(--avatar-group-count-size-sm) [&>svg]:size-(--avatar-group-count-icon-size) group-has-data-[size=lg]/avatar-group:[&>svg]:size-(--avatar-group-count-icon-size-lg) group-has-data-[size=sm]/avatar-group:[&>svg]:size-(--avatar-group-count-icon-size-sm)",
+        "relative flex size-(--avatar-group-count-size) shrink-0 items-center justify-center rounded-(--avatar-group-count-radius) bg-(--avatar-fallback-bg) text-sm text-(--avatar-fallback-fg) ring-(length:--avatar-group-ring-width) ring-(--avatar-group-ring-color) group-has-data-[size=lg]/avatar-group:size-(--avatar-group-count-size-lg) group-has-data-[size=sm]/avatar-group:size-(--avatar-group-count-size-sm) [&>svg]:size-(--avatar-group-count-icon-size) group-has-data-[size=lg]/avatar-group:[&>svg]:size-(--avatar-group-count-icon-size-lg) group-has-data-[size=sm]/avatar-group:[&>svg]:size-(--avatar-group-count-icon-size-sm)",
         className
       )}
       {...props}

@@ -1,30 +1,26 @@
 /** Switch **/
 
 :root {
-    --switch-radius: 9999px;
+    --switch-radius: var(--selection-control-radius-full);
     --switch-border-color: transparent;
 
-    --switch-focus-border-color: var(--ring);
-    --switch-focus-ring-width: 3px;
-    --switch-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    --switch-focus-border-color: var(--border-selection-focus);
+    --switch-focus-ring-width: var(--ring-selection-focus-width);
+    --switch-focus-ring-color: var(--ring-selection-focus-color);
 
-    --switch-track-height: 1.15rem;
-    --switch-track-width: calc(var(--spacing) * 8);
-    --switch-track-height-sm: calc(var(--spacing) * 3.5);
-    --switch-track-width-sm: calc(var(--spacing) * 6);
+    --switch-track-height: var(--selection-switch-track-height-md);
+    --switch-track-width: var(--selection-switch-track-width-md);
+    --switch-track-height-sm: var(--selection-switch-track-height-sm);
+    --switch-track-width-sm: var(--selection-switch-track-width-sm);
 
-    --switch-track-bg-checked: var(--primary);
-    --switch-track-bg-unchecked: var(--input);
+    --switch-track-bg-checked: var(--surface-selection-checked-bg);
+    --switch-track-bg-unchecked: var(--surface-switch-track-unchecked);
 
-    --switch-thumb-size: calc(var(--spacing) * 4);
-    --switch-thumb-size-sm: calc(var(--spacing) * 3);
-    --switch-thumb-bg: var(--background);
-    --switch-thumb-bg-checked-dark: var(--primary-foreground);
-    --switch-thumb-bg-unchecked-dark: var(--foreground);
+    --switch-thumb-size: var(--selection-switch-thumb-size-md);
+    --switch-thumb-size-sm: var(--selection-switch-thumb-size-sm);
+    --switch-thumb-bg: var(--surface-switch-thumb);
+    --switch-thumb-bg-checked: var(--surface-switch-thumb);
+    --switch-thumb-bg-unchecked: var(--surface-switch-thumb);
     --switch-thumb-translate-checked: calc(100% - 2px);
     --switch-thumb-translate-unchecked: 0px;
-}
-
-.dark {
-    --switch-track-bg-unchecked: color-mix(in oklab, var(--input) 80%, transparent);
 }

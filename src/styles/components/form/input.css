@@ -1,24 +1,19 @@
 /** Input **/
 
 :root {
-    --input-height: calc(var(--spacing) * 9);
-    --input-radius: var(--radius-md);
-    --input-padding-x: calc(var(--spacing) * 3);
-    --input-padding-y: calc(var(--spacing) * 1);
-    --input-border-color: var(--input);
-    --input-bg: transparent;
-    --input-placeholder-color: var(--muted-foreground);
-    --input-file-height: calc(var(--spacing) * 7);
+    --input-height: var(--field-height-md);
+    --input-radius: var(--field-radius);
+    --input-padding-x: var(--field-padding-x);
+    --input-padding-y: var(--field-padding-y);
+    --input-border-color: var(--border-field);
+    --input-bg: var(--surface-field-bg);
+    --input-placeholder-color: var(--text-field-placeholder);
+    --input-file-height: var(--field-height-sm);
 
-    --input-focus-border-color: var(--ring);
-    --input-focus-ring-width: 3px;
-    --input-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    --input-focus-border-color: var(--border-field-focus);
+    --input-focus-ring-width: var(--ring-field-focus-width);
+    --input-focus-ring-color: var(--ring-field-focus-color);
 
-    --input-invalid-border-color: var(--destructive);
-    --input-invalid-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
-}
-
-.dark {
-    --input-bg: color-mix(in oklab, var(--input) 30%, transparent);
-    --input-invalid-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+    --input-invalid-border-color: var(--border-field-invalid);
+    --input-invalid-ring-color: var(--ring-field-invalid-color);
 }

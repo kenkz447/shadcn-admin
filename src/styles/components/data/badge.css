@@ -1,26 +1,40 @@
 /** Badge **/
 
 :root {
-    --badge-gap: calc(var(--spacing) * 1);
-    --badge-radius: 9999px;
+    --badge-gap: var(--space-1);
+    --badge-radius: var(--selection-control-radius-full);
     --badge-border-color: transparent;
-    --badge-padding-x: calc(var(--spacing) * 2);
+    --badge-padding-x: var(--space-2);
     --badge-padding-y: calc(var(--spacing) * 0.5);
-    --badge-icon-size: calc(var(--spacing) * 3);
+    --badge-icon-size: var(--icon-xs);
 
-    --badge-focus-border-color: var(--ring);
-    --badge-focus-ring-width: 3px;
-    --badge-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    --badge-focus-border-color: var(--border-field-focus);
+    --badge-focus-ring-width: var(--ring-focus-width);
+    --badge-focus-ring-color: var(--ring-focus-color);
 
-    --badge-invalid-border-color: var(--destructive);
-    --badge-invalid-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
-    --badge-invalid-ring-color-dark: color-mix(in oklab, var(--destructive) 40%, transparent);
+    --badge-invalid-border-color: var(--border-field-invalid);
+    --badge-invalid-ring-color: var(--ring-field-invalid-color);
 
-    --badge-destructive-focus-ring: color-mix(in oklab, var(--destructive) 20%, transparent);
-    --badge-destructive-focus-ring-dark: color-mix(in oklab, var(--destructive) 40%, transparent);
-}
+    --badge-primary-bg: var(--surface-brand-solid);
+    --badge-primary-fg: var(--text-on-brand-solid);
+    --badge-primary-hover-bg: var(--surface-brand-solid-hover);
 
-.dark {
-    --badge-invalid-ring-color: var(--badge-invalid-ring-color-dark);
-    --badge-destructive-focus-ring: var(--badge-destructive-focus-ring-dark);
+    --badge-secondary-bg: var(--surface-secondary-solid);
+    --badge-secondary-fg: var(--text-on-secondary-solid);
+    --badge-secondary-hover-bg: var(--surface-secondary-solid-hover);
+
+    --badge-destructive-bg: var(--surface-danger-solid);
+    --badge-destructive-fg: var(--text-on-danger-solid);
+    --badge-destructive-hover-bg: var(--surface-danger-solid-hover);
+    --badge-destructive-focus-ring: var(--ring-destructive-soft-color);
+
+    --badge-outline-border-color: var(--border-surface);
+    --badge-outline-fg: var(--text-strong);
+    --badge-outline-hover-bg: var(--surface-accent-subtle);
+    --badge-outline-hover-fg: var(--text-on-accent-subtle);
+
+    --badge-ghost-hover-bg: var(--surface-accent-subtle);
+    --badge-ghost-hover-fg: var(--text-on-accent-subtle);
+
+    --badge-link-fg: var(--text-link-brand);
 }

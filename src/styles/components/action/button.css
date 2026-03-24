@@ -1,77 +1,75 @@
 /** Button **/
 
 :root {
-	--button-radius: var(--radius-lg);
-	--button-radius-xs: min(var(--radius-md), 10px);
-	--button-radius-sm: min(var(--radius-md), 12px);
-	--button-group-radius: var(--radius-lg);
+	--button-radius: var(--radius-control-lg);
+	--button-radius-xs: min(var(--radius-control-md), 10px);
+	--button-radius-sm: min(var(--radius-control-md), 12px);
+	--button-group-radius: var(--radius-control-lg);
 
-	--button-text-size: 0.875rem;
-	--button-text-size-xs: 0.75rem;
-	--button-text-size-sm: 0.8rem;
+	--button-text-size: var(--text-sm);
+	--button-text-size-xs: var(--text-xs);
+	--button-text-size-sm: var(--text-ui-sm);
 
-	--button-focus-ring-width: 3px;
-	--button-invalid-ring-width: 3px;
-	--button-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
-	--button-invalid-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
-	--button-invalid-border-color: var(--destructive);
+	--button-focus-ring-width: var(--ring-focus-width);
+	--button-invalid-ring-width: var(--ring-focus-width);
+	--button-focus-ring-color: var(--ring-focus-color);
+	--button-invalid-ring-color: var(--ring-invalid-color);
+	--button-invalid-border-color: var(--border-invalid);
 
-	--button-icon-size: calc(var(--spacing) * 4);
-	--button-icon-size-xs: calc(var(--spacing) * 3);
-	--button-icon-size-sm: calc(var(--spacing) * 3.5);
+	--button-icon-size: var(--icon-md);
+	--button-icon-size-xs: var(--icon-xs);
+	--button-icon-size-sm: var(--icon-sm);
 
-	--button-height: calc(var(--spacing) * 8);
-	--button-height-xs: calc(var(--spacing) * 6);
-	--button-height-sm: calc(var(--spacing) * 7);
-	--button-height-lg: calc(var(--spacing) * 9);
+	--button-height: var(--control-height-md);
+	--button-height-xs: var(--control-height-xs);
+	--button-height-sm: var(--control-height-sm);
+	--button-height-lg: var(--control-height-lg);
 
-	--button-gap: calc(var(--spacing) * 1.5);
-	--button-gap-xs: calc(var(--spacing) * 1);
-	--button-gap-sm: calc(var(--spacing) * 1);
-	--button-gap-lg: calc(var(--spacing) * 1.5);
+	--button-gap: var(--control-gap-sm);
+	--button-gap-xs: var(--control-gap-xs);
+	--button-gap-sm: var(--control-gap-xs);
+	--button-gap-lg: var(--control-gap-sm);
 
-	--button-padding-x: calc(var(--spacing) * 2.5);
-	--button-padding-x-xs: calc(var(--spacing) * 2);
-	--button-padding-x-sm: calc(var(--spacing) * 2.5);
-	--button-padding-x-lg: calc(var(--spacing) * 2.5);
+	--button-padding-x: var(--control-padding-x-sm);
+	--button-padding-x-xs: var(--control-padding-x-xs);
+	--button-padding-x-sm: var(--control-padding-x-sm);
+	--button-padding-x-lg: var(--control-padding-x-sm);
 
-	--button-padding-inline-start: calc(var(--spacing) * 2);
-	--button-padding-inline-end: calc(var(--spacing) * 2);
-	--button-padding-inline-start-xs: calc(var(--spacing) * 1.5);
-	--button-padding-inline-end-xs: calc(var(--spacing) * 1.5);
-	--button-padding-inline-start-sm: calc(var(--spacing) * 1.5);
-	--button-padding-inline-end-sm: calc(var(--spacing) * 1.5);
-	--button-padding-inline-start-lg: calc(var(--spacing) * 3);
-	--button-padding-inline-end-lg: calc(var(--spacing) * 3);
+	--button-padding-inline-start: var(--space-2);
+	--button-padding-inline-end: var(--space-2);
+	--button-padding-inline-start-xs: var(--space-1-5);
+	--button-padding-inline-end-xs: var(--space-1-5);
+	--button-padding-inline-start-sm: var(--space-1-5);
+	--button-padding-inline-end-sm: var(--space-1-5);
+	--button-padding-inline-start-lg: var(--space-3);
+	--button-padding-inline-end-lg: var(--space-3);
 
-	--button-size-icon: calc(var(--spacing) * 8);
-	--button-size-icon-xs: calc(var(--spacing) * 6);
-	--button-size-icon-sm: calc(var(--spacing) * 7);
-	--button-size-icon-lg: calc(var(--spacing) * 9);
+	--button-size-icon: var(--control-size-md);
+	--button-size-icon-xs: var(--control-size-xs);
+	--button-size-icon-sm: var(--control-size-sm);
+	--button-size-icon-lg: var(--control-size-lg);
 
-	--button-outline-bg: var(--background);
+	--button-primary-bg: var(--surface-brand-solid);
+	--button-primary-fg: var(--text-on-brand-solid);
+	--button-primary-hover-bg: var(--surface-brand-solid-hover);
+
+	--button-secondary-bg: var(--surface-secondary-solid);
+	--button-secondary-fg: var(--text-on-secondary-solid);
+	--button-secondary-hover-bg: var(--surface-secondary-solid-hover);
+
+	--button-link-fg: var(--text-link-brand);
+
+	--button-outline-bg: var(--surface-control-bg);
 	--button-outline-border-color: var(--border);
-	--button-outline-hover-bg: var(--muted);
+	--button-outline-hover-bg: var(--surface-muted-hover-bg);
+	--button-outline-hover-fg: var(--text-strong);
 
-	--button-ghost-hover-bg: var(--muted);
+	--button-ghost-hover-bg: var(--surface-muted-hover-bg);
+	--button-ghost-hover-fg: var(--text-strong);
 
-	--button-destructive-bg: color-mix(in oklab, var(--destructive) 10%, transparent);
-	--button-destructive-hover-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
-	--button-destructive-focus-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
-	--button-destructive-focus-border-color: color-mix(in oklab, var(--destructive) 40%, transparent);
-}
-
-.dark {
-	--button-invalid-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
-	--button-invalid-border-color: color-mix(in oklab, var(--destructive) 50%, transparent);
-
-	--button-outline-bg: color-mix(in oklab, var(--input) 30%, transparent);
-	--button-outline-border-color: var(--input);
-	--button-outline-hover-bg: color-mix(in oklab, var(--input) 50%, transparent);
-
-	--button-ghost-hover-bg: color-mix(in oklab, var(--muted) 50%, transparent);
-
-	--button-destructive-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
-	--button-destructive-hover-bg: color-mix(in oklab, var(--destructive) 30%, transparent);
-	--button-destructive-focus-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+	--button-destructive-bg: var(--surface-destructive-soft-bg);
+	--button-destructive-hover-bg: var(--surface-destructive-soft-hover-bg);
+	--button-destructive-fg: var(--text-danger);
+	--button-destructive-focus-ring-color: var(--ring-destructive-soft-color);
+	--button-destructive-focus-border-color: var(--border-invalid-strong);
 }

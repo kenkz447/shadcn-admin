@@ -62,7 +62,7 @@ function SelectContent({
       <SelectPrimitive.Content
         data-slot="select-content"
         className={cn(
-          "relative z-50 max-h-(--radix-select-content-available-height) min-w-(--select-content-min-width) origin-(--radix-select-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-(--select-content-radius) border border-(--select-content-border-color) bg-popover text-popover-foreground shadow-md data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95",
+          "relative z-50 max-h-(--radix-select-content-available-height) min-w-(--select-content-min-width) origin-(--radix-select-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-(--select-content-radius) border border-(--select-content-border-color) bg-(--select-content-bg) text-(--select-content-fg) shadow-md data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95",
           position === "popper" &&
             "data-[side=bottom]:translate-y-(--select-content-offset) data-[side=left]:translate-x-(--select-content-offset-negative) data-[side=right]:translate-x-(--select-content-offset) data-[side=top]:translate-y-(--select-content-offset-negative)",
           className
@@ -95,7 +95,7 @@ function SelectLabel({
     <SelectPrimitive.Label
       data-slot="select-label"
       className={cn(
-        "px-(--select-label-padding-x) py-(--select-label-padding-y) text-xs text-muted-foreground",
+        "px-(--select-label-padding-x) py-(--select-label-padding-y) text-xs text-(--select-label-fg)",
         className
       )}
       {...props}
@@ -112,7 +112,7 @@ function SelectItem({
     <SelectPrimitive.Item
       data-slot="select-item"
       className={cn(
-        "relative flex w-full cursor-default items-center gap-(--select-item-gap) rounded-(--select-item-radius) py-(--select-item-padding-y) pr-(--select-item-padding-right) pl-(--select-item-padding-left) text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--select-icon-size) [&_svg:not([class*='text-'])]:text-muted-foreground *:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-(--select-item-gap)",
+        "relative flex w-full cursor-default items-center gap-(--select-item-gap) rounded-(--select-item-radius) py-(--select-item-padding-y) pr-(--select-item-padding-right) pl-(--select-item-padding-left) text-sm outline-hidden select-none focus:bg-(--select-item-focus-bg) focus:text-(--select-item-focus-fg) data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--select-icon-size) [&_svg:not([class*='text-'])]:text-(--select-item-icon-fg) *:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-(--select-item-gap)",
         className
       )}
       {...props}

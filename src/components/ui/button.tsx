@@ -9,12 +9,12 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
-        outline: "border-(--button-outline-border-color) bg-(--button-outline-bg) hover:bg-(--button-outline-hover-bg) hover:text-foreground aria-expanded:bg-(--button-outline-hover-bg) aria-expanded:text-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
-        ghost: "hover:bg-(--button-ghost-hover-bg) hover:text-foreground aria-expanded:bg-(--button-ghost-hover-bg) aria-expanded:text-foreground",
-        destructive: "bg-(--button-destructive-bg) hover:bg-(--button-destructive-hover-bg) focus-visible:ring-(--button-destructive-focus-ring-color) text-destructive focus-visible:border-(--button-destructive-focus-border-color)",
-        link: "text-primary underline-offset-4 hover:underline",
+        default: "bg-(--button-primary-bg) text-(--button-primary-fg) [a]:hover:bg-(--button-primary-hover-bg)",
+        outline: "border-(--button-outline-border-color) bg-(--button-outline-bg) hover:bg-(--button-outline-hover-bg) hover:text-(--button-outline-hover-fg) aria-expanded:bg-(--button-outline-hover-bg) aria-expanded:text-(--button-outline-hover-fg)",
+        secondary: "bg-(--button-secondary-bg) text-(--button-secondary-fg) hover:bg-(--button-secondary-hover-bg) aria-expanded:bg-(--button-secondary-bg) aria-expanded:text-(--button-secondary-fg)",
+        ghost: "hover:bg-(--button-ghost-hover-bg) hover:text-(--button-ghost-hover-fg) aria-expanded:bg-(--button-ghost-hover-bg) aria-expanded:text-(--button-ghost-hover-fg)",
+        destructive: "bg-(--button-destructive-bg) hover:bg-(--button-destructive-hover-bg) focus-visible:ring-(--button-destructive-focus-ring-color) text-(--button-destructive-fg) focus-visible:border-(--button-destructive-focus-border-color)",
+        link: "text-(--button-link-fg) underline-offset-4 hover:underline",
       },
       size: {
         default:

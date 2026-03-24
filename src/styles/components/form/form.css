@@ -2,4 +2,8 @@
 
 :root {
     --form-item-gap: calc(var(--spacing) * 2);
+
+    --form-label-error-fg: var(--text-danger);
+    --form-description-fg: var(--text-muted-default);
+    --form-message-fg: var(--text-danger);
 }

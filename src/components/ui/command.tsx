@@ -21,7 +21,7 @@ function Command({
     <CommandPrimitive
       data-slot="command"
       className={cn(
-        "flex h-full w-full flex-col overflow-hidden rounded-(--command-radius) bg-popover text-popover-foreground",
+        "flex h-full w-full flex-col overflow-hidden rounded-(--command-radius) bg-(--command-bg) text-(--command-fg)",
         className
       )}
       {...props}
@@ -55,7 +55,7 @@ function CommandDialog({
         )}
         showCloseButton={showCloseButton}
       >
-        <Command className="**:data-[slot=command-input-wrapper]:h-(--command-dialog-input-wrapper-height) **:[[cmdk-group-heading]]:px-(--command-dialog-group-heading-padding-x) **:[[cmdk-group-heading]]:font-medium **:[[cmdk-group-heading]]:text-muted-foreground **:[[cmdk-group]]:px-(--command-dialog-group-padding-x) [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-input-wrapper]_svg]:h-(--command-dialog-input-icon-size) [&_[cmdk-input-wrapper]_svg]:w-(--command-dialog-input-icon-size) **:[[cmdk-input]]:h-(--command-dialog-input-height) **:[[cmdk-item]]:px-(--command-dialog-item-padding-x) **:[[cmdk-item]]:py-(--command-dialog-item-padding-y) [&_[cmdk-item]_svg]:h-(--command-dialog-item-icon-size) [&_[cmdk-item]_svg]:w-(--command-dialog-item-icon-size)">
+        <Command className="**:data-[slot=command-input-wrapper]:h-(--command-dialog-input-wrapper-height) **:[[cmdk-group-heading]]:px-(--command-dialog-group-heading-padding-x) **:[[cmdk-group-heading]]:font-medium **:[[cmdk-group-heading]]:text-(--command-muted-fg) **:[[cmdk-group]]:px-(--command-dialog-group-padding-x) [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-input-wrapper]_svg]:h-(--command-dialog-input-icon-size) [&_[cmdk-input-wrapper]_svg]:w-(--command-dialog-input-icon-size) **:[[cmdk-input]]:h-(--command-dialog-input-height) **:[[cmdk-item]]:px-(--command-dialog-item-padding-x) **:[[cmdk-item]]:py-(--command-dialog-item-padding-y) [&_[cmdk-item]_svg]:h-(--command-dialog-item-icon-size) [&_[cmdk-item]_svg]:w-(--command-dialog-item-icon-size)">
           {children}
         </Command>
       </DialogContent>
@@ -76,7 +76,7 @@ function CommandInput({
       <CommandPrimitive.Input
         data-slot="command-input"
         className={cn(
-          "flex h-(--command-input-height) w-full rounded-(--command-radius) bg-transparent py-(--command-input-padding-y) text-sm outline-hidden placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50",
+          "flex h-(--command-input-height) w-full rounded-(--command-radius) bg-transparent py-(--command-input-padding-y) text-sm outline-hidden placeholder:text-(--command-muted-fg) disabled:cursor-not-allowed disabled:opacity-50",
           className
         )}
         {...props}
@@ -121,7 +121,7 @@ function CommandGroup({
     <CommandPrimitive.Group
       data-slot="command-group"
       className={cn(
-        "overflow-hidden p-(--command-group-padding) text-foreground **:[[cmdk-group-heading]]:px-(--command-group-heading-padding-x) **:[[cmdk-group-heading]]:py-(--command-group-heading-padding-y) **:[[cmdk-group-heading]]:text-xs **:[[cmdk-group-heading]]:font-medium **:[[cmdk-group-heading]]:text-muted-foreground",
+        "overflow-hidden p-(--command-group-padding) text-(--command-fg) **:[[cmdk-group-heading]]:px-(--command-group-heading-padding-x) **:[[cmdk-group-heading]]:py-(--command-group-heading-padding-y) **:[[cmdk-group-heading]]:text-xs **:[[cmdk-group-heading]]:font-medium **:[[cmdk-group-heading]]:text-(--command-muted-fg)",
         className
       )}
       {...props}
@@ -153,7 +153,7 @@ function CommandItem({
     <CommandPrimitive.Item
       data-slot="command-item"
       className={cn(
-        "relative flex cursor-default items-center gap-(--command-item-gap) rounded-(--command-item-radius) px-(--command-item-padding-x) py-(--command-item-padding-y) text-sm outline-hidden select-none data-disabled:pointer-events-none data-disabled:opacity-50 data-selected:bg-accent data-selected:text-accent-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--command-item-icon-size) [&_svg:not([class*='text-'])]:text-muted-foreground",
+        "relative flex cursor-default items-center gap-(--command-item-gap) rounded-(--command-item-radius) px-(--command-item-padding-x) py-(--command-item-padding-y) text-sm outline-hidden select-none data-disabled:pointer-events-none data-disabled:opacity-50 data-selected:bg-(--command-item-active-bg) data-selected:text-(--command-item-active-fg) [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--command-item-icon-size) [&_svg:not([class*='text-'])]:text-(--command-muted-fg)",
         className
       )}
       {...props}
@@ -169,7 +169,7 @@ function CommandShortcut({
     <span
       data-slot="command-shortcut"
       className={cn(
-        "ml-auto text-xs tracking-widest text-muted-foreground",
+        "ml-auto text-xs tracking-widest text-(--command-muted-fg)",
         className
       )}
       {...props}

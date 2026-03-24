@@ -1,5 +1,6 @@
 /** Skeleton **/
 
 :root {
-    --skeleton-radius: var(--radius-md);
+    --skeleton-radius: var(--field-radius);
+    --skeleton-bg: var(--surface-accent-subtle);
 }
