@@ -1,7 +1,7 @@
 /** Dialog **/
 
 :root {
-    --dialog-overlay-bg: var(--overlay-surface-scrim);
+    --dialog-overlay-bg: var(--surface-overlay-scrim);
 
     --dialog-content-max-width: calc(100% - 2rem);
     --dialog-content-max-width-sm: 32rem;

@@ -1,162 +1,162 @@
 /** Shared semantic tokens **/
 
+
 :root {
-	/* Internal tone derivations */
-	/* Grammar: --tone-{role}-{family}-{emphasis}[-state] */
-	--tone-surface-brand-solid-hover: color-mix(in oklab, var(--primary) 80%, transparent);
-	--tone-surface-secondary-solid-hover: color-mix(in oklab, var(--secondary) 80%, transparent);
-	--tone-surface-danger-solid: var(--destructive);
-	--tone-surface-danger-solid-hover: color-mix(in oklab, var(--destructive) 90%, transparent);
-	--tone-surface-danger-soft: color-mix(in oklab, var(--destructive) 10%, transparent);
-	--tone-surface-danger-soft-hover: color-mix(in oklab, var(--destructive) 20%, transparent);
+	/* Internal Tone Derivations */
+	--tone-border-danger-default: var(--destructive);
+	--tone-border-danger-strong: color-mix(in oklab, var(--destructive) 40%, transparent);
 	--tone-fg-danger-soft: color-mix(in oklab, var(--destructive) 90%, transparent);
 	--tone-fg-muted-strong: color-mix(in oklab, var(--foreground) 60%, transparent);
-	--tone-surface-muted-soft: color-mix(in oklab, var(--muted) 50%, transparent);
-	--tone-surface-muted-soft-hover: var(--muted);
-	--tone-surface-input-soft: transparent;
-	--tone-surface-input-soft-hover: transparent;
-	--tone-surface-input-strong: var(--input);
-	--tone-surface-overlay-scrim: color-mix(in oklab, black 50%, transparent);
-	--tone-border-danger-strong: color-mix(in oklab, var(--destructive) 40%, transparent);
-	--tone-border-danger-default: var(--destructive);
-	--tone-ring-focus-default: color-mix(in oklab, var(--ring) 50%, transparent);
 	--tone-ring-danger-default: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--tone-ring-focus-default: color-mix(in oklab, var(--ring) 50%, transparent);
+	--tone-surface-brand-solid-hover: color-mix(in oklab, var(--primary) 80%, transparent);
+	--tone-surface-danger-soft-hover: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--tone-surface-danger-soft: color-mix(in oklab, var(--destructive) 10%, transparent);
+	--tone-surface-danger-solid-hover: color-mix(in oklab, var(--destructive) 90%, transparent);
+	--tone-surface-danger-solid: var(--destructive);
+	--tone-surface-input-soft-hover: transparent;
+	--tone-surface-input-soft: transparent;
+	--tone-surface-input-strong: var(--input);
+	--tone-surface-muted-soft-hover: var(--muted);
+	--tone-surface-muted-soft: color-mix(in oklab, var(--muted) 50%, transparent);
+	--tone-surface-overlay-scrim: color-mix(in oklab, black 50%, transparent);
+	--tone-surface-secondary-solid-hover: color-mix(in oklab, var(--secondary) 80%, transparent);
 
-	/* Brand and feedback surfaces */
-	--surface-brand-solid: var(--primary);
-	--surface-brand-solid-hover: var(--tone-surface-brand-solid-hover);
-	--fg-brand-solid-contrast: var(--primary-foreground);
-
-	--surface-secondary-solid: var(--secondary);
-	--surface-secondary-solid-hover: var(--tone-surface-secondary-solid-hover);
-	--fg-secondary-solid-contrast: var(--secondary-foreground);
-
-	--surface-accent-subtle: var(--accent);
+	/* Core Foreground (Text/Icon) */
 	--fg-accent-subtle-contrast: var(--accent-foreground);
-
-	--surface-danger-solid: var(--tone-surface-danger-solid);
-	--surface-danger-solid-hover: var(--tone-surface-danger-solid-hover);
-	--surface-danger-soft: var(--tone-surface-danger-soft);
-	--surface-danger-soft-hover: var(--tone-surface-danger-soft-hover);
-	--fg-danger-solid-contrast: white;
-
-	/* Core text and surface roles */
 	--fg-brand-link: var(--primary);
-	--fg-danger: var(--destructive);
+	--fg-brand-solid-contrast: var(--primary-foreground);
 	--fg-danger-soft: var(--tone-fg-danger-soft);
-	--fg-primary: var(--foreground);
+	--fg-danger-solid-contrast: white;
+	--fg-danger: var(--destructive);
 	--fg-muted-strong: var(--tone-fg-muted-strong);
 	--fg-muted: var(--muted-foreground);
-	--surface-muted: var(--muted);
-	--surface-muted-soft: var(--tone-surface-muted-soft);
+	--fg-popover-contrast: var(--popover-foreground);
+	--fg-primary: var(--foreground);
+	--fg-secondary-solid-contrast: var(--secondary-foreground);
+	--field-placeholder-fg: var(--placeholder-fg);
+	--placeholder-fg: var(--muted-foreground);
+
+	/* Core Surfaces */
+	--danger-surface-soft-hover: var(--surface-danger-soft-hover);
+	--danger-surface-soft: var(--surface-danger-soft);
+	--muted-surface-hover: var(--surface-muted-soft-hover);
+	--surface-overlay-scrim: var(--tone-surface-overlay-scrim);
+	--surface-accent-subtle: var(--accent);
+	--surface-border-color: var(--border);
+	--surface-brand-solid-hover: var(--tone-surface-brand-solid-hover);
+	--surface-brand-solid: var(--primary);
+	--surface-danger-soft-hover: var(--tone-surface-danger-soft-hover);
+	--surface-danger-soft: var(--tone-surface-danger-soft);
+	--surface-danger-solid-hover: var(--tone-surface-danger-solid-hover);
+	--surface-danger-solid: var(--tone-surface-danger-solid);
+	--surface-input-soft-hover: var(--tone-surface-input-soft-hover);
+	--surface-input-soft: var(--tone-surface-input-soft);
+	--surface-input-strong: var(--tone-surface-input-strong);
 	--surface-muted-soft-hover: var(--tone-surface-muted-soft-hover);
+	--surface-muted-soft: var(--tone-surface-muted-soft);
+	--surface-muted: var(--muted);
 	--surface-page: var(--background);
 	--surface-popover: var(--popover);
-	--fg-popover-contrast: var(--popover-foreground);
-	--surface-input-soft: var(--tone-surface-input-soft);
-	--surface-input-soft-hover: var(--tone-surface-input-soft-hover);
-	--surface-input-strong: var(--tone-surface-input-strong);
+	--surface-secondary-solid-hover: var(--tone-surface-secondary-solid-hover);
+	--surface-secondary-solid: var(--secondary);
 
-	/* Context display roles */
-	--menu-fg-muted: var(--fg-muted);
-	--nav-list-surface: var(--surface-muted);
-	--nav-list-fg: var(--fg-muted);
-	--nav-item-hover-fg: var(--fg-primary);
-	--nav-item-active-fg: var(--fg-primary);
-	--nav-indicator-fg: var(--fg-primary);
-
-	/* Context interaction roles */
-	--menu-item-surface-destructive-focus: var(--surface-danger-soft);
-	--menu-item-destructive-focus-fg: var(--fg-danger);
-	--menu-item-surface-active: var(--surface-accent-subtle);
-	--menu-item-active-fg: var(--fg-accent-subtle-contrast);
-	--data-row-surface-hover: var(--surface-muted-soft-hover);
-	--data-row-surface-selected: var(--surface-muted);
-	--nav-tab-surface-active: var(--background);
-	--nav-tab-border-active: transparent;
-	--nav-border-focus: var(--ring);
-
-	/* Data display roles */
-	--data-footer-surface: var(--surface-muted-soft);
-	--data-caption-fg: var(--fg-muted);
-	--data-heading-fg: var(--fg-primary);
-
-
-	/* Shared state tokens (Merged) */
-	/* Generic surfaces and interaction recipes */
-	--control-surface: var(--surface-input-soft);
-	--control-surface-hover: var(--surface-input-soft-hover);
-	--muted-surface-hover: var(--surface-muted-soft-hover);
-	--danger-surface-soft: var(--surface-danger-soft);
-	--danger-surface-soft-hover: var(--surface-danger-soft-hover);
-	--overlay-surface-scrim: var(--tone-surface-overlay-scrim);
-
-	/* Border roles derived from state */
-	--control-border-color: var(--input);
-	--invalid-border-strong: var(--tone-border-danger-strong);
-	--invalid-border-color: var(--tone-border-danger-default);
-	--field-border-color: var(--control-border-color);
-	--surface-border-color: var(--border);
-
-	/* Placeholder and field state */
-	--placeholder-fg: var(--muted-foreground);
-	--field-placeholder-fg: var(--placeholder-fg);
-
-	/* Focus and invalid recipes */
-	--focus-ring-width: 3px;
-	--focus-ring-color: var(--tone-ring-focus-default);
-	--invalid-ring-color: var(--tone-ring-danger-default);
+	/* Core Borders & Rings */
+	--avatar-ring-on-surface: var(--background);
 	--danger-soft-ring-color: var(--tone-ring-danger-default);
+	--focus-ring-color: var(--tone-ring-focus-default);
+	--focus-ring-width-sm: 2px;
+	--focus-ring-width: 3px;
+	--invalid-border-color: var(--tone-border-danger-default);
+	--invalid-border-strong: var(--tone-border-danger-strong);
+	--invalid-ring-color: var(--tone-ring-danger-default);
 
-	/* Field */
-	--field-surface: var(--control-surface);
-	--field-surface-hover: var(--control-surface-hover);
+	/* Controls & Fields */
+	--control-border-color: var(--input);
+	--control-surface-hover: var(--surface-input-soft-hover);
+	--control-surface: var(--surface-input-soft);
+	--field-border-color: var(--control-border-color);
 	--field-border-focus: var(--ring);
 	--field-border-invalid: var(--invalid-border-color);
-	--field-ring-focus-width: var(--focus-ring-width);
 	--field-ring-focus-color: var(--focus-ring-color);
+	--field-ring-focus-width: var(--focus-ring-width);
 	--field-ring-invalid-color: var(--invalid-ring-color);
+	--field-surface-hover: var(--control-surface-hover);
+	--field-surface: var(--control-surface);
 
-	/* Selection controls */
-	--selection-surface: var(--field-surface);
+	/* Controls: Selection */
+	--selection-border-checked: var(--surface-brand-solid);
 	--selection-border-color: var(--field-border-color);
 	--selection-border-focus: var(--field-border-focus);
 	--selection-border-invalid: var(--field-border-invalid);
-	--selection-ring-focus-width: var(--field-ring-focus-width);
+	--selection-brand-fg: var(--fg-brand-link);
+	--selection-checked-fg: var(--fg-brand-solid-contrast);
 	--selection-ring-focus-color: var(--field-ring-focus-color);
+	--selection-ring-focus-width: var(--field-ring-focus-width);
 	--selection-ring-invalid-color: var(--field-ring-invalid-color);
 	--selection-surface-checked: var(--surface-brand-solid);
-	--selection-border-checked: var(--surface-brand-solid);
-	--selection-checked-fg: var(--fg-brand-solid-contrast);
-	--selection-brand-fg: var(--fg-brand-link);
-	--switch-track-surface-unchecked: var(--surface-input-strong);
-	--switch-thumb-surface: var(--background);
+	--selection-surface: var(--field-surface);
+
+	/* Controls: Switch */
 	--switch-thumb-surface-checked-dark: var(--primary-foreground);
 	--switch-thumb-surface-unchecked-dark: var(--foreground);
-	--focus-ring-width-sm: 2px;
+	--switch-thumb-surface: var(--background);
+	--switch-track-surface-unchecked: var(--surface-input-strong);
 
-	/* Scroll and divider */
-	--scroll-focus-ring-width: var(--focus-ring-width);
-	--scroll-focus-ring-color: var(--focus-ring-color);
-	--scroll-thumb-surface: var(--border);
+	/* Component: Menu */
+	--menu-fg-muted: var(--fg-muted);
+	--menu-item-active-fg: var(--fg-accent-subtle-contrast);
+	--menu-item-destructive-focus-fg: var(--fg-danger);
+	--menu-item-surface-active: var(--surface-accent-subtle);
+	--menu-item-surface-destructive-focus: var(--surface-danger-soft);
+
+	/* Component: Navigation */
+	--nav-border-focus: var(--ring);
+	--nav-indicator-fg: var(--fg-primary);
+	--nav-item-active-fg: var(--fg-primary);
+	--nav-item-hover-fg: var(--fg-primary);
+	--nav-list-fg: var(--fg-muted);
+	--nav-list-surface: var(--surface-muted);
+	--nav-tab-border-active: transparent;
+	--nav-tab-surface-active: var(--background);
+
+	/* Component: Data Display */
+	--data-caption-fg: var(--fg-muted);
+	--data-footer-surface: var(--surface-muted-soft);
+	--data-heading-fg: var(--fg-primary);
+	--data-row-surface-hover: var(--surface-muted-soft-hover);
+	--data-row-surface-selected: var(--surface-muted);
+
+	/* Other Base Variables */
 	--divider-surface: var(--surface-border-color);
-	--avatar-ring-on-surface: var(--background);
+	--scroll-focus-ring-color: var(--focus-ring-color);
+	--scroll-focus-ring-width: var(--focus-ring-width);
+	--scroll-thumb-surface: var(--border);
 }
 
+
+
 .dark {
-	--tone-surface-danger-solid: color-mix(in oklab, var(--destructive) 60%, transparent);
-	--tone-surface-danger-soft: color-mix(in oklab, var(--destructive) 20%, transparent);
-	--tone-surface-danger-soft-hover: color-mix(in oklab, var(--destructive) 30%, transparent);
-	--tone-surface-muted-soft: color-mix(in oklab, var(--muted) 50%, transparent);
-	--tone-surface-muted-soft-hover: color-mix(in oklab, var(--muted) 50%, transparent);
-	--tone-surface-input-soft: color-mix(in oklab, var(--input) 30%, transparent);
-	--tone-surface-input-soft-hover: color-mix(in oklab, var(--input) 50%, transparent);
-	--tone-surface-input-strong: color-mix(in oklab, var(--input) 80%, transparent);
+	/* Tones */
 	--tone-border-danger-default: color-mix(in oklab, var(--destructive) 50%, transparent);
 	--tone-ring-danger-default: color-mix(in oklab, var(--destructive) 40%, transparent);
-	--nav-tab-surface-active: var(--surface-input-soft);
+	--tone-surface-danger-soft-hover: color-mix(in oklab, var(--destructive) 30%, transparent);
+	--tone-surface-danger-soft: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--tone-surface-danger-solid: color-mix(in oklab, var(--destructive) 60%, transparent);
+	--tone-surface-input-soft-hover: color-mix(in oklab, var(--input) 50%, transparent);
+	--tone-surface-input-soft: color-mix(in oklab, var(--input) 30%, transparent);
+	--tone-surface-input-strong: color-mix(in oklab, var(--input) 80%, transparent);
+	--tone-surface-muted-soft-hover: color-mix(in oklab, var(--muted) 50%, transparent);
+	--tone-surface-muted-soft: color-mix(in oklab, var(--muted) 50%, transparent);
+
+	/* Controls: Switch */
+	--switch-thumb-surface: var(--primary-foreground);
+	--switch-thumb-surface-unchecked: var(--foreground);
+
+	/* Borders & Rings */
 	--nav-tab-border-active: var(--input);
 
-	/* State dark */
+	/* Components & Controls */
+	--nav-tab-surface-active: var(--surface-input-soft);
 	--selection-surface: var(--field-surface);
 }

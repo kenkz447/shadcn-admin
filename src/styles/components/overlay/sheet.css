@@ -1,7 +1,7 @@
 /** Sheet **/
 
 :root {
-    --sheet-overlay-bg: var(--overlay-surface-scrim);
+    --sheet-overlay-bg: var(--surface-overlay-scrim);
 
     --sheet-content-gap: var(--panel-gap-lg);
     --sheet-content-max-width: 24rem;
