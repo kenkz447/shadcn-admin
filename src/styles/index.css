@@ -1,35 +1,51 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import './theme.css';
-@import './components/alert.css';
-@import './components/avatar.css';
-@import './components/badge.css';
-@import './components/card.css';
-@import './components/button.css';
-@import './components/calendar.css';
-@import './components/checkbox.css';
-@import './components/command.css';
-@import './components/dialog.css';
-@import './components/dropdown-menu.css';
-@import './components/form.css';
-@import './components/input.css';
-@import './components/input-otp.css';
-@import './components/label.css';
-@import './components/popover.css';
-@import './components/radio-group.css';
-@import './components/scroll-area.css';
-@import './components/select.css';
-@import './components/separator.css';
-@import './components/skeleton.css';
-@import './components/sheet.css';
-@import './components/sidebar.css';
-@import './components/sonner.css';
-@import './components/switch.css';
-@import './components/table.css';
-@import './components/tabs.css';
-@import './components/tooltip.css';
-@import './components/textarea.css';
-@import './components/alert-dialog.css';
+
+/* Input / Data Entry */
+@import './components/form/calendar.css';
+@import './components/form/checkbox.css';
+@import './components/form/command.css';
+@import './components/form/form.css';
+@import './components/form/input.css';
+@import './components/form/input-otp.css';
+@import './components/form/radio-group.css';
+@import './components/form/select.css';
+@import './components/form/switch.css';
+@import './components/form/textarea.css';
+
+/* Data Display */
+@import './components/data/avatar.css';
+@import './components/data/badge.css';
+@import './components/data/card.css';
+@import './components/data/skeleton.css';
+@import './components/data/table.css';
+
+/* Navigation */
+@import './components/nav/sidebar.css';
+@import './components/nav/tabs.css';
+
+/* Feedback / Status */
+@import './components/status/alert.css';
+@import './components/status/sonner.css';
+@import './components/status/tooltip.css';
+
+/* Overlay / Floating UI */
+@import './components/overlay/alert-dialog.css';
+@import './components/overlay/dialog.css';
+@import './components/overlay/dropdown-menu.css';
+@import './components/overlay/popover.css';
+@import './components/overlay/sheet.css';
+
+/* Actions / Controls */
+@import './components/action/button.css';
+
+/* Layout / Structure */
+@import './components/layout/scroll-area.css';
+@import './components/layout/separator.css';
+
+/* Utility / Misc */
+@import './components/util/label.css';
 
 @custom-variant dark (&:is(.dark *));
 
