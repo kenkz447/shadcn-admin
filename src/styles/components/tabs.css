@@ -1,0 +1,52 @@
+/** Tabs **/
+
+:root {
+    /* Tabs (container + list) */
+    --tabs-bg: var(--muted);
+    --tabs-fg: var(--muted-foreground);
+    --tabs-border: var(--border);
+    --tabs-size-md: calc(var(--spacing) * 9);
+    --tabs-radius: var(--radius-lg);
+    --tabs-padding: 3px;
+    --tabs-gap: calc(var(--spacing) * 2);
+    --tabs-line-gap: calc(var(--spacing) * 1);
+
+    /* Tabs item (trigger) */
+    --tabs-item-gap: calc(var(--spacing) * 1.5);
+    --tabs-item-padding-x: calc(var(--spacing) * 2);
+    --tabs-item-padding-y: calc(var(--spacing) * 1);
+    --tabs-item-radius: var(--radius-md);
+    --tabs-item-height: calc(100% - 1px);
+
+    --tabs-item-bg: transparent;
+    --tabs-item-border: transparent; 
+    --tabs-item-border-active: transparent;
+
+    /* text-foreground/60 */
+    --tabs-item-fg: color-mix(in oklab, var(--foreground) 60%, transparent);
+
+    --tabs-item-bg-hover: transparent;
+    --tabs-item-fg-hover: var(--foreground);
+
+    --tabs-item-bg-active: var(--background);
+    --tabs-item-fg-active: var(--foreground);
+
+    /* focus-visible */
+    --tabs-item-outline-color: var(--ring);
+    --tabs-item-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    --tabs-item-ring-width: 3px;
+
+    /* Indicator cho variant=line */
+    --tabs-indicator-color: var(--foreground);
+    --tabs-indicator-thickness-horizontal: calc(var(--spacing) * 0.5);
+    --tabs-indicator-thickness-vertical: calc(var(--spacing) * 0.5);
+
+    --tabs-indicator-offset-horizontal: -5px; 
+    --tabs-indicator-offset-vertical: calc(var(--spacing) * -1);
+}
+
+.dark {
+    --tabs-item-fg: var(--muted-foreground);
+    --tabs-item-bg-active: color-mix(in oklab, var(--input) 30%, transparent);
+    --tabs-item-border-active: var(--input);
+}

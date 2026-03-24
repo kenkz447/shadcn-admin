@@ -1,0 +1,25 @@
+/** Checkbox **/
+
+:root {
+    --checkbox-size: calc(var(--spacing) * 4);
+    --checkbox-radius: 4px;
+    --checkbox-border-color: var(--input);
+    --checkbox-bg: transparent;
+    --checkbox-indicator-size: calc(var(--spacing) * 3.5);
+
+    --checkbox-focus-border-color: var(--ring);
+    --checkbox-focus-ring-width: 3px;
+    --checkbox-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+
+    --checkbox-invalid-border-color: var(--destructive);
+    --checkbox-invalid-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+
+    --checkbox-checked-border-color: var(--primary);
+    --checkbox-checked-bg: var(--primary);
+    --checkbox-checked-fg: var(--primary-foreground);
+}
+
+.dark {
+    --checkbox-bg: color-mix(in oklab, var(--input) 30%, transparent);
+    --checkbox-invalid-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+}

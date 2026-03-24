@@ -1,0 +1,43 @@
+/** Command **/
+
+:root {
+    --command-radius: var(--radius-md);
+
+    --command-dialog-content-padding: 0px;
+    --command-dialog-input-wrapper-height: calc(var(--spacing) * 12);
+    --command-dialog-group-heading-padding-x: calc(var(--spacing) * 2);
+    --command-dialog-group-padding-x: calc(var(--spacing) * 2);
+    --command-dialog-input-icon-size: calc(var(--spacing) * 5);
+    --command-dialog-input-height: calc(var(--spacing) * 12);
+    --command-dialog-item-padding-x: calc(var(--spacing) * 2);
+    --command-dialog-item-padding-y: calc(var(--spacing) * 3);
+    --command-dialog-item-icon-size: calc(var(--spacing) * 5);
+
+    --command-input-wrapper-height: calc(var(--spacing) * 9);
+    --command-input-wrapper-gap: calc(var(--spacing) * 2);
+    --command-input-wrapper-border-color: var(--border);
+    --command-input-wrapper-padding-x: calc(var(--spacing) * 3);
+    --command-input-icon-size: calc(var(--spacing) * 4);
+    --command-input-icon-opacity: 0.5;
+    --command-input-height: calc(var(--spacing) * 10);
+    --command-input-padding-y: calc(var(--spacing) * 3);
+
+    --command-list-max-height: 300px;
+    --command-list-scroll-padding-y: calc(var(--spacing) * 1);
+
+    --command-empty-padding-y: calc(var(--spacing) * 6);
+
+    --command-group-padding: calc(var(--spacing) * 1);
+    --command-group-heading-padding-x: calc(var(--spacing) * 2);
+    --command-group-heading-padding-y: calc(var(--spacing) * 1.5);
+
+    --command-separator-margin-x: calc(var(--spacing) * -1);
+    --command-separator-height: 1px;
+    --command-separator-color: var(--border);
+
+    --command-item-gap: calc(var(--spacing) * 2);
+    --command-item-radius: var(--radius-sm);
+    --command-item-padding-x: calc(var(--spacing) * 2);
+    --command-item-padding-y: calc(var(--spacing) * 1.5);
+    --command-item-icon-size: calc(var(--spacing) * 4);
+}

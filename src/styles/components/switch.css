@@ -1,0 +1,30 @@
+/** Switch **/
+
+:root {
+    --switch-radius: 9999px;
+    --switch-border-color: transparent;
+
+    --switch-focus-border-color: var(--ring);
+    --switch-focus-ring-width: 3px;
+    --switch-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+
+    --switch-track-height: 1.15rem;
+    --switch-track-width: calc(var(--spacing) * 8);
+    --switch-track-height-sm: calc(var(--spacing) * 3.5);
+    --switch-track-width-sm: calc(var(--spacing) * 6);
+
+    --switch-track-bg-checked: var(--primary);
+    --switch-track-bg-unchecked: var(--input);
+
+    --switch-thumb-size: calc(var(--spacing) * 4);
+    --switch-thumb-size-sm: calc(var(--spacing) * 3);
+    --switch-thumb-bg: var(--background);
+    --switch-thumb-bg-checked-dark: var(--primary-foreground);
+    --switch-thumb-bg-unchecked-dark: var(--foreground);
+    --switch-thumb-translate-checked: calc(100% - 2px);
+    --switch-thumb-translate-unchecked: 0px;
+}
+
+.dark {
+    --switch-track-bg-unchecked: color-mix(in oklab, var(--input) 80%, transparent);
+}

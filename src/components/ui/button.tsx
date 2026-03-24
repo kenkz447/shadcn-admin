@@ -5,47 +5,40 @@ import { Slot } from "radix-ui"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex shrink-0 items-center justify-center font-medium text-sm whitespace-nowrap transition-all outline-none disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+  "focus-visible:border-ring focus-visible:ring-(--button-focus-ring-color) aria-invalid:ring-(--button-invalid-ring-color) aria-invalid:border-(--button-invalid-border-color) rounded-(--button-radius) border border-transparent bg-clip-padding text-(length:--button-text-size) font-medium focus-visible:ring-(length:--button-focus-ring-width) aria-invalid:ring-(length:--button-invalid-ring-width) active:translate-y-px [&_svg:not([class*='size-'])]:size-(--button-icon-size) group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        primary: "bg-btn-primary text-btn-primary-foreground hover:bg-btn-primary-hover",
-        destructive:
-          "bg-btn-destructive text-btn-destructive-foreground hover:bg-btn-destructive-hover focus-visible:ring-btn-destructive-focus",
-        outline:
-          "border border-btn-outline-border bg-btn-outline shadow-xs hover:bg-btn-outline-hover hover:text-accent-foreground",
-        secondary:
-          "bg-btn-secondary text-btn-secondary-foreground hover:bg-btn-secondary-hover",
-        ghost:
-          "hover:bg-btn-ghost-hover hover:text-btn-ghost-foreground",
-        link: "text-btn-primary underline-offset-4 hover:underline",
+        default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+        outline: "border-(--button-outline-border-color) bg-(--button-outline-bg) hover:bg-(--button-outline-hover-bg) hover:text-foreground aria-expanded:bg-(--button-outline-hover-bg) aria-expanded:text-foreground",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+        ghost: "hover:bg-(--button-ghost-hover-bg) hover:text-foreground aria-expanded:bg-(--button-ghost-hover-bg) aria-expanded:text-foreground",
+        destructive: "bg-(--button-destructive-bg) hover:bg-(--button-destructive-hover-bg) focus-visible:ring-(--button-destructive-focus-ring-color) text-destructive focus-visible:border-(--button-destructive-focus-border-color)",
+        link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        md: "h-btn-md px-btn-px-md rounded-btn-md gap-btn-gap-md [&_svg:not([class*='size-'])]:size-btn-svg-size-md",
-        sm: "h-btn-sm px-btn-px-sm rounded-btn-sm gap-btn-gap-sm [&_svg:not([class*='size-'])]:size-btn-svg-size-sm",
-        lg: "h-btn-lg px-btn-px-lg rounded-btn-lg gap-btn-gap-lg [&_svg:not([class*='size-'])]:size-btn-svg-size-lg",
-        icon: "size-btn-md rounded-btn-md gap-btn-gap-md [&_svg:not([class*='size-'])]:size-btn-svg-size-md",
-        "icon-sm": "size-btn-sm rounded-btn-sm gap-btn-gap-sm [&_svg:not([class*='size-'])]:size-btn-svg-size-sm",
-        "icon-lg": "size-btn-lg rounded-btn-lg gap-btn-gap-lg [&_svg:not([class*='size-'])]:size-btn-svg-size-lg",
-      },
-      focus: {
-        visible: "focus-visible:border-btn-focus-border focus-visible:ring-[3px] focus-visible:ring-btn-focus-ring",
-        none: "",
+        default:
+          "h-(--button-height) gap-(--button-gap) px-(--button-padding-x) has-data-[icon=inline-end]:pr-(--button-padding-inline-end) has-data-[icon=inline-start]:pl-(--button-padding-inline-start)",
+        xs: "h-(--button-height-xs) gap-(--button-gap-xs) rounded-(--button-radius-xs) px-(--button-padding-x-xs) text-(length:--button-text-size-xs) in-data-[slot=button-group]:rounded-(--button-group-radius) has-data-[icon=inline-end]:pr-(--button-padding-inline-end-xs) has-data-[icon=inline-start]:pl-(--button-padding-inline-start-xs) [&_svg:not([class*='size-'])]:size-(--button-icon-size-xs)",
+        sm: "h-(--button-height-sm) gap-(--button-gap-sm) rounded-(--button-radius-sm) px-(--button-padding-x-sm) text-(length:--button-text-size-sm) in-data-[slot=button-group]:rounded-(--button-group-radius) has-data-[icon=inline-end]:pr-(--button-padding-inline-end-sm) has-data-[icon=inline-start]:pl-(--button-padding-inline-start-sm) [&_svg:not([class*='size-'])]:size-(--button-icon-size-sm)",
+        lg: "h-(--button-height-lg) gap-(--button-gap-lg) px-(--button-padding-x-lg) has-data-[icon=inline-end]:pr-(--button-padding-inline-end-lg) has-data-[icon=inline-start]:pl-(--button-padding-inline-start-lg)",
+        icon: "size-(--button-size-icon)",
+        "icon-xs": "size-(--button-size-icon-xs) rounded-(--button-radius-xs) in-data-[slot=button-group]:rounded-(--button-group-radius) [&_svg:not([class*='size-'])]:size-(--button-icon-size-xs)",
+        "icon-sm": "size-(--button-size-icon-sm) rounded-(--button-radius-sm) in-data-[slot=button-group]:rounded-(--button-group-radius)",
+        "icon-lg": "size-(--button-size-icon-lg)",
       },
     },
     defaultVariants: {
-      variant: "primary",
-      size: "md",
-      focus: "visible",
+      variant: "default",
+      size: "default",
     },
   }
 )
 
 function Button({
   className,
-  variant,
-  size,
-  focus,
+  variant = "default",
+  size = "default",
   asChild = false,
   ...props
 }: React.ComponentProps<"button"> &
@@ -59,7 +52,7 @@ function Button({
       data-slot="button"
       data-variant={variant}
       data-size={size}
-      className={cn(buttonVariants({ variant, size, focus, className }))}
+      className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     />
   )

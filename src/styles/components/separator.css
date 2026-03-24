@@ -1,0 +1,6 @@
+/** Separator **/
+
+:root {
+    --separator-color: var(--border);
+    --separator-thickness: 1px;
+}

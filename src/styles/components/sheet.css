@@ -1,0 +1,25 @@
+/** Sheet **/
+
+:root {
+    --sheet-overlay-bg: color-mix(in oklab, black 50%, transparent);
+
+    --sheet-content-gap: calc(var(--spacing) * 4);
+    --sheet-content-max-width: 24rem;
+    --sheet-content-width: 75%;
+    --sheet-content-border-color: var(--border);
+
+    --sheet-close-offset-top: calc(var(--spacing) * 4);
+    --sheet-close-offset-right: calc(var(--spacing) * 4);
+    --sheet-close-radius: var(--radius-xs);
+    --sheet-close-opacity: 0.7;
+    --sheet-close-opacity-hover: 1;
+    --sheet-close-ring-width: 2px;
+    --sheet-close-ring-color: var(--ring);
+    --sheet-close-ring-offset-width: 2px;
+    --sheet-close-icon-size: calc(var(--spacing) * 4);
+
+    --sheet-header-gap: calc(var(--spacing) * 1.5);
+    --sheet-header-padding: calc(var(--spacing) * 4);
+    --sheet-footer-gap: calc(var(--spacing) * 2);
+    --sheet-footer-padding: calc(var(--spacing) * 4);
+}

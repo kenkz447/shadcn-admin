@@ -1,107 +1,77 @@
 /** Button **/
 
 :root {
-    --btn-focus-border: var(--ring);
-    --btn-focus-ring: color-mix(in oklab, var(--ring) 50%, transparent);
+	--button-radius: var(--radius-lg);
+	--button-radius-xs: min(var(--radius-md), 10px);
+	--button-radius-sm: min(var(--radius-md), 12px);
+	--button-group-radius: var(--radius-lg);
 
-    --btn-primary: var(--primary);
-    --btn-primary-foreground: var(--primary-foreground);
-    --btn-primary-hover: color-mix(in oklab, var(--primary) 90%, transparent);
+	--button-text-size: 0.875rem;
+	--button-text-size-xs: 0.75rem;
+	--button-text-size-sm: 0.8rem;
 
-    --btn-secondary: var(--secondary);
-    --btn-secondary-foreground: var(--secondary-foreground);
-    --btn-secondary-hover: color-mix(in oklab, var(--secondary) 80%, transparent);
+	--button-focus-ring-width: 3px;
+	--button-invalid-ring-width: 3px;
+	--button-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+	--button-invalid-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--button-invalid-border-color: var(--destructive);
 
-    --btn-destructive: var(--destructive);
-    --btn-destructive-foreground: var(--destructive-foreground);
-    --btn-destructive-hover: color-mix(in oklab, var(--destructive) 90%, transparent);
-    --btn-destructive-focus: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--button-icon-size: calc(var(--spacing) * 4);
+	--button-icon-size-xs: calc(var(--spacing) * 3);
+	--button-icon-size-sm: calc(var(--spacing) * 3.5);
 
-    --btn-ghost: var(--accent);
-    --btn-ghost-foreground: var(--accent-foreground);
-    --btn-ghost-hover: var(--accent);
+	--button-height: calc(var(--spacing) * 8);
+	--button-height-xs: calc(var(--spacing) * 6);
+	--button-height-sm: calc(var(--spacing) * 7);
+	--button-height-lg: calc(var(--spacing) * 9);
 
-    --btn-outline: var(--background);
-    --btn-outline-foreground: var(--foreground);
-    --btn-outline-border: var(--border);
-    --btn-outline-hover: color-mix(in oklab, var(--accent) 50%, transparent);
+	--button-gap: calc(var(--spacing) * 1.5);
+	--button-gap-xs: calc(var(--spacing) * 1);
+	--button-gap-sm: calc(var(--spacing) * 1);
+	--button-gap-lg: calc(var(--spacing) * 1.5);
 
-    --btn-md: var(--spacing-size-md);
-    --btn-sm: var(--spacing-size-sm);
-    --btn-lg: var(--spacing-size-lg);
+	--button-padding-x: calc(var(--spacing) * 2.5);
+	--button-padding-x-xs: calc(var(--spacing) * 2);
+	--button-padding-x-sm: calc(var(--spacing) * 2.5);
+	--button-padding-x-lg: calc(var(--spacing) * 2.5);
 
-    --btn-px-md: var(--spacing-px-md);
-    --btn-px-sm: var(--spacing-px-sm);
-    --btn-px-lg: var(--spacing-px-lg);
+	--button-padding-inline-start: calc(var(--spacing) * 2);
+	--button-padding-inline-end: calc(var(--spacing) * 2);
+	--button-padding-inline-start-xs: calc(var(--spacing) * 1.5);
+	--button-padding-inline-end-xs: calc(var(--spacing) * 1.5);
+	--button-padding-inline-start-sm: calc(var(--spacing) * 1.5);
+	--button-padding-inline-end-sm: calc(var(--spacing) * 1.5);
+	--button-padding-inline-start-lg: calc(var(--spacing) * 3);
+	--button-padding-inline-end-lg: calc(var(--spacing) * 3);
 
-    --btn-gap-md: var(--spacing-gap-md);
-    --btn-gap-sm: var(--spacing-gap-md);
-    --btn-gap-lg: var(--spacing-gap-md);
+	--button-size-icon: calc(var(--spacing) * 8);
+	--button-size-icon-xs: calc(var(--spacing) * 6);
+	--button-size-icon-sm: calc(var(--spacing) * 7);
+	--button-size-icon-lg: calc(var(--spacing) * 9);
 
-    --btn-radius-md: var(--radius-md);
-    --btn-radius-sm: var(--radius-sm);
-    --btn-radius-lg: var(--radius-lg);
+	--button-outline-bg: var(--background);
+	--button-outline-border-color: var(--border);
+	--button-outline-hover-bg: var(--muted);
 
-    --btn-svg-size-md: var(--svg-size-md);
-    --btn-svg-size-sm: var(--svg-size-md);
-    --btn-svg-size-lg: var(--svg-size-md);
+	--button-ghost-hover-bg: var(--muted);
+
+	--button-destructive-bg: color-mix(in oklab, var(--destructive) 10%, transparent);
+	--button-destructive-hover-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--button-destructive-focus-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--button-destructive-focus-border-color: color-mix(in oklab, var(--destructive) 40%, transparent);
 }
 
 .dark {
-    --btn-destructive: color-mix(in oklab, var(--destructive) 60%, transparent);
-    --btn-destructive-hover: color-mix(in oklab, var(--destructive) 90%, transparent);
-    --btn-destructive-focus: color-mix(in oklab, var(--destructive) 40%, transparent);
+	--button-invalid-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+	--button-invalid-border-color: color-mix(in oklab, var(--destructive) 50%, transparent);
 
-    --btn-ghost-hover: color-mix(in oklab, var(--accent) 50%, transparent);
+	--button-outline-bg: color-mix(in oklab, var(--input) 30%, transparent);
+	--button-outline-border-color: var(--input);
+	--button-outline-hover-bg: color-mix(in oklab, var(--input) 50%, transparent);
 
-    --btn-outline: color-mix(in oklab, var(--input) 30%, transparent);
-    --btn-outline-border: color-mix(in oklab, var(--input) 50%, transparent);
-    --btn-outline-hover: color-mix(in oklab, var(--input) 50%, transparent);
-}
+	--button-ghost-hover-bg: color-mix(in oklab, var(--muted) 50%, transparent);
 
-@theme inline {
-    --color-btn-focus-border: var(--btn-focus-border);
-    --color-btn-focus-ring: var(--btn-focus-ring);
-
-    --color-btn-primary: var(--btn-primary);
-    --color-btn-primary-foreground: var(--btn-primary-foreground);
-    --color-btn-primary-hover: var(--btn-primary-hover);
-
-    --color-btn-secondary: var(--btn-secondary);
-    --color-btn-secondary-foreground: var(--btn-secondary-foreground);
-    --color-btn-secondary-hover: var(--btn-secondary-hover);
-
-    --color-btn-destructive: var(--btn-destructive);
-    --color-btn-destructive-foreground: var(--btn-destructive-foreground);
-    --color-btn-destructive-hover: var(--btn-destructive-hover);
-    --color-btn-destructive-focus: var(--btn-destructive-focus);
-
-    --color-btn-ghost: var(--btn-ghost);
-    --color-btn-ghost-foreground: var(--btn-ghost-foreground);
-    --color-btn-ghost-hover: var(--btn-ghost-hover);
-
-    --color-btn-outline: var(--btn-outline);
-    --color-btn-outline-foreground: var(--btn-outline-foreground);
-    --color-btn-outline-border: var(--btn-outline-border);
-    --color-btn-outline-hover: var(--btn-outline-hover);
-
-    --spacing-btn-md: var(--btn-md);
-    --spacing-btn-sm: var(--btn-sm);
-    --spacing-btn-lg: var(--btn-lg);
-
-    --spacing-btn-px-md: var(--btn-px-md);
-    --spacing-btn-px-sm: var(--btn-px-sm);
-    --spacing-btn-px-lg: var(--btn-px-lg);
-
-    --spacing-gap-btn-md: var(--btn-gap-md);
-    --spacing-gap-btn-sm: var(--btn-gap-sm);
-    --spacing-gap-btn-lg: var(--btn-gap-lg);
-    
-    --radius-btn-md: var(--btn-radius-md);
-    --radius-btn-sm: var(--btn-radius-sm);
-    --radius-btn-lg: var(--btn-radius-lg);
-
-    --spacing-btn-svg-size-md: var(--btn-svg-size-md);
-    --spacing-btn-svg-size-sm: var(--btn-svg-size-sm);
-    --spacing-btn-svg-size-lg: var(--btn-svg-size-lg);
+	--button-destructive-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--button-destructive-hover-bg: color-mix(in oklab, var(--destructive) 30%, transparent);
+	--button-destructive-focus-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
 }
