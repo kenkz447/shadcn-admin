@@ -17,5 +17,5 @@
 
     --input-otp-caret-height: var(--space-4);
     --input-otp-caret-width: 1px;
-    --input-otp-caret-color: var(--text-default);
+    --input-otp-caret-color: var(--text-primary);
 }

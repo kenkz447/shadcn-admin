@@ -27,7 +27,7 @@
     --calendar-range-middle-bg: var(--surface-accent-subtle);
     --calendar-range-middle-fg: var(--text-accent-subtle-contrast);
     --calendar-day-hover-dark-fg: var(--text-accent-subtle-contrast);
-    --calendar-bg: var(--surface-base);
+    --calendar-bg: var(--surface-page);
     --calendar-overlay-bg: var(--surface-popover);
     --calendar-muted-fg: var(--text-muted);
     --calendar-today-bg: var(--surface-accent-subtle);

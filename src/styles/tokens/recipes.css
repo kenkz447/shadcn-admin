@@ -31,7 +31,7 @@
 	/* Field geometry */
 	--field-height-sm: var(--control-height-md);
 	--field-height-md: var(--control-height-lg);
-	--field-min-height-lg: calc(var(--spacing) * 16);
+	--field-height-min-lg: calc(var(--spacing) * 16);
 	--field-radius: var(--control-radius-md);
 	--field-padding-x: var(--control-padding-x-md);
 	--field-padding-y: var(--control-padding-y-xs);
@@ -60,13 +60,13 @@
 	--panel-gap-sm: var(--space-2);
 	--panel-gap-md: var(--space-3);
 	--panel-gap-lg: var(--space-4);
-	--panel-side-offset: var(--space-1);
+	--panel-offset-side: var(--space-1);
 
 	/* Menu geometry */
 	--menu-content-min-width: calc(var(--spacing) * 32);
 	--menu-content-radius: var(--panel-radius-md);
 	--menu-content-padding: var(--space-1);
-	--menu-content-side-offset: var(--panel-side-offset);
+	--menu-content-offset-side: var(--panel-offset-side);
 	--menu-item-gap: var(--control-gap-md);
 	--menu-item-radius: var(--control-radius-sm);
 	--menu-item-padding-x: var(--space-2);

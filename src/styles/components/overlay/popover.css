@@ -5,7 +5,7 @@
     --popover-content-radius: var(--panel-radius-md);
     --popover-content-border-color: var(--surface-border);
     --popover-content-padding: var(--panel-padding-sm);
-    --popover-content-side-offset: var(--panel-side-offset);
+    --popover-content-side-offset: var(--panel-offset-side);
     --popover-content-bg: var(--surface-popover);
     --popover-content-fg: var(--text-popover-contrast);
 

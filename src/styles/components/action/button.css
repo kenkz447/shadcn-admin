@@ -62,10 +62,10 @@
 	--button-outline-bg: var(--control-surface);
 	--button-outline-border-color: var(--border);
 	--button-outline-hover-bg: var(--muted-surface-hover);
-	--button-outline-hover-fg: var(--text-strong);
+	--button-outline-hover-fg: var(--text-primary);
 
 	--button-ghost-hover-bg: var(--muted-surface-hover);
-	--button-ghost-hover-fg: var(--text-strong);
+	--button-ghost-hover-fg: var(--text-primary);
 
 	--button-destructive-bg: var(--danger-surface-soft);
 	--button-destructive-hover-bg: var(--danger-surface-soft-hover);

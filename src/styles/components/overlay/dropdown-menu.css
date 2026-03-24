@@ -5,7 +5,7 @@
     --dropdown-menu-content-radius: var(--menu-content-radius);
     --dropdown-menu-content-border-color: var(--surface-border);
     --dropdown-menu-content-padding: var(--menu-content-padding);
-    --dropdown-menu-content-side-offset: var(--menu-content-side-offset);
+    --dropdown-menu-content-side-offset: var(--menu-content-offset-side);
     --dropdown-menu-content-bg: var(--surface-popover);
     --dropdown-menu-content-fg: var(--text-popover-contrast);
 

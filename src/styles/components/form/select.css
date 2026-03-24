@@ -28,8 +28,8 @@
     --select-content-bg: var(--surface-popover);
     --select-content-fg: var(--text-popover-contrast);
 
-    --select-content-offset: var(--menu-content-side-offset);
-    --select-content-offset-negative: calc(var(--menu-content-side-offset) * -1);
+    --select-content-offset: var(--menu-content-offset-side);
+    --select-content-offset-negative: calc(var(--menu-content-offset-side) * -1);
     --select-viewport-padding: var(--menu-content-padding);
 
     --select-label-padding-x: var(--menu-label-padding-x);

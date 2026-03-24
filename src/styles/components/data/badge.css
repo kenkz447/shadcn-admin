@@ -29,7 +29,7 @@
     --badge-destructive-focus-ring: var(--danger-soft-ring-color);
 
     --badge-outline-border-color: var(--surface-border);
-    --badge-outline-fg: var(--text-strong);
+    --badge-outline-fg: var(--text-primary);
     --badge-outline-hover-bg: var(--surface-accent-subtle);
     --badge-outline-hover-fg: var(--text-accent-subtle-contrast);
 

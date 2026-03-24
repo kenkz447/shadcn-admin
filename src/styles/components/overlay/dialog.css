@@ -9,7 +9,7 @@
     --dialog-content-radius: var(--panel-radius-lg);
     --dialog-content-border-color: var(--surface-border);
     --dialog-content-padding: var(--panel-padding-lg);
-    --dialog-content-bg: var(--surface-base);
+    --dialog-content-bg: var(--surface-page);
 
     --dialog-close-offset-top: var(--space-4);
     --dialog-close-offset-right: var(--space-4);
@@ -19,7 +19,7 @@
     --dialog-close-ring-width: 2px;
     --dialog-close-ring-color: var(--ring);
     --dialog-close-ring-offset-width: 2px;
-    --dialog-close-ring-offset-color: var(--surface-base);
+    --dialog-close-ring-offset-color: var(--surface-page);
     --dialog-close-icon-size: var(--icon-md);
     --dialog-close-active-bg: var(--surface-accent-subtle);
     --dialog-close-active-fg: var(--text-muted);

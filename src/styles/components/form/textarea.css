@@ -1,7 +1,7 @@
 /** Textarea **/
 
 :root {
-    --textarea-min-height: var(--field-min-height-lg);
+    --textarea-min-height: var(--field-height-min-lg);
     --textarea-radius: var(--field-radius);
     --textarea-padding-x: var(--field-padding-x);
     --textarea-padding-y: var(--field-padding-y-comfortable);

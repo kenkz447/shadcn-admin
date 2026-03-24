@@ -44,14 +44,13 @@
 	--text-brand-link: var(--primary);
 	--text-danger: var(--destructive);
 	--text-danger-soft: var(--tone-text-danger-soft);
-	--text-strong: var(--foreground);
+	--text-primary: var(--foreground);
 	--text-muted-strong: var(--tone-text-muted-strong);
 	--text-muted: var(--muted-foreground);
 	--surface-muted: var(--muted);
 	--surface-muted-soft: var(--tone-surface-muted-soft);
 	--surface-muted-soft-hover: var(--tone-surface-muted-soft-hover);
-	--surface-base: var(--background);
-	--text-default: var(--foreground);
+	--surface-page: var(--background);
 	--surface-popover: var(--popover);
 	--text-popover-contrast: var(--popover-foreground);
 	--surface-input-soft: var(--tone-surface-input-soft);
@@ -62,9 +61,9 @@
 	--menu-text-muted: var(--text-muted);
 	--nav-list-surface: var(--surface-muted);
 	--nav-list-text: var(--text-muted);
-	--nav-item-text-hover: var(--text-default);
-	--nav-item-text-active: var(--text-default);
-	--nav-indicator-text: var(--text-default);
+	--nav-item-text-hover: var(--text-primary);
+	--nav-item-text-active: var(--text-primary);
+	--nav-indicator-text: var(--text-primary);
 
 	/* Context interaction roles */
 	--menu-item-surface-destructive-focus: var(--surface-danger-soft);
@@ -80,7 +79,7 @@
 	/* Data display roles */
 	--data-footer-surface: var(--surface-muted-soft);
 	--data-caption-text: var(--text-muted);
-	--data-heading-text: var(--text-default);
+	--data-heading-text: var(--text-primary);
 }
 
 .dark {
