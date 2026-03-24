@@ -80,6 +80,67 @@
 	--data-footer-surface: var(--surface-muted-soft);
 	--data-caption-fg: var(--fg-muted);
 	--data-heading-fg: var(--fg-primary);
+
+
+	/* Shared state tokens (Merged) */
+	/* Generic surfaces and interaction recipes */
+	--control-surface: var(--surface-input-soft);
+	--control-surface-hover: var(--surface-input-soft-hover);
+	--muted-surface-hover: var(--surface-muted-soft-hover);
+	--danger-surface-soft: var(--surface-danger-soft);
+	--danger-surface-soft-hover: var(--surface-danger-soft-hover);
+	--overlay-surface-scrim: var(--tone-surface-overlay-scrim);
+
+	/* Border roles derived from state */
+	--control-border-color: var(--input);
+	--invalid-border-strong: var(--tone-border-danger-strong);
+	--invalid-border-color: var(--tone-border-danger-default);
+	--field-border-color: var(--control-border-color);
+	--surface-border-color: var(--border);
+
+	/* Placeholder and field state */
+	--placeholder-fg: var(--muted-foreground);
+	--field-placeholder-fg: var(--placeholder-fg);
+
+	/* Focus and invalid recipes */
+	--focus-ring-width: 3px;
+	--focus-ring-color: var(--tone-ring-focus-default);
+	--invalid-ring-color: var(--tone-ring-danger-default);
+	--danger-soft-ring-color: var(--tone-ring-danger-default);
+
+	/* Field */
+	--field-surface: var(--control-surface);
+	--field-surface-hover: var(--control-surface-hover);
+	--field-border-focus: var(--ring);
+	--field-border-invalid: var(--invalid-border-color);
+	--field-ring-focus-width: var(--focus-ring-width);
+	--field-ring-focus-color: var(--focus-ring-color);
+	--field-ring-invalid-color: var(--invalid-ring-color);
+
+	/* Selection controls */
+	--selection-surface: var(--field-surface);
+	--selection-border-color: var(--field-border-color);
+	--selection-border-focus: var(--field-border-focus);
+	--selection-border-invalid: var(--field-border-invalid);
+	--selection-ring-focus-width: var(--field-ring-focus-width);
+	--selection-ring-focus-color: var(--field-ring-focus-color);
+	--selection-ring-invalid-color: var(--field-ring-invalid-color);
+	--selection-surface-checked: var(--surface-brand-solid);
+	--selection-border-checked: var(--surface-brand-solid);
+	--selection-checked-fg: var(--fg-brand-solid-contrast);
+	--selection-brand-fg: var(--fg-brand-link);
+	--switch-track-surface-unchecked: var(--surface-input-strong);
+	--switch-thumb-surface: var(--background);
+	--switch-thumb-surface-checked-dark: var(--primary-foreground);
+	--switch-thumb-surface-unchecked-dark: var(--foreground);
+	--focus-ring-width-sm: 2px;
+
+	/* Scroll and divider */
+	--scroll-focus-ring-width: var(--focus-ring-width);
+	--scroll-focus-ring-color: var(--focus-ring-color);
+	--scroll-thumb-surface: var(--border);
+	--divider-surface: var(--surface-border-color);
+	--avatar-ring-on-surface: var(--background);
 }
 
 .dark {
@@ -95,4 +156,7 @@
 	--tone-ring-danger-default: color-mix(in oklab, var(--destructive) 40%, transparent);
 	--nav-tab-surface-active: var(--surface-input-soft);
 	--nav-tab-border-active: var(--input);
+
+	/* State dark */
+	--selection-surface: var(--field-surface);
 }
