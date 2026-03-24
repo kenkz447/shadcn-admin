@@ -1,0 +1,25 @@
+/** Button **/
+@theme inline {
+    --color-btn-primary: var(--primary);
+    --color-btn-primary-foreground: var(--primary-foreground);
+    --color-btn-secondary: var(--secondary);
+    --color-btn-secondary-foreground: var(--secondary-foreground);
+    --color-btn-destructive: var(--destructive);
+    --color-btn-destructive-foreground: var(--destructive-foreground);
+
+    --spacing-btn-md: var(--spacing-size-md);
+    --spacing-btn-sm: var(--spacing-size-sm);
+    --spacing-btn-lg: var(--spacing-size-lg);
+
+    --spacing-btn-px-md: var(--spacing-px-md);
+    --spacing-btn-px-sm: var(--spacing-px-sm);
+    --spacing-btn-px-lg: var(--spacing-px-lg);
+
+    --spacing-btn-gap-md: var(--spacing-gap-md);
+    --spacing-btn-gap-sm: var(--spacing-gap-sm);
+    --spacing-btn-gap-lg: var(--spacing-gap-lg);
+
+    --radius-btn-md: var(--radius-md);
+    --radius-btn-sm: var(--radius-sm);
+    --radius-btn-lg: var(--radius-lg);
+}
