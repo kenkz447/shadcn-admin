@@ -1,5 +1,6 @@
 import { format } from 'date-fns'
 import { Calendar as CalendarIcon } from 'lucide-react'
+
 import { Button } from '@/components/ui/button'
 import { Calendar } from '@/components/ui/calendar'
 import {
@@ -23,7 +24,7 @@ export function DatePicker({
     <Popover>
       <PopoverTrigger asChild>
         <Button
-          variant='outline'
+          appearance='outline'
           data-empty={!selected}
           className='w-[240px] justify-start text-start font-normal data-[empty=true]:text-muted-foreground'
         >

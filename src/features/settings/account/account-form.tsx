@@ -113,7 +113,7 @@ export function AccountForm() {
                 <PopoverTrigger asChild>
                   <FormControl>
                     <Button
-                      variant='outline'
+                      appearance='outline'
                       role='combobox'
                       className={cn(
                         'w-[200px] justify-between',

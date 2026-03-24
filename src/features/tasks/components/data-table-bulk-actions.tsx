@@ -77,7 +77,7 @@ export function DataTableBulkActions<TData>({
             <TooltipTrigger asChild>
               <DropdownMenuTrigger asChild>
                 <Button
-                  variant='outline'
+                  appearance='outline'
                   size='icon'
                   className='size-8'
                   aria-label='Update status'
@@ -113,7 +113,7 @@ export function DataTableBulkActions<TData>({
             <TooltipTrigger asChild>
               <DropdownMenuTrigger asChild>
                 <Button
-                  variant='outline'
+                  appearance='outline'
                   size='icon'
                   className='size-8'
                   aria-label='Update priority'
@@ -147,7 +147,7 @@ export function DataTableBulkActions<TData>({
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
-              variant='outline'
+              appearance='outline'
               size='icon'
               onClick={() => handleBulkExport()}
               className='size-8'
@@ -166,7 +166,7 @@ export function DataTableBulkActions<TData>({
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
-              variant='destructive'
+              color='destructive'
               size='icon'
               onClick={() => setShowDeleteConfirm(true)}
               className='size-8'

@@ -99,4 +99,17 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /** Layout */
+  --spacing-ui-md: 3rem;
+  --spacing-ui-sm: calc(var(--spacing-ui-md) * 0.75);
+  --spacing-ui-lg: calc(var(--spacing-ui-md) * 1.25);
+
+  --spacing-ui-gap-md: 1rem;
+  --spacing-ui-gap-sm: calc(var(--spacing-ui-gap-md) * 0.75);
+  --spacing-ui-gap-lg: calc(var(--spacing-ui-gap-md) * 1.25);
+
+  --radius-ui-md: 2rem;
+  --radius-ui-sm: calc(var(--radius-ui-md) * 0.75);
+  --radius-ui-lg: calc(var(--radius-ui-md) * 1.25);
 }

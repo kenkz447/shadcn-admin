@@ -98,7 +98,7 @@ export function TasksImportDialog({
         </Form>
         <DialogFooter className='gap-2'>
           <DialogClose asChild>
-            <Button variant='outline'>Close</Button>
+            <Button appearance='outline'>Close</Button>
           </DialogClose>
           <Button type='submit' form='task-import-form'>
             Import

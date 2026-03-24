@@ -88,7 +88,7 @@ export function Chats() {
 
                 <Button
                   size='icon'
-                  variant='ghost'
+                  appearance='ghost'
                   onClick={() => setCreateConversationDialog(true)}
                   className='rounded-lg'
                 >
@@ -172,7 +172,7 @@ export function Chats() {
                 <div className='flex gap-3'>
                   <Button
                     size='icon'
-                    variant='ghost'
+                    appearance='ghost'
                     className='-ms-2 h-full sm:hidden'
                     onClick={() => setMobileSelectedUser(null)}
                   >
@@ -201,21 +201,21 @@ export function Chats() {
                 <div className='-me-1 flex items-center gap-1 lg:gap-2'>
                   <Button
                     size='icon'
-                    variant='ghost'
+                    appearance='ghost'
                     className='hidden size-8 rounded-full sm:inline-flex lg:size-10'
                   >
                     <Video size={22} className='stroke-muted-foreground' />
                   </Button>
                   <Button
                     size='icon'
-                    variant='ghost'
+                    appearance='ghost'
                     className='hidden size-8 rounded-full sm:inline-flex lg:size-10'
                   >
                     <Phone size={22} className='stroke-muted-foreground' />
                   </Button>
                   <Button
                     size='icon'
-                    variant='ghost'
+                    appearance='ghost'
                     className='h-10 rounded-md sm:h-8 sm:w-4 lg:h-10 lg:w-6'
                   >
                     <MoreVertical className='stroke-muted-foreground sm:size-5' />
@@ -265,7 +265,7 @@ export function Chats() {
                       <Button
                         size='icon'
                         type='button'
-                        variant='ghost'
+                        appearance='ghost'
                         className='h-8 rounded-md'
                       >
                         <Plus size={20} className='stroke-muted-foreground' />
@@ -273,7 +273,7 @@ export function Chats() {
                       <Button
                         size='icon'
                         type='button'
-                        variant='ghost'
+                        appearance='ghost'
                         className='hidden h-8 rounded-md lg:inline-flex'
                       >
                         <ImagePlus
@@ -284,7 +284,7 @@ export function Chats() {
                       <Button
                         size='icon'
                         type='button'
-                        variant='ghost'
+                        appearance='ghost'
                         className='hidden h-8 rounded-md lg:inline-flex'
                       >
                         <Paperclip
@@ -302,7 +302,7 @@ export function Chats() {
                       />
                     </label>
                     <Button
-                      variant='ghost'
+                      appearance='ghost'
                       size='icon'
                       className='hidden sm:inline-flex'
                     >

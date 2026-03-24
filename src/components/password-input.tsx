@@ -1,6 +1,12 @@
 import * as React from 'react'
-import { Eye, EyeOff } from 'lucide-react'
+
+import {
+  Eye,
+  EyeOff,
+} from 'lucide-react'
+
 import { cn } from '@/lib/utils'
+
 import { Button } from './ui/button'
 
 type PasswordInputProps = Omit<
@@ -30,7 +36,7 @@ export function PasswordInput({
       <Button
         type='button'
         size='icon'
-        variant='ghost'
+        appearance='ghost'
         disabled={disabled}
         className='absolute end-1 top-1/2 h-6 w-6 -translate-y-1/2 rounded-md text-muted-foreground'
         onClick={() => setShowPassword((prev) => !prev)}

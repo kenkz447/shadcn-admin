@@ -1,4 +1,3 @@
-import { cn } from '@/lib/utils'
 import {
   AlertDialog,
   AlertDialogCancel,
@@ -9,6 +8,7 @@ import {
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog'
 import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 type ConfirmDialogProps = {
   open: boolean
@@ -54,7 +54,7 @@ export function ConfirmDialog(props: ConfirmDialogProps) {
             {cancelBtnText ?? 'Cancel'}
           </AlertDialogCancel>
           <Button
-            variant={destructive ? 'destructive' : 'default'}
+            color={destructive ? 'destructive' : 'primary'}
             onClick={handleConfirm}
             disabled={disabled || isLoading}
           >

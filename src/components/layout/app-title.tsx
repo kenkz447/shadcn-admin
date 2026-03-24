@@ -1,12 +1,17 @@
-import { Link } from '@tanstack/react-router'
-import { Menu, X } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import {
+  Menu,
+  X,
+} from 'lucide-react'
+
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
 } from '@/components/ui/sidebar'
+import { cn } from '@/lib/utils'
+import { Link } from '@tanstack/react-router'
+
 import { Button } from '../ui/button'
 
 export function AppTitle() {
@@ -47,7 +52,7 @@ function ToggleSidebar({
     <Button
       data-sidebar='trigger'
       data-slot='sidebar-trigger'
-      variant='ghost'
+      appearance='ghost'
       size='icon'
       className={cn('aspect-square size-8 max-md:scale-125', className)}
       onClick={(event) => {

@@ -114,7 +114,6 @@ export function NewChat({ users, onOpenChange, open }: NewChatProps) {
             </CommandList>
           </Command>
           <Button
-            variant={'default'}
             onClick={() => showSubmittedData(selectedUsers)}
             disabled={selectedUsers.length === 0}
           >

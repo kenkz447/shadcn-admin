@@ -121,7 +121,7 @@ export function SignUpForm({
 
         <div className='grid grid-cols-2 gap-2'>
           <Button
-            variant='outline'
+            appearance='outline'
             className='w-full'
             type='button'
             disabled={isLoading}
@@ -129,7 +129,7 @@ export function SignUpForm({
             <IconGithub className='h-4 w-4' /> GitHub
           </Button>
           <Button
-            variant='outline'
+            appearance='outline'
             className='w-full'
             type='button'
             disabled={isLoading}

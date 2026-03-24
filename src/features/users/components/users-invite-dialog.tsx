@@ -138,7 +138,7 @@ export function UsersInviteDialog({
         </Form>
         <DialogFooter className='gap-y-2'>
           <DialogClose asChild>
-            <Button variant='outline'>Cancel</Button>
+            <Button appearance='outline'>Cancel</Button>
           </DialogClose>
           <Button type='submit' form='user-invite-form'>
             Invite <Send />

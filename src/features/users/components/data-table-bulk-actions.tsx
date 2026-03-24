@@ -55,7 +55,7 @@ export function DataTableBulkActions<TData>({
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
-              variant='outline'
+              appearance='outline'
               size='icon'
               onClick={handleBulkInvite}
               className='size-8'
@@ -74,7 +74,7 @@ export function DataTableBulkActions<TData>({
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
-              variant='outline'
+              appearance='outline'
               size='icon'
               onClick={() => handleBulkStatusChange('active')}
               className='size-8'
@@ -93,7 +93,7 @@ export function DataTableBulkActions<TData>({
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
-              variant='outline'
+              appearance='outline'
               size='icon'
               onClick={() => handleBulkStatusChange('inactive')}
               className='size-8'
@@ -112,7 +112,7 @@ export function DataTableBulkActions<TData>({
         <Tooltip>
           <TooltipTrigger asChild>
             <Button
-              variant='destructive'
+              color='destructive'
               size='icon'
               onClick={() => setShowDeleteConfirm(true)}
               className='size-8'

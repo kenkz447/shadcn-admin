@@ -162,7 +162,7 @@ export function ProfileForm() {
           ))}
           <Button
             type='button'
-            variant='outline'
+            appearance='outline'
             size='sm'
             className='mt-2'
             onClick={() => append({ value: '' })}

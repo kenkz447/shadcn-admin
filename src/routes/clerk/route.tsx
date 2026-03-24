@@ -1,14 +1,25 @@
-/* eslint-disable react-refresh/only-export-components */
-import { createFileRoute, Outlet } from '@tanstack/react-router'
-import { ClerkProvider } from '@clerk/clerk-react'
-import { ExternalLink, Key } from 'lucide-react'
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
-import { Separator } from '@/components/ui/separator'
-import { SidebarTrigger } from '@/components/ui/sidebar'
+import {
+  ExternalLink,
+  Key,
+} from 'lucide-react'
+
 import { ConfigDrawer } from '@/components/config-drawer'
 import { AuthenticatedLayout } from '@/components/layout/authenticated-layout'
 import { Main } from '@/components/layout/main'
 import { ThemeSwitch } from '@/components/theme-switch'
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from '@/components/ui/alert'
+import { Separator } from '@/components/ui/separator'
+import { SidebarTrigger } from '@/components/ui/sidebar'
+import { ClerkProvider } from '@clerk/clerk-react'
+/* eslint-disable react-refresh/only-export-components */
+import {
+  createFileRoute,
+  Outlet,
+} from '@tanstack/react-router'
 
 export const Route = createFileRoute('/clerk')({
   component: RouteComponent,
@@ -42,7 +53,7 @@ function MissingClerkPubKey() {
   return (
     <AuthenticatedLayout>
       <div className='bg-backgroundh-16 flex justify-between p-4'>
-        <SidebarTrigger variant='outline' className='scale-125 sm:scale-100' />
+        <SidebarTrigger appearance='outline' className='scale-125 sm:scale-100' />
         <div className='space-x-4'>
           <ThemeSwitch />
           <ConfigDrawer />

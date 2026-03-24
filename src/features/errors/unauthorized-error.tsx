@@ -1,5 +1,8 @@
-import { useNavigate, useRouter } from '@tanstack/react-router'
 import { Button } from '@/components/ui/button'
+import {
+  useNavigate,
+  useRouter,
+} from '@tanstack/react-router'
 
 export function UnauthorisedError() {
   const navigate = useNavigate()
@@ -14,7 +17,7 @@ export function UnauthorisedError() {
           resource.
         </p>
         <div className='mt-6 flex gap-4'>
-          <Button variant='outline' onClick={() => history.go(-1)}>
+          <Button appearance='outline' onClick={() => history.go(-1)}>
             Go Back
           </Button>
           <Button onClick={() => navigate({ to: '/' })}>Back to Home</Button>

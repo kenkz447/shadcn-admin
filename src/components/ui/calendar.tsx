@@ -1,17 +1,21 @@
-import * as React from "react"
+import * as React from 'react'
+
 import {
   ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
-} from "lucide-react"
+} from 'lucide-react'
 import {
+  type DayButton,
   DayPicker,
   getDefaultClassNames,
-  type DayButton,
-} from "react-day-picker"
+} from 'react-day-picker'
 
-import { cn } from "@/lib/utils"
-import { Button, buttonVariants } from "@/components/ui/button"
+import {
+  Button,
+  buttonVariants,
+} from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 function Calendar({
   className,
@@ -23,7 +27,7 @@ function Calendar({
   components,
   ...props
 }: React.ComponentProps<typeof DayPicker> & {
-  buttonVariant?: React.ComponentProps<typeof Button>["variant"]
+  buttonVariant?: React.ComponentProps<typeof Button>["appearance"]
 }) {
   const defaultClassNames = getDefaultClassNames()
 
@@ -54,12 +58,12 @@ function Calendar({
           defaultClassNames.nav
         ),
         button_previous: cn(
-          buttonVariants({ variant: buttonVariant }),
+          buttonVariants({ appearance: buttonVariant }),
           "size-(--cell-size) p-0 select-none aria-disabled:opacity-50",
           defaultClassNames.button_previous
         ),
         button_next: cn(
-          buttonVariants({ variant: buttonVariant }),
+          buttonVariants({ appearance: buttonVariant }),
           "size-(--cell-size) p-0 select-none aria-disabled:opacity-50",
           defaultClassNames.button_next
         ),
@@ -181,6 +185,7 @@ function CalendarDayButton({
   className,
   day,
   modifiers,
+  color: _color,
   ...props
 }: React.ComponentProps<typeof DayButton>) {
   const defaultClassNames = getDefaultClassNames()
@@ -193,7 +198,7 @@ function CalendarDayButton({
   return (
     <Button
       ref={ref}
-      variant="ghost"
+      appearance="ghost"
       size="icon"
       data-day={day.date.toLocaleDateString()}
       data-selected-single={

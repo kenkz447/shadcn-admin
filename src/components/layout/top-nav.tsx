@@ -1,6 +1,5 @@
-import { Link } from '@tanstack/react-router'
 import { Menu } from 'lucide-react'
-import { cn } from '@/lib/utils'
+
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -8,6 +7,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { cn } from '@/lib/utils'
+import { Link } from '@tanstack/react-router'
 
 type TopNavProps = React.HTMLAttributes<HTMLElement> & {
   links: {
@@ -24,7 +25,7 @@ export function TopNav({ className, links, ...props }: TopNavProps) {
       <div className='lg:hidden'>
         <DropdownMenu modal={false}>
           <DropdownMenuTrigger asChild>
-            <Button size='icon' variant='outline' className='md:size-7'>
+            <Button size='icon' appearance='outline' className='md:size-7'>
               <Menu />
             </Button>
           </DropdownMenuTrigger>

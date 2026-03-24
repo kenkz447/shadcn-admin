@@ -157,7 +157,7 @@ function Unauthorized() {
           to access this resource.
         </p>
         <div className='mt-6 flex gap-4'>
-          <Button variant='outline' onClick={() => history.go(-1)}>
+          <Button appearance='outline' onClick={() => history.go(-1)}>
             Go Back
           </Button>
           <Button onClick={() => navigate({ to: '/clerk/sign-in' })}>
@@ -172,7 +172,7 @@ function Unauthorized() {
                   ? `Redirecting to Sign In page in ${countdown}s`
                   : `Redirecting...`}
               </p>
-              <Button variant='link' onClick={() => setCancelled(true)}>
+              <Button appearance='link' onClick={() => setCancelled(true)}>
                 Cancel Redirect
               </Button>
             </>
