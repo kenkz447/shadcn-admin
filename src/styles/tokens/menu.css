@@ -1,6 +1,5 @@
 :root {
     --menu-content-radius: var(--radius-md);
-
     --menu-content-min-width: calc(var(--spacing) * 32);
     --menu-content-border-color: var(--border);
     --menu-content-border-color-focus: var(--ring);

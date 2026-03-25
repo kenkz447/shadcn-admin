@@ -19,37 +19,36 @@
     --select-trigger-border-color-invalid: var(--control-border-color-invalid);
     --select-trigger-ring-color-invalid: var(--control-ring-color-invalid);
 
-    --select-icon-size: calc(var(--spacing) * 4);
+    --select-icon-size: var(--menu-item-icon-size);
     --select-icon-opacity: 0.5;
 
-    --select-content-min-width: calc(var(--spacing) * 32);
-    --select-content-radius: var(--overlay-content-radius);
-    --select-content-border-color: var(--overlay-content-border-color);
-    --select-content-border-color-focus: var(--overlay-content-border-color-focus);
-    --select-content-ring-width-focus: var(--overlay-content-ring-width-focus);
-    --select-content-ring-color-focus: var(--overlay-content-ring-color-focus);
-    --select-content-bg: var(--overlay-content-bg);
-    --select-content-padding: var(--overlay-content-padding);
+    --select-content-min-width: var(--menu-content-min-width);
+    --select-content-radius: var(--menu-content-radius);
+    --select-content-border-color: var(--menu-content-border-color);
+    --select-content-bg: var(--menu-content-bg);
+    --select-content-padding: var(--menu-content-padding);
 
-    --select-content-offset: calc(var(--spacing) * 1);
-    --select-content-offset-negative: calc(var(--spacing) * -1);
+    --select-content-offset: var(--menu-content-side-offset);
+    --select-content-offset-negative: calc(var(--menu-content-side-offset) * -1);
 
-    --select-label-padding-x: calc(var(--spacing) * 2);
-    --select-label-padding-y: calc(var(--spacing) * 1.5);
+    --select-label-fg: var(--menu-label-fg);
+    --select-label-font-size: var(--menu-label-font-size);
+    --select-label-padding-x: var(--menu-label-padding-x);
+    --select-label-padding-y: var(--menu-label-padding-y);
 
-    --select-item-gap: calc(var(--spacing) * 2);
-    --select-item-radius: var(--radius-sm);
-    --select-item-padding-y: calc(var(--spacing) * 1.5);
+    --select-item-gap: var(--menu-item-gap);
+    --select-item-radius: var(--menu-item-radius);
+    --select-item-padding-y: var(--menu-item-padding-y);
     --select-item-padding-right: calc(var(--spacing) * 8);
-    --select-item-padding-left: calc(var(--spacing) * 2);
+    --select-item-padding-left: var(--menu-item-padding-x);
 
-    --select-item-indicator-offset-right: calc(var(--spacing) * 2);
+    --select-item-indicator-offset-right: var(--menu-item-padding-x);
     --select-item-indicator-size: calc(var(--spacing) * 3.5);
 
-    --select-separator-margin-x: calc(var(--spacing) * -1);
-    --select-separator-margin-y: calc(var(--spacing) * 1);
-    --select-separator-height: 1px;
-    --select-separator-color: var(--border);
+    --select-separator-margin-x: var(--menu-separator-margin-x);
+    --select-separator-margin-y: var(--menu-separator-margin-y);
+    --select-separator-height: var(--menu-separator-height);
+    --select-separator-color: var(--menu-separator-color);
 
     --select-scroll-button-padding-y: calc(var(--spacing) * 1);
 }
