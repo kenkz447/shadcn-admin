@@ -3,21 +3,17 @@
 :root {
     --input-height: var(--control-height);
     --input-radius: var(--control-radius);
-    --input-padding-x: calc(var(--spacing) * 3);
-    --input-padding-y: calc(var(--spacing) * 1);
-    --input-border-color: var(--input);
-    --input-bg: transparent;
-    --input-placeholder-color: var(--muted-foreground);
+    --input-padding-x: var(--control-padding-x);
+    --input-padding-y: var(--control-padding-y);
+    --input-border-color: var(--control-border-color);
+    --input-bg: var(--control-bg);
+    --input-placeholder-color: var(--control-placeholder-color);
     --input-file-height: calc(var(--spacing) * 7);
 
-    --input-border-color-focus: var(--ring);
+    --input-border-color-focus: var(--control-border-color-focus);
     --input-ring-width-focus: var(--control-ring-width-focus);
     --input-ring-color-focus: var(--control-ring-color-focus);
 
     --input-border-color-invalid: var(--control-border-color-invalid);
     --input-ring-color-invalid: var(--control-ring-color-invalid);
-}
-
-.dark {
-    --input-bg: color-mix(in oklab, var(--input) 30%, transparent);
 }

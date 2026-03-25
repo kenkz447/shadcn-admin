@@ -7,8 +7,19 @@
 
   /* Shared geometry */
   --control-radius: var(--radius-md);
-  
+
+  /* Shared spacing */
+  --control-padding-x: calc(var(--spacing) * 3);
+  --control-padding-y: calc(var(--spacing) * 2);
+
+  /* Shared Colors */
+  --control-bg: transparent;
+  --control-bg-hover: transparent;
+  --control-border-color: var(--input);
+  --control-placeholder-color: var(--muted-foreground);
+
   /* Shared Focus and Validation */
+  --control-border-color-focus: var(--ring);
   --control-ring-width-focus: 3px;
   --control-ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
 
@@ -18,6 +29,10 @@
 }
 
 .dark {
+  /* Dark mode specific backgrounds */
+  --control-bg: color-mix(in oklab, var(--input) 30%, transparent);
+  --control-bg-hover: color-mix(in oklab, var(--input) 50%, transparent); /* Dùng cho hover states của button/select */
+
   --control-ring-color-focus: color-mix(in oklab, var(--ring) 40%, transparent);
   --control-border-color-invalid: color-mix(in oklab, var(--destructive) 50%, transparent);
   --control-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);

@@ -8,8 +8,8 @@
     --calendar-nav-gap: calc(var(--spacing) * 1);
     --calendar-dropdown-gap: calc(var(--spacing) * 1.5);
     --calendar-dropdown-radius: var(--control-radius);
-    --calendar-dropdown-border-color: var(--input);
-    --calendar-dropdown-border-color-focus: var(--ring);
+    --calendar-dropdown-border-color: var(--control-border-color);
+    --calendar-dropdown-border-color-focus: var(--control-border-color-focus);
     --calendar-dropdown-ring-width-focus: var(--control-ring-width-focus);
     --calendar-dropdown-ring-color-focus: var(--control-ring-color-focus);
     --calendar-caption-icon-size: calc(var(--spacing) * 3.5);

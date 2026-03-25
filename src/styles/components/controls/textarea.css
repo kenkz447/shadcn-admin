@@ -3,20 +3,16 @@
 :root {
     --textarea-min-height: calc(var(--spacing) * 16);
     --textarea-radius: var(--control-radius);
-    --textarea-padding-x: calc(var(--spacing) * 3);
-    --textarea-padding-y: calc(var(--spacing) * 2);
-    --textarea-border-color: var(--input);
-    --textarea-bg: transparent;
-    --textarea-placeholder-color: var(--muted-foreground);
+    --textarea-padding-x: var(--control-padding-x);
+    --textarea-padding-y: var(--control-padding-y);
+    --textarea-border-color: var(--control-border-color);
+    --textarea-bg: var(--control-bg);
+    --textarea-placeholder-color: var(--control-placeholder-color);
 
-    --textarea-border-color-focus: var(--ring);
+    --textarea-border-color-focus: var(--control-border-color-focus);
     --textarea-ring-width-focus: var(--control-ring-width-focus);
     --textarea-ring-color-focus: var(--control-ring-color-focus);
 
     --textarea-border-color-invalid: var(--control-border-color-invalid);
     --textarea-ring-color-invalid: var(--control-ring-color-invalid);
-}
-
-.dark {
-    --textarea-bg: color-mix(in oklab, var(--input) 30%, transparent);
 }

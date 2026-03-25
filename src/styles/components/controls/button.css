@@ -55,18 +55,18 @@
 
 	--btn-destructive-bg: color-mix(in oklab, var(--destructive) 10%, transparent);
 	--btn-destructive-bg-hover: color-mix(in oklab, var(--destructive) 20%, transparent);
-	--btn-destructive-ring-color-focus: color-mix(in oklab, var(--destructive) 20%, transparent);
+	--btn-destructive-ring-color-focus: var(--control-ring-color-invalid);
 	--btn-destructive-border-color-focus: color-mix(in oklab, var(--destructive) 40%, transparent);
 }
 
 .dark {
-	--btn-outline-bg: color-mix(in oklab, var(--input) 30%, transparent);
-	--btn-outline-border-color: var(--input);
-	--btn-outline-bg-hover: color-mix(in oklab, var(--input) 50%, transparent);
+	--btn-outline-bg: var(--control-bg);
+	--btn-outline-border-color: var(--control-border-color);
+	--btn-outline-bg-hover: var(--control-bg-hover);
 
 	--btn-ghost-bg-hover: color-mix(in oklab, var(--muted) 50%, transparent);
 
 	--btn-destructive-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
 	--btn-destructive-bg-hover: color-mix(in oklab, var(--destructive) 30%, transparent);
-	--btn-destructive-ring-color-focus: color-mix(in oklab, var(--destructive) 40%, transparent);
+	--btn-destructive-ring-color-focus: var(--control-ring-color-invalid);
 }

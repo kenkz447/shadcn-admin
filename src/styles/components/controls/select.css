@@ -3,16 +3,16 @@
 :root {
     --select-trigger-gap: calc(var(--spacing) * 2);
     --select-trigger-radius: var(--control-radius);
-    --select-trigger-border-color: var(--input);
-    --select-trigger-bg: transparent;
-    --select-trigger-bg-hover: transparent;
-    --select-trigger-padding-x: calc(var(--spacing) * 3);
-    --select-trigger-padding-y: calc(var(--spacing) * 2);
+    --select-trigger-border-color: var(--control-border-color);
+    --select-trigger-bg: var(--control-bg);
+    --select-trigger-bg-hover: var(--control-bg-hover);
+    --select-trigger-padding-x: var(--control-padding-x);
+    --select-trigger-padding-y: var(--control-padding-y);
     --select-trigger-height: var(--control-height);
     --select-trigger-height-sm: var(--control-height-sm);
-    --select-trigger-placeholder-color: var(--muted-foreground);
+    --select-trigger-placeholder-color: var(--control-placeholder-color);
 
-    --select-trigger-border-color-focus: var(--ring);
+    --select-trigger-border-color-focus: var(--control-border-color-focus);
     --select-trigger-ring-width-focus: var(--control-ring-width-focus);
     --select-trigger-ring-color-focus: var(--control-ring-color-focus);
 
@@ -48,9 +48,4 @@
     --select-separator-color: var(--border);
 
     --select-scroll-button-padding-y: calc(var(--spacing) * 1);
-}
-
-.dark {
-    --select-trigger-bg: color-mix(in oklab, var(--input) 30%, transparent);
-    --select-trigger-bg-hover: color-mix(in oklab, var(--input) 50%, transparent);
 }

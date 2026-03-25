@@ -5,10 +5,10 @@
 
     --input-otp-slot-size: var(--control-height);
     --input-otp-slot-radius: var(--control-radius);
-    --input-otp-slot-border-color: var(--input);
-    --input-otp-slot-bg: transparent;
+    --input-otp-slot-border-color: var(--control-border-color);
+    --input-otp-slot-bg: var(--control-bg);
 
-    --input-otp-slot-border-color-active: var(--ring);
+    --input-otp-slot-border-color-active: var(--control-border-color-focus);
     --input-otp-slot-ring-width-active: var(--control-ring-width-focus);
     --input-otp-slot-ring-color-active: var(--control-ring-color-focus);
 
@@ -17,8 +17,4 @@
 
     --input-otp-caret-height: calc(var(--spacing) * 4);
     --input-otp-caret-width: 1px;
-}
-
-.dark {
-    --input-otp-slot-bg: color-mix(in oklab, var(--input) 30%, transparent);
 }
