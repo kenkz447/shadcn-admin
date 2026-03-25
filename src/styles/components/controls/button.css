@@ -26,10 +26,10 @@
 	--btn-height-sm: var(--control-height-sm);
 	--btn-height-lg: var(--control-height-lg);
 
-	--btn-gap: calc(var(--spacing) * 1.5);
-	--btn-gap-xs: calc(var(--spacing) * 1);
-	--btn-gap-sm: calc(var(--spacing) * 1);
-	--btn-gap-lg: calc(var(--spacing) * 1.5);
+	--btn-gap: var(--control-gap);
+	--btn-gap-xs: var(--control-gap-xs);
+	--btn-gap-sm: var(--control-gap-sm);
+	--btn-gap-lg: var(--control-gap-lg);
 
 	--btn-padding-x: calc(var(--spacing) * 2.5);
 	--btn-padding-x-xs: calc(var(--spacing) * 2);

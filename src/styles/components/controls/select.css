@@ -1,7 +1,7 @@
 /** Select **/
 
 :root {
-    --select-trigger-gap: calc(var(--spacing) * 2);
+    --select-trigger-gap: var(--control-gap);
     --select-trigger-radius: var(--control-radius);
     --select-trigger-border-color: var(--control-border-color);
     --select-trigger-bg: var(--control-bg);
@@ -23,12 +23,16 @@
     --select-icon-opacity: 0.5;
 
     --select-content-min-width: calc(var(--spacing) * 32);
-    --select-content-radius: var(--control-radius);
-    --select-content-border-color: var(--border);
+    --select-content-radius: var(--overlay-content-radius);
+    --select-content-border-color: var(--overlay-content-border-color);
+    --select-content-border-color-focus: var(--overlay-content-border-color-focus);
+    --select-content-ring-width-focus: var(--overlay-content-ring-width-focus);
+    --select-content-ring-color-focus: var(--overlay-content-ring-color-focus);
+    --select-content-bg: var(--overlay-content-bg);
+    --select-content-padding: var(--overlay-content-padding);
 
     --select-content-offset: calc(var(--spacing) * 1);
     --select-content-offset-negative: calc(var(--spacing) * -1);
-    --select-viewport-padding: calc(var(--spacing) * 1);
 
     --select-label-padding-x: calc(var(--spacing) * 2);
     --select-label-padding-y: calc(var(--spacing) * 1.5);

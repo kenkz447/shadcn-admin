@@ -1,7 +1,10 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import './theme.css';
+
+@import './tokens/overlay.css';
 @import './tokens/controls.css';
+
 @import './components/containers/card.css';
 @import './components/containers/dialog.css';
 @import './components/containers/sheet.css';

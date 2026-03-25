@@ -1,25 +1,30 @@
 /** Calendar **/
 
 :root {
-    --calendar-padding: calc(var(--spacing) * 3);
-    --calendar-cell-size: calc(var(--spacing) * 8);
-    --calendar-months-gap: calc(var(--spacing) * 4);
+    --calendar-padding: 0;
+    --calendar-cell-size: var(--control-height);
+    
+    --calendar-months-gap: calc(var(--spacing) * 4); /* For range picker */
     --calendar-month-gap: calc(var(--spacing) * 4);
+
     --calendar-nav-gap: calc(var(--spacing) * 1);
+    --calendar-nav-icon-size: calc(var(--spacing) * 4);
+
     --calendar-dropdown-gap: calc(var(--spacing) * 1.5);
     --calendar-dropdown-radius: var(--control-radius);
     --calendar-dropdown-border-color: var(--control-border-color);
     --calendar-dropdown-border-color-focus: var(--control-border-color-focus);
     --calendar-dropdown-ring-width-focus: var(--control-ring-width-focus);
     --calendar-dropdown-ring-color-focus: var(--control-ring-color-focus);
+
     --calendar-caption-icon-size: calc(var(--spacing) * 3.5);
-    --calendar-nav-icon-size: calc(var(--spacing) * 4);
-    --calendar-week-margin-top: calc(var(--spacing) * 2);
     --calendar-range-radius: var(--control-radius);
-    --calendar-day-button-gap: calc(var(--spacing) * 1);
+
     --calendar-day-button-ring-width: var(--control-ring-width-focus);
     --calendar-day-button-ring-color: var(--control-ring-color-focus);
+
     --calendar-weekday-radius: var(--control-radius);
     --calendar-weekday-text-size: 0.8rem;
     --calendar-week-number-text-size: 0.8rem;
+    --calendar-week-margin-top: calc(var(--spacing) * 2);
 }

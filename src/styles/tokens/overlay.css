@@ -1,0 +1,9 @@
+:root {
+    --overlay-content-radius: var(--radius-md);
+    --overlay-content-border-color: var(--control-border-color);
+    --overlay-content-border-color-focus: var(--control-border-color-focus);
+    --overlay-content-ring-width-focus: var(--control-ring-width-focus);
+    --overlay-content-ring-color-focus: var(--control-ring-color-focus);
+    --overlay-content-bg: var(--control-bg);
+    --overlay-content-padding: calc(var(--spacing) * 1);
+}

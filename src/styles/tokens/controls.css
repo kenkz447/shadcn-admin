@@ -5,6 +5,12 @@
   --control-height: calc(var(--spacing) * 9); /* Default height for form-fields and buttons */
   --control-height-lg: calc(var(--spacing) * 10);
 
+  /* Gap scale */
+  --control-gap: calc(var(--spacing) * 2);
+  --control-gap-xs: calc(var(--spacing) * 1);
+  --control-gap-sm: calc(var(--spacing) * 1);
+  --control-gap-lg: calc(var(--spacing) * 2);
+
   /* Shared geometry */
   --control-radius: var(--radius-md);
 
