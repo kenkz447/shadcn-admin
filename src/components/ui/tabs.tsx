@@ -1,8 +1,12 @@
-import * as React from "react"
-import { cva, type VariantProps } from "class-variance-authority"
-import { Tabs as TabsPrimitive } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import {
+    cva,
+    type VariantProps,
+} from 'class-variance-authority'
+import { Tabs as TabsPrimitive } from 'radix-ui'
+
+import { cn } from '@/lib/utils'
 
 function Tabs({
   className,
@@ -62,7 +66,7 @@ function TabsTrigger({
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
       className={cn(
-        "relative inline-flex h-(--tabs-item-height) flex-1 items-center justify-center gap-(--tabs-item-gap) rounded-(--tabs-item-radius) border border-(--tabs-item-border) px-(--tabs-item-padding-x) py-(--tabs-item-padding-y) text-sm font-medium whitespace-nowrap text-(--tabs-item-fg) transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:bg-(--tabs-item-bg-hover) hover:text-(--tabs-item-fg-hover) focus-visible:border-(--tabs-item-outline-color) focus-visible:ring-(length:--tabs-item-ring-width) focus-visible:ring-(--tabs-item-ring-color) focus-visible:outline-1 focus-visible:outline-(--tabs-item-outline-color) disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "relative inline-flex h-(--tabs-item-height) flex-1 items-center justify-center gap-(--tabs-item-gap) rounded-(--tabs-item-radius) border border-(--tabs-item-border) px-(--tabs-item-padding-x) py-(--tabs-item-padding-y) text-sm font-medium whitespace-nowrap text-(--tabs-item-fg) transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start hover:bg-(--tabs-item-bg-hover) hover:text-(--tabs-item-fg-hover) focus-visible:border-(--tabs-item-outline-color-focus) focus-visible:ring-(length:--tabs-item-ring-width-focus) focus-visible:ring-(--tabs-item-ring-color-focus) focus-visible:outline-1 focus-visible:outline-(--tabs-item-outline-color-focus) disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         "group-data-[variant=line]/tabs-list:bg-transparent group-data-[variant=line]/tabs-list:data-[state=active]:border-transparent group-data-[variant=line]/tabs-list:data-[state=active]:bg-transparent",
         "data-[state=active]:border-(--tabs-item-border-active) data-[state=active]:bg-(--tabs-item-bg-active) data-[state=active]:text-(--tabs-item-fg-active)",
         "after:absolute after:bg-(--tabs-indicator-color) after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-(--tabs-indicator-offset-horizontal) group-data-[orientation=horizontal]/tabs:after:h-(--tabs-indicator-thickness-horizontal) group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:right-(--tabs-indicator-offset-vertical) group-data-[orientation=vertical]/tabs:after:w-(--tabs-indicator-thickness-vertical) group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100",
@@ -86,4 +90,4 @@ function TabsContent({
   )
 }
 
-export { Tabs, TabsList, TabsTrigger, TabsContent, tabsListVariants }
+export { Tabs, TabsContent, TabsList, tabsListVariants, TabsTrigger }

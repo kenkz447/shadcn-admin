@@ -1,10 +1,11 @@
 "use client"
 
-import * as React from "react"
-import { XIcon } from "lucide-react"
-import { Dialog as SheetPrimitive } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import { XIcon } from 'lucide-react'
+import { Dialog as SheetPrimitive } from 'radix-ui'
+
+import { cn } from '@/lib/utils'
 
 function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
   return <SheetPrimitive.Root data-slot="sheet" {...props} />
@@ -75,7 +76,7 @@ function SheetContent({
       >
         {children}
         {showCloseButton && (
-          <SheetPrimitive.Close className="absolute top-(--sheet-close-offset-top) right-(--sheet-close-offset-right) rounded-(--sheet-close-radius) opacity-(--sheet-close-opacity) ring-offset-background transition-opacity hover:opacity-(--sheet-close-opacity-hover) focus:ring-(length:--sheet-close-ring-width) focus:ring-(--sheet-close-ring-color) focus:ring-offset-(length:--sheet-close-ring-offset-width) focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-secondary">
+          <SheetPrimitive.Close className="absolute top-(--sheet-close-offset-top) right-(--sheet-close-offset-right) rounded-(--sheet-close-radius) opacity-(--sheet-close-opacity) ring-offset-background transition-opacity hover:opacity-(--sheet-close-opacity-hover) focus:ring-(length:--sheet-close-ring-width-focus) focus:ring-(--sheet-close-ring-color-focus) focus:ring-offset-(length:--sheet-close-ring-offset-width) focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-secondary">
             <XIcon className="size-(--sheet-close-icon-size)" />
             <span className="sr-only">Close</span>
           </SheetPrimitive.Close>
@@ -137,13 +138,4 @@ function SheetDescription({
   )
 }
 
-export {
-  Sheet,
-  SheetTrigger,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetFooter,
-  SheetTitle,
-  SheetDescription,
-}
+export { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger }

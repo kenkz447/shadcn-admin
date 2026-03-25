@@ -1,0 +1,24 @@
+:root {
+  /* Height scale */
+  --control-height-xs: calc(var(--spacing) * 6);
+  --control-height-sm: calc(var(--spacing) * 7);
+  --control-height: calc(var(--spacing) * 9); /* Default height for form-fields and buttons */
+  --control-height-lg: calc(var(--spacing) * 10);
+
+  /* Shared geometry */
+  --control-radius: var(--radius-md);
+  
+  /* Shared Focus and Validation */
+  --control-ring-width-focus: 3px;
+  --control-ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
+
+  --control-border-color-invalid: var(--destructive);
+  --control-ring-width-invalid: 3px;
+  --control-ring-color-invalid: color-mix(in oklab, var(--destructive) 20%, transparent);
+}
+
+.dark {
+  --control-ring-color-focus: color-mix(in oklab, var(--ring) 40%, transparent);
+  --control-border-color-invalid: color-mix(in oklab, var(--destructive) 50%, transparent);
+  --control-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
+}

@@ -26,10 +26,10 @@
 
     --dropdown-menu-shortcut-margin-left: auto;
 
-    --dropdown-menu-destructive-focus-bg: color-mix(in oklab, var(--destructive) 10%, transparent);
-    --dropdown-menu-destructive-focus-fg: var(--destructive);
+    --dropdown-menu-destructive-bg-focus: color-mix(in oklab, var(--destructive) 10%, transparent);
+    --dropdown-menu-destructive-fg-focus: var(--destructive);
 }
 
 .dark {
-    --dropdown-menu-destructive-focus-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
+    --dropdown-menu-destructive-bg-focus: color-mix(in oklab, var(--destructive) 20%, transparent);
 }

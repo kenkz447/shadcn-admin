@@ -1,10 +1,15 @@
 "use client"
 
-import * as React from "react"
-import { CheckIcon, ChevronRightIcon, CircleIcon } from "lucide-react"
-import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import {
+    CheckIcon,
+    ChevronRightIcon,
+    CircleIcon,
+} from 'lucide-react'
+import { DropdownMenu as DropdownMenuPrimitive } from 'radix-ui'
+
+import { cn } from '@/lib/utils'
 
 function DropdownMenu({
   ...props
@@ -74,7 +79,7 @@ function DropdownMenuItem({
       data-inset={inset}
       data-variant={variant}
       className={cn(
-        "relative flex cursor-default items-center gap-(--dropdown-menu-item-gap) rounded-(--dropdown-menu-item-radius) px-(--dropdown-menu-item-padding-x) py-(--dropdown-menu-item-padding-y) text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 data-[inset]:pl-(--dropdown-menu-item-inset-padding-left) data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-(--dropdown-menu-destructive-focus-bg) data-[variant=destructive]:focus:text-(--dropdown-menu-destructive-focus-fg) [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--dropdown-menu-item-icon-size) [&_svg:not([class*='text-'])]:text-muted-foreground data-[variant=destructive]:*:[svg]:text-destructive!",
+        "relative flex cursor-default items-center gap-(--dropdown-menu-item-gap) rounded-(--dropdown-menu-item-radius) px-(--dropdown-menu-item-padding-x) py-(--dropdown-menu-item-padding-y) text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 data-[inset]:pl-(--dropdown-menu-item-inset-padding-left) data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-(--dropdown-menu-destructive-bg-focus) data-[variant=destructive]:focus:text-(--dropdown-menu-destructive-fg-focus) [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--dropdown-menu-item-icon-size) [&_svg:not([class*='text-'])]:text-muted-foreground data-[variant=destructive]:*:[svg]:text-destructive!",
         className
       )}
       {...props}
@@ -242,19 +247,19 @@ function DropdownMenuSubContent({
 }
 
 export {
-  DropdownMenu,
-  DropdownMenuPortal,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuLabel,
-  DropdownMenuItem,
-  DropdownMenuCheckboxItem,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubTrigger,
-  DropdownMenuSubContent,
+    DropdownMenu,
+    DropdownMenuCheckboxItem,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuPortal,
+    DropdownMenuRadioGroup,
+    DropdownMenuRadioItem,
+    DropdownMenuSeparator,
+    DropdownMenuShortcut,
+    DropdownMenuSub,
+    DropdownMenuSubContent,
+    DropdownMenuSubTrigger,
+    DropdownMenuTrigger,
 }

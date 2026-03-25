@@ -1,27 +1,31 @@
-import * as React from "react"
-import { cva, type VariantProps } from "class-variance-authority"
-import { PanelLeftIcon } from "lucide-react"
-import { Slot } from "radix-ui"
+import * as React from 'react'
 
-import { useIsMobile } from "@/hooks/use-mobile"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Separator } from "@/components/ui/separator"
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-} from "@/components/ui/sheet"
-import { Skeleton } from "@/components/ui/skeleton"
+    cva,
+    type VariantProps,
+} from 'class-variance-authority'
+import { PanelLeftIcon } from 'lucide-react'
+import { Slot } from 'radix-ui'
+
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Separator } from '@/components/ui/separator'
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+} from '@/components/ui/sheet'
+import { Skeleton } from '@/components/ui/skeleton'
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from '@/components/ui/tooltip'
+import { useIsMobile } from '@/hooks/use-mobile'
+import { cn } from '@/lib/utils'
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
@@ -418,7 +422,7 @@ function SidebarGroupLabel({
       data-slot="sidebar-group-label"
       data-sidebar="group-label"
       className={cn(
-        "flex h-(--sidebar-group-label-height) shrink-0 items-center rounded-(--sidebar-group-label-radius) px-(--sidebar-group-label-padding-x) text-xs font-medium text-sidebar-foreground/70 ring-sidebar-ring outline-hidden transition-[margin,opacity] duration-200 ease-linear focus-visible:ring-(length:--sidebar-group-label-focus-ring-width) [&>svg]:size-(--sidebar-group-label-icon-size) [&>svg]:shrink-0",
+        "flex h-(--sidebar-group-label-height) shrink-0 items-center rounded-(--sidebar-group-label-radius) px-(--sidebar-group-label-padding-x) text-xs font-medium text-sidebar-foreground/70 ring-sidebar-ring outline-hidden transition-[margin,opacity] duration-200 ease-linear focus-visible:ring-(length:--sidebar-group-label-ring-width-focus) [&>svg]:size-(--sidebar-group-label-icon-size) [&>svg]:shrink-0",
         "group-data-[collapsible=icon]:mt-(--sidebar-group-label-collapsed-margin-top) group-data-[collapsible=icon]:opacity-0",
         className
       )}
@@ -439,7 +443,7 @@ function SidebarGroupAction({
       data-slot="sidebar-group-action"
       data-sidebar="group-action"
       className={cn(
-        "absolute top-(--sidebar-group-action-top) right-(--sidebar-group-action-right) flex aspect-square w-(--sidebar-group-action-width) items-center justify-center rounded-(--sidebar-group-action-radius) p-0 text-sidebar-foreground ring-sidebar-ring outline-hidden transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-(length:--sidebar-group-action-focus-ring-width) [&>svg]:size-(--sidebar-group-action-icon-size) [&>svg]:shrink-0",
+        "absolute top-(--sidebar-group-action-top) right-(--sidebar-group-action-right) flex aspect-square w-(--sidebar-group-action-width) items-center justify-center rounded-(--sidebar-group-action-radius) p-0 text-sidebar-foreground ring-sidebar-ring outline-hidden transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-(length:--sidebar-group-action-ring-width-focus) [&>svg]:size-(--sidebar-group-action-icon-size) [&>svg]:shrink-0",
         // Increases the hit area of the button on mobile.
         "after:absolute after:inset-(--sidebar-group-action-hit-area) md:after:hidden",
         "group-data-[collapsible=icon]:hidden",
@@ -490,7 +494,7 @@ function SidebarMenuItem({ className, ...props }: React.ComponentProps<"li">) {
 }
 
 const sidebarMenuButtonVariants = cva(
-  "peer/menu-button flex w-full items-center gap-(--sidebar-menu-button-gap) overflow-hidden rounded-(--sidebar-menu-button-radius) p-(--sidebar-menu-button-padding) text-left text-sm ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-(--sidebar-menu-button-padding-right-with-action) group-data-[collapsible=icon]:size-(--sidebar-menu-button-collapsed-size)! group-data-[collapsible=icon]:p-(--sidebar-menu-button-padding)! hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-(length:--sidebar-menu-button-focus-ring-width) active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-(--sidebar-menu-button-icon-size) [&>svg]:shrink-0",
+  "peer/menu-button flex w-full items-center gap-(--sidebar-menu-button-gap) overflow-hidden rounded-(--sidebar-menu-button-radius) p-(--sidebar-menu-button-padding) text-left text-sm ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-(--sidebar-menu-button-padding-right-with-action) group-data-[collapsible=icon]:size-(--sidebar-menu-button-collapsed-size)! group-data-[collapsible=icon]:p-(--sidebar-menu-button-padding)! hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-(length:--sidebar-menu-button-ring-width-focus) active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-(--sidebar-menu-button-icon-size) [&>svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -577,7 +581,7 @@ function SidebarMenuAction({
       data-slot="sidebar-menu-action"
       data-sidebar="menu-action"
       className={cn(
-        "absolute top-(--sidebar-menu-action-top) right-(--sidebar-menu-action-right) flex aspect-square w-(--sidebar-menu-action-width) items-center justify-center rounded-(--sidebar-menu-action-radius) p-0 text-sidebar-foreground ring-sidebar-ring outline-hidden transition-transform peer-hover/menu-button:text-sidebar-accent-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-(length:--sidebar-menu-action-focus-ring-width) [&>svg]:size-(--sidebar-menu-action-icon-size) [&>svg]:shrink-0",
+        "absolute top-(--sidebar-menu-action-top) right-(--sidebar-menu-action-right) flex aspect-square w-(--sidebar-menu-action-width) items-center justify-center rounded-(--sidebar-menu-action-radius) p-0 text-sidebar-foreground ring-sidebar-ring outline-hidden transition-transform peer-hover/menu-button:text-sidebar-accent-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-(length:--sidebar-menu-action-ring-width-focus) [&>svg]:size-(--sidebar-menu-action-icon-size) [&>svg]:shrink-0",
         // Increases the hit area of the button on mobile.
         "after:absolute after:inset-(--sidebar-menu-action-hit-area) md:after:hidden",
         "peer-data-[size=sm]/menu-button:top-(--sidebar-menu-action-top-sm)",
@@ -705,7 +709,7 @@ function SidebarMenuSubButton({
       data-size={size}
       data-active={isActive}
       className={cn(
-        "flex h-(--sidebar-menu-sub-button-height) min-w-0 translate-x-(--sidebar-menu-sub-button-translate-x) items-center gap-(--sidebar-menu-sub-button-gap) overflow-hidden rounded-(--sidebar-menu-sub-button-radius) px-(--sidebar-menu-sub-button-padding-x) text-sidebar-foreground ring-sidebar-ring outline-hidden hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-(length:--sidebar-menu-sub-button-focus-ring-width) active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&>span:last-child]:truncate [&>svg]:size-(--sidebar-menu-sub-button-icon-size) [&>svg]:shrink-0 [&>svg]:text-sidebar-accent-foreground",
+        "flex h-(--sidebar-menu-sub-button-height) min-w-0 translate-x-(--sidebar-menu-sub-button-translate-x) items-center gap-(--sidebar-menu-sub-button-gap) overflow-hidden rounded-(--sidebar-menu-sub-button-radius) px-(--sidebar-menu-sub-button-padding-x) text-sidebar-foreground ring-sidebar-ring outline-hidden hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-(length:--sidebar-menu-sub-button-ring-width-focus) active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&>span:last-child]:truncate [&>svg]:size-(--sidebar-menu-sub-button-icon-size) [&>svg]:shrink-0 [&>svg]:text-sidebar-accent-foreground",
         "data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground",
         size === "sm" && "text-xs",
         size === "md" && "text-sm",
@@ -718,28 +722,28 @@ function SidebarMenuSubButton({
 }
 
 export {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarGroup,
-  SidebarGroupAction,
-  SidebarGroupContent,
-  SidebarGroupLabel,
-  SidebarHeader,
-  SidebarInput,
-  SidebarInset,
-  SidebarMenu,
-  SidebarMenuAction,
-  SidebarMenuBadge,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarMenuSkeleton,
-  SidebarMenuSub,
-  SidebarMenuSubButton,
-  SidebarMenuSubItem,
-  SidebarProvider,
-  SidebarRail,
-  SidebarSeparator,
-  SidebarTrigger,
-  useSidebar,
+    Sidebar,
+    SidebarContent,
+    SidebarFooter,
+    SidebarGroup,
+    SidebarGroupAction,
+    SidebarGroupContent,
+    SidebarGroupLabel,
+    SidebarHeader,
+    SidebarInput,
+    SidebarInset,
+    SidebarMenu,
+    SidebarMenuAction,
+    SidebarMenuBadge,
+    SidebarMenuButton,
+    SidebarMenuItem,
+    SidebarMenuSkeleton,
+    SidebarMenuSub,
+    SidebarMenuSubButton,
+    SidebarMenuSubItem,
+    SidebarProvider,
+    SidebarRail,
+    SidebarSeparator,
+    SidebarTrigger,
+    useSidebar,
 }

@@ -1,10 +1,11 @@
 "use client"
 
-import * as React from "react"
-import { CheckIcon } from "lucide-react"
-import { Checkbox as CheckboxPrimitive } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import { CheckIcon } from 'lucide-react'
+import { Checkbox as CheckboxPrimitive } from 'radix-ui'
+
+import { cn } from '@/lib/utils'
 
 function Checkbox({
   className,
@@ -14,7 +15,7 @@ function Checkbox({
     <CheckboxPrimitive.Root
       data-slot="checkbox"
       className={cn(
-        "peer size-(--checkbox-size) shrink-0 rounded-(--checkbox-radius) border border-(--checkbox-border-color) bg-(--checkbox-bg) shadow-xs transition-shadow outline-none focus-visible:border-(--checkbox-focus-border-color) focus-visible:ring-(length:--checkbox-focus-ring-width) focus-visible:ring-(--checkbox-focus-ring-color) disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-(--checkbox-invalid-border-color) aria-invalid:ring-(--checkbox-invalid-ring-color) data-[state=checked]:border-(--checkbox-checked-border-color) data-[state=checked]:bg-(--checkbox-checked-bg) data-[state=checked]:text-(--checkbox-checked-fg)",
+        "peer size-(--checkbox-size) shrink-0 rounded-(--checkbox-radius) border border-(--checkbox-border-color) bg-(--checkbox-bg) shadow-xs transition-shadow outline-none focus-visible:border-(--checkbox-border-color-focus) focus-visible:ring-(length:--checkbox-ring-width-focus) focus-visible:ring-(--checkbox-ring-color-focus) disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-(--checkbox-border-color-invalid) aria-invalid:ring-(--checkbox-ring-color-invalid) data-[state=checked]:border-(--checkbox-checked-border-color) data-[state=checked]:bg-(--checkbox-checked-bg) data-[state=checked]:text-(--checkbox-checked-fg)",
         className
       )}
       {...props}

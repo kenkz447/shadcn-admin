@@ -32,9 +32,9 @@
     --tabs-item-fg-active: var(--foreground);
 
     /* focus-visible */
-    --tabs-item-outline-color: var(--ring);
-    --tabs-item-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
-    --tabs-item-ring-width: 3px;
+    --tabs-item-outline-color-focus: var(--ring);
+    --tabs-item-ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
+    --tabs-item-ring-width-focus: 3px;
 
     /* Indicator cho variant=line */
     --tabs-indicator-color: var(--foreground);

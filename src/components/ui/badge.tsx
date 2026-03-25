@@ -1,11 +1,15 @@
-import * as React from "react"
-import { cva, type VariantProps } from "class-variance-authority"
-import { Slot } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import {
+    cva,
+    type VariantProps,
+} from 'class-variance-authority'
+import { Slot } from 'radix-ui'
+
+import { cn } from '@/lib/utils'
 
 const badgeVariants = cva(
-  "inline-flex w-fit shrink-0 items-center justify-center gap-(--badge-gap) overflow-hidden rounded-(--badge-radius) border border-(--badge-border-color) px-(--badge-padding-x) py-(--badge-padding-y) text-xs font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:border-(--badge-focus-border-color) focus-visible:ring-(length:--badge-focus-ring-width) focus-visible:ring-(--badge-focus-ring-color) aria-invalid:border-(--badge-invalid-border-color) aria-invalid:ring-(--badge-invalid-ring-color) [&>svg]:pointer-events-none [&>svg]:size-(--badge-icon-size)",
+  "inline-flex w-fit shrink-0 items-center justify-center gap-(--badge-gap) overflow-hidden rounded-(--badge-radius) border border-(--badge-border-color) px-(--badge-padding-x) py-(--badge-padding-y) text-xs font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:border-(--badge-border-color-focus) focus-visible:ring-(length:--badge-ring-width-focus) focus-visible:ring-(--badge-ring-color-focus) aria-invalid:border-(--badge-border-color-invalid) aria-invalid:ring-(--badge-ring-color-invalid) [&>svg]:pointer-events-none [&>svg]:size-(--badge-icon-size)",
   {
     variants: {
       variant: {
@@ -13,7 +17,7 @@ const badgeVariants = cva(
         secondary:
           "bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
         destructive:
-          "bg-destructive text-white focus-visible:ring-(--badge-destructive-focus-ring) dark:bg-destructive/60 [a&]:hover:bg-destructive/90",
+          "bg-destructive text-white focus-visible:ring-(--badge-destructive-ring-color-focus) dark:bg-destructive/60 [a&]:hover:bg-destructive/90",
         outline:
           "border-border text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
         ghost: "[a&]:hover:bg-accent [a&]:hover:text-accent-foreground",

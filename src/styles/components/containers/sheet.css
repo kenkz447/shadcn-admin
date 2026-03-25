@@ -13,9 +13,9 @@
     --sheet-close-radius: var(--radius-xs);
     --sheet-close-opacity: 0.7;
     --sheet-close-opacity-hover: 1;
-    --sheet-close-ring-width: 2px;
-    --sheet-close-ring-color: var(--ring);
-    --sheet-close-ring-offset-width: 2px;
+    --sheet-close-ring-width-focus: 2px;
+    --sheet-close-ring-color-focus: var(--ring);
+    --sheet-close-ring-offset-width-focus: 2px;
     --sheet-close-icon-size: calc(var(--spacing) * 4);
 
     --sheet-header-gap: calc(var(--spacing) * 1.5);

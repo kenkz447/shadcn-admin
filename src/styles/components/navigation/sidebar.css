@@ -29,14 +29,14 @@
     --sidebar-group-label-padding-x: calc(var(--spacing) * 2);
     --sidebar-group-label-icon-size: calc(var(--spacing) * 4);
     --sidebar-group-label-collapsed-margin-top: calc(var(--spacing) * -8);
-    --sidebar-group-label-focus-ring-width: 2px;
+    --sidebar-group-label-ring-width-focus: 2px;
 
     --sidebar-group-action-top: calc(var(--spacing) * 3.5);
     --sidebar-group-action-right: calc(var(--spacing) * 3);
     --sidebar-group-action-width: calc(var(--spacing) * 5);
     --sidebar-group-action-radius: var(--radius-md);
     --sidebar-group-action-hit-area: calc(var(--spacing) * -2);
-    --sidebar-group-action-focus-ring-width: 2px;
+    --sidebar-group-action-ring-width-focus: 2px;
     --sidebar-group-action-icon-size: calc(var(--spacing) * 4);
 
     --sidebar-menu-gap: calc(var(--spacing) * 1);
@@ -49,7 +49,7 @@
     --sidebar-menu-button-height: calc(var(--spacing) * 8);
     --sidebar-menu-button-height-sm: calc(var(--spacing) * 7);
     --sidebar-menu-button-height-lg: calc(var(--spacing) * 12);
-    --sidebar-menu-button-focus-ring-width: 2px;
+    --sidebar-menu-button-ring-width-focus: 2px;
 
     --sidebar-menu-action-top: calc(var(--spacing) * 1.5);
     --sidebar-menu-action-top-sm: calc(var(--spacing) * 1);
@@ -58,7 +58,7 @@
     --sidebar-menu-action-width: calc(var(--spacing) * 5);
     --sidebar-menu-action-radius: var(--radius-md);
     --sidebar-menu-action-hit-area: calc(var(--spacing) * -2);
-    --sidebar-menu-action-focus-ring-width: 2px;
+    --sidebar-menu-action-ring-width-focus: 2px;
     --sidebar-menu-action-icon-size: calc(var(--spacing) * 4);
 
     --sidebar-menu-badge-right: calc(var(--spacing) * 1);
@@ -86,7 +86,7 @@
     --sidebar-menu-sub-button-padding-x: calc(var(--spacing) * 2);
     --sidebar-menu-sub-button-translate-x: 1px;
     --sidebar-menu-sub-button-icon-size: calc(var(--spacing) * 4);
-    --sidebar-menu-sub-button-focus-ring-width: 2px;
+    --sidebar-menu-sub-button-ring-width-focus: 2px;
 
     --sidebar-shadow-outline: 0 0 0 1px hsl(var(--sidebar-border));
     --sidebar-shadow-outline-hover: 0 0 0 1px hsl(var(--sidebar-accent));

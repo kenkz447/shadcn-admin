@@ -1,9 +1,10 @@
-import * as React from "react"
-import { XIcon } from "lucide-react"
-import { Dialog as DialogPrimitive } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { XIcon } from 'lucide-react'
+import { Dialog as DialogPrimitive } from 'radix-ui'
+
+import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 function Dialog({
   ...props
@@ -68,7 +69,7 @@ function DialogContent({
         {showCloseButton && (
           <DialogPrimitive.Close
             data-slot="dialog-close"
-            className="absolute top-(--dialog-close-offset-top) right-(--dialog-close-offset-right) rounded-(--dialog-close-radius) opacity-(--dialog-close-opacity) ring-offset-background transition-opacity hover:opacity-(--dialog-close-opacity-hover) focus:ring-(length:--dialog-close-ring-width) focus:ring-(--dialog-close-ring-color) focus:ring-offset-(length:--dialog-close-ring-offset-width) focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--dialog-close-icon-size)"
+            className="absolute top-(--dialog-close-offset-top) right-(--dialog-close-offset-right) rounded-(--dialog-close-radius) opacity-(--dialog-close-opacity) ring-offset-background transition-opacity hover:opacity-(--dialog-close-opacity-hover) focus:ring-(length:--dialog-close-ring-width-focus) focus:ring-(--dialog-close-ring-color-focus) focus:ring-offset-(length:--dialog-close-ring-offset-width) focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--dialog-close-icon-size)"
           >
             <XIcon />
             <span className="sr-only">Close</span>
@@ -145,15 +146,4 @@ function DialogDescription({
   )
 }
 
-export {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogOverlay,
-  DialogPortal,
-  DialogTitle,
-  DialogTrigger,
-}
+export { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogOverlay, DialogPortal, DialogTitle, DialogTrigger }

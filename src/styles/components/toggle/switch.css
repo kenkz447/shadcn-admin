@@ -4,9 +4,9 @@
     --switch-radius: 9999px;
     --switch-border-color: transparent;
 
-    --switch-focus-border-color: var(--ring);
-    --switch-focus-ring-width: 3px;
-    --switch-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    --switch--border-color-focus: var(--ring);
+    --switch--ring-width-focus: 3px;
+    --switch--ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
 
     --switch-track-height: 1.15rem;
     --switch-track-width: calc(var(--spacing) * 8);

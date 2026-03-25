@@ -7,12 +7,12 @@
     --checkbox-bg: transparent;
     --checkbox-indicator-size: calc(var(--spacing) * 3.5);
 
-    --checkbox-focus-border-color: var(--ring);
-    --checkbox-focus-ring-width: 3px;
-    --checkbox-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    --checkbox-border-color-focus: var(--ring);
+    --checkbox-ring-width-focus: 3px;
+    --checkbox-ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
 
-    --checkbox-invalid-border-color: var(--destructive);
-    --checkbox-invalid-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+    --checkbox-border-color-invalid: var(--destructive);
+    --checkbox-ring-color-invalid: color-mix(in oklab, var(--destructive) 20%, transparent);
 
     --checkbox-checked-border-color: var(--primary);
     --checkbox-checked-bg: var(--primary);
@@ -21,5 +21,5 @@
 
 .dark {
     --checkbox-bg: color-mix(in oklab, var(--input) 30%, transparent);
-    --checkbox-invalid-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+    --checkbox-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
 }

@@ -9,12 +9,12 @@
     --radio-bg: transparent;
     --radio-color: var(--primary);
 
-    --radio-focus-border-color: var(--ring);
-    --radio-focus-ring-width: 3px;
-    --radio-focus-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    --radio--border-color-focus: var(--ring);
+    --radio--ring-width-focus: 3px;
+    --radio--ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
 
-    --radio-invalid-border-color: var(--destructive);
-    --radio-invalid-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+    --radio-border-color-invalid: var(--destructive);
+    --radio-ring-color-invalid: color-mix(in oklab, var(--destructive) 20%, transparent);
 
     --radio-indicator-size: calc(var(--spacing) * 2);
     --radio-indicator-color: var(--primary);
@@ -22,5 +22,5 @@
 
 .dark {
     --radio-bg: color-mix(in oklab, var(--input) 30%, transparent);
-    --radio-invalid-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+    --radio-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
 }

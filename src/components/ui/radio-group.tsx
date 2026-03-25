@@ -1,8 +1,9 @@
-import * as React from "react"
-import { CircleIcon } from "lucide-react"
-import { RadioGroup as RadioGroupPrimitive } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import { CircleIcon } from 'lucide-react'
+import { RadioGroup as RadioGroupPrimitive } from 'radix-ui'
+
+import { cn } from '@/lib/utils'
 
 function RadioGroup({
   className,
@@ -25,7 +26,7 @@ function RadioGroupItem({
     <RadioGroupPrimitive.Item
       data-slot="radio-group-item"
       className={cn(
-        "aspect-square size-(--radio-size) shrink-0 rounded-(--radio-radius) border border-(--radio-border-color) bg-(--radio-bg) text-(--radio-color) shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-(--radio-focus-border-color) focus-visible:ring-(length:--radio-focus-ring-width) focus-visible:ring-(--radio-focus-ring-color) disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-(--radio-invalid-border-color) aria-invalid:ring-(--radio-invalid-ring-color)",
+        "aspect-square size-(--radio-size) shrink-0 rounded-(--radio-radius) border border-(--radio-border-color) bg-(--radio-bg) text-(--radio-color) shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-(--radio--border-color-focus) focus-visible:ring-(length:--radio--ring-width-focus) focus-visible:ring-(--radio--ring-color-focus) disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-(--radio-border-color-invalid) aria-invalid:ring-(--radio-ring-color-invalid)",
         className
       )}
       {...props}

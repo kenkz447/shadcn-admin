@@ -1,17 +1,21 @@
-import * as React from "react"
-import {
-  ChevronDownIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-} from "lucide-react"
-import {
-  DayPicker,
-  getDefaultClassNames,
-  type DayButton,
-} from "react-day-picker"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
-import { Button, buttonVariants } from "@/components/ui/button"
+import {
+    ChevronDownIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+} from 'lucide-react'
+import {
+    type DayButton,
+    DayPicker,
+    getDefaultClassNames,
+} from 'react-day-picker'
+
+import {
+    Button,
+    buttonVariants,
+} from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 function Calendar({
   className,
@@ -75,7 +79,7 @@ function Calendar({
           defaultClassNames.dropdowns
         ),
         dropdown_root: cn(
-          "relative rounded-(--calendar-dropdown-radius) border border-(--calendar-dropdown-border-color) shadow-xs has-focus:border-(--calendar-dropdown-focus-border-color) has-focus:ring-(length:--calendar-dropdown-focus-ring-width) has-focus:ring-(--calendar-dropdown-focus-ring-color)",
+          "relative rounded-(--calendar-dropdown-radius) border border-(--calendar-dropdown-border-color) shadow-xs has-focus:border-(--calendar-dropdown-border-color-focus) has-focus:ring-(length:--calendar-dropdown-ring-width-focus) has-focus:ring-(--calendar-dropdown-ring-color-focus)",
           defaultClassNames.dropdown_root
         ),
         dropdown: cn(

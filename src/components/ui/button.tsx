@@ -1,19 +1,23 @@
-import * as React from "react"
-import { cva, type VariantProps } from "class-variance-authority"
-import { Slot } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import {
+    cva,
+    type VariantProps,
+} from 'class-variance-authority'
+import { Slot } from 'radix-ui'
+
+import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  "focus-visible:border-ring focus-visible:ring-(--button-focus-ring-color) aria-invalid:ring-(--button-invalid-ring-color) aria-invalid:border-(--button-invalid-border-color) rounded-(--button-radius) border border-transparent bg-clip-padding text-(length:--button-text-size) font-medium focus-visible:ring-(length:--button-focus-ring-width) aria-invalid:ring-(length:--button-invalid-ring-width) active:translate-y-px [&_svg:not([class*='size-'])]:size-(--button-icon-size) group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+  "focus-visible:border-ring focus-visible:ring-(--button-ring-color-focus) aria-invalid:ring-(--button-ring-color-invalid) aria-invalid:border-(--button-border-color-invalid) rounded-(--button-radius) border border-transparent bg-clip-padding text-(length:--button-text-size) font-medium focus-visible:ring-(length:--button-ring-width-focus) aria-invalid:ring-(length:--button-ring-width-invalid) active:translate-y-px [&_svg:not([class*='size-'])]:size-(--button-icon-size) group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   {
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
-        outline: "border-(--button-outline-border-color) bg-(--button-outline-bg) hover:bg-(--button-outline-hover-bg) hover:text-foreground aria-expanded:bg-(--button-outline-hover-bg) aria-expanded:text-foreground",
+        outline: "border-(--button-outline-border-color) bg-(--button-outline-bg) hover:bg-(--button-outline-bg-hover) hover:text-foreground aria-expanded:bg-(--button-outline-bg-hover) aria-expanded:text-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
-        ghost: "hover:bg-(--button-ghost-hover-bg) hover:text-foreground aria-expanded:bg-(--button-ghost-hover-bg) aria-expanded:text-foreground",
-        destructive: "bg-(--button-destructive-bg) hover:bg-(--button-destructive-hover-bg) focus-visible:ring-(--button-destructive-focus-ring-color) text-destructive focus-visible:border-(--button-destructive-focus-border-color)",
+        ghost: "hover:bg-(--button-ghost-bg-hover) hover:text-foreground aria-expanded:bg-(--button-ghost-bg-hover) aria-expanded:text-foreground",
+        destructive: "bg-(--button-destructive-bg) hover:bg-(--button-destructive-bg-hover) focus-visible:ring-(--button-destructive-ring-color-focus) text-destructive focus-visible:border-(--button-destructive-border-color-focus)",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {

@@ -1,10 +1,15 @@
 "use client"
 
-import * as React from "react"
-import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react"
-import { Select as SelectPrimitive } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import {
+    CheckIcon,
+    ChevronDownIcon,
+    ChevronUpIcon,
+} from 'lucide-react'
+import { Select as SelectPrimitive } from 'radix-ui'
+
+import { cn } from '@/lib/utils'
 
 function Select({
   ...props
@@ -37,7 +42,7 @@ function SelectTrigger({
       data-slot="select-trigger"
       data-size={size}
       className={cn(
-        "flex w-fit items-center justify-between gap-(--select-trigger-gap) rounded-(--select-trigger-radius) border border-(--select-trigger-border-color) bg-(--select-trigger-bg) px-(--select-trigger-padding-x) py-(--select-trigger-padding-y) text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-(--select-trigger-focus-border-color) focus-visible:ring-(length:--select-trigger-focus-ring-width) focus-visible:ring-(--select-trigger-focus-ring-color) disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-(--select-trigger-invalid-border-color) aria-invalid:ring-(--select-trigger-invalid-ring-color) data-placeholder:text-(--select-trigger-placeholder-color) data-[size=default]:h-(--select-trigger-height) data-[size=sm]:h-(--select-trigger-height-sm) *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-(--select-trigger-gap) hover:bg-(--select-trigger-bg-hover) [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--select-icon-size) [&_svg:not([class*='text-'])]:text-muted-foreground",
+        "flex w-fit items-center justify-between gap-(--select-trigger-gap) rounded-(--select-trigger-radius) border border-(--select-trigger-border-color) bg-(--select-trigger-bg) px-(--select-trigger-padding-x) py-(--select-trigger-padding-y) text-sm whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-(--select-trigger-border-color-focus) focus-visible:ring-(length:--select-trigger-ring-width-focus) focus-visible:ring-(--select-trigger-ring-color-focus) disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-(--select-trigger-border-color-invalid) aria-invalid:ring-(--select-trigger-ring-color-invalid) data-placeholder:text-(--select-trigger-placeholder-color) data-[size=default]:h-(--select-trigger-height) data-[size=sm]:h-(--select-trigger-height-sm) *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-(--select-trigger-gap) hover:bg-(--select-trigger-bg-hover) [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-(--select-icon-size) [&_svg:not([class*='text-'])]:text-muted-foreground",
         className
       )}
       {...props}
@@ -182,15 +187,4 @@ function SelectScrollDownButton({
   )
 }
 
-export {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectScrollDownButton,
-  SelectScrollUpButton,
-  SelectSeparator,
-  SelectTrigger,
-  SelectValue,
-}
+export { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectScrollDownButton, SelectScrollUpButton, SelectSeparator, SelectTrigger, SelectValue }
