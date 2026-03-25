@@ -1,9 +1,12 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@import "shadcn/tailwind.css";
+
 @import './theme.css';
 
 @import './tokens/overlay.css';
 @import './tokens/controls.css';
+@import './tokens/menu.css';
 
 @import './components/containers/card.css';
 @import './components/containers/dialog.css';
