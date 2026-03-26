@@ -11,7 +11,7 @@
     --command-input-wrapper-padding-x: calc(var(--spacing) * 3);
     --command-input-wrapper-bg: color-mix(in oklab, var(--input) 30%, transparent);
     --command-input-wrapper-border-color: color-mix(in oklab, var(--input) 30%, transparent);
-    --command-input-icon-size: var(--icon-size);
+    --command-input-icon-size: var(--icon-size-md);
     --command-input-icon-opacity: 0.5;
 
     --command-list-max-height: 300px;

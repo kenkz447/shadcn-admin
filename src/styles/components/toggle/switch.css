@@ -1,12 +1,8 @@
 /** Switch **/
 
 :root {
-    --switch-radius: 9999px;
+    --switch-radius: var(--radius-full);
     --switch-border-color: transparent;
-
-    --switch--border-color-focus: var(--toggle-border-color-focus);
-    --switch--ring-width-focus: var(--toggle-ring-width-focus);
-    --switch--ring-color-focus: var(--toggle-ring-color-focus);
 
     --switch-track-height: 1.15rem;
     --switch-track-width: calc(var(--spacing) * 8);

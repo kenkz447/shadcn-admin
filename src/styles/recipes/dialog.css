@@ -1,0 +1,23 @@
+:root {
+    --dialog-content-max-width: calc(100% - 2rem);
+    --dialog-content-max-width-screen-sm: 32rem;
+
+    --dialog-content-gap: var(--space-lg);
+    --dialog-content-radius: var(--radius-lg);
+    --dialog-content-padding: var(--space-xl);
+
+    --dialog-close-offset-top: var(--space-lg);
+    --dialog-close-offset-right: var(--space-lg);
+
+    --dialog-close-radius: var(--radius-xs);
+    --dialog-close-opacity: 0.7;
+    --dialog-close-opacity-hover: 1;
+    --dialog-close-icon-size: var(--icon-size-md);
+
+    --dialog-header-gap: var(--space-sm);
+    --dialog-footer-gap: var(--space-sm);
+
+    --dialog-content-border-color: var(--border);
+
+    --dialog-overlay-bg: color-mix(in oklab, black 50%, transparent);
+}

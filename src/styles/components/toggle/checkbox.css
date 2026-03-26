@@ -7,9 +7,6 @@
     --checkbox-bg: var(--toggle-bg);
     --checkbox-indicator-size: calc(var(--spacing) * 3.5);
 
-    --checkbox-border-color-focus: var(--toggle-border-color-focus);
-    --checkbox-ring-width-focus: var(--toggle-ring-width-focus);
-
     --checkbox-border-color-invalid: var(--toggle-border-color-invalid);
     --checkbox-ring-color-invalid: var(--toggle-ring-color-invalid);
 

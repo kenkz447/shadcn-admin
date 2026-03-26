@@ -1,16 +1,12 @@
 :root {
   /* Shared sizes */
-  --toggle-size: calc(var(--spacing) * 4);
+  --toggle-size: var(--icon-size-md);
 
   /* Shared Colors */
   --toggle-bg: transparent;
   --toggle-border-color: var(--input);
 
   /* Shared Focus and Validation */
-  --toggle-border-color-focus: var(--ring);
-  --toggle-ring-width-focus: 3px;
-  --toggle-ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
-
   --toggle-border-color-invalid: var(--destructive);
   --toggle-ring-color-invalid: color-mix(in oklab, var(--destructive) 20%, transparent);
 }

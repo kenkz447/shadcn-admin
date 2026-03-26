@@ -7,5 +7,5 @@
     --card-padding-x: calc(var(--spacing) * 6);
     --card-padding-y: calc(var(--spacing) * 6);
 
-    --card-header-gap: var(--spacing-base);
+    --card-header-gap: var(--space-sm);
 }

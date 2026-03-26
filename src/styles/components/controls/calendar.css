@@ -2,25 +2,25 @@
 
 :root {
     --calendar-padding: 0;
-    --calendar-cell-size: var(--control-height);
+    --calendar-cell-size: var(--control-size-md);
     
     --calendar-months-gap: calc(var(--spacing) * 4); /* For range picker */
     --calendar-month-gap: calc(var(--spacing) * 4);
 
     --calendar-nav-gap: calc(var(--spacing) * 1);
-    --calendar-nav-icon-size: var(--icon-size);
+    --calendar-nav-icon-size: var(--icon-size-md);
 
     --calendar-dropdown-gap: calc(var(--spacing) * 1.5);
-    --calendar-dropdown-radius: var(--control-radius);
+    --calendar-dropdown-radius: var(--control-radius-md);
     --calendar-dropdown-border-color: var(--control-border-color);
     --calendar-dropdown-border-color-focus: var(--control-border-color-focus);
 
     --calendar-caption-icon-size: var(--icon-size-sm);
-    --calendar-range-radius: var(--control-radius);
+    --calendar-range-radius: var(--control-radius-md);
 
 
-    --calendar-weekday-radius: var(--control-radius);
+    --calendar-weekday-radius: var(--control-radius-md);
     --calendar-weekday-text-size: 0.8rem;
     --calendar-week-number-text-size: 0.8rem;
-    --calendar-week-margin-top: var(--spacing-base);
+    --calendar-week-margin-top: var(--space-sm);
 }

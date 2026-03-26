@@ -1,32 +1,42 @@
 import { useState } from 'react'
-import { Fragment } from 'react/jsx-runtime'
+
 import { format } from 'date-fns'
 import {
-  ArrowLeft,
-  MoreVertical,
-  Edit,
-  Paperclip,
-  Phone,
-  ImagePlus,
-  Plus,
-  Search as SearchIcon,
-  Send,
-  Video,
-  MessagesSquare,
+    ArrowLeft,
+    Edit,
+    ImagePlus,
+    MessagesSquare,
+    MoreVertical,
+    Paperclip,
+    Phone,
+    Plus,
+    Search as SearchIcon,
+    Send,
+    Video,
 } from 'lucide-react'
-import { cn } from '@/lib/utils'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Button } from '@/components/ui/button'
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { Separator } from '@/components/ui/separator'
+import { Fragment } from 'react/jsx-runtime'
+
 import { ConfigDrawer } from '@/components/config-drawer'
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
 import { ProfileDropdown } from '@/components/profile-dropdown'
 import { Search } from '@/components/search'
 import { ThemeSwitch } from '@/components/theme-switch'
+import {
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
+} from '@/components/ui/avatar'
+import { Button } from '@/components/ui/button'
+import { ScrollArea } from '@/components/ui/scroll-area'
+import { Separator } from '@/components/ui/separator'
+import { cn } from '@/lib/utils'
+
 import { NewChat } from './components/new-chat'
-import { type ChatUser, type Convo } from './data/chat-types'
+import {
+    type ChatUser,
+    type Convo,
+} from './data/chat-types'
 // Fake Data
 import { conversations } from './data/convo.json'
 
@@ -106,7 +116,7 @@ export function Chats() {
                 <span className='sr-only'>Search</span>
                 <input
                   type='text'
-                  className='w-full flex-1 bg-inherit text-sm focus-visible:outline-hidden'
+                  className='w-full flex-1 bg-inherit text-sm'
                   placeholder='Search chat...'
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -298,7 +308,7 @@ export function Chats() {
                       <input
                         type='text'
                         placeholder='Type your messages...'
-                        className='h-8 w-full bg-inherit focus-visible:outline-hidden'
+                        className='h-8 w-full bg-inherit'
                       />
                     </label>
                     <Button

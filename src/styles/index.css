@@ -3,12 +3,12 @@
 @import 'shadcn/tailwind.css';
 
 @import './theme.css';
+@import './semantic.css';
 
-@import './tokens/default.css';
-@import './tokens/dialog.css';
-@import './tokens/controls.css';
-@import './tokens/menu.css';
-@import './tokens/toggle.css';
+@import './recipes/dialog.css';
+@import './recipes/controls.css';
+@import './recipes/menu.css';
+@import './recipes/toggle.css';
 
 @import './components/containers/card.css';
 
@@ -51,7 +51,7 @@
     }
 
     :focus-visible {
-        @apply ring-3 ring-ring/50;
+        @apply ring-3 ring-ring/50 outline-0;
     }
 
     html {

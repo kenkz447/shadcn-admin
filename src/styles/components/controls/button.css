@@ -1,69 +1,58 @@
 /** Button **/
 
 :root {
-	--btn-radius: var(--control-radius);
-	--btn-radius-xs: min(var(--control-radius), 10px);
-	--btn-radius-sm: min(var(--control-radius), 12px);
-	--btn-group-radius: var(--control-radius);
+    --btn-radius-xs: var(--control-radius-md);
+    --btn-radius-sm: var(--control-radius-md);
+    --btn-radius-md: var(--control-radius-md);
+	
+    --btn-group-radius: var(--control-radius-md);
 
-	--btn-text-size: 0.875rem;
-	--btn-text-size-xs: 0.75rem;
-	--btn-text-size-sm: 0.8rem;
+    --btn-font-xs: var(--font-size-xs);
+    --btn-font-sm: var(--font-size-xs);
+    --btn-font-md: var(--font-size-sm);
+    
+    --btn-icon-size-md: var(--icon-size-md);
+    --btn-icon-size-xs: var(--icon-size-xs);
+    --btn-icon-size-sm: var(--icon-size-sm);
 
-	--btn-ring-width-invalid: var(--control-ring-width-invalid);
-	--btn-ring-color-invalid: var(--control-ring-color-invalid);
+    --btn-size-xs: var(--control-size-xs);
+    --btn-size-sm: var(--control-size-sm);
+    --btn-size-md: var(--control-size-md);
+    --btn-size-lg: var(--control-size-lg);
 
-	--btn-border-color-invalid: var(--control-border-color-invalid);
+    --btn-gap-xs: var(--space-sm);
+    --btn-gap-sm: var(--space-sm);
+    --btn-gap-md: var(--space-sm);
+    --btn-gap-lg: var(--space-sm);
 
-	--btn-icon-size: var(--icon-size);
-	--btn-icon-size-xs: var(--icon-size-xs);
-	--btn-icon-size-sm: var(--icon-size-sm);
+    --btn-padding-x-xs: var(--space-sm);
+    --btn-padding-x-sm: var(--space-sm);
+    --btn-padding-x-md: var(--space-md);
+    --btn-padding-x-lg: var(--space-md);
 
-	--btn-height: var(--control-height);
-	--btn-height-xs: var(--control-height-xs);
-	--btn-height-sm: var(--control-height-sm);
-	--btn-height-lg: var(--control-height-lg);
+    --btn-has-icon-padding-xs: var(--space-xs);
+    --btn-has-icon-padding-sm: var(--space-xs);
+    --btn-has-icon-padding-md: var(--space-sm);
+    --btn-has-icon-padding-lg: var(--space-lg);
 
-	--btn-gap: var(--control-gap);
-	--btn-gap-xs: var(--control-gap-xs);
-	--btn-gap-sm: var(--control-gap-sm);
-	--btn-gap-lg: var(--control-gap-lg);
+    --btn-outline-bg: var(--background);
+    --btn-outline-bg-hover: var(--muted);
 
-	--btn-padding-x: calc(var(--spacing) * 2.5);
-	--btn-padding-x-xs: var(--spacing-base);
-	--btn-padding-x-sm: calc(var(--spacing) * 2.5);
-	--btn-padding-x-lg: calc(var(--spacing) * 2.5);
+    --btn-outline-border-color: var(--border);
 
-	--btn-has-icon-padding: var(--spacing-base);
-	--btn-has-icon-padding-xs: calc(var(--spacing) * 1.5);
-	--btn-has-icon-padding-sm: calc(var(--spacing) * 1.5);
-	--btn-has-icon-padding-lg: calc(var(--spacing) * 3);
+    --btn-ghost-bg-hover: var(--muted);
 
-	--btn-size-icon: var(--control-height);
-	--btn-size-icon-xs: var(--control-height-xs);
-	--btn-size-icon-sm: var(--control-height-sm);
-	--btn-size-icon-lg: var(--control-height-lg);
-
-	--btn-outline-bg: var(--background);
-	--btn-outline-bg-hover: var(--muted);
-
-	--btn-outline-border-color: var(--border);
-
-	--btn-ghost-bg-hover: var(--muted);
-
-	--btn-destructive-bg: color-mix(in oklab, var(--destructive) 10%, transparent);
-	--btn-destructive-bg-hover: color-mix(in oklab, var(--destructive) 20%, transparent);
-	--btn-destructive-ring-color-focus: var(--control-ring-color-invalid);
-	--btn-destructive-border-color-focus: color-mix(in oklab, var(--destructive) 40%, transparent);
+    --btn-destructive-bg: color-mix(in oklab, var(--destructive) 10%, transparent);
+    --btn-destructive-bg-hover: color-mix(in oklab, var(--destructive) 20%, transparent);
 }
 
 .dark {
-	--btn-outline-bg: var(--control-bg);
-	--btn-outline-border-color: var(--control-border-color);
-	--btn-outline-bg-hover: var(--control-bg-hover);
+    --btn-outline-bg: var(--control-bg);
+    --btn-outline-border-color: var(--control-border-color);
+    --btn-outline-bg-hover: var(--control-bg-hover);
 
-	--btn-ghost-bg-hover: color-mix(in oklab, var(--muted) 50%, transparent);
+    --btn-ghost-bg-hover: color-mix(in oklab, var(--muted) 50%, transparent);
 
-	--btn-destructive-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
-	--btn-destructive-bg-hover: color-mix(in oklab, var(--destructive) 30%, transparent);
+    --btn-destructive-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
+    --btn-destructive-bg-hover: color-mix(in oklab, var(--destructive) 30%, transparent);
 }

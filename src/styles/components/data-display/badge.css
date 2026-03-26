@@ -4,14 +4,13 @@
     --badge-gap: calc(var(--spacing) * 1);
     --badge-radius: 9999px;
 
-    --badge-padding-x: var(--spacing-base);
+    --badge-padding-x: var(--space-sm);
     --badge-padding-y: calc(var(--spacing) * 0.5);
 
     --badge-icon-size: calc(var(--spacing) * 3);
     
     --badge-border-color: transparent;
     --badge-border-color-invalid: var(--control-border-color-invalid);
-    --badge-border-color-focus: var(--control-border-color-focus);
 
     --badge-ring-color-invalid: var(--control-ring-color-invalid);
 

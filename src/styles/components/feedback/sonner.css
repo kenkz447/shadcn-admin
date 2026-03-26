@@ -1,6 +1,6 @@
 /** Sonner **/
 
 :root {
-    --sonner-icon-size: var(--icon-size);
+    --sonner-icon-size: var(--icon-size-md);
     --sonner-border-radius: var(--radius);
 }

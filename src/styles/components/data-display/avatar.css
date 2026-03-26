@@ -1,13 +1,13 @@
 /** Avatar **/
 
 :root {
-    --avatar-size: var(--control-height);
-    --avatar-size-sm: var(--control-height-sm);
-    --avatar-size-lg: var(--control-height-lg);
+    --avatar-size: var(--control-size-md);
+    --avatar-size-sm: var(--control-size-sm);
+    --avatar-size-lg: var(--control-size-lg);
     --avatar-ring-width: 2px;
     --avatar-ring-color: var(--background);
 
-    --avatar-icon-size: var(--icon-size);
+    --avatar-icon-size: var(--icon-size-md);
     --avatar-icon-size-sm: var(--icon-size-sm);
     --avatar-icon-size-lg: var(--icon-size-lg);
 

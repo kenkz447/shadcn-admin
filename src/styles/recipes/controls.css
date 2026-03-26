@@ -1,0 +1,41 @@
+:root {
+    /* Height scale */
+    --control-size-xs: calc(var(--spacing) * 6);
+    --control-size-sm: calc(var(--spacing) * 7);
+    --control-size-md: calc(var(--spacing) * 9); /* Default height for form-fields and buttons */
+    --control-size-lg: calc(var(--spacing) * 10);
+
+    /* Gap scale */
+    --control-gap-xs: calc(var(--spacing) * 1);
+    --control-gap-sm: calc(var(--spacing) * 1);
+    --control-gap-md: var(--space-sm);
+    --control-gap-lg: var(--space-sm);
+
+    /* Shared geometry */
+    --control-radius-md: var(--radius-md);
+
+    /* Shared spacing */
+    --control-padding-x: var(--space-md);
+    --control-padding-y: var(--space-sm);
+
+    /* Shared Colors */
+    --control-bg: transparent;
+    --control-bg-hover: transparent;
+    --control-border-color: var(--input);
+    --control-placeholder-color: var(--muted-foreground);
+
+    /* Shared Focus and Validation */
+    --control-border-color-focus: var(--ring);
+    --control-border-color-invalid: var(--destructive);
+
+    --control-ring-color-invalid: color-mix(in oklab, var(--destructive) 20%, transparent);
+}
+
+.dark {
+    /* Dark mode specific backgrounds */
+    --control-bg: color-mix(in oklab, var(--input) 30%, transparent);
+    --control-bg-hover: color-mix(in oklab, var(--input) 50%, transparent); /* Dùng cho hover states của button/select */
+
+    --control-border-color-invalid: color-mix(in oklab, var(--destructive) 50%, transparent);
+    --control-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
+}

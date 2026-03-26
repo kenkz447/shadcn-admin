@@ -1,18 +1,16 @@
 /** Select **/
 
 :root {
-    --select-trigger-gap: var(--control-gap);
-    --select-trigger-radius: var(--control-radius);
+    --select-trigger-gap: var(--control-gap-md);
+    --select-trigger-radius: var(--control-radius-md);
     --select-trigger-border-color: var(--control-border-color);
     --select-trigger-bg: var(--control-bg);
     --select-trigger-bg-hover: var(--control-bg-hover);
     --select-trigger-padding-x: var(--control-padding-x);
     --select-trigger-padding-y: var(--control-padding-y);
-    --select-trigger-height: var(--control-height);
-    --select-trigger-height-sm: var(--control-height-sm);
+    --select-trigger-height: var(--control-size-md);
+    --select-trigger-height-sm: var(--control-size-sm);
     --select-trigger-placeholder-color: var(--control-placeholder-color);
-
-    --select-trigger-border-color-focus: var(--control-border-color-focus);
 
     --select-trigger-border-color-invalid: var(--control-border-color-invalid);
     --select-trigger-ring-color-invalid: var(--control-ring-color-invalid);

@@ -1,15 +1,21 @@
-import { useState, useEffect, useRef } from 'react'
-import { type Table } from '@tanstack/react-table'
+import {
+    useEffect,
+    useRef,
+    useState,
+} from 'react'
+
 import { X } from 'lucide-react'
-import { cn } from '@/lib/utils'
+
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
+    Tooltip,
+    TooltipContent,
+    TooltipTrigger,
 } from '@/components/ui/tooltip'
+import { cn } from '@/lib/utils'
+import { type Table } from '@tanstack/react-table'
 
 type DataTableBulkActionsProps<TData> = {
   table: Table<TData>
@@ -145,7 +151,6 @@ export function DataTableBulkActions<TData>({
         className={cn(
           'fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-xl',
           'transition-all delay-100 duration-300 ease-out hover:scale-105',
-          'focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none'
         )}
       >
         <div

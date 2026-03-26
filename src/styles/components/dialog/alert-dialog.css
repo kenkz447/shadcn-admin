@@ -12,10 +12,10 @@
 
     --alert-dialog-header-gap: calc(var(--spacing) * 1.5);
     --alert-dialog-header-media-gap-x: calc(var(--spacing) * 6);
-    --alert-dialog-footer-gap: var(--spacing-base);
+    --alert-dialog-footer-gap: var(--space-sm);
 
     --alert-dialog-media-size: calc(var(--spacing) * 16);
-    --alert-dialog-media-margin-bottom: var(--spacing-base);
+    --alert-dialog-media-margin-bottom: var(--space-sm);
     --alert-dialog-media-radius: var(--radius-md);
     --alert-dialog-media-icon-size: calc(var(--spacing) * 8);
 }

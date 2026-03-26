@@ -1,10 +1,10 @@
 /** Input OTP **/
 
 :root {
-    --input-otp-gap: var(--spacing-base);
+    --input-otp-gap: var(--space-sm);
 
-    --input-otp-slot-size: var(--control-height);
-    --input-otp-slot-radius: var(--control-radius);
+    --input-otp-slot-size: var(--control-size-md);
+    --input-otp-slot-radius: var(--control-radius-md);
     --input-otp-slot-border-color: var(--control-border-color);
     --input-otp-slot-bg: var(--control-bg);
 

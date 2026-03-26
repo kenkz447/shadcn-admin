@@ -3,15 +3,15 @@
     --tabs-bg: var(--muted);
     --tabs-fg: var(--muted-foreground);
     --tabs-border: var(--border);
-    --tabs-size-md: var(--control-height);
+    --tabs-size-md: var(--control-size-md);
     --tabs-radius: var(--radius-lg);
     --tabs-padding: 3px;
-    --tabs-gap: var(--spacing-base);
+    --tabs-gap: var(--space-sm);
     --tabs-line-gap: calc(var(--spacing) * 1);
 
     /** Tabs item (trigger) */
     --tabs-item-gap: calc(var(--spacing) * 1.5);
-    --tabs-item-padding-x: var(--spacing-base);
+    --tabs-item-padding-x: var(--space-sm);
     --tabs-item-padding-y: calc(var(--spacing) * 1);
     --tabs-item-radius: var(--radius-md);
     --tabs-item-height: calc(100% - 1px);
@@ -28,9 +28,6 @@
 
     --tabs-item-bg-active: var(--background);
     --tabs-item-fg-active: var(--foreground);
-
-    /* focus-visible */
-    --tabs-item-border-color-focus: var(--control-border-color-focus);
 
     /** Indicator cho variant=line */
     --tabs-indicator-color: var(--foreground);
