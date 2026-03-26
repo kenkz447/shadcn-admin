@@ -11,6 +11,4 @@
     --table-head-height: calc(var(--spacing) * 10);
     --table-cell-padding: calc(var(--spacing) * 2);
     --table-checkbox-translate-y: 2px;
-
-    --table-caption-margin-top: calc(var(--spacing) * 4);
 }
