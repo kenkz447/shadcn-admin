@@ -40,6 +40,7 @@
 @import './components/toggle/checkbox.css';
 @import './components/toggle/radio-group.css';
 @import './components/toggle/switch.css';
+@import './components/misc/kbd.css';
 
 @custom-variant dark (&:is(.dark *));
 

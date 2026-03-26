@@ -1,0 +1,16 @@
+:root {
+    /* Kbd */
+    --kbd-height: var(--size-xs);
+    --kbd-gap: var(--space-sm);
+    --kbd-padding-x: var(--space-md);
+    --kbd-radius: var(--radius-xs);
+    --kbd-font-size: var(--font-size-xs);
+    --kbd-icon-size: var(--icon-size-xs);
+
+    --kbd-tooltip-bg: color-mix(in oklab, var(--background) 20%, transparent);
+    --kbd-tooltip-fg: var(--background);
+}
+
+.dark {
+    --kbd-tooltip-bg: color-mix(in oklab, var(--background) 10%, transparent);
+}

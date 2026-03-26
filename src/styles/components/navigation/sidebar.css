@@ -8,7 +8,7 @@
     --sidebar-container-padding: var(--space-md);
     --sidebar-container-padding-with-border: calc(var(--spacing) * 4 + 2px);
 
-    --sidebar-trigger-size: var(--control-size-sm);
+    --sidebar-trigger-size: var(--control-size-md);
 
     --sidebar-rail-width: var(--space-lg);
     --sidebar-rail-offset: calc(var(--sidebar-rail-width) * -1);
@@ -42,13 +42,13 @@
 
     --sidebar-menu-button-gap: var(--space-md);
     --sidebar-menu-button-radius: var(--radius-md);
-    --sidebar-menu-button-padding: var(--space-md);
+    --sidebar-menu-button-padding: var(--space-lg);
     --sidebar-menu-button-padding-right-with-action: var(--space-3xl);
     --sidebar-menu-button-icon-size: var(--icon-size-md);
     --sidebar-menu-button-collapsed-size: var(--control-size-sm);
-    --sidebar-menu-button-height: var(--control-size-lg);
-    --sidebar-menu-button-height-sm: var(--control-size-md);
-    --sidebar-menu-button-height-lg: var(--control-size-xl);
+    --sidebar-menu-button-height: var(--control-size-md);
+    --sidebar-menu-button-height-sm: var(--control-size-sm);
+    --sidebar-menu-button-height-lg: var(--control-size-lg);
 
     --sidebar-menu-action-top: var(--space-md);
     --sidebar-menu-action-top-sm: var(--space-sm);
