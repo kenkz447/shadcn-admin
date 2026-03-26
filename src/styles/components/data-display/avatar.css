@@ -1,15 +1,15 @@
 /** Avatar **/
 
 :root {
-    --avatar-size: calc(var(--spacing) * 8);
-    --avatar-size-sm: calc(var(--spacing) * 6);
-    --avatar-size-lg: calc(var(--spacing) * 10);
-    --avatar-radius: 9999px;
+    --avatar-size: var(--control-size);
+    --avatar-size-sm: var(--control-size-sm);
+    --avatar-size-lg: var(--control-size-lg);
+    --avatar-ring-width: 2px;
+    --avatar-ring-color: var(--background);
 
-    --avatar-fallback-radius: 9999px;
-    --avatar-badge-radius: 9999px;
-    --avatar-badge-ring-width: 2px;
-    --avatar-badge-ring-color: var(--background);
+    --avatar-icon-size: var(--control-icon-size);
+    --avatar-icon-size-sm: var(--control-icon-size-sm);
+    --avatar-icon-size-lg: var(--control-icon-size-lg);
 
     --avatar-badge-size-sm: calc(var(--spacing) * 2);
     --avatar-badge-size: calc(var(--spacing) * 2.5);
@@ -17,14 +17,4 @@
     --avatar-badge-icon-size: calc(var(--spacing) * 2);
 
     --avatar-group-space-x: calc(var(--spacing) * -2);
-    --avatar-group-ring-width: 2px;
-    --avatar-group-ring-color: var(--background);
-
-    --avatar-group-count-size: calc(var(--spacing) * 8);
-    --avatar-group-count-size-sm: calc(var(--spacing) * 6);
-    --avatar-group-count-size-lg: calc(var(--spacing) * 10);
-    --avatar-group-count-radius: 9999px;
-    --avatar-group-count-icon-size: calc(var(--spacing) * 4);
-    --avatar-group-count-icon-size-sm: calc(var(--spacing) * 3);
-    --avatar-group-count-icon-size-lg: calc(var(--spacing) * 5);
 }

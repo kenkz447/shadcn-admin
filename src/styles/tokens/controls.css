@@ -5,6 +5,12 @@
   --control-height: calc(var(--spacing) * 9); /* Default height for form-fields and buttons */
   --control-height-lg: calc(var(--spacing) * 10);
 
+  /* Icon size scale */
+  --control-icon-size: calc(var(--spacing) * 4);
+  --control-icon-size-xs: calc(var(--spacing) * 3);
+  --control-icon-size-sm: calc(var(--spacing) * 3.5);
+  --control-icon-size-lg: calc(var(--spacing) * 5);
+
   /* Gap scale */
   --control-gap: calc(var(--spacing) * 2);
   --control-gap-xs: calc(var(--spacing) * 1);
