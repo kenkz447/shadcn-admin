@@ -10,8 +10,6 @@
     --textarea-placeholder-color: var(--control-placeholder-color);
 
     --textarea-border-color-focus: var(--control-border-color-focus);
-    --textarea-ring-width-focus: var(--control-ring-width-focus);
-    --textarea-ring-color-focus: var(--control-ring-color-focus);
 
     --textarea-border-color-invalid: var(--control-border-color-invalid);
     --textarea-ring-color-invalid: var(--control-ring-color-invalid);

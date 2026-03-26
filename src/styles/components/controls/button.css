@@ -10,9 +10,7 @@
 	--btn-text-size-xs: 0.75rem;
 	--btn-text-size-sm: 0.8rem;
 
-	--btn-ring-width-focus: var(--control-ring-width-focus);
 	--btn-ring-width-invalid: var(--control-ring-width-invalid);
-	--btn-ring-color-focus: var(--control-ring-color-focus);
 	--btn-ring-color-invalid: var(--control-ring-color-invalid);
 
 	--btn-border-color-invalid: var(--control-border-color-invalid);

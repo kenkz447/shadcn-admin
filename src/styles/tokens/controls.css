@@ -32,8 +32,6 @@
 
   /* Shared Focus and Validation */
   --control-border-color-focus: var(--ring);
-  --control-ring-width-focus: 3px;
-  --control-ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
 
   --control-border-color-invalid: var(--destructive);
   --control-ring-width-invalid: 3px;
@@ -45,7 +43,6 @@
   --control-bg: color-mix(in oklab, var(--input) 30%, transparent);
   --control-bg-hover: color-mix(in oklab, var(--input) 50%, transparent); /* Dùng cho hover states của button/select */
 
-  --control-ring-color-focus: color-mix(in oklab, var(--ring) 40%, transparent);
   --control-border-color-invalid: color-mix(in oklab, var(--destructive) 50%, transparent);
   --control-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
 }

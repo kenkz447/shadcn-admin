@@ -31,8 +31,6 @@
 
     /* focus-visible */
     --tabs-item-border-color-focus: var(--control-border-color-focus);
-    --tabs-item-ring-color-focus: var(--control-ring-color-focus);
-    --tabs-item-ring-width-focus: var(--control-ring-width-focus);
 
     /** Indicator cho variant=line */
     --tabs-indicator-color: var(--foreground);

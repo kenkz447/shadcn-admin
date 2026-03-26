@@ -13,8 +13,6 @@
     --select-trigger-placeholder-color: var(--control-placeholder-color);
 
     --select-trigger-border-color-focus: var(--control-border-color-focus);
-    --select-trigger-ring-width-focus: var(--control-ring-width-focus);
-    --select-trigger-ring-color-focus: var(--control-ring-color-focus);
 
     --select-trigger-border-color-invalid: var(--control-border-color-invalid);
     --select-trigger-ring-color-invalid: var(--control-ring-color-invalid);

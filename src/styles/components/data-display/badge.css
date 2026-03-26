@@ -13,8 +13,6 @@
     --badge-border-color-invalid: var(--control-border-color-invalid);
     --badge-border-color-focus: var(--control-border-color-focus);
 
-    --badge-ring-width-focus: var(--control-ring-width-focus);
-    --badge-ring-color-focus: var(--control-ring-color-focus);
     --badge-ring-color-invalid: var(--control-ring-color-invalid);
 
     --badge-destructive-ring-color-focus: var(--control-ring-color-invalid);

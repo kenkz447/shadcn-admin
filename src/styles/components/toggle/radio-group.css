@@ -11,7 +11,6 @@
 
     --radio-border-color-focus: var(--toggle-border-color-focus);
     --radio-ring-width-focus: var(--toggle-ring-width-focus);
-    --radio-ring-color-focus: var(--toggle-ring-color-focus);
     
     --radio-border-color-invalid: var(--toggle-border-color-invalid);
     --radio-ring-color-invalid: var(--toggle-ring-color-invalid);

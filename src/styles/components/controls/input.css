@@ -11,8 +11,6 @@
     --input-file-height: calc(var(--spacing) * 7);
 
     --input-border-color-focus: var(--control-border-color-focus);
-    --input-ring-width-focus: var(--control-ring-width-focus);
-    --input-ring-color-focus: var(--control-ring-color-focus);
 
     --input-border-color-invalid: var(--control-border-color-invalid);
     --input-ring-color-invalid: var(--control-ring-color-invalid);

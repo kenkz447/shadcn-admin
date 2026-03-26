@@ -14,8 +14,6 @@
     --sheet-close-radius: var(--dialog-close-radius);
     --sheet-close-opacity: var(--dialog-close-opacity);
     --sheet-close-opacity-hover: var(--dialog-close-opacity-hover);
-    --sheet-close-ring-width-focus: var(--dialog-close-ring-width-focus);
-    --sheet-close-ring-color-focus: var(--dialog-close-ring-color-focus);
     --sheet-close-icon-size: var(--dialog-close-icon-size);
 
     --sheet-header-gap: var(--dialog-header-gap);

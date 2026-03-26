@@ -9,7 +9,7 @@ import { Slot } from 'radix-ui'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  "focus-visible:border-ring focus-visible:ring-(--btn-ring-color-focus) aria-invalid:ring-(--btn-ring-color-invalid) aria-invalid:border-(--btn-border-color-invalid) rounded-(--btn-radius) border border-transparent bg-clip-padding text-(length:--btn-text-size) font-medium focus-visible:ring-(length:--btn-ring-width-focus) aria-invalid:ring-(length:--btn-ring-width-invalid) active:translate-y-px [&_svg:not([class*='size-'])]:size-(--btn-icon-size) group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+  "aria-invalid:ring-(--btn-ring-color-invalid) aria-invalid:border-(--btn-border-color-invalid) rounded-(--btn-radius) border border-transparent bg-clip-padding text-(length:--btn-text-size) font-medium aria-invalid:ring-(length:--btn-ring-width-invalid) active:translate-y-px [&_svg:not([class*='size-'])]:size-(--btn-icon-size) group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   {
     variants: {
       variant: {

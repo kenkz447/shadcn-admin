@@ -9,8 +9,6 @@
     --input-otp-slot-bg: var(--control-bg);
 
     --input-otp-slot-border-color-active: var(--control-border-color-focus);
-    --input-otp-slot-ring-width-active: var(--control-ring-width-focus);
-    --input-otp-slot-ring-color-active: var(--control-ring-color-focus);
 
     --input-otp-slot-border-color-invalid: var(--control-border-color-invalid);
     --input-otp-slot-ring-color-invalid: var(--control-ring-color-invalid);
