@@ -226,7 +226,7 @@ export function Chats() {
                   <Button
                     size='icon'
                     variant='ghost'
-                    className='h-10 rounded-md sm:h-8 sm:w-4 lg:h-10 lg:w-6'
+                    className='rounded-full'
                   >
                     <MoreVertical className='stroke-muted-foreground sm:size-5' />
                   </Button>
@@ -284,7 +284,7 @@ export function Chats() {
                         size='icon'
                         type='button'
                         variant='ghost'
-                        className='hidden h-8 rounded-md lg:inline-flex'
+                        className='hidden rounded-md lg:inline-flex'
                       >
                         <ImagePlus
                           size={20}
@@ -295,7 +295,7 @@ export function Chats() {
                         size='icon'
                         type='button'
                         variant='ghost'
-                        className='hidden h-8 rounded-md lg:inline-flex'
+                        className='hidden rounded-md lg:inline-flex'
                       >
                         <Paperclip
                           size={20}

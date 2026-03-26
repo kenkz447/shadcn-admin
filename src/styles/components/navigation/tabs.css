@@ -14,7 +14,7 @@
     --tabs-item-padding-x: var(--space-md);
     --tabs-item-padding-y: var(--space-sm);
     --tabs-item-radius: var(--radius-md);
-    --tabs-item-height: calc(100% - 1px);
+    --tabs-item-height: 100%;
 
     --tabs-item-bg: transparent;
     --tabs-item-border: transparent; 

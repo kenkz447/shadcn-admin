@@ -1,25 +1,37 @@
 /* eslint-disable react-refresh/only-export-components */
-import { useEffect, useState } from 'react'
 import {
-  createFileRoute,
-  Link,
-  useNavigate,
-  useRouter,
-} from '@tanstack/react-router'
-import { SignedIn, useAuth, UserButton } from '@clerk/clerk-react'
-import { ExternalLink, Loader2 } from 'lucide-react'
+    useEffect,
+    useState,
+} from 'react'
+
+import {
+    ExternalLink,
+    Loader2,
+} from 'lucide-react'
+
 import { ClerkLogo } from '@/assets/clerk-logo'
-import { Button } from '@/components/ui/button'
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
 import { LearnMore } from '@/components/learn-more'
 import { Search } from '@/components/search'
 import { ThemeSwitch } from '@/components/theme-switch'
+import { Button } from '@/components/ui/button'
 import { UsersDialogs } from '@/features/users/components/users-dialogs'
 import { UsersPrimaryButtons } from '@/features/users/components/users-primary-buttons'
 import { UsersProvider } from '@/features/users/components/users-provider'
 import { UsersTable } from '@/features/users/components/users-table'
 import { users } from '@/features/users/data/users'
+import {
+    SignedIn,
+    useAuth,
+    UserButton,
+} from '@clerk/clerk-react'
+import {
+    createFileRoute,
+    Link,
+    useNavigate,
+    useRouter,
+} from '@tanstack/react-router'
 
 export const Route = createFileRoute('/clerk/_authenticated/user-management')({
   component: UserManagement,
@@ -164,7 +176,7 @@ function Unauthorized() {
             <ClerkLogo className='invert' /> Sign in
           </Button>
         </div>
-        <div className='mt-4 h-8 text-center'>
+        <div className='mt-4 text-center'>
           {!cancelled && !opened && (
             <>
               <p>
