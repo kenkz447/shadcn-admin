@@ -2,10 +2,10 @@
 
 :root {
     --checkbox-size: var(--toggle-size);
-    --checkbox-radius: 4px;
+    --checkbox-radius: var(--radius-xs);
     --checkbox-border-color: var(--toggle-border-color);
     --checkbox-bg: var(--toggle-bg);
-    --checkbox-indicator-size: calc(var(--spacing) * 3.5);
+    --checkbox-indicator-size: var(--icon-size-md);
 
     --checkbox-border-color-invalid: var(--toggle-border-color-invalid);
     --checkbox-ring-color-invalid: var(--toggle-ring-color-invalid);

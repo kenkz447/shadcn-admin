@@ -22,5 +22,5 @@
     --calendar-weekday-radius: var(--control-radius-md);
     --calendar-weekday-text-size: 0.8rem;
     --calendar-week-number-text-size: 0.8rem;
-    --calendar-week-margin-top: var(--space-sm);
+    --calendar-week-margin-top: var(--space-md);
 }

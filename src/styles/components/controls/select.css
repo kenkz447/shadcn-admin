@@ -35,11 +35,11 @@
     --select-item-gap: var(--menu-item-gap);
     --select-item-radius: var(--menu-item-radius);
     --select-item-padding-y: var(--menu-item-padding-y);
-    --select-item-padding-right: calc(var(--spacing) * 8);
+    --select-item-padding-right: var(--size-3xl);
     --select-item-padding-left: var(--menu-item-padding-x);
 
     --select-item-indicator-offset-right: var(--menu-item-padding-x);
-    --select-item-indicator-size: calc(var(--spacing) * 3.5);
+    --select-item-indicator-size: var(--icon-size-sm);
 
     --select-separator-margin-x: var(--menu-separator-margin-x);
     --select-separator-margin-y: var(--menu-separator-margin-y);

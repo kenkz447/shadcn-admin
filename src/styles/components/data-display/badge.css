@@ -4,7 +4,7 @@
     --badge-gap: calc(var(--spacing) * 1);
     --badge-radius: 9999px;
 
-    --badge-padding-x: var(--space-sm);
+    --badge-padding-x: var(--space-md);
     --badge-padding-y: calc(var(--spacing) * 0.5);
 
     --badge-icon-size: calc(var(--spacing) * 3);

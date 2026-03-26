@@ -1,17 +1,17 @@
 /** Radio Group **/
 
 :root {
-    --radio-group-gap: calc(var(--spacing) * 3);
-
     --radio-size: var(--toggle-size);
-    --radio-radius: 9999px;
+    --radio-radius: var(--radius-full);
     --radio-border-color: var(--toggle-border-color);
     --radio-bg: var(--toggle-bg);
     --radio-color: var(--primary);
 
     --radio-border-color-invalid: var(--toggle-border-color-invalid);
     --radio-ring-color-invalid: var(--toggle-ring-color-invalid);
+    
+    --radio-group-gap: var(--space-md);
 
-    --radio-indicator-size: var(--space-sm);
+    --radio-indicator-size: var(--icon-size-xs);
     --radio-indicator-color: var(--primary);
 }

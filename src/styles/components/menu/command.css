@@ -7,17 +7,17 @@
     --command-bg: var(--popover);
     --command-fg: var(--popover-foreground);
 
-    --command-input-wrapper-height: calc(var(--spacing) * 9);
-    --command-input-wrapper-padding-x: calc(var(--spacing) * 3);
+    --command-input-wrapper-height: var(--control-size-md);
+    --command-input-wrapper-padding-x: var(--control-padding-x);
     --command-input-wrapper-bg: color-mix(in oklab, var(--input) 30%, transparent);
     --command-input-wrapper-border-color: color-mix(in oklab, var(--input) 30%, transparent);
     --command-input-icon-size: var(--icon-size-md);
     --command-input-icon-opacity: 0.5;
 
     --command-list-max-height: 300px;
-    --command-list-scroll-padding-y: calc(var(--spacing) * 1);
+    --command-list-scroll-padding-y: var(--space-sm);
 
-    --command-empty-padding-y: calc(var(--spacing) * 6);
+    --command-empty-padding-y: var(--space-2xl);
 
     --command-group-padding: var(--menu-content-padding);
 

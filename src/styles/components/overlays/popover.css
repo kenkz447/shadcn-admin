@@ -1,9 +1,9 @@
 /** Popover **/
 
 :root {
-    --popover-content-width: calc(var(--spacing) * 72);
-    --popover-content-padding: calc(var(--spacing) * 4);
-    --popover-header-gap: calc(var(--spacing) * 1);
+    --popover-content-width: calc(var(--space-sm) * 72);
+    --popover-content-padding: var(--space-xl);
+    --popover-header-gap: var(--space-sm);
 
     --popover-content-radius: var(--radius-md);
     --popover-content-border-color: var(--border);

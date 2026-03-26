@@ -2,5 +2,5 @@
 
 :root {
     --separator-color: var(--border);
-    --separator-thickness: 1px;
+    --separator-thickness: var(--border-width-default);
 }

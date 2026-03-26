@@ -1,5 +1,5 @@
 /** Label **/
 
 :root {
-    --label-gap: var(--space-sm);
+    --label-gap: var(--space-md);
 }

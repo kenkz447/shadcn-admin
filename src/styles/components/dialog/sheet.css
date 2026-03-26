@@ -17,8 +17,8 @@
     --sheet-close-icon-size: var(--dialog-close-icon-size);
 
     --sheet-header-gap: var(--dialog-header-gap);
-    --sheet-header-padding: calc(var(--spacing) * 4);
+    --sheet-header-padding: var(--space-xl);
 
     --sheet-footer-gap: var(--dialog-footer-gap);
-    --sheet-footer-padding: calc(var(--spacing) * 4);
+    --sheet-footer-padding: var(--space-xl);
 }

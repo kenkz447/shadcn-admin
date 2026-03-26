@@ -5,14 +5,14 @@
     --tabs-border: var(--border);
     --tabs-size-md: var(--control-size-md);
     --tabs-radius: var(--radius-lg);
-    --tabs-padding: 3px;
-    --tabs-gap: var(--space-sm);
-    --tabs-line-gap: calc(var(--spacing) * 1);
+    --tabs-padding: var(--space-sm);
+    --tabs-gap: var(--space-md);
+    --tabs-line-gap: var(--space-sm);
 
     /** Tabs item (trigger) */
-    --tabs-item-gap: calc(var(--spacing) * 1.5);
-    --tabs-item-padding-x: var(--space-sm);
-    --tabs-item-padding-y: calc(var(--spacing) * 1);
+    --tabs-item-gap: var(--space-md);
+    --tabs-item-padding-x: var(--space-md);
+    --tabs-item-padding-y: var(--space-sm);
     --tabs-item-radius: var(--radius-md);
     --tabs-item-height: calc(100% - 1px);
 
@@ -31,11 +31,11 @@
 
     /** Indicator cho variant=line */
     --tabs-indicator-color: var(--foreground);
-    --tabs-indicator-thickness-horizontal: calc(var(--spacing) * 0.5);
-    --tabs-indicator-thickness-vertical: calc(var(--spacing) * 0.5);
+    --tabs-indicator-thickness-horizontal: var(--border-width-thick);
+    --tabs-indicator-thickness-vertical: var(--border-width-thick);
 
-    --tabs-indicator-offset-horizontal: -5px; 
-    --tabs-indicator-offset-vertical: calc(var(--spacing) * -1);
+    --tabs-indicator-offset-horizontal: calc(var(--space-sm) * -1); 
+    --tabs-indicator-offset-vertical: calc(var(--space-sm) * -1);
 }
 
 .dark {

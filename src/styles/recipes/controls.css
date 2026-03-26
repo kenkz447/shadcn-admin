@@ -8,15 +8,15 @@
     /* Gap scale */
     --control-gap-xs: calc(var(--spacing) * 1);
     --control-gap-sm: calc(var(--spacing) * 1);
-    --control-gap-md: var(--space-sm);
-    --control-gap-lg: var(--space-sm);
+    --control-gap-md: var(--space-md);
+    --control-gap-lg: var(--space-md);
 
     /* Shared geometry */
     --control-radius-md: var(--radius-md);
 
     /* Shared spacing */
-    --control-padding-x: var(--space-md);
-    --control-padding-y: var(--space-sm);
+    --control-padding-x: var(--space-lg);
+    --control-padding-y: var(--space-md);
 
     /* Shared Colors */
     --control-bg: transparent;

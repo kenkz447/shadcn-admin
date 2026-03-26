@@ -8,7 +8,7 @@ import {
 import { cn } from '@/lib/utils'
 
 const alertVariants = cva(
-  "relative grid w-full grid-cols-[0_1fr] items-start gap-y-(--alert-gap-y) rounded-(--alert-radius) border border-(--alert-border-color) px-(--alert-padding-x) py-(--alert-padding-y) text-sm has-[>svg]:grid-cols-[var(--alert-icon-column-size)_1fr] has-[>svg]:gap-x-(--alert-gap-x) [&>svg]:size-(--alert-icon-size) [&>svg]:translate-y-(--alert-icon-translate-y) [&>svg]:text-current",
+  "relative grid w-full grid-cols-[0_1fr] items-start gap-y-(--alert-gap-y) rounded-(--alert-radius) border border-(--alert-border-color) px-(--alert-padding-x) py-(--alert-padding-y) text-sm has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-(--alert-gap-x) [&>svg]:size-(--alert-icon-size) [&>svg]:translate-y-(--alert-icon-translate-y) [&>svg]:text-current",
   {
     variants: {
       variant: {

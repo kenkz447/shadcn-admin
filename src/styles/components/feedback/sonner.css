@@ -2,5 +2,5 @@
 
 :root {
     --sonner-icon-size: var(--icon-size-md);
-    --sonner-border-radius: var(--radius);
+    --sonner-border-radius: var(--radius-md);
 }

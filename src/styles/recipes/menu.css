@@ -3,24 +3,24 @@
     --menu-content-min-width: calc(var(--spacing) * 32);
 
     --menu-content-bg: var(--background);
-    --menu-content-padding: var(--space-xs);
-    --menu-content-side-offset: var(--space-xs);
+    --menu-content-padding: var(--space-sm);
+    --menu-content-side-offset: var(--space-sm);
 
     --menu-label-fg: var(--muted-foreground);
     --menu-label-font-size: var(--font-size-sm);
-    --menu-label-padding-x: var(--space-sm);
-    --menu-label-padding-y: var(--space-sm);
+    --menu-label-padding-x: var(--space-md);
+    --menu-label-padding-y: var(--space-md);
 
-    --menu-item-gap: var(--space-sm);
+    --menu-item-gap: var(--space-md);
     --menu-item-radius: var(--radius-sm);
-    --menu-item-padding-x: var(--space-sm);
-    --menu-item-padding-y: var(--space-sm);
+    --menu-item-padding-x: var(--space-md);
+    --menu-item-padding-y: var(--space-md);
     --menu-item-icon-size: var(--icon-size-md);
     --menu-item-selected-bg: var(--muted);
     --menu-item-selected-fg: var(--foreground);
 
-    --menu-separator-margin-x: calc(-1 * var(--space-xs));
-    --menu-separator-margin-y: var(--space-xs);
+    --menu-separator-margin-x: calc(-1 * var(--space-sm));
+    --menu-separator-margin-y: var(--space-sm);
     --menu-separator-height: var(--border-width-thin);
     --menu-separator-color: var(--border);
 

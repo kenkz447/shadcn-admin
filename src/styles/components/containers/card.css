@@ -1,11 +1,11 @@
 /** Card **/
 
 :root {
-    --card-gap: calc(var(--spacing) * 6);
+    --card-gap: var(--space-2xl);
     --card-radius: var(--radius-xl);
     --card-border-color: var(--border);
-    --card-padding-x: calc(var(--spacing) * 6);
-    --card-padding-y: calc(var(--spacing) * 6);
+    --card-padding-x: var(--space-2xl);
+    --card-padding-y: var(--space-2xl);
 
-    --card-header-gap: var(--space-sm);
+    --card-header-gap: var(--space-md);
 }

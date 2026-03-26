@@ -20,20 +20,20 @@
     --btn-size-md: var(--control-size-md);
     --btn-size-lg: var(--control-size-lg);
 
-    --btn-gap-xs: var(--space-sm);
-    --btn-gap-sm: var(--space-sm);
-    --btn-gap-md: var(--space-sm);
-    --btn-gap-lg: var(--space-sm);
+    --btn-gap-xs: var(--space-md);
+    --btn-gap-sm: var(--space-md);
+    --btn-gap-md: var(--space-md);
+    --btn-gap-lg: var(--space-md);
 
-    --btn-padding-x-xs: var(--space-sm);
-    --btn-padding-x-sm: var(--space-sm);
-    --btn-padding-x-md: var(--space-md);
-    --btn-padding-x-lg: var(--space-md);
+    --btn-padding-x-xs: var(--space-md);
+    --btn-padding-x-sm: var(--space-md);
+    --btn-padding-x-md: var(--space-lg);
+    --btn-padding-x-lg: var(--space-lg);
 
-    --btn-has-icon-padding-xs: var(--space-xs);
-    --btn-has-icon-padding-sm: var(--space-xs);
-    --btn-has-icon-padding-md: var(--space-sm);
-    --btn-has-icon-padding-lg: var(--space-lg);
+    --btn-has-icon-padding-xs: var(--space-sm);
+    --btn-has-icon-padding-sm: var(--space-sm);
+    --btn-has-icon-padding-md: var(--space-md);
+    --btn-has-icon-padding-lg: var(--space-xl);
 
     --btn-outline-bg: var(--background);
     --btn-outline-bg-hover: var(--muted);

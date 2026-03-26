@@ -5,58 +5,58 @@
     --sidebar-width-mobile-default: 18rem;
     --sidebar-width-icon-default: 3rem;
 
-    --sidebar-container-padding: var(--space-sm);
+    --sidebar-container-padding: var(--space-md);
     --sidebar-container-padding-with-border: calc(var(--spacing) * 4 + 2px);
 
     --sidebar-trigger-size: var(--control-size-sm);
 
-    --sidebar-rail-width: calc(var(--spacing) * 4);
-    --sidebar-rail-offset: calc(var(--spacing) * -4);
-    --sidebar-rail-collapsed-offset: calc(var(--spacing) * -2);
+    --sidebar-rail-width: var(--space-lg);
+    --sidebar-rail-offset: calc(var(--sidebar-rail-width) * -1);
+    --sidebar-rail-collapsed-offset: calc(var(--sidebar-rail-offset) / 2);
     --sidebar-rail-translate-x: -50%;
     --sidebar-rail-line-width: 2px;
     --sidebar-rail-collapsed-bg: var(--sidebar);
 
-    --sidebar-inset-margin: var(--space-sm);
+    --sidebar-inset-margin: var(--space-md);
     --sidebar-inset-radius: var(--radius-xl);
     --sidebar-floating-radius: var(--radius-lg);
 
     --sidebar-input-height: var(--control-size-md);
-    --sidebar-section-gap: var(--space-sm);
-    --sidebar-section-padding: var(--space-sm);
-    --sidebar-separator-margin-x: var(--space-sm);
+    --sidebar-section-gap: var(--space-md);
+    --sidebar-section-padding: var(--space-md);
+    --sidebar-separator-margin-x: var(--space-md);
 
-    --sidebar-menu-gap: calc(var(--spacing) * 1);
+    --sidebar-menu-gap: var(--space-sm);
     
     --sidebar-group-label-height: var(--control-size-sm);
-    --sidebar-group-label-padding-x: var(--space-sm);
+    --sidebar-group-label-padding-x: var(--space-md);
     --sidebar-group-label-icon-size: var(--icon-size-md);
     --sidebar-group-label-collapsed-margin-top: calc(var(--sidebar-group-label-height) * -1);
 
-    --sidebar-group-action-top: calc(var(--spacing) * 3.5);
-    --sidebar-group-action-right: calc(var(--spacing) * 3);
-    --sidebar-group-action-width: calc(var(--spacing) * 5);
+    --sidebar-group-action-top: var(--space-xl);
+    --sidebar-group-action-right: var(--space-lg);
+    --sidebar-group-action-width: var(--size-xs);
     --sidebar-group-action-radius: var(--radius-md);
-    --sidebar-group-action-hit-area: calc(var(--space-sm) * -1);
+    --sidebar-group-action-hit-area: calc(var(--space-md) * -1);
     --sidebar-group-action-icon-size: var(--icon-size-md);
 
-    --sidebar-menu-button-gap: var(--space-sm);
+    --sidebar-menu-button-gap: var(--space-md);
     --sidebar-menu-button-radius: var(--radius-md);
-    --sidebar-menu-button-padding: var(--space-sm);
-    --sidebar-menu-button-padding-right-with-action: calc(var(--spacing) * 8);
+    --sidebar-menu-button-padding: var(--space-md);
+    --sidebar-menu-button-padding-right-with-action: var(--space-3xl);
     --sidebar-menu-button-icon-size: var(--icon-size-md);
-    --sidebar-menu-button-collapsed-size: calc(var(--spacing) * 8);
-    --sidebar-menu-button-height: calc(var(--spacing) * 8);
-    --sidebar-menu-button-height-sm: calc(var(--spacing) * 7);
-    --sidebar-menu-button-height-lg: calc(var(--spacing) * 12);
+    --sidebar-menu-button-collapsed-size: var(--control-size-sm);
+    --sidebar-menu-button-height: var(--control-size-md);
+    --sidebar-menu-button-height-sm: var(--control-size-sm);
+    --sidebar-menu-button-height-lg: var(--control-size-lg);
 
-    --sidebar-menu-action-top: calc(var(--spacing) * 1.5);
-    --sidebar-menu-action-top-sm: calc(var(--spacing) * 1);
-    --sidebar-menu-action-top-lg: calc(var(--spacing) * 2.5);
-    --sidebar-menu-action-right: calc(var(--spacing) * 1);
-    --sidebar-menu-action-width: calc(var(--spacing) * 5);
+    --sidebar-menu-action-top: var(--space-md);
+    --sidebar-menu-action-top-sm: var(--space-sm);
+    --sidebar-menu-action-top-lg: var(--space-lg);
+    --sidebar-menu-action-right: var(--space-sm);
+    --sidebar-menu-action-width: var(--size-xs);
     --sidebar-menu-action-radius: var(--radius-md);
-    --sidebar-menu-action-hit-area: calc(var(--spacing) * -2);
+    --sidebar-menu-action-hit-area: calc(var(--space-md) * -1);
     --sidebar-menu-action-icon-size: var(--icon-size-md);
 
     --sidebar-menu-badge-right: calc(var(--spacing) * 1);
@@ -65,23 +65,23 @@
     --sidebar-menu-badge-radius: var(--radius-md);
     --sidebar-menu-badge-padding-x: calc(var(--spacing) * 1);
 
-    --sidebar-menu-skeleton-height: calc(var(--spacing) * 8);
-    --sidebar-menu-skeleton-gap: var(--space-sm);
+    --sidebar-menu-skeleton-height: var(--size-sm);
+    --sidebar-menu-skeleton-gap: var(--space-md);
     --sidebar-menu-skeleton-radius: var(--radius-md);
-    --sidebar-menu-skeleton-padding-x: var(--space-sm);
+    --sidebar-menu-skeleton-padding-x: var(--space-md);
     --sidebar-menu-skeleton-icon-size: var(--icon-size-md);
-    --sidebar-menu-skeleton-text-height: calc(var(--spacing) * 4);
+    --sidebar-menu-skeleton-text-height: var(--icon-size-md);
 
-    --sidebar-menu-sub-margin-x: calc(var(--spacing) * 3.5);
+    --sidebar-menu-sub-margin-x: var(--space-xl);
     --sidebar-menu-sub-translate-x: 1px;
-    --sidebar-menu-sub-gap: calc(var(--spacing) * 1);
+    --sidebar-menu-sub-gap: var(--space-sm);
     --sidebar-menu-sub-border-color: var(--sidebar-border);
-    --sidebar-menu-sub-padding-x: calc(var(--spacing) * 2.5);
-    --sidebar-menu-sub-padding-y: calc(var(--spacing) * 0.5);
+    --sidebar-menu-sub-padding-x: var(--space-xl);
+    --sidebar-menu-sub-padding-y: var(--space-xs);
     --sidebar-menu-sub-button-height: var(--control-size-sm);
-    --sidebar-menu-sub-button-gap: var(--space-sm);
+    --sidebar-menu-sub-button-gap: var(--space-md);
     --sidebar-menu-sub-button-radius: var(--radius-md);
-    --sidebar-menu-sub-button-padding-x: var(--space-sm);
+    --sidebar-menu-sub-button-padding-x: var(--space-md);
     --sidebar-menu-sub-button-translate-x: 1px;
     --sidebar-menu-sub-button-icon-size: var(--icon-size-md);
 
