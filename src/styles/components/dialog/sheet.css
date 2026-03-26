@@ -1,0 +1,26 @@
+/** Sheet **/
+
+:root {
+    --sheet-overlay-bg: var(--dialog-overlay-bg);
+
+    --sheet-content-max-width: 24rem;
+    --sheet-content-width: 75%;
+
+    --sheet-content-gap: var(--dialog-content-gap);
+    --sheet-content-border-color: var(--dialog-content-border-color);
+
+    --sheet-close-offset-top: var(--dialog-close-offset-top);
+    --sheet-close-offset-right: var(--dialog-close-offset-right);
+    --sheet-close-radius: var(--dialog-close-radius);
+    --sheet-close-opacity: var(--dialog-close-opacity);
+    --sheet-close-opacity-hover: var(--dialog-close-opacity-hover);
+    --sheet-close-ring-width-focus: var(--dialog-close-ring-width-focus);
+    --sheet-close-ring-color-focus: var(--dialog-close-ring-color-focus);
+    --sheet-close-icon-size: var(--dialog-close-icon-size);
+
+    --sheet-header-gap: var(--dialog-header-gap);
+    --sheet-header-padding: calc(var(--spacing) * 4);
+
+    --sheet-footer-gap: var(--dialog-footer-gap);
+    --sheet-footer-padding: calc(var(--spacing) * 4);
+}

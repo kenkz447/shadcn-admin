@@ -4,18 +4,21 @@
 
 @import './theme.css';
 
-@import './tokens/overlay.css';
+@import './tokens/dialog.css';
 @import './tokens/controls.css';
 @import './tokens/menu.css';
+@import './tokens/toggle.css';
 
 @import './components/containers/card.css';
-@import './components/containers/dialog.css';
-@import './components/containers/sheet.css';
+
+@import './components/dialog/dialog.css';
+@import './components/dialog/sheet.css';
+@import './components/dialog/alert-dialog.css';
+
 @import './components/data-display/avatar.css';
 @import './components/data-display/badge.css';
 @import './components/data-display/table.css';
 @import './components/feedback/alert.css';
-@import './components/feedback/alert-dialog.css';
 @import './components/feedback/sonner.css';
 @import './components/feedback/skeleton.css';
 @import './components/controls/button.css';

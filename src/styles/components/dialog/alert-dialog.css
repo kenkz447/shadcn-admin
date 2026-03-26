@@ -1,0 +1,21 @@
+/** Alert Dialog **/
+
+:root {
+    --alert-dialog-overlay-bg: var(--dialog-overlay-bg);
+
+    --alert-dialog-content-max-width: var(--dialog-content-max-width);
+    --alert-dialog-content-max-width-screen-sm: var(--dialog-content-max-width-screen-sm);
+    --alert-dialog-content-gap: var(--dialog-content-gap);
+    --alert-dialog-content-radius: var(--dialog-content-radius);
+    --alert-dialog-content-border-color: var(--dialog-content-border-color);
+    --alert-dialog-content-padding: var(--dialog-content-padding);
+
+    --alert-dialog-header-gap: calc(var(--spacing) * 1.5);
+    --alert-dialog-header-media-gap-x: calc(var(--spacing) * 6);
+    --alert-dialog-footer-gap: calc(var(--spacing) * 2);
+
+    --alert-dialog-media-size: calc(var(--spacing) * 16);
+    --alert-dialog-media-margin-bottom: calc(var(--spacing) * 2);
+    --alert-dialog-media-radius: var(--radius-md);
+    --alert-dialog-media-icon-size: calc(var(--spacing) * 8);
+}
