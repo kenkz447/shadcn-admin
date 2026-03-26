@@ -15,9 +15,9 @@
 
 	--btn-border-color-invalid: var(--control-border-color-invalid);
 
-	--btn-icon-size: calc(var(--spacing) * 4);
-	--btn-icon-size-xs: calc(var(--spacing) * 3);
-	--btn-icon-size-sm: calc(var(--spacing) * 3.5);
+	--btn-icon-size: var(--icon-size);
+	--btn-icon-size-xs: var(--icon-size-xs);
+	--btn-icon-size-sm: var(--icon-size-sm);
 
 	--btn-height: var(--control-height);
 	--btn-height-xs: var(--control-height-xs);
@@ -30,11 +30,11 @@
 	--btn-gap-lg: var(--control-gap-lg);
 
 	--btn-padding-x: calc(var(--spacing) * 2.5);
-	--btn-padding-x-xs: calc(var(--spacing) * 2);
+	--btn-padding-x-xs: var(--spacing-base);
 	--btn-padding-x-sm: calc(var(--spacing) * 2.5);
 	--btn-padding-x-lg: calc(var(--spacing) * 2.5);
 
-	--btn-has-icon-padding: calc(var(--spacing) * 2);
+	--btn-has-icon-padding: var(--spacing-base);
 	--btn-has-icon-padding-xs: calc(var(--spacing) * 1.5);
 	--btn-has-icon-padding-sm: calc(var(--spacing) * 1.5);
 	--btn-has-icon-padding-lg: calc(var(--spacing) * 3);

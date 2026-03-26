@@ -1,7 +1,8 @@
-import * as React from "react"
-import { Popover as PopoverPrimitive } from "radix-ui"
+import * as React from 'react'
 
-import { cn } from "@/lib/utils"
+import { Popover as PopoverPrimitive } from 'radix-ui'
+
+import { cn } from '@/lib/utils'
 
 function Popover({
   ...props
@@ -76,12 +77,4 @@ function PopoverDescription({
   )
 }
 
-export {
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverAnchor,
-  PopoverHeader,
-  PopoverTitle,
-  PopoverDescription,
-}
+export { Popover, PopoverAnchor, PopoverContent, PopoverDescription, PopoverHeader, PopoverTitle, PopoverTrigger }

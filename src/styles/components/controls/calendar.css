@@ -8,19 +8,19 @@
     --calendar-month-gap: calc(var(--spacing) * 4);
 
     --calendar-nav-gap: calc(var(--spacing) * 1);
-    --calendar-nav-icon-size: calc(var(--spacing) * 4);
+    --calendar-nav-icon-size: var(--icon-size);
 
     --calendar-dropdown-gap: calc(var(--spacing) * 1.5);
     --calendar-dropdown-radius: var(--control-radius);
     --calendar-dropdown-border-color: var(--control-border-color);
     --calendar-dropdown-border-color-focus: var(--control-border-color-focus);
 
-    --calendar-caption-icon-size: calc(var(--spacing) * 3.5);
+    --calendar-caption-icon-size: var(--icon-size-sm);
     --calendar-range-radius: var(--control-radius);
 
 
     --calendar-weekday-radius: var(--control-radius);
     --calendar-weekday-text-size: 0.8rem;
     --calendar-week-number-text-size: 0.8rem;
-    --calendar-week-margin-top: calc(var(--spacing) * 2);
+    --calendar-week-margin-top: var(--spacing-base);
 }

@@ -15,6 +15,6 @@
     --radio-border-color-invalid: var(--toggle-border-color-invalid);
     --radio-ring-color-invalid: var(--toggle-ring-color-invalid);
 
-    --radio-indicator-size: calc(var(--spacing) * 2);
+    --radio-indicator-size: var(--spacing-base);
     --radio-indicator-color: var(--primary);
 }

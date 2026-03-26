@@ -12,7 +12,7 @@
     --dropdown-item-padding-x: var(--menu-item-padding-x);
     --dropdown-item-padding-y: var(--menu-item-padding-y);
     --dropdown-item-inset-padding-left: calc(var(--spacing) * 8);
-    --dropdown-item-indicator-offset-left: calc(var(--spacing) * 2);
+    --dropdown-item-indicator-offset-left: var(--spacing-base);
     --dropdown-item-indicator-size: var(--menu-item-indicator-size);
     --dropdown-item-icon-size: var(--menu-item-icon-size);
 

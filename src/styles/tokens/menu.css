@@ -9,14 +9,14 @@
 
     --menu-label-fg: var(--muted-foreground);
     --menu-label-font-size: var(--text-sm);
-    --menu-label-padding-x: calc(var(--spacing) * 2);
+    --menu-label-padding-x: var(--spacing-base);
     --menu-label-padding-y: calc(var(--spacing) * 1.5);
 
-    --menu-item-gap: calc(var(--spacing) * 2);
+    --menu-item-gap: var(--spacing-base);
     --menu-item-radius: var(--radius-sm);
-    --menu-item-padding-x: calc(var(--spacing) * 2);
+    --menu-item-padding-x: var(--spacing-base);
     --menu-item-padding-y: calc(var(--spacing) * 1.5);
-    --menu-item-icon-size: calc(var(--spacing) * 4);
+    --menu-item-icon-size: var(--icon-size);
     --menu-item-selected-bg: var(--muted);
     --menu-item-selected-fg: var(--foreground);
 

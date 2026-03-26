@@ -1,0 +1,9 @@
+:root {
+    --spacing-base: calc(var(--spacing) * 2);
+
+    /* Icon size scale */
+    --icon-size: calc(var(--spacing) * 4);
+    --icon-size-xs: calc(var(--spacing) * 3);
+    --icon-size-sm: calc(var(--spacing) * 3.5);
+    --icon-size-lg: calc(var(--spacing) * 5);
+}

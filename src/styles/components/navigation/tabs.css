@@ -6,12 +6,12 @@
     --tabs-size-md: var(--control-height);
     --tabs-radius: var(--radius-lg);
     --tabs-padding: 3px;
-    --tabs-gap: calc(var(--spacing) * 2);
+    --tabs-gap: var(--spacing-base);
     --tabs-line-gap: calc(var(--spacing) * 1);
 
     /** Tabs item (trigger) */
     --tabs-item-gap: calc(var(--spacing) * 1.5);
-    --tabs-item-padding-x: calc(var(--spacing) * 2);
+    --tabs-item-padding-x: var(--spacing-base);
     --tabs-item-padding-y: calc(var(--spacing) * 1);
     --tabs-item-radius: var(--radius-md);
     --tabs-item-height: calc(100% - 1px);

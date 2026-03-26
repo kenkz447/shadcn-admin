@@ -5,24 +5,18 @@
   --control-height: calc(var(--spacing) * 9); /* Default height for form-fields and buttons */
   --control-height-lg: calc(var(--spacing) * 10);
 
-  /* Icon size scale */
-  --control-icon-size: calc(var(--spacing) * 4);
-  --control-icon-size-xs: calc(var(--spacing) * 3);
-  --control-icon-size-sm: calc(var(--spacing) * 3.5);
-  --control-icon-size-lg: calc(var(--spacing) * 5);
-
   /* Gap scale */
-  --control-gap: calc(var(--spacing) * 2);
+  --control-gap: var(--spacing-base);
   --control-gap-xs: calc(var(--spacing) * 1);
   --control-gap-sm: calc(var(--spacing) * 1);
-  --control-gap-lg: calc(var(--spacing) * 2);
+  --control-gap-lg: var(--spacing-base);
 
   /* Shared geometry */
   --control-radius: var(--radius-md);
 
   /* Shared spacing */
   --control-padding-x: calc(var(--spacing) * 3);
-  --control-padding-y: calc(var(--spacing) * 2);
+  --control-padding-y: var(--spacing-base);
 
   /* Shared Colors */
   --control-bg: transparent;

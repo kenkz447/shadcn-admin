@@ -7,9 +7,9 @@
     --avatar-ring-width: 2px;
     --avatar-ring-color: var(--background);
 
-    --avatar-icon-size: var(--control-icon-size);
-    --avatar-icon-size-sm: var(--control-icon-size-sm);
-    --avatar-icon-size-lg: var(--control-icon-size-lg);
+    --avatar-icon-size: var(--icon-size);
+    --avatar-icon-size-sm: var(--icon-size-sm);
+    --avatar-icon-size-lg: var(--icon-size-lg);
 
     --avatar-badge-size-sm: calc(var(--spacing) * 2);
     --avatar-badge-size: calc(var(--spacing) * 2.5);

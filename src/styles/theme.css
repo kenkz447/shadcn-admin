@@ -31,10 +31,6 @@
   --sidebar-accent-foreground: var(--accent-foreground);
   --sidebar-border: var(--border);
   --sidebar-ring: var(--ring);
-
-  --svg-size-md: calc(var(--spacing) * 4);
-  --svg-size-sm: calc(var(--spacing) * 3);
-  --svg-size-lg: calc(var(--spacing) * 5);
 }
 
 .dark {

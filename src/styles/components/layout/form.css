@@ -1,5 +1,5 @@
 /** Form **/
 
 :root {
-    --form-item-gap: calc(var(--spacing) * 2);
+    --form-item-gap: var(--spacing-base);
 }

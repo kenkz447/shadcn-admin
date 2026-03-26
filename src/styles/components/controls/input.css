@@ -8,7 +8,7 @@
     --input-border-color: var(--control-border-color);
     --input-bg: var(--control-bg);
     --input-placeholder-color: var(--control-placeholder-color);
-    --input-file-height: calc(var(--spacing) * 7);
+    --input-file-height: var(--control-height-sm);
 
     --input-border-color-focus: var(--control-border-color-focus);
 

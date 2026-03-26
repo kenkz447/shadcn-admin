@@ -4,6 +4,7 @@
 
 @import './theme.css';
 
+@import './tokens/default.css';
 @import './tokens/dialog.css';
 @import './tokens/controls.css';
 @import './tokens/menu.css';

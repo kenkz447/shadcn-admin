@@ -9,6 +9,6 @@
     --table-row-bg-selected: var(--muted);
 
     --table-head-height: calc(var(--spacing) * 10);
-    --table-cell-padding: calc(var(--spacing) * 2);
+    --table-cell-padding: var(--spacing-base);
     --table-checkbox-translate-y: 2px;
 }

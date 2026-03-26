@@ -1,7 +1,7 @@
 /** Input OTP **/
 
 :root {
-    --input-otp-gap: calc(var(--spacing) * 2);
+    --input-otp-gap: var(--spacing-base);
 
     --input-otp-slot-size: var(--control-height);
     --input-otp-slot-radius: var(--control-radius);

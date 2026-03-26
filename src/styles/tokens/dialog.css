@@ -12,8 +12,8 @@
     --dialog-close-radius: var(--radius-xs);
     --dialog-close-opacity: 0.7;
     --dialog-close-opacity-hover: 1;
-    --dialog-close-icon-size: var(--control-icon-size);
+    --dialog-close-icon-size: var(--icon-size);
 
-    --dialog-header-gap: calc(var(--spacing) * 2);
-    --dialog-footer-gap: calc(var(--spacing) * 2);
+    --dialog-header-gap: var(--spacing-base);
+    --dialog-footer-gap: var(--spacing-base);
 }
