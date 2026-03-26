@@ -3,21 +3,19 @@
 :root {
     --badge-gap: calc(var(--spacing) * 1);
     --badge-radius: 9999px;
-    --badge-border-color: transparent;
+
     --badge-padding-x: calc(var(--spacing) * 2);
     --badge-padding-y: calc(var(--spacing) * 0.5);
+
     --badge-icon-size: calc(var(--spacing) * 3);
+    
+    --badge-border-color: transparent;
+    --badge-border-color-invalid: var(--control-border-color-invalid);
+    --badge-border-color-focus: var(--control-border-color-focus);
 
-    --badge-border-color-focus: var(--ring);
-    --badge-ring-width-focus: 3px;
-    --badge-ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
+    --badge-ring-width-focus: var(--control-ring-width-focus);
+    --badge-ring-color-focus: var(--control-ring-color-focus);
+    --badge-ring-color-invalid: var(--control-ring-color-invalid);
 
-    --badge-border-color-invalid: var(--destructive);
-    --badge-ring-color-invalid: color-mix(in oklab, var(--destructive) 20%, transparent);
-    --badge-destructive-ring-color-focus: color-mix(in oklab, var(--destructive) 20%, transparent);
-}
-
-.dark {
-    --badge-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
-    --badge-destructive-ring-color-focus: color-mix(in oklab, var(--destructive) 40%, transparent);
+    --badge-destructive-ring-color-focus: var(--control-ring-color-invalid);
 }

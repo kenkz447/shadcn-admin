@@ -68,5 +68,4 @@
 
 	--btn-destructive-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
 	--btn-destructive-bg-hover: color-mix(in oklab, var(--destructive) 30%, transparent);
-	--btn-destructive-ring-color-focus: var(--control-ring-color-invalid);
 }
