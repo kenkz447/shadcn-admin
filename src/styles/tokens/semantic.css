@@ -1,0 +1,42 @@
+:root {
+    /* Size scale */
+    --size-xs: var(--size-6);
+    --size-sm: var(--size-8);
+    --size-md: var(--size-10);
+    --size-lg: var(--size-12);
+
+    /* Spacing scale */
+    --space-xs: var(--size-1);
+    --space-sm: var(--size-2);
+    --space-md: var(--size-3);
+    --space-lg: var(--size-4);
+    --space-xl: var(--size-6);
+    --space-2xl: var(--size-8);
+    --space-3xl: var(--size-10);
+    --space-4xl: var(--size-12);
+    --space-5xl: var(--size-16);
+
+    /* Radius scale */
+    --radius-xs: var(--size-1);
+    --radius-sm: var(--size-2);
+    --radius-md: var(--size-3);
+    --radius-full: 9999px;
+
+    /* Border scale */
+    --border-width-thin: 1px;
+    --border-width-default: 2px;
+
+    /* Icon size scale */
+    --icon-size-xs: var(--size-3);
+    --icon-size-sm: var(--size-4);
+    --icon-size-md: var(--size-5);
+    --icon-size-lg: var(--size-6);
+
+    /* Font size scale */
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-md: 1rem; /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-2xl: 1.5rem; /* 24px */
+}
