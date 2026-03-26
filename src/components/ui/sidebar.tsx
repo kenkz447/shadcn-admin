@@ -422,7 +422,7 @@ function SidebarGroupLabel({
       data-slot="sidebar-group-label"
       data-sidebar="group-label"
       className={cn(
-        "flex h-(--sidebar-group-label-height) shrink-0 items-center rounded-(--sidebar-group-label-radius) px-(--sidebar-group-label-padding-x) text-xs font-medium text-sidebar-foreground/70 ring-sidebar-ring outline-hidden transition-[margin,opacity] duration-200 ease-linear focus-visible:ring-(length:--sidebar-group-label-ring-width-focus) [&>svg]:size-(--sidebar-group-label-icon-size) [&>svg]:shrink-0",
+        "flex h-(--sidebar-group-label-height) shrink-0 items-center px-(--sidebar-group-label-padding-x) text-xs font-medium text-sidebar-foreground/70 ring-sidebar-ring outline-hidden transition-[margin,opacity] duration-200 ease-linear [&>svg]:size-(--sidebar-group-label-icon-size) [&>svg]:shrink-0",
         "group-data-[collapsible=icon]:mt-(--sidebar-group-label-collapsed-margin-top) group-data-[collapsible=icon]:opacity-0",
         className
       )}
