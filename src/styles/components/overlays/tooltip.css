@@ -3,7 +3,7 @@
 :root {
     --tooltip-content-padding-x: calc(var(--spacing) * 3);
     --tooltip-content-padding-y: calc(var(--spacing) * 1.5);
-    --tooltip-content-radius: var(--overlay-content-radius);
+    --tooltip-content-radius: var(--radius-md);
 
     --tooltip-arrow-size: calc(var(--spacing) * 2.5);
     --tooltip-arrow-translate-y: calc(-50% - 2px);

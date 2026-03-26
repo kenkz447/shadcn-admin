@@ -5,6 +5,6 @@
     --popover-content-padding: calc(var(--spacing) * 4);
     --popover-header-gap: calc(var(--spacing) * 1);
 
-    --popover-content-radius: var(--overlay-content-radius);
-    --popover-content-border-color: var(--overlay-content-border-color);
+    --popover-content-radius: var(--radius-md);
+    --popover-content-border-color: var(--border);
 }
