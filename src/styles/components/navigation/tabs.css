@@ -1,17 +1,15 @@
-/** Tabs **/
-
 :root {
-    /* Tabs (container + list) */
+    /** Tabs (container + list) */
     --tabs-bg: var(--muted);
     --tabs-fg: var(--muted-foreground);
     --tabs-border: var(--border);
-    --tabs-size-md: calc(var(--spacing) * 9);
+    --tabs-size-md: var(--control-height);
     --tabs-radius: var(--radius-lg);
     --tabs-padding: 3px;
     --tabs-gap: calc(var(--spacing) * 2);
     --tabs-line-gap: calc(var(--spacing) * 1);
 
-    /* Tabs item (trigger) */
+    /** Tabs item (trigger) */
     --tabs-item-gap: calc(var(--spacing) * 1.5);
     --tabs-item-padding-x: calc(var(--spacing) * 2);
     --tabs-item-padding-y: calc(var(--spacing) * 1);
@@ -32,11 +30,11 @@
     --tabs-item-fg-active: var(--foreground);
 
     /* focus-visible */
-    --tabs-item-outline-color-focus: var(--ring);
-    --tabs-item-ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
-    --tabs-item-ring-width-focus: 3px;
+    --tabs-item-border-color-focus: var(--control-border-color-focus);
+    --tabs-item-ring-color-focus: var(--control-ring-color-focus);
+    --tabs-item-ring-width-focus: var(--control-ring-width-focus);
 
-    /* Indicator cho variant=line */
+    /** Indicator cho variant=line */
     --tabs-indicator-color: var(--foreground);
     --tabs-indicator-thickness-horizontal: calc(var(--spacing) * 0.5);
     --tabs-indicator-thickness-vertical: calc(var(--spacing) * 0.5);
