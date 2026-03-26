@@ -11,7 +11,6 @@
 
 @import './components/containers/card.css';
 
-@import './components/dialog/dialog.css';
 @import './components/dialog/sheet.css';
 @import './components/dialog/alert-dialog.css';
 
