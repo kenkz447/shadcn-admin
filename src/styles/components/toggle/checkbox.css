@@ -1,25 +1,20 @@
 /** Checkbox **/
 
 :root {
-    --checkbox-size: calc(var(--spacing) * 4);
+    --checkbox-size: var(--toggle-size);
     --checkbox-radius: 4px;
-    --checkbox-border-color: var(--input);
-    --checkbox-bg: transparent;
+    --checkbox-border-color: var(--toggle-border-color);
+    --checkbox-bg: var(--toggle-bg);
     --checkbox-indicator-size: calc(var(--spacing) * 3.5);
 
-    --checkbox-border-color-focus: var(--ring);
-    --checkbox-ring-width-focus: 3px;
-    --checkbox-ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
+    --checkbox-border-color-focus: var(--toggle-border-color-focus);
+    --checkbox-ring-width-focus: var(--toggle-ring-width-focus);
+    --checkbox-ring-color-focus: var(--toggle-ring-color-focus);
 
-    --checkbox-border-color-invalid: var(--destructive);
-    --checkbox-ring-color-invalid: color-mix(in oklab, var(--destructive) 20%, transparent);
+    --checkbox-border-color-invalid: var(--toggle-border-color-invalid);
+    --checkbox-ring-color-invalid: var(--toggle-ring-color-invalid);
 
     --checkbox-checked-border-color: var(--primary);
     --checkbox-checked-bg: var(--primary);
     --checkbox-checked-fg: var(--primary-foreground);
-}
-
-.dark {
-    --checkbox-bg: color-mix(in oklab, var(--input) 30%, transparent);
-    --checkbox-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
 }

@@ -3,24 +3,19 @@
 :root {
     --radio-group-gap: calc(var(--spacing) * 3);
 
-    --radio-size: calc(var(--spacing) * 4);
+    --radio-size: var(--toggle-size);
     --radio-radius: 9999px;
-    --radio-border-color: var(--input);
-    --radio-bg: transparent;
+    --radio-border-color: var(--toggle-border-color);
+    --radio-bg: var(--toggle-bg);
     --radio-color: var(--primary);
 
-    --radio--border-color-focus: var(--ring);
-    --radio--ring-width-focus: 3px;
-    --radio--ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
-
-    --radio-border-color-invalid: var(--destructive);
-    --radio-ring-color-invalid: color-mix(in oklab, var(--destructive) 20%, transparent);
+    --radio-border-color-focus: var(--toggle-border-color-focus);
+    --radio-ring-width-focus: var(--toggle-ring-width-focus);
+    --radio-ring-color-focus: var(--toggle-ring-color-focus);
+    
+    --radio-border-color-invalid: var(--toggle-border-color-invalid);
+    --radio-ring-color-invalid: var(--toggle-ring-color-invalid);
 
     --radio-indicator-size: calc(var(--spacing) * 2);
     --radio-indicator-color: var(--primary);
-}
-
-.dark {
-    --radio-bg: color-mix(in oklab, var(--input) 30%, transparent);
-    --radio-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
 }

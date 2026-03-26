@@ -4,9 +4,9 @@
     --switch-radius: 9999px;
     --switch-border-color: transparent;
 
-    --switch--border-color-focus: var(--ring);
-    --switch--ring-width-focus: 3px;
-    --switch--ring-color-focus: color-mix(in oklab, var(--ring) 50%, transparent);
+    --switch--border-color-focus: var(--toggle-border-color-focus);
+    --switch--ring-width-focus: var(--toggle-ring-width-focus);
+    --switch--ring-color-focus: var(--toggle-ring-color-focus);
 
     --switch-track-height: 1.15rem;
     --switch-track-width: calc(var(--spacing) * 8);
@@ -16,7 +16,7 @@
     --switch-track-bg-checked: var(--primary);
     --switch-track-bg-unchecked: var(--input);
 
-    --switch-thumb-size: calc(var(--spacing) * 4);
+    --switch-thumb-size: var(--toggle-size);
     --switch-thumb-size-sm: calc(var(--spacing) * 3);
     --switch-thumb-bg: var(--background);
     --switch-thumb-bg-checked-dark: var(--primary-foreground);
