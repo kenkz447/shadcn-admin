@@ -2,6 +2,6 @@
 
 :root {
     --scroll-area-scrollbar-padding: 1px;
-    --scroll-area-scrollbar-size: var(--size-lg);
+    --scroll-area-scrollbar-size: var(--space-lg);
     --scroll-area-thumb-bg: var(--border);
 }

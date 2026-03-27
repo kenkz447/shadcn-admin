@@ -28,6 +28,11 @@ import {
     AvatarImage,
 } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
+import {
+    InputGroup,
+    InputGroupAddon,
+    InputGroupInput,
+} from '@/components/ui/input-group'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
 import { cn } from '@/lib/utils'
@@ -91,7 +96,7 @@ export function Chats() {
           <div className='flex w-full flex-col gap-2 sm:w-56 lg:w-72 2xl:w-80'>
             <div className='sticky top-0 z-10 -mx-4 bg-background px-4 pb-3 shadow-md sm:static sm:z-auto sm:mx-0 sm:p-0 sm:shadow-none'>
               <div className='flex items-center justify-between py-2'>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 items-center'>
                   <h1 className='text-2xl font-bold'>Inbox</h1>
                   <MessagesSquare size={20} />
                 </div>
@@ -100,28 +105,17 @@ export function Chats() {
                   size='icon'
                   variant='ghost'
                   onClick={() => setCreateConversationDialog(true)}
-                  className='rounded-lg'
                 >
                   <Edit size={24} className='stroke-muted-foreground' />
                 </Button>
               </div>
 
-              <label
-                className={cn(
-                  'focus-within:ring-1 focus-within:ring-ring focus-within:outline-hidden',
-                  'flex h-10 w-full items-center space-x-0 rounded-md border border-border ps-2'
-                )}
-              >
-                <SearchIcon size={15} className='me-2 stroke-slate-500' />
-                <span className='sr-only'>Search</span>
-                <input
-                  type='text'
-                  className='w-full flex-1 bg-inherit text-sm'
-                  placeholder='Search chat...'
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                />
-              </label>
+              <InputGroup >
+                <InputGroupInput onChange={(e) => setSearch(e.target.value)} />
+                <InputGroupAddon >
+                  <SearchIcon />
+                </InputGroupAddon>
+              </InputGroup>
             </div>
 
             <ScrollArea className='-mx-3 h-full overflow-scroll p-3'>
@@ -256,7 +250,7 @@ export function Chats() {
                                   className={cn(
                                     'mt-1 block text-xs font-light text-foreground/75 italic',
                                     msg.sender === 'You' &&
-                                      'text-end text-primary-foreground/85'
+                                    'text-end text-primary-foreground/85'
                                   )}
                                 >
                                   {format(msg.timestamp, 'h:mm a')}

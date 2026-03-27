@@ -2,37 +2,22 @@
 
 :root {
     /* Container */
-    --input-group-height: var(--size-sm);
-    --input-group-radius: var(--radius-lg);
-    --input-group-ring-width: 3px;
+    --input-group-height: var(--control-size-md);
+    --input-group-radius: var(--control-radius-md);
 
     /* Addon – shared */
     --input-group-addon-gap: var(--space-md);
     --input-group-addon-font-size: var(--font-size-sm);
-    --input-group-addon-icon-size: var(--icon-size-sm);
-    --input-group-addon-kbd-radius: calc(var(--radius) - 5px);
+    --input-group-addon-icon-size: var(--icon-size-md);
 
     /* Addon – inline (inline-start / inline-end) */
     --input-group-addon-padding-x: var(--space-md);
-    --input-group-addon-padding-y: calc(var(--spacing) * 1.5);
-    --input-group-addon-btn-offset: -0.3rem;
-    --input-group-addon-kbd-offset: -0.15rem;
+    --input-group-addon-padding-y: var(--space-md);
+    --input-group-addon-control-offset: calc(-1 * var(--space-sm));
 
     /* Addon – block (block-start / block-end) */
-    --input-group-addon-block-padding-x: calc(var(--spacing) * 2.5);
+    --input-group-addon-block-padding-x: var(--space-lg);
     --input-group-addon-block-padding-y: var(--space-md);
-
-    /* Button */
-    --input-group-btn-gap: var(--space-md);
-    --input-group-btn-font-size: var(--font-size-sm);
-
-    --input-group-btn-size-xs: var(--size-xs);
-    --input-group-btn-gap-xs: var(--space-sm);
-    --input-group-btn-padding-x-xs: calc(var(--spacing) * 1.5);
-    --input-group-btn-radius-xs: calc(var(--radius) - 3px);
-    --input-group-btn-icon-size-xs: calc(var(--spacing) * 3.5);
-
-    --input-group-btn-size-sm: var(--size-sm);
 
     /* Text addon */
     --input-group-text-font-size: var(--font-size-sm);

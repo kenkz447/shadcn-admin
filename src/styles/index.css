@@ -27,10 +27,13 @@
 @import './components/controls/input-otp.css';
 @import './components/controls/select.css';
 @import './components/controls/textarea.css';
+
 @import './components/layout/form.css';
 @import './components/layout/label.css';
 @import './components/layout/scroll-area.css';
 @import './components/layout/separator.css';
+@import './components/layout/input-group.css';
+
 @import './components/navigation/sidebar.css';
 @import './components/navigation/tabs.css';
 @import './components/menu/command.css';
