@@ -165,9 +165,9 @@ export function DataTableBulkActions<TData>({
             <TooltipTrigger asChild>
               <Button
                 variant='outline'
-                size='icon'
+                size='icon-xs'
                 onClick={handleClearSelection}
-                className='size-6 rounded-full'
+                className='rounded-full'
                 aria-label='Clear selection'
                 title='Clear selection (Escape)'
               >

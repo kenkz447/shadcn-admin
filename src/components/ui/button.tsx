@@ -28,8 +28,8 @@ const buttonVariants = cva(
         lg: "h-(--btn-size-lg) gap-(--btn-gap-lg) px-(--btn-padding-x-lg) has-data-[icon=inline-end]:pr-(--btn-has-icon-padding-lg) has-data-[icon=inline-start]:pl-(--btn-has-icon-padding-lg)",
         icon: "size-(--btn-size-md)",
         "icon-xs": "size-(--btn-size-xs) rounded-(--btn-radius-xs) in-data-[slot=button-group]:rounded-(--btn-group-radius) [&_svg:not([class*='size-'])]:size-(--btn-icon-size-xs)",
-        "icon-sm": "size-(--btn-size-sm) rounded-(--btn-radius-sm) in-data-[slot=button-group]:rounded-(--btn-group-radius)",
-        "icon-lg": "size-(--btn-size-lg)",
+        "icon-sm": "size-(--btn-size-sm) rounded-(--btn-radius-sm) in-data-[slot=button-group]:rounded-(--btn-group-radius) [&_svg:not([class*='size-'])]:size-(--btn-icon-size-sm)",
+        "icon-lg": "size-(--btn-size-lg) [&_svg:not([class*='size-'])]:size-(--btn-icon-size-lg)",
       },
     },
     defaultVariants: {

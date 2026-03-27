@@ -25,7 +25,7 @@ export function DataTableViewOptions<TData>({
           size='sm'
           className='ms-auto hidden lg:flex'
         >
-          <MixerHorizontalIcon className='size-4' />
+          <MixerHorizontalIcon />
           View
         </Button>
       </DropdownMenuTrigger>

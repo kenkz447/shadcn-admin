@@ -1,22 +1,33 @@
 import { useState } from 'react'
-import { type Table } from '@tanstack/react-table'
-import { Trash2, CircleArrowUp, ArrowUpDown, Download } from 'lucide-react'
+
+import {
+    ArrowUpDown,
+    CircleArrowUp,
+    Download,
+    Trash2,
+} from 'lucide-react'
 import { toast } from 'sonner'
-import { sleep } from '@/lib/utils'
+
+import { DataTableBulkActions as BulkActionsToolbar } from '@/components/data-table'
 import { Button } from '@/components/ui/button'
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
+    Tooltip,
+    TooltipContent,
+    TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { DataTableBulkActions as BulkActionsToolbar } from '@/components/data-table'
-import { priorities, statuses } from '../data/data'
+import { sleep } from '@/lib/utils'
+import { type Table } from '@tanstack/react-table'
+
+import {
+    priorities,
+    statuses,
+} from '../data/data'
 import { type Task } from '../data/schema'
 import { TasksMultiDeleteDialog } from './tasks-multi-delete-dialog'
 
@@ -78,8 +89,7 @@ export function DataTableBulkActions<TData>({
               <DropdownMenuTrigger asChild>
                 <Button
                   variant='outline'
-                  size='icon'
-                  className='size-8'
+                  size='icon-sm'
                   aria-label='Update status'
                   title='Update status'
                 >
@@ -114,8 +124,7 @@ export function DataTableBulkActions<TData>({
               <DropdownMenuTrigger asChild>
                 <Button
                   variant='outline'
-                  size='icon'
-                  className='size-8'
+                  size='icon-sm'
                   aria-label='Update priority'
                   title='Update priority'
                 >
@@ -148,9 +157,8 @@ export function DataTableBulkActions<TData>({
           <TooltipTrigger asChild>
             <Button
               variant='outline'
-              size='icon'
+              size='icon-sm'
               onClick={() => handleBulkExport()}
-              className='size-8'
               aria-label='Export tasks'
               title='Export tasks'
             >
@@ -167,9 +175,8 @@ export function DataTableBulkActions<TData>({
           <TooltipTrigger asChild>
             <Button
               variant='destructive'
-              size='icon'
+              size='icon-sm'
               onClick={() => setShowDeleteConfirm(true)}
-              className='size-8'
               aria-label='Delete selected tasks'
               title='Delete selected tasks'
             >

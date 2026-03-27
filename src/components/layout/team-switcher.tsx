@@ -1,19 +1,24 @@
 import * as React from 'react'
-import { ChevronsUpDown, Plus } from 'lucide-react'
+
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuTrigger,
+    ChevronsUpDown,
+    Plus,
+} from 'lucide-react'
+
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuShortcut,
+    DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import {
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  useSidebar,
+    SidebarMenu,
+    SidebarMenuButton,
+    SidebarMenuItem,
+    useSidebar,
 } from '@/components/ui/sidebar'
 
 type TeamSwitcherProps = {
@@ -64,7 +69,7 @@ export function TeamSwitcher({ teams }: TeamSwitcherProps) {
                 onClick={() => setActiveTeam(team)}
                 className='gap-2 p-2'
               >
-                <div className='flex size-6 items-center justify-center rounded-sm border'>
+                <div className='flex items-center justify-center rounded-sm border'>
                   <team.logo className='size-4 shrink-0' />
                 </div>
                 {team.name}
@@ -73,7 +78,7 @@ export function TeamSwitcher({ teams }: TeamSwitcherProps) {
             ))}
             <DropdownMenuSeparator />
             <DropdownMenuItem className='gap-2 p-2'>
-              <div className='flex size-6 items-center justify-center rounded-md border bg-background'>
+              <div className='flex items-center justify-center rounded-md border bg-background'>
                 <Plus className='size-4' />
               </div>
               <div className='font-medium text-muted-foreground'>Add team</div>

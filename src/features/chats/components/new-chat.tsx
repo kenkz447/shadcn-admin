@@ -1,22 +1,33 @@
 import { useState } from 'react'
-import { Check, X } from 'lucide-react'
-import { showSubmittedData } from '@/lib/show-submitted-data'
+
+import {
+    Check,
+    X,
+} from 'lucide-react'
+
+import {
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
+} from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
+    Command,
+    CommandEmpty,
+    CommandGroup,
+    CommandInput,
+    CommandItem,
+    CommandList,
 } from '@/components/ui/command'
 import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
+    Dialog,
+    DialogContent,
+    DialogHeader,
+    DialogTitle,
 } from '@/components/ui/dialog'
+import { showSubmittedData } from '@/lib/show-submitted-data'
+
 import { type ChatUser } from '../data/chat-types'
 
 type User = Omit<ChatUser, 'messages'>
@@ -90,11 +101,10 @@ export function NewChat({ users, onOpenChange, open }: NewChatProps) {
                     className='flex items-center justify-between gap-2 hover:bg-accent hover:text-accent-foreground'
                   >
                     <div className='flex items-center gap-2'>
-                      <img
-                        src={user.profile || '/placeholder.svg'}
-                        alt={user.fullName}
-                        className='h-8 w-8 rounded-full'
-                      />
+                      <Avatar size='sm'>
+                        <AvatarImage src={user.profile || '/placeholder.svg'} alt={user.fullName} />
+                        <AvatarFallback className='rounded-lg'>SN</AvatarFallback>
+                      </Avatar>
                       <div className='flex flex-col'>
                         <span className='text-sm font-medium'>
                           {user.fullName}

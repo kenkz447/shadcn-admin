@@ -183,7 +183,7 @@ export function Chats() {
                     <ArrowLeft className='rtl:rotate-180' />
                   </Button>
                   <div className='flex items-center gap-2 lg:gap-4'>
-                    <Avatar className='size-9 lg:size-11'>
+                    <Avatar>
                       <AvatarImage
                         src={selectedUser.profile}
                         alt={selectedUser.username}
@@ -202,27 +202,27 @@ export function Chats() {
                 </div>
 
                 {/* Right */}
-                <div className='-me-1 flex items-center gap-1 lg:gap-2'>
+                <div className='-me-1 flex items-center gap-1'>
                   <Button
-                    size='icon'
+                    size='icon-sm'
                     variant='ghost'
-                    className='hidden size-8 rounded-full sm:inline-flex lg:size-10'
+                    className='hidden rounded-full sm:inline-flex'
                   >
-                    <Video size={22} className='stroke-muted-foreground' />
+                    <Video className='stroke-muted-foreground' />
                   </Button>
                   <Button
-                    size='icon'
+                    size='icon-sm'
                     variant='ghost'
-                    className='hidden size-8 rounded-full sm:inline-flex lg:size-10'
+                    className='hidden rounded-full sm:inline-flex'
                   >
-                    <Phone size={22} className='stroke-muted-foreground' />
+                    <Phone className='stroke-muted-foreground' />
                   </Button>
                   <Button
-                    size='icon'
+                    size='icon-sm'
                     variant='ghost'
                     className='rounded-full'
                   >
-                    <MoreVertical className='stroke-muted-foreground sm:size-5' />
+                    <MoreVertical className='stroke-muted-foreground' />
                   </Button>
                 </div>
               </div>

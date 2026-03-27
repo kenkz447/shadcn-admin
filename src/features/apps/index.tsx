@@ -1,22 +1,32 @@
-import { type ChangeEvent, useState } from 'react'
-import { getRouteApi } from '@tanstack/react-router'
-import { SlidersHorizontal, ArrowUpAZ, ArrowDownAZ } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select'
-import { Separator } from '@/components/ui/separator'
+    type ChangeEvent,
+    useState,
+} from 'react'
+
+import {
+    ArrowDownAZ,
+    ArrowUpAZ,
+    SlidersHorizontal,
+} from 'lucide-react'
+
 import { ConfigDrawer } from '@/components/config-drawer'
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
 import { ProfileDropdown } from '@/components/profile-dropdown'
 import { Search } from '@/components/search'
 import { ThemeSwitch } from '@/components/theme-switch'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from '@/components/ui/select'
+import { Separator } from '@/components/ui/separator'
+import { getRouteApi } from '@tanstack/react-router'
+
 import { apps } from './data/apps'
 
 const route = getRouteApi('/_authenticated/apps/')
@@ -107,7 +117,7 @@ export function Apps() {
           <div className='flex flex-col gap-4 sm:my-4 sm:flex-row'>
             <Input
               placeholder='Filter apps...'
-              className='h-9 w-40 lg:w-[250px]'
+              className='w-40 lg:w-[250px]'
               value={searchTerm}
               onChange={handleSearch}
             />

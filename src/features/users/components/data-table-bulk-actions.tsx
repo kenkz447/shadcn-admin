@@ -1,15 +1,23 @@
 import { useState } from 'react'
-import { type Table } from '@tanstack/react-table'
-import { Trash2, UserX, UserCheck, Mail } from 'lucide-react'
+
+import {
+    Mail,
+    Trash2,
+    UserCheck,
+    UserX,
+} from 'lucide-react'
 import { toast } from 'sonner'
-import { sleep } from '@/lib/utils'
+
+import { DataTableBulkActions as BulkActionsToolbar } from '@/components/data-table'
 import { Button } from '@/components/ui/button'
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
+    Tooltip,
+    TooltipContent,
+    TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { DataTableBulkActions as BulkActionsToolbar } from '@/components/data-table'
+import { sleep } from '@/lib/utils'
+import { type Table } from '@tanstack/react-table'
+
 import { type User } from '../data/schema'
 import { UsersMultiDeleteDialog } from './users-multi-delete-dialog'
 
@@ -56,9 +64,8 @@ export function DataTableBulkActions<TData>({
           <TooltipTrigger asChild>
             <Button
               variant='outline'
-              size='icon'
+              size='icon-sm'
               onClick={handleBulkInvite}
-              className='size-8'
               aria-label='Invite selected users'
               title='Invite selected users'
             >
@@ -75,9 +82,8 @@ export function DataTableBulkActions<TData>({
           <TooltipTrigger asChild>
             <Button
               variant='outline'
-              size='icon'
+              size='icon-sm'
               onClick={() => handleBulkStatusChange('active')}
-              className='size-8'
               aria-label='Activate selected users'
               title='Activate selected users'
             >
@@ -94,9 +100,8 @@ export function DataTableBulkActions<TData>({
           <TooltipTrigger asChild>
             <Button
               variant='outline'
-              size='icon'
+              size='icon-sm'
               onClick={() => handleBulkStatusChange('inactive')}
-              className='size-8'
               aria-label='Deactivate selected users'
               title='Deactivate selected users'
             >
@@ -113,9 +118,8 @@ export function DataTableBulkActions<TData>({
           <TooltipTrigger asChild>
             <Button
               variant='destructive'
-              size='icon'
+              size='icon-sm'
               onClick={() => setShowDeleteConfirm(true)}
-              className='size-8'
               aria-label='Delete selected users'
               title='Delete selected users'
             >
