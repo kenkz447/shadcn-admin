@@ -4,7 +4,6 @@
 
 @import './theme.css';
 @import './tone.css';
-@import './default.css';
 
 @import './recipes/dialog.css';
 @import './recipes/input.css';
