@@ -1,0 +1,15 @@
+/** Switch **/
+
+:root {
+    --switch-track-border-color: transparent;
+    --switch-track-height: calc(var(--switch-thumb-size) + 4px);
+    --switch-track-width: calc(var(--switch-thumb-size) * 2);
+    --switch-track-bg-checked: var(--primary);
+    --switch-track-bg-unchecked: var(--input);
+    --switch-track-radius: var(--radius-full);
+
+    --switch-thumb-size: var(--icon-size-md);
+    --switch-thumb-bg: var(--background);
+    --switch-thumb-translate-checked: calc(100% - 2px);
+    --switch-thumb-radius: var(--radius-full);
+}

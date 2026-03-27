@@ -134,12 +134,12 @@ export function Apps() {
           </div>
 
           <Select value={sort} onValueChange={handleSortChange}>
-            <SelectTrigger className='w-16'>
+            <SelectTrigger>
               <SelectValue>
                 <SlidersHorizontal size={18} />
               </SelectValue>
             </SelectTrigger>
-            <SelectContent align='end'>
+            <SelectContent position='popper'>
               <SelectItem value='asc'>
                 <div className='flex items-center gap-4'>
                   <ArrowUpAZ size={16} />

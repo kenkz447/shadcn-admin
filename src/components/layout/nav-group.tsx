@@ -1,36 +1,42 @@
 import { type ReactNode } from 'react'
-import { Link, useLocation } from '@tanstack/react-router'
+
 import { ChevronRight } from 'lucide-react'
+
 import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
+    Collapsible,
+    CollapsibleContent,
+    CollapsibleTrigger,
 } from '@/components/ui/collapsible'
 import {
-  SidebarGroup,
-  SidebarGroupLabel,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarMenuSub,
-  SidebarMenuSubButton,
-  SidebarMenuSubItem,
-  useSidebar,
+    SidebarGroup,
+    SidebarGroupLabel,
+    SidebarMenu,
+    SidebarMenuButton,
+    SidebarMenuItem,
+    SidebarMenuSub,
+    SidebarMenuSubButton,
+    SidebarMenuSubItem,
+    useSidebar,
 } from '@/components/ui/sidebar'
+import {
+    Link,
+    useLocation,
+} from '@tanstack/react-router'
+
 import { Badge } from '../ui/badge'
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
 } from '../ui/dropdown-menu'
 import {
-  type NavCollapsible,
-  type NavItem,
-  type NavLink,
-  type NavGroup as NavGroupProps,
+    type NavCollapsible,
+    type NavGroup as NavGroupProps,
+    type NavItem,
+    type NavLink,
 } from './types'
 
 export function NavGroup({ title, items }: NavGroupProps) {
@@ -104,7 +110,7 @@ function SidebarMenuCollapsible({
             <ChevronRight className='ms-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90 rtl:rotate-180' />
           </SidebarMenuButton>
         </CollapsibleTrigger>
-        <CollapsibleContent className='CollapsibleContent'>
+        <CollapsibleContent>
           <SidebarMenuSub>
             {item.items.map((subItem) => (
               <SidebarMenuSubItem key={subItem.title}>

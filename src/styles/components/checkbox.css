@@ -1,0 +1,14 @@
+/** Checkbox **/
+
+:root {
+    --checkbox-radius: var(--radius-xs);
+    --checkbox-indicator-size: var(--icon-size-md);
+
+    --checkbox-size: var(--toggle-size);
+    --checkbox-border-color: var(--toggle-border-color);
+    --checkbox-bg: var(--toggle-bg);
+
+    --checkbox-checked-border-color: var(--toggle-border-color-checked);
+    --checkbox-checked-bg: var(--toggle-bg-checked);
+    --checkbox-checked-fg: var(--toggle-fg-checked);
+}

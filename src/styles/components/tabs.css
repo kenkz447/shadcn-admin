@@ -3,7 +3,7 @@
     --tabs-bg: var(--muted);
     --tabs-fg: var(--muted-foreground);
     --tabs-border: var(--border);
-    --tabs-size-md: var(--control-size-md);
+    --tabs-size-md: var(--size-md);
     --tabs-radius: var(--radius-lg);
     --tabs-padding: var(--space-sm);
     --tabs-gap: var(--space-md);

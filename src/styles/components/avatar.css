@@ -1,9 +1,9 @@
 /** Avatar **/
 
 :root {
-    --avatar-size: var(--control-size-md);
-    --avatar-size-sm: var(--control-size-sm);
-    --avatar-size-lg: var(--control-size-lg);
+    --avatar-size: var(--size-md);
+    --avatar-size-sm: var(--size-sm);
+    --avatar-size-lg: var(--size-lg);
     --avatar-ring-width: var(--border-width-thick);
     --avatar-ring-color: var(--background);
 

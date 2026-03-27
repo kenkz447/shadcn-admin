@@ -5,7 +5,6 @@
     --dropdown-content-radius: var(--menu-content-radius);
     --dropdown-content-border-color: var(--menu-content-border-color);
     --dropdown-content-padding: var(--menu-content-padding);
-    --dropdown-content-side-offset: var(--menu-content-side-offset);
 
     --dropdown-item-gap: var(--menu-item-gap);
     --dropdown-item-radius: var(--menu-item-radius);

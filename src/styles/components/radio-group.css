@@ -1,0 +1,11 @@
+/** Radio Group **/
+
+:root {
+    --radio-group-gap: var(--space-md);
+    --radio-indicator-size: var(--icon-size-xs);
+
+    --radio-size: var(--toggle-size);
+    --radio-border-color: var(--toggle-border-color);
+    --radio-bg: var(--toggle-bg);
+    --radio-indicator-color: var(--toggle-indicator-color);
+}

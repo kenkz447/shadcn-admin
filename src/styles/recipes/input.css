@@ -1,0 +1,102 @@
+:root {
+    /* Height scale */
+    --input-size-xs: var(--size-xs);
+    --input-size-sm: var(--size-sm);
+    --input-size-md: var(--size-md); /* Default height for form-fields and buttons */
+    --input-size-lg: var(--size-lg);
+
+    /* Gap scale */
+    --input-gap-xs: var(--space-sm);
+    --input-gap-sm: var(--space-sm);
+    --input-gap-md: var(--space-md);
+    --input-gap-lg: var(--space-md);
+
+    /* Shared geometry */
+    --input-radius-md: var(--radius-md);
+
+    /* Shared spacing */
+    --input-padding-x: var(--space-lg);
+    --input-padding-y: var(--space-md);
+
+    /* Shared Colors */
+    --input-placeholder-color: var(--muted-foreground);
+
+    --input-bg: transparent;
+    --input-bg-hover: transparent;
+    --input-bg-focus: transparent;
+    --input-bg-disabled: transparent;
+    --input-bg-disabled: color-mix(in oklab, var(--input) 50%, transparent);
+
+    --input-border-color: var(--input);
+    --input-border-color-hover: var(--input);
+    --input-border-color-disabled: var(--input);
+    --input-border-color-focus: var(--ring);
+    --input-border-color-invalid: var(--destructive);
+
+    --input-ring-color-focus: color-mix(in oklab, var(--ring) 40%, transparent);
+    --input-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
+
+    --input-fg-disabled: var(--muted-foreground);
+
+    &.dark {
+        /* Dark mode specific backgrounds */
+        --input-bg: color-mix(in oklab, var(--input) 30%, transparent);
+        --input-bg-hover: color-mix(in oklab, var(--input) 50%, transparent); /* Dùng cho hover states của button/select */
+    }
+}
+
+@utility input-hover {
+    @apply border-(--input-border-color-hover) bg-(--input-bg-hover);
+}
+
+@utility input-focus {
+    @apply border-(--input-border-color-focus) bg-(--input-bg-focus) ring-(--input-ring-color-focus) ring-3;
+}
+
+@utility input-disabled {
+    @apply pointer-events-none border-(--input-border-color-disabled) bg-(--input-bg-disabled) text-(--input-fg-disabled);
+}
+
+@utility input-invalid {
+    @apply border-(--input-border-color-invalid) bg-(--input-bg-invalid) ring-(--input-ring-color-invalid);
+}
+
+[data-behavior='input'] {
+    &:hover {
+        @apply input-hover;
+    }
+
+    &:focus {
+        @apply input-focus;
+    }
+
+    &:disabled {
+        @apply input-disabled;
+    }
+
+    &[aria-invalid='true'] {
+        @apply input-invalid;
+    }
+}
+
+[data-behavior='input-group'] {
+    &:hover {
+        @apply input-hover;
+    }
+
+    &:has(:focus) {
+        @apply input-focus;
+    }
+
+    &:has([disabled='true']) {
+        @apply input-disabled;
+    }
+
+    &:has([aria-invalid='true']) {
+        @apply input-invalid;
+    }
+
+    [data-behavior='input'] {
+        @apply border-0 bg-transparent ring-0;
+    }
+}

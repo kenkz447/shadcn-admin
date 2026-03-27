@@ -7,8 +7,8 @@
     --command-bg: var(--popover);
     --command-fg: var(--popover-foreground);
 
-    --command-input-wrapper-height: var(--control-size-md);
-    --command-input-wrapper-padding-x: var(--control-padding-x);
+    --command-input-wrapper-height: var(--input-size-md);
+    --command-input-wrapper-padding-x: var(--input-padding-x);
     --command-input-wrapper-bg: color-mix(in oklab, var(--input) 30%, transparent);
     --command-input-wrapper-border-color: color-mix(in oklab, var(--input) 30%, transparent);
     --command-input-icon-size: var(--icon-size-md);

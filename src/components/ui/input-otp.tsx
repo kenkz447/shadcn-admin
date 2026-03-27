@@ -19,7 +19,6 @@ function InputOTP({
 }) {
     return (
         <OTPInput
-            data-slot="input-otp"
             containerClassName={cn(
                 "flex items-center gap-(--input-otp-gap) has-disabled:opacity-50",
                 containerClassName
@@ -34,7 +33,7 @@ function InputOTPGroup({ className, ...props }: React.ComponentProps<"div">) {
     return (
         <div
             data-slot="input-otp-group"
-            className={cn("flex items-center", className)}
+            className={cn("flex items-center rounded-lg has-aria-invalid:ring-3 has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40", className)}
             {...props}
         />
     )
@@ -55,7 +54,7 @@ function InputOTPSlot({
             data-slot="input-otp-slot"
             data-active={isActive}
             className={cn(
-                "relative flex h-(--input-otp-slot-size) w-(--input-otp-slot-size) items-center justify-center border-y border-r border-(--input-otp-slot-border-color) bg-(--input-otp-slot-bg) text-sm shadow-xs transition-all outline-none first:rounded-l-(--input-otp-slot-radius) first:border-l last:rounded-r-(--input-otp-slot-radius) aria-invalid:border-invalid data-[active=true]:z-10 data-[active=true]:border-(--input-otp-slot-border-color-active) dark:data-[active=true]:aria-invalid:border-invalid/40 data-[active=true]:aria-invalid:ring-invalid",
+                "relative flex size-(--input-otp-slot-size) items-center justify-center border-y border-r border-(--input-otp-slot-border-color) bg-(--input-otp-slot-bg) text-sm shadow-xs transition-all outline-none first:rounded-l-(--input-otp-slot-radius) first:border-l last:rounded-r-(--input-otp-slot-radius) aria-invalid:border-invalid data-[active=true]:z-10 data-[active=true]:border-(--input-otp-slot-border-color-active) dark:data-[active=true]:aria-invalid:border-invalid/40 data-[active=true]:aria-invalid:ring-invalid",
                 className
             )}
             {...props}

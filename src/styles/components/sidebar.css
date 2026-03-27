@@ -8,7 +8,7 @@
     --sidebar-container-padding: var(--space-md);
     --sidebar-container-padding-with-border: calc(var(--spacing) * 4 + 2px);
 
-    --sidebar-trigger-size: var(--control-size-md);
+    --sidebar-trigger-size: var(--size-md);
 
     --sidebar-rail-width: var(--space-lg);
     --sidebar-rail-offset: calc(var(--sidebar-rail-width) * -1);
@@ -21,14 +21,14 @@
     --sidebar-inset-radius: var(--radius-xl);
     --sidebar-floating-radius: var(--radius-lg);
 
-    --sidebar-input-height: var(--control-size-md);
+    --sidebar-height: var(--size-md);
     --sidebar-section-gap: var(--space-md);
     --sidebar-section-padding: var(--space-md);
     --sidebar-separator-margin-x: var(--space-md);
 
     --sidebar-menu-gap: var(--space-sm);
     
-    --sidebar-group-label-height: var(--control-size-sm);
+    --sidebar-group-label-height: var(--size-sm);
     --sidebar-group-label-padding-x: var(--space-md);
     --sidebar-group-label-icon-size: var(--icon-size-md);
     --sidebar-group-label-collapsed-margin-top: calc(var(--sidebar-group-label-height) * -1);
@@ -45,10 +45,10 @@
     --sidebar-menu-button-padding: var(--space-lg);
     --sidebar-menu-button-padding-right-with-action: var(--space-3xl);
     --sidebar-menu-button-icon-size: var(--icon-size-md);
-    --sidebar-menu-button-collapsed-size: var(--control-size-sm);
-    --sidebar-menu-button-height: var(--control-size-md);
-    --sidebar-menu-button-height-sm: var(--control-size-sm);
-    --sidebar-menu-button-height-lg: var(--control-size-lg);
+    --sidebar-menu-button-collapsed-size: var(--size-sm);
+    --sidebar-menu-button-height: var(--size-md);
+    --sidebar-menu-button-height-sm: var(--size-sm);
+    --sidebar-menu-button-height-lg: var(--size-lg);
 
     --sidebar-menu-action-top: var(--space-md);
     --sidebar-menu-action-top-sm: var(--space-sm);
@@ -78,7 +78,7 @@
     --sidebar-menu-sub-border-color: var(--sidebar-border);
     --sidebar-menu-sub-padding-x: var(--space-xl);
     --sidebar-menu-sub-padding-y: var(--space-xs);
-    --sidebar-menu-sub-button-height: var(--control-size-sm);
+    --sidebar-menu-sub-button-height: var(--size-sm);
     --sidebar-menu-sub-button-gap: var(--space-md);
     --sidebar-menu-sub-button-radius: var(--radius-md);
     --sidebar-menu-sub-button-padding-x: var(--space-md);

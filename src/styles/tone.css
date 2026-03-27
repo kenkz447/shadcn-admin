@@ -7,18 +7,14 @@
     --secondary-subtle: color-mix(in oklab, var(--secondary) 20%, transparent);
     --secondary-disabled: color-mix(in oklab, var(--secondary) 50%, transparent);
 
-    --destructive-hover: color-mix(in oklab, var(--destructive) 20%, transparent);
+    --destructive-hover: color-mix(in oklab, var(--destructive) 40%, transparent);
     --destructive-subtle: color-mix(in oklab, var(--destructive) 20%, transparent);
     --destructive-disabled: color-mix(in oklab, var(--destructive) 50%, transparent);
-
-    --invalid: var(--destructive);
 }
 
 .dark {
     --destructive-bg: color-mix(in oklab, var(--destructive) 20%, transparent);
     --destructive-bg-hover: color-mix(in oklab, var(--destructive) 30%, transparent);
-
-    --invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
 }
 
 @theme inline {
@@ -33,6 +29,4 @@
     --color-destructive-hover: var(--destructive-bg-hover);
     --color-destructive-subtle: var(--destructive-subtle);
     --color-destructive-disabled: var(--destructive-disabled);
-
-    --color-invalid: var(--invalid);
 }

@@ -1,16 +1,16 @@
 /** Select **/
 
 :root {
-    --select-trigger-gap: var(--control-gap-md);
-    --select-trigger-radius: var(--control-radius-md);
-    --select-trigger-border-color: var(--control-border-color);
-    --select-trigger-bg: var(--control-bg);
-    --select-trigger-bg-hover: var(--control-bg-hover);
-    --select-trigger-padding-x: var(--control-padding-x);
-    --select-trigger-padding-y: var(--control-padding-y);
-    --select-trigger-height: var(--control-size-md);
-    --select-trigger-height-sm: var(--control-size-sm);
-    --select-trigger-placeholder-color: var(--control-placeholder-color);
+    --select-trigger-gap: var(--input-gap-md);
+    --select-trigger-radius: var(--input-radius-md);
+    --select-trigger-border-color: var(--input-border-color);
+    --select-trigger-bg: var(--input-bg);
+    --select-trigger-bg-hover: var(--input-bg-hover);
+    --select-trigger-padding-x: var(--input-padding-x);
+    --select-trigger-padding-y: var(--input-padding-y);
+    --select-trigger-height: var(--input-size-md);
+    --select-trigger-height-sm: var(--input-size-sm);
+    --select-trigger-placeholder-color: var(--input-placeholder-color);
 
     --select-icon-size: var(--menu-item-icon-size);
     --select-icon-opacity: 0.5;

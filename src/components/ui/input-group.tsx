@@ -15,6 +15,7 @@ import { cn } from '@/lib/utils'
 function InputGroup({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
+      data-behavior="input-group"
       data-slot="input-group"
       role="group"
       className={cn(

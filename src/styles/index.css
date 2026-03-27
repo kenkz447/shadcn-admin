@@ -4,48 +4,42 @@
 
 @import './theme.css';
 @import './tone.css';
-
-@import './semantic.css';
+@import './default.css';
 
 @import './recipes/dialog.css';
-@import './recipes/controls.css';
+@import './recipes/input.css';
 @import './recipes/menu.css';
 @import './recipes/toggle.css';
 
-@import './components/containers/card.css';
-
-@import './components/dialog/sheet.css';
-@import './components/dialog/alert-dialog.css';
-
-@import './components/data-display/avatar.css';
-@import './components/data-display/badge.css';
-@import './components/data-display/table.css';
-@import './components/feedback/alert.css';
-@import './components/feedback/sonner.css';
-@import './components/feedback/skeleton.css';
-@import './components/controls/button.css';
-@import './components/controls/calendar.css';
-@import './components/controls/input.css';
-@import './components/controls/input-otp.css';
-@import './components/controls/select.css';
-@import './components/controls/textarea.css';
-
-@import './components/layout/form.css';
-@import './components/layout/label.css';
-@import './components/layout/scroll-area.css';
-@import './components/layout/separator.css';
-@import './components/layout/input-group.css';
-
-@import './components/navigation/sidebar.css';
-@import './components/navigation/tabs.css';
-@import './components/menu/command.css';
-@import './components/menu/dropdown-menu.css';
-@import './components/overlays/popover.css';
-@import './components/overlays/tooltip.css';
-@import './components/toggle/checkbox.css';
-@import './components/toggle/radio-group.css';
-@import './components/toggle/switch.css';
-@import './components/misc/kbd.css';
+@import './components/card.css';
+@import './components/button.css';
+@import './components/sheet.css';
+@import './components/alert-dialog.css';
+@import './components/avatar.css';
+@import './components/badge.css';
+@import './components/table.css';
+@import './components/alert.css';
+@import './components/sonner.css';
+@import './components/skeleton.css';
+@import './components/calendar.css';
+@import './components/input-otp.css';
+@import './components/input-group.css';
+@import './components/select.css';
+@import './components/textarea.css';
+@import './components/form.css';
+@import './components/label.css';
+@import './components/scroll-area.css';
+@import './components/separator.css';
+@import './components/sidebar.css';
+@import './components/tabs.css';
+@import './components/command.css';
+@import './components/dropdown-menu.css';
+@import './components/popover.css';
+@import './components/tooltip.css';
+@import './components/checkbox.css';
+@import './components/radio-group.css';
+@import './components/switch.css';
+@import './components/kbd.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -78,6 +72,12 @@
         cursor: pointer;
     }
 
+    * {
+        @apply border-border outline-ring/50;
+        scrollbar-width: thin;
+        scrollbar-color: var(--border) transparent;
+    }
+
     /* Prevent focus zoom on mobile devices */
     @media screen and (max-width: 767px) {
         input,
@@ -105,33 +105,4 @@
 
 @utility faded-bottom {
     @apply after:pointer-events-none after:absolute after:start-0 after:bottom-0 after:hidden after:h-32 after:w-full after:rounded-b-2xl after:bg-[linear-gradient(180deg,transparent_10%,var(--background)_70%)] md:after:block;
-}
-
-/* styles.css */
-.CollapsibleContent {
-    overflow: hidden;
-}
-.CollapsibleContent[data-state='open'] {
-    animation: slideDown 300ms ease-out;
-}
-.CollapsibleContent[data-state='closed'] {
-    animation: slideUp 300ms ease-out;
-}
-
-@keyframes slideDown {
-    from {
-        height: 0;
-    }
-    to {
-        height: var(--radix-collapsible-content-height);
-    }
-}
-
-@keyframes slideUp {
-    from {
-        height: var(--radix-collapsible-content-height);
-    }
-    to {
-        height: 0;
-    }
 }

@@ -1,11 +1,11 @@
 /** Button **/
 
 :root {
-    --btn-radius-xs: var(--control-radius-md);
-    --btn-radius-sm: var(--control-radius-md);
-    --btn-radius-md: var(--control-radius-md);
-	
-    --btn-group-radius: var(--control-radius-md);
+    --btn-radius-xs: var(--radius-md);
+    --btn-radius-sm: var(--radius-md);
+    --btn-radius-md: var(--radius-md);
+
+    --btn-group-radius: var(--radius-md);
 
     --btn-font-xs: var(--font-size-xs);
     --btn-font-sm: var(--font-size-xs);
@@ -15,10 +15,10 @@
     --btn-icon-size-xs: var(--icon-size-xs);
     --btn-icon-size-sm: var(--icon-size-sm);
 
-    --btn-size-xs: var(--control-size-xs);
-    --btn-size-sm: var(--control-size-sm);
-    --btn-size-md: var(--control-size-md);
-    --btn-size-lg: var(--control-size-lg);
+    --btn-size-xs: var(--size-xs);
+    --btn-size-sm: var(--size-sm);
+    --btn-size-md: var(--size-md);
+    --btn-size-lg: var(--size-lg);
 
     --btn-gap-xs: var(--space-md);
     --btn-gap-sm: var(--space-md);

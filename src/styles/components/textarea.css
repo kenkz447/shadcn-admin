@@ -1,0 +1,12 @@
+/** Textarea **/
+
+:root {
+    --textarea-min-height: var(--spacing-5xl);
+    --textarea-radius: var(--input-radius-md);
+    --textarea-padding-x: var(--input-padding-x);
+    --textarea-padding-y: var(--input-padding-y);
+    
+    --textarea-border-color: var(--input-border-color);
+    --textarea-bg: var(--input-bg);
+    --textarea-placeholder-color: var(--input-placeholder-color);
+}

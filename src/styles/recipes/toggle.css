@@ -4,9 +4,11 @@
 
   /* Shared Colors */
   --toggle-bg: transparent;
-  --toggle-border-color: var(--input);
-}
+  --toggle-bg-checked: var(--primary);
+  --toggle-fg-checked: var(--primary-foreground);
 
-.dark {
-  --toggle-bg: color-mix(in oklab, var(--input) 30%, transparent);
+  --toggle-border-color: var(--input);
+  --toggle-border-color-checked: var(--primary);
+
+  --toggle-indicator-color: var(--primary);
 }
