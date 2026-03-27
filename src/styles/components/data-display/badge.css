@@ -10,9 +10,4 @@
     --badge-icon-size: calc(var(--spacing) * 3);
     
     --badge-border-color: transparent;
-    --badge-border-color-invalid: var(--control-border-color-invalid);
-
-    --badge-ring-color-invalid: var(--control-ring-color-invalid);
-
-    --badge-destructive-ring-color-focus: var(--control-ring-color-invalid);
 }

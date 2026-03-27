@@ -7,9 +7,6 @@
     --checkbox-bg: var(--toggle-bg);
     --checkbox-indicator-size: var(--icon-size-md);
 
-    --checkbox-border-color-invalid: var(--toggle-border-color-invalid);
-    --checkbox-ring-color-invalid: var(--toggle-ring-color-invalid);
-
     --checkbox-checked-border-color: var(--primary);
     --checkbox-checked-bg: var(--primary);
     --checkbox-checked-fg: var(--primary-foreground);

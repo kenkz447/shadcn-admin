@@ -9,7 +9,7 @@ import { Slot } from 'radix-ui'
 import { cn } from '@/lib/utils'
 
 const badgeVariants = cva(
-    "inline-flex w-fit shrink-0 items-center justify-center gap-(--badge-gap) overflow-hidden rounded-(--badge-radius) border border-(--badge-border-color) px-(--badge-padding-x) py-(--badge-padding-y) text-xs font-medium whitespace-nowrap transition-[color,box-shadow] aria-invalid:border-(--badge-border-color-invalid) aria-invalid:ring-(--badge-ring-color-invalid) [&>svg]:pointer-events-none [&>svg]:size-(--badge-icon-size)",
+    "inline-flex w-fit shrink-0 items-center justify-center gap-(--badge-gap) overflow-hidden rounded-(--badge-radius) border border-(--badge-border-color) px-(--badge-padding-x) py-(--badge-padding-y) text-xs font-medium whitespace-nowrap transition-[color,box-shadow] aria-invalid:border-invalid aria-invalid:ring-invalid [&>svg]:pointer-events-none [&>svg]:size-(--badge-icon-size)",
     {
         variants: {
             variant: {

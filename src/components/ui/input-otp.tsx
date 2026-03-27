@@ -55,7 +55,7 @@ function InputOTPSlot({
             data-slot="input-otp-slot"
             data-active={isActive}
             className={cn(
-                "relative flex h-(--input-otp-slot-size) w-(--input-otp-slot-size) items-center justify-center border-y border-r border-(--input-otp-slot-border-color) bg-(--input-otp-slot-bg) text-sm shadow-xs transition-all outline-none first:rounded-l-(--input-otp-slot-radius) first:border-l last:rounded-r-(--input-otp-slot-radius) aria-invalid:border-(--input-otp-slot-border-color-invalid) data-[active=true]:z-10 data-[active=true]:border-(--input-otp-slot-border-color-active) data-[active=true]:aria-invalid:border-(--input-otp-slot-border-color-invalid) data-[active=true]:aria-invalid:ring-(--input-otp-slot-ring-color-invalid)",
+                "relative flex h-(--input-otp-slot-size) w-(--input-otp-slot-size) items-center justify-center border-y border-r border-(--input-otp-slot-border-color) bg-(--input-otp-slot-bg) text-sm shadow-xs transition-all outline-none first:rounded-l-(--input-otp-slot-radius) first:border-l last:rounded-r-(--input-otp-slot-radius) aria-invalid:border-invalid data-[active=true]:z-10 data-[active=true]:border-(--input-otp-slot-border-color-active) dark:data-[active=true]:aria-invalid:border-invalid/40 data-[active=true]:aria-invalid:ring-invalid",
                 className
             )}
             {...props}

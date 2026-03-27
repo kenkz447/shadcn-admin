@@ -9,7 +9,4 @@
     --textarea-border-color: var(--control-border-color);
     --textarea-bg: var(--control-bg);
     --textarea-placeholder-color: var(--control-placeholder-color);
-
-    --textarea-border-color-invalid: var(--control-border-color-invalid);
-    --textarea-ring-color-invalid: var(--control-ring-color-invalid);
 }

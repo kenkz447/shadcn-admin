@@ -13,11 +13,11 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
-        outline: "border-(--btn-outline-border-color) bg-(--btn-outline-bg) hover:bg-(--btn-outline-bg-hover) hover:text-foreground aria-expanded:bg-(--btn-outline-bg-hover) aria-expanded:text-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
-        ghost: "hover:bg-(--btn-ghost-bg-hover) hover:text-foreground aria-expanded:bg-(--btn-ghost-bg-hover) aria-expanded:text-foreground",
-        destructive: "bg-(--btn-destructive-bg) hover:bg-(--btn-destructive-bg-hover) text-destructive",
+        default: "bg-primary text-primary-foreground [a]:hover:bg-primary-hover",
+        outline: " border-border bg-background hover:bg-secondary-hover hover:text-foreground aria-expanded:bg-secondary-hover aria-expanded:text-foreground",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-hover aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+        ghost: "hover:bg-secondary-hover hover:text-foreground aria-expanded:bg-secondary-hover aria-expanded:text-foreground",
+        destructive: "bg-destructive-subtle hover:bg-destructive-hover text-destructive",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {

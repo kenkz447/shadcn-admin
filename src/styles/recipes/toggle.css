@@ -5,13 +5,8 @@
   /* Shared Colors */
   --toggle-bg: transparent;
   --toggle-border-color: var(--input);
-
-  /* Shared Focus and Validation */
-  --toggle-border-color-invalid: var(--destructive);
-  --toggle-ring-color-invalid: color-mix(in oklab, var(--destructive) 20%, transparent);
 }
 
 .dark {
   --toggle-bg: color-mix(in oklab, var(--input) 30%, transparent);
-  --toggle-ring-color-invalid: color-mix(in oklab, var(--destructive) 40%, transparent);
 }

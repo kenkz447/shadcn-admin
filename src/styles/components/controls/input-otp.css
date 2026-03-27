@@ -10,9 +10,6 @@
 
     --input-otp-slot-border-color-active: var(--control-border-color-focus);
 
-    --input-otp-slot-border-color-invalid: var(--control-border-color-invalid);
-    --input-otp-slot-ring-color-invalid: var(--control-ring-color-invalid);
-
     --input-otp-caret-height: calc(var(--input-otp-slot-size) / 2);
     --input-otp-caret-width: 1px;
 }

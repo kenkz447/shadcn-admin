@@ -10,9 +10,6 @@
     --input-bg: var(--control-bg);
 
     --input-border-color: var(--control-border-color);
-    --input-border-color-invalid: var(--control-border-color-invalid);
 
     --input-placeholder-color: var(--control-placeholder-color);
-
-    --input-ring-color-invalid: var(--control-ring-color-invalid);
 }

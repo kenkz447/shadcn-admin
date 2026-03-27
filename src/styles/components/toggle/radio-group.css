@@ -7,9 +7,6 @@
     --radio-bg: var(--toggle-bg);
     --radio-color: var(--primary);
 
-    --radio-border-color-invalid: var(--toggle-border-color-invalid);
-    --radio-ring-color-invalid: var(--toggle-ring-color-invalid);
-    
     --radio-group-gap: var(--space-md);
 
     --radio-indicator-size: var(--icon-size-xs);

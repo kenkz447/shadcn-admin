@@ -12,9 +12,6 @@
     --select-trigger-height-sm: var(--control-size-sm);
     --select-trigger-placeholder-color: var(--control-placeholder-color);
 
-    --select-trigger-border-color-invalid: var(--control-border-color-invalid);
-    --select-trigger-ring-color-invalid: var(--control-ring-color-invalid);
-
     --select-icon-size: var(--menu-item-icon-size);
     --select-icon-opacity: 0.5;
 

@@ -3,6 +3,8 @@
 @import 'shadcn/tailwind.css';
 
 @import './theme.css';
+@import './tone.css';
+
 @import './semantic.css';
 
 @import './recipes/dialog.css';
