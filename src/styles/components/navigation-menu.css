@@ -1,0 +1,22 @@
+/** Navigation Menu **/
+
+:root {
+    --nav-menu-list-gap: var(--space-sm);
+
+    --nav-menu-trigger-height: var(--size-md);
+    --nav-menu-trigger-padding-x: var(--space-xl);
+    --nav-menu-trigger-padding-y: var(--space-md);
+    --nav-menu-trigger-radius: var(--radius-md);
+    --nav-menu-trigger-icon-size: var(--icon-size-xs);
+    --nav-menu-trigger-icon-margin-left: var(--space-sm);
+
+    --nav-menu-link-padding: var(--space-md);
+    --nav-menu-link-gap: var(--space-sm);
+    --nav-menu-link-radius: var(--radius-sm);
+
+    --nav-menu-viewport-margin-top: var(--space-sm);
+    --nav-menu-viewport-radius: var(--radius-md);
+
+    --nav-menu-indicator-height: var(--space-sm);
+    --nav-menu-indicator-arrow-size: var(--space-md);
+}

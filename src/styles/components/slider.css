@@ -1,0 +1,8 @@
+/** Slider **/
+
+:root {
+    --slider-vertical-min-height: calc(var(--spacing) * 44);
+    --slider-track-thickness: var(--space-md);
+    --slider-thumb-size: var(--icon-size-sm);
+    --slider-radius: var(--radius-full);
+}

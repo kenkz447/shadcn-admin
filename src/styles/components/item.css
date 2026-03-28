@@ -1,0 +1,18 @@
+/** Item **/
+
+:root {
+    --item-radius: var(--radius-md);
+    --item-font-size: var(--font-size-sm);
+    --item-gap: var(--space-xl);
+    --item-padding: var(--space-xl);
+    --item-sm-gap: var(--space-lg);
+    --item-sm-padding-x: var(--space-xl);
+    --item-sm-padding-y: var(--space-lg);
+
+    --item-media-translate: var(--size-xs);
+    --item-media-icon-size: var(--size-sm);
+    --item-media-icon-radius: var(--radius-sm);
+    --item-media-icon-svg-size: var(--icon-size-sm);
+    --item-media-image-size: var(--size-md);
+    --item-media-image-radius: var(--radius-sm);
+}

@@ -1,0 +1,9 @@
+/** Pagination **/
+
+:root {
+    --pagination-content-gap: var(--space-sm);
+    --pagination-ellipsis-size: var(--size-md);
+    --pagination-ellipsis-icon-size: var(--icon-size-sm);
+    --pagination-nav-gap: var(--space-sm);
+    --pagination-nav-padding-x: var(--space-xl);
+}

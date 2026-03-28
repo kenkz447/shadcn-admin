@@ -1,0 +1,6 @@
+/** Progress **/
+
+:root {
+    --progress-height: var(--space-md);
+    --progress-radius: var(--radius-full);
+}

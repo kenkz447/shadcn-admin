@@ -1,0 +1,9 @@
+/** Button Group **/
+
+:root {
+    --btn-group-text-radius: var(--btn-radius-md);
+    --btn-group-text-padding-x: var(--btn-padding-x-md);
+    --btn-group-text-font-size: var(--btn-font-size-md);
+    --btn-group-text-gap: var(--btn-gap-md);
+    --btn-group-text-icon-size: var(--btn-icon-size-md);
+}

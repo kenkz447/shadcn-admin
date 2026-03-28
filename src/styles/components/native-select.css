@@ -1,0 +1,17 @@
+/** Native Select **/
+
+:root {
+    --native-select-height: var(--input-size-md);
+    --native-select-height-sm: var(--size-sm);
+
+    --native-select-radius: var(--input-radius-md);
+    --native-select-padding-x: var(--input-padding-x);
+    --native-select-padding-y: var(--input-padding-y);
+    --native-select-padding-y-sm: var(--space-sm);
+
+    --native-select-padding-right: calc(var(--native-select-padding-x) + var(--native-select-icon-size));
+    --native-select-font-size: var(--font-size-sm);
+
+    --native-select-icon-inset: var(--native-select-padding-x);
+    --native-select-icon-size: var(--icon-size-md);
+}

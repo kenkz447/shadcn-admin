@@ -1,0 +1,7 @@
+/** Hover Card **/
+
+:root {
+    --hover-card-width: var(--popover-content-width);
+    --hover-card-radius: var(--popover-content-radius);
+    --hover-card-padding: var(--popover-content-padding);
+}

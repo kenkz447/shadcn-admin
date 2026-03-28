@@ -1,0 +1,16 @@
+/** Toggle **/
+
+:root {
+    --toggle-radius: var(--btn-radius-md);
+    --toggle-font-size: var(--btn-font-md);
+    --toggle-gap: var(--btn-gap-md);
+    --toggle-icon-size: var(--icon-size-md);
+
+    --toggle-size-sm: var(--size-sm);
+    --toggle-size-md: var(--size-md);
+    --toggle-size-lg: var(--size-lg);
+
+    --toggle-padding-x-sm: var(--btn-padding-x-sm);
+    --toggle-padding-x-md: var(--btn-padding-x-md);
+    --toggle-padding-x-lg: var(--btn-padding-x-lg);
+}

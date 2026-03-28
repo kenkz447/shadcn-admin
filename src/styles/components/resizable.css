@@ -1,0 +1,8 @@
+/** Resizable **/
+
+:root {
+    --resizable-handle-height: var(--space-xl);
+    --resizable-handle-width: var(--space-lg);
+    --resizable-handle-radius: var(--radius-xs);
+    --resizable-handle-icon-size: var(--icon-size-sm);
+}

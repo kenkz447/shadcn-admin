@@ -148,7 +148,7 @@ function RadioGroupItem({
         className={cn(
           'relative rounded-[6px] ring-[1px] ring-border',
           'group-data-[state=checked]:shadow-2xl group-data-[state=checked]:ring-primary',
-          'group-focus-visible:ring-2'
+          'group-focus-visible:ring-3'
         )}
         role='img'
         aria-hidden='false'

@@ -1,0 +1,11 @@
+/** Accordion **/
+
+:root {
+    --accordion-font-size: var(--font-size-sm);
+    --accordion-trigger-gap: var(--space-xl);
+    --accordion-trigger-py: var(--space-xl);
+    --accordion-trigger-radius: var(--radius-md);
+    --accordion-chevron-size: var(--icon-size-sm);
+    --accordion-chevron-translate: var(--size-xs);
+    --accordion-content-pb: var(--space-xl);
+}

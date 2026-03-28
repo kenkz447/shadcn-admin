@@ -1,0 +1,9 @@
+/** Carousel **/
+
+:root {
+    --carousel-content-negative-offset: calc(var(--space-xl) * -1);
+    --carousel-item-offset: var(--space-xl);
+    --carousel-btn-size: var(--size-sm);
+    --carousel-btn-radius: var(--radius-full);
+    --carousel-btn-offset: calc(var(--space-4xl) * -1);
+}

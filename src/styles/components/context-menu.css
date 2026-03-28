@@ -1,0 +1,27 @@
+/** Context Menu **/
+
+:root {
+    --context-content-min-width: var(--menu-content-min-width);
+    --context-content-radius: var(--menu-content-radius);
+    --context-content-border-color: var(--menu-content-border-color);
+    --context-content-padding: var(--menu-content-padding);
+
+    --context-item-gap: var(--menu-item-gap);
+    --context-item-radius: var(--menu-item-radius);
+    --context-item-padding-x: var(--menu-item-padding-x);
+    --context-item-padding-y: var(--menu-item-padding-y);
+    --context-item-inset-padding-left: var(--space-3xl);
+    --context-item-indicator-offset-left: var(--space-md);
+    --context-item-indicator-size: var(--menu-item-icon-size);
+    --context-item-icon-size: var(--menu-item-icon-size);
+
+    --context-label-fg: var(--menu-label-fg);
+    --context-label-font-size: var(--menu-label-font-size);
+    --context-label-padding-x: var(--menu-label-padding-x);
+    --context-label-padding-y: var(--menu-label-padding-y);
+
+    --context-separator-margin-x: var(--menu-separator-margin-x);
+    --context-separator-margin-y: var(--menu-separator-margin-y);
+    --context-separator-height: var(--menu-separator-height);
+    --context-separator-color: var(--menu-separator-color);
+}

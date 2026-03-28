@@ -1,0 +1,5 @@
+/** Spinner **/
+
+:root {
+    --spinner-size: var(--icon-size-md);
+}

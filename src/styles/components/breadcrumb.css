@@ -1,0 +1,10 @@
+/** Breadcrumb **/
+
+:root {
+    --breadcrumb-font-size: var(--font-size-sm);
+    --breadcrumb-list-gap: var(--space-md);
+    --breadcrumb-item-gap: var(--space-md);
+    --breadcrumb-separator-icon-size: var(--icon-size-md);
+    --breadcrumb-ellipsis-size: var(--size-md);
+    --breadcrumb-ellipsis-icon-size: var(--icon-size-md);
+}
